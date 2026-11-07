@@ -1,0 +1,1073 @@
+{
+  "zone": "Maghreb & Afrique du Nord",
+  "generated": "2026-11-06",
+  "events": [
+    {
+      "name": "ARIIS — Africa Real Estate Innovation & Investment Summit",
+      "edition": "3e édition",
+      "category": "flagship_continental",
+      "start": "2026-11-10",
+      "end": "2026-11-11",
+      "date_display": "10-11 nov. 2026",
+      "date_status": "confirmed",
+      "city": "Alger",
+      "country": "Algérie",
+      "venue": "Hôtel Golden Tulip Royaume, Alger",
+      "organizer": "Immotify (SARL FNAR GROUP)",
+      "attendees": "500+",
+      "exhibitors": "35",
+      "investor_score": 4,
+      "investor_why": "C'est l'unique sommet africain de la zone qui réunit exclusivement capitaux immobiliers et officiels de décision : 90 % de décideurs annoncés et 1 200 rendez-vous B2B visés sur deux jours. Format hôtelier (pas stand) et présence de deux ministères algériens en patronage en font un point d'entrée court mais à fort rendement pour un investisseur cherchant du contact direct avec les acteurs du foncier et du développement en Algérie.",
+      "capital_actors": [
+        "décideurs publics (2 ministères algériens en patronage)",
+        "investisseurs",
+        "fonds",
+        "développeurs immobiliers"
+      ],
+      "themes": [
+        "innovation immobilière",
+        "investissement",
+        "proptech",
+        "développement immobilier",
+        "rendez-vous B2B"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.arisummit.com/en",
+      "source_name": "ARIIS — site officiel de l'organisateur",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "édition/date: le site officiel annonce la 3e édition les 10-11 nov. 2026 à Alger ; dz-immobilier.com décrit un « ARIIS 2026 (African Real Estate Innovation Show) » de 2e édition tenu du 8 au 10 avril 2026 à l'Expo Palace d'Alger (120 exposants, 8 000 visiteurs) et une 3e édition à Oran en avril 2027 — récit incompatible avec le site officiel",
+        "identité: le sigle ARIIS désigne vraisemblablement deux manifestations distinctes (un salon d'avril à l'Expo Palace et un sommet d'automne en hôtel) — clarifier avant de réserver",
+        "capacité: 500 participants (capacité maximale annoncée) et 35 stands pour 2026 ; l'édition 2025 avait fait 350+ participants (Marriott Bab Ezzouar, 18-19 nov. 2025)"
+      ]
+    },
+    {
+      "name": "Morocco Showcase Summit",
+      "edition": "3e édition",
+      "category": "capital_markets",
+      "start": "2026-11-26",
+      "end": "2026-11-26",
+      "date_display": "26 nov. 2026",
+      "date_status": "confirmed",
+      "city": "Casablanca",
+      "country": "Maroc",
+      "venue": "Marriott Hotel, Casablanca",
+      "organizer": "API Events (en partenariat avec SMIT — Société Marocaine d'Ingénierie Touristique)",
+      "attendees": "300+",
+      "exhibitors": null,
+      "investor_score": 4,
+      "investor_why": "Le rendez-vous de référence du capital touristique et immobilier au Maroc, avec un stream « capital and real estate » (family offices, rendements, disponibilité foncière) et la présence annoncée de groupes hôteliers et fonds d'investissement internationaux. La présence de la SMIT, agence publique, en coproduction en fait un point d'accès direct aux arbitrages gouvernementaux sur les projets.",
+      "capital_actors": [
+        "investisseurs internationaux",
+        "family offices",
+        "groupes hôteliers (Accor, Radisson, Barceló)",
+        "fonds d'investissement",
+        "SMIT (agence publique)"
+      ],
+      "themes": [
+        "investissement touristique et immobilier",
+        "résidences brandées",
+        "rendement",
+        "opportunités foncières",
+        "hospitality"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.afriwallstreet.com/morocco-showcase-2026/",
+      "source_name": "AfriWallStreet (release de l'organisateur)",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "format 2026: une seule journée (26 nov.) alors que les éditions 2024 et 2025 se tenaient sur deux jours",
+        "date 2025 (hors horizon): 19-20 nov. 2025 (EQS News, travelandtourworld.com) vs 18-19 nov. 2025 (GlueUp, propertywheel)",
+        "effectif: « 300+ investisseurs internationaux de 15 pays » (afriwallstreet.com, hospitalitynet.net, masscomglobal.com) — aucune donnée de attendance vérifiée auprès d'un organisateur"
+      ]
+    },
+    {
+      "name": "FHS Egypt — Future Hospitality Summit Egypt",
+      "edition": "1re édition en Égypte",
+      "category": "capital_markets",
+      "start": "2026-11-10",
+      "end": "2026-11-11",
+      "date_display": "10-11 nov. 2026",
+      "date_status": "confirmed",
+      "city": "Le Caire",
+      "country": "Égypte",
+      "venue": "Sofitel Downtown Cairo Nile, Le Caire",
+      "organizer": "The Bench (Future Hospitality Summit)",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 4,
+      "investor_why": "Un sommet d'investissement hôtelier centré sur l'immobilier : hôtels, developments mixtes, resorts et résidences brandées, avec un track dédié « FHS Living » (hôtelisation de l'immobilier sur 9 classes d'actifs) le 11 novembre. C'est la porte d'entrée la plus directe vers les pipelines de développement et les asset managers sur le marché égyptien, même si l'échelle reste celle d'un summit et non d'un salon.",
+      "capital_actors": [
+        "investisseurs et propriétaires",
+        "développeurs",
+        "opérateurs hôteliers",
+        "gouvernements et décideurs publics",
+        "asset managers"
+      ],
+      "themes": [
+        "hôtellerie et investissement",
+        "résidences brandées",
+        "développements mixtes",
+        "asset management",
+        "hôtelisation de l'immobilier (FHS Living)"
+      ],
+      "ticket_url": null,
+      "source_url": "https://futurehospitality.com/egypt",
+      "source_name": "Future Hospitality Summit — page officielle FHS Egypt",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "édition 2027 non annoncée au 06/11/2026 : les prochaines échéances FHS Around the World sont Riyad 21-22 mars 2027, 28-29 avril 2027 (ville non précisée) et Ouganda 2-3 févr. 2027 — aucune en Égypte",
+        "continuité: FHS Egypt est une création (lancement annoncé le 11 févr. 2026), donc pas encore un rendez-vous ancré",
+        "effectif: aucune donnée publiée"
+      ]
+    },
+    {
+      "name": "TASSHIIL — Salon du Crédit, du Leasing et de l'Investissement (TASHIL)",
+      "edition": "3e édition",
+      "category": "capital_markets",
+      "start": "2026-11-16",
+      "end": "2026-11-18",
+      "date_display": "16-18 nov. 2026",
+      "date_status": "confirmed",
+      "city": "Alger",
+      "country": "Algérie",
+      "venue": "Pavillon Gourara, Palais des Expositions (SAFEX), Pins Maritimes, Alger",
+      "organizer": "SARL NETINOU",
+      "attendees": null,
+      "exhibitors": "85+",
+      "investor_score": 4,
+      "investor_why": "Le point de rendez-vous du financement algérien : banques, sociétés de leasing, établissements financiers et agences publiques d'appui prennent des dossiers sur place, et le secteur « habitat » est explicitement inclus. Pour un financeur ou un promoteur, c'est le salon où se présente l'offre de crédit et de leasing immobilier algérienne en trois jours, en parallèle des rendez-vous du mois.",
+      "capital_actors": [
+        "banques",
+        "sociétés de leasing",
+        "institutions financières",
+        "agences publiques d'appui",
+        "fintech",
+        "investisseurs"
+      ],
+      "themes": [
+        "crédit",
+        "leasing",
+        "financement du secteur du logement",
+        "investissement",
+        "finance islamique",
+        "paiement électronique"
+      ],
+      "ticket_url": null,
+      "source_url": "https://algeriaexhibitions.dz/en/events/tashil-2026",
+      "source_name": "Algeria Exhibitions (groupe SAFEX) — fiche officielle TASHIL",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "effectif exposants: « plus de 85 » (algeriaexhibitions.dz) vs « environ 80 » (dzevent.com)",
+        "édition 2025: TASHIL 2025 s'est tenu du 23 au 25 nov. 2025 (pavillon Gourara) — cohérent avec une Édition annuelle",
+        "périmètre immobilier: le communiqué officiel cite les secteurs « bancaire, financier, technologique et entrepreneurial » (85+ exposants) ; c'est dzevent.com et tasshiil.com qui mentionnent explicitement le secteur « habitat / logement »"
+      ]
+    },
+    {
+      "name": "EXPOFINANCES — Salon des Banques, Assurances et Produits Financiers",
+      "edition": "15e édition",
+      "category": "capital_markets",
+      "start": "2026-12-17",
+      "end": "2026-12-26",
+      "date_display": "17-26 déc. 2026",
+      "date_status": "confirmed",
+      "city": "Alger",
+      "country": "Algérie",
+      "venue": "Pavillon Casbah, Palais des Expositions (SAFEX), Pins Maritimes, Alger",
+      "organizer": "Algeria Exhibitions (groupe SAFEX)",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Le salon financier national algérien, avec les banques, assureurs, sociétés de leasing et institutions publiques réunis, et un programme sur le financement, l'investissement et la finance islamique. Utile pour un financeur immobilier qui veut toucher en dix jours l'ensemble de l'offre de crédit algérienne ; à noter que le lien immobilier passe par le leasing et non par un track foncier dédié.",
+      "capital_actors": [
+        "banques",
+        "compagnies d'assurance et de réassurance",
+        "sociétés de leasing",
+        "établissements financiers",
+        "institutions et organismes publics"
+      ],
+      "themes": [
+        "financement",
+        "investissement",
+        "leasing",
+        "finance islamique",
+        "digitalisation bancaire",
+        "inclusion financière"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.algeriaexhibitions.dz/manifestations/expofinances-2026",
+      "source_name": "Algeria Exhibitions (groupe SAFEX) — fiche officielle EXPOFINANCES",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "substance: le programme officiel mentionne « financement des entreprises », « investissement » et « finance islamique » mais aucun track « crédit foncier / financement immobilier » explicite — la Sélection 2/6 passe surtout sur l'audience, l'échelle, la continuité, l'influence et la portée",
+        "édition: EXPOFINANCES 2025 s'est tenu du 18 au 27 déc. 2025 (pavillon Casbah) ; le 15e millésime est cohérent",
+        "dates affichées simultanément sur deux pavillons (EXPOFINANCES et FPA) : conflit de programmation SAFEX à signaler avant tout déplacement"
+      ]
+    },
+    {
+      "name": "e-logia — Master Edition (Salon international des promoteurs immobiliers, de l'habitat intelligent et de la décoration)",
+      "edition": "13e édition (Master Edition) selon le site officiel ; 14e selon yadra.fr",
+      "category": "national_anchor",
+      "start": "2026-12-03",
+      "end": "2026-12-07",
+      "date_display": "3-7 déc. 2026",
+      "date_status": "probable",
+      "city": "Oran",
+      "country": "Algérie",
+      "venue": "Centre des Conventions d'Oran",
+      "organizer": "e-logia",
+      "attendees": "60 000+",
+      "exhibitors": "196",
+      "investor_score": 3,
+      "investor_why": "Le salon immobilier pur d'Algérie de l'ouest : promoteurs, habitat, financement et assurance réunis, avec une forte présence de promoteurs et d'acteurs financiers et des partenariats internationaux (Chine, Tunisie, Italie). Utile pour toucher le tissu de promotion immobilière régional, mais l'audience est mixte grand public/professionnels, donc moins dense en décideurs institutionnels qu'un sommet d'investissement.",
+      "capital_actors": [
+        "promoteurs immobiliers",
+        "banques et institutions de financement",
+        "assureurs",
+        "décideurs publics"
+      ],
+      "themes": [
+        "promotion immobilière",
+        "financement immobilier",
+        "logement",
+        "habitat intelligent",
+        "assurance"
+      ],
+      "ticket_url": null,
+      "source_url": "https://elogia-dz.com/",
+      "source_name": "e-logia — site officiel de l'organisateur",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "date: 3-7 déc. 2026 (site officiel elogia-dz.com) vs 10-14 déc. 2026 (yadra.fr) — à confirmer auprès de l'organisateur avant de caler un déplacement",
+        "numérotation: 13e édition (site officiel) vs 14e édition (yadra.fr) ; l'APS présente la 13e édition comme l'édition d'été du 27 au 30 juillet 2026 — incohérence de numérotation de l'organisateur",
+        "effectifs: 60 000 visiteurs / 196 exposants rapportés par la presse pour l'édition 2026 d'été, non reconfirmés pour la Master de décembre"
+      ]
+    },
+    {
+      "name": "Cityscape Egypt Forum",
+      "edition": "édition 2026 du Forum (après l'exposition Cityscape Egypt 2026)",
+      "category": "national_anchor",
+      "start": "2026-11-09",
+      "end": "2026-11-09",
+      "date_display": "9 nov. 2026",
+      "date_status": "probable",
+      "city": "Le Caire",
+      "country": "Égypte",
+      "venue": "Le Caire (centre de congrès et lieu exact à confirmer)",
+      "organizer": "Informa Markets / Cityscape Events",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Le forum remplace l'exposition 2026 du plus grand salon immobilier du pays et concentre la discussion de marché sur une journée : réglementations, financement et dynamique des promoteurs égyptiens. Moins dense qu'une exposition en termes de rendez-vous, mais plus concentré sur les sujets de décision que le public du salon.",
+      "capital_actors": [
+        "développeurs immobiliers",
+        "investisseurs",
+        "décideurs publics",
+        "banques"
+      ],
+      "themes": [
+        "marché immobilier égyptien",
+        "développement",
+        "financement",
+        "réglementation",
+        "Vision 2030"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.cityscape-events.com/egypt/",
+      "source_name": "Cityscape Events — page officielle Égypte",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "date: 9 novembre 2026 (cityscape-events.com/egypt) vs 10 novembre 2026 (egypt-business.com)",
+        "format: Cityscape Egypt bascule en 2026 sur un Forum d'une journée, l'exposition revenant du 29 sept. au 2 oct. 2027 (16e édition) ; le calendrier 2026 est donc substantiellement reconfiguré",
+        "numérotation: 15e ou 16e édition selon les sources pour les éditions 2026/2027"
+      ]
+    },
+    {
+      "name": "Cityscape Egypt — International Real Estate Exhibition (édition 2027)",
+      "edition": "16e édition",
+      "category": "national_anchor",
+      "start": "2027-09-29",
+      "end": "2027-10-02",
+      "date_display": "29 sept.-2 oct. 2027",
+      "date_status": "confirmed",
+      "city": "Le Caire",
+      "country": "Égypte",
+      "venue": "Le Caire (lieu précis à confirmer)",
+      "organizer": "Informa Markets / Cityscape Events",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Le rendez-vous immobilier national égyptien de l'horizon 2027, avec la structure habituelle de quelque 80 promoteurs et plus d'un millier de projets présentés. Utile pour cartographier l'offre de développement égyptienne, avec une audience de professionnels et d'acheteurs plutôt qu'un pur comité d'investissement.",
+      "capital_actors": [
+        "développeurs immobiliers",
+        "investisseurs",
+        "banques",
+        "décideurs publics"
+      ],
+      "themes": [
+        "marché immobilier égyptien",
+        "développement résidentiel",
+        "financement",
+        "opportunités d'investissement"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.cityscape-events.com/egypt/",
+      "source_name": "Cityscape Events — calendrier Égypte",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "date: « 29 septembre - 2 octobre 2027 » (egypt-business.com) — le calendrier 2026 réserve le Forum les 9 ou 10 novembre 2026, l'exposition 2026 étant remplacée",
+        "lieu: New Cairo / Egypt International Exhibition Centre probable mais non confirmé dans les sources lues"
+      ]
+    },
+    {
+      "name": "Cityscape Egypt Summit (édition 2027)",
+      "edition": "édition 2027 — non confirmée",
+      "category": "watchlist",
+      "start": null,
+      "end": null,
+      "date_display": "septembre 2027 (date exacte non fixée)",
+      "date_status": "to_confirm",
+      "city": "Le Caire",
+      "country": "Égypte",
+      "venue": null,
+      "organizer": "Informa Markets / Cityscape Events",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Le sommet de Cityscape est historiquement le créneau où se tiennent les annonces ministérielles et les présentations de projets sous patronage. À surveiller en priorité pour 2027 : c'est le point d'accès aux décideurs publics du marché immobilier égyptien, mais rien n'est officiellement calé à ce jour.",
+      "capital_actors": [
+        "ministères (Logement, Nouveau Communautés Urbaines)",
+        "développeurs",
+        "investisseurs",
+        "banques"
+      ],
+      "themes": [
+        "marché immobilier égyptien",
+        "politique du logement",
+        "réglementation",
+        "développement urbain"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.cityscape-events.com/egypt/",
+      "source_name": "Cityscape Events — page Égypte",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "existence et date de l'édition 2027 non confirmées sur le site officiel au 06/11/2026 ; mentionnée seulement via la presse et les agrégateurs pour septembre 2027",
+        "à ne pas confondre avec l'exposition Cityscape Egypt 2027 (29 sept.-2 oct. 2027), dont les dates sont confirmées"
+      ]
+    },
+    {
+      "name": "Forbes Middle East Building the Future Summit — Egypt",
+      "edition": "1re édition",
+      "category": "capital_markets",
+      "start": "2026-11-29",
+      "end": "2026-11-30",
+      "date_display": "29-30 nov. 2026",
+      "date_status": "confirmed",
+      "city": "Gizeh",
+      "country": "Égypte",
+      "venue": "Gizeh (site exact à confirmer)",
+      "organizer": "Forbes Middle East Events",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Un sommet consacré au financement de l'infrastructure et à la transformation urbaine égyptiennes, réunissant gouvernement, promoteurs, investisseurs, urbanistes et contracteurs. Moins depth sur l'immobilier pur que Cityscape, mais un meilleur accès aux arbitrages publics sur les grands projets et les PPP.",
+      "capital_actors": [
+        "décideurs publics",
+        "développeurs",
+        "investisseurs",
+        "contracteurs",
+        "urbanistes"
+      ],
+      "themes": [
+        "infrastructure",
+        "développement urbain",
+        "financement de grands projets",
+        "PPP",
+        "marché immobilier"
+      ],
+      "ticket_url": null,
+      "source_url": "https://forbesmiddleeastevents.com/",
+      "source_name": "Forbes Middle East Events — calendrier officiel",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "lieu: la page officielle indique « Giza » (catégorie Infrastructure & Urban Development) sans préciser le site ; le nom du lieu n'a pas pu être confirmé",
+        "première édition : pas de continuité établie pour l'Égypte",
+        "effectif: aucune donnée publiée"
+      ]
+    },
+    {
+      "name": "SIB — Salon International du Bâtiment",
+      "edition": "20e édition",
+      "category": "adjacent_construction",
+      "start": "2026-11-25",
+      "end": "2026-11-29",
+      "date_display": "25-29 nov. 2026",
+      "date_status": "confirmed",
+      "city": "El Jadida",
+      "country": "Maroc",
+      "venue": "Parc d'Exposition Mohammed VI, El Jadida",
+      "organizer": "SIB (organisateur non précisé par les sources consultées)",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Le rendez-vous du bâtiment le plus ancien du Maroc (40 ans) et le salon d'expo le plus structuré du pays, dont le programme 2026 comporte explicitement un secteur « immobilier, financement et investissement ». Pour un investisseur, c'est le meilleur endroit du Maroc où la promotion, le financement et la construction se rencontrent en un seul lieu, même si l'événement reste d'abord un salon de matériaux.",
+      "capital_actors": [
+        "banques et institutions de financement",
+        "promoteurs immobiliers",
+        "architectes et bureaux d'études",
+        "décideurs publics"
+      ],
+      "themes": [
+        "bâtiment et construction",
+        "immobilier",
+        "financement et investissement",
+        "urbanisme",
+        "matériaux"
+      ],
+      "ticket_url": null,
+      "source_url": "https://sib.ma/",
+      "source_name": "SIB — site officiel",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "qualification: salon de bâtiment et de matériaux avant tout ; le secteur « IMMOBILIER, FINANCEMENT & INVESTISSEMENT » figure dans la brochure officielle 2026 et la description eventseye mentionne les secteurs « Urbanisme, Décoration et Immobilier », mais aucune présence de promoteurs ni conference track immobilier n'a pu être vérifiée nominalement",
+        "dénomination: eventseye le présente comme le « Salon international du bâtiment de Casablanca » (créé en 1986) alors qu'il se tient à El Jadida",
+        "effectif: non communiqué dans les sources lues"
+      ]
+    },
+    {
+      "name": "MEDIBAT — Salon Méditerranéen du Bâtiment",
+      "edition": "19e édition",
+      "category": "adjacent_construction",
+      "start": "2027-04-21",
+      "end": "2027-04-24",
+      "date_display": "21-24 avr. 2027",
+      "date_status": "confirmed",
+      "city": "Sfax",
+      "country": "Tunisie",
+      "venue": "Foire internationale de Sfax (Parc des expositions de Sfax)",
+      "organizer": "Chambre de Commerce et d'Industrie de Sfax (CCIS)",
+      "attendees": "20 000+",
+      "exhibitors": "200+",
+      "investor_score": 4,
+      "investor_why": "Le salon du bâtiment le plus panafricain du Maghreb : 200+ exposants de 20+ pays, 20 000 visiteurs professionnels et un forum économique dédié au PPP dans le bâtiment et l'infrastructure, avec la présence du ministère de l'Équipement. Le volet « promotion immobilière » y est traité au même titre que la construction, et la CCI de Sfax y convoque activement les entrepreneurs de tout le continent.",
+      "capital_actors": [
+        "ministère de l'Équipement (Tunisie)",
+        "investisseurs",
+        "donneurs d'ordre et entreprises de BTP",
+        "institutions financières (forum économique PPP)",
+        "décideurs publics"
+      ],
+      "themes": [
+        "bâtiment et construction",
+        "promotion immobilière",
+        "PPP",
+        "financement de projets",
+        "urbanisme",
+        "villes durables"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.salon-medibat.com/",
+      "source_name": "MEDIBAT — site officiel de la CCI de Sfax",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "date: 21-24 avril 2027 (salon-medibat.com, nessma.tv) vs mai 2027 (neventum) — la date officielle est avril",
+        "lieu: Foire internationale de Sfax (site officiel, nessma.tv) vs Parc des expositions de Sfax (eventseye) — probable dénomination double du même site",
+        "thème 2027: « Le bâtiment au cœur de la métamorphose urbaine : réinventer la ville » selon le site officiel ; « Le bâtiment au cœur de la transition urbaine : réinventer la ville » selon le communiqué ministériel"
+      ]
+    },
+    {
+      "name": "PRO-IMMO — Salon de la promotion immobilière et du financement",
+      "edition": "16e édition",
+      "category": "national_anchor",
+      "start": null,
+      "end": null,
+      "date_display": "octobre 2026",
+      "date_status": "to_confirm",
+      "city": "Tunis",
+      "country": "Tunisie",
+      "venue": "Palais des Congrès de Tunis",
+      "organizer": "PRO-IMMO (organisateur non précisé par les sources consultées)",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 3,
+      "investor_why": "Le salon de référence tunisien de la promotion immobilière et de son financement, semestriel et présent depuis plus de 15 ans : c'est là que se cotisent promoteurs, banques et établissements de financement tunisiens. Indispensable pour cartographier l'offre de logements neufs et les conditions de crédit, mais le public reste mixte (particuliers et professionnels).",
+      "capital_actors": [
+        "banques",
+        "développeurs et promoteurs",
+        "conseillers et agents",
+        "financiers"
+      ],
+      "themes": [
+        "promotion immobilière",
+        "financement du logement",
+        "nouveaux programmes",
+        "conseil et services"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.eventseye.com/fairs/f-pro-immo-29244-0.html",
+      "source_name": "EventsEye — fiche PRO-IMMO 2026",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "date exacte non publiée: seule la mention « octobre 2026 » est disponible (eventseye) ; la 15e édition s'est tenue les 11-13 juin 2026 (salon-proimmo.net) et le salon est semestriel",
+        "éditions futures: « juin 2027 (?) » et « octobre 2027 (?) » listées par eventseye, non confirmées",
+        "continuité: au moins 15 éditions, mais le libellé exact de l'édition d'octobre 2026 (15e ou 16e) n'est pas tranché"
+      ]
+    },
+    {
+      "name": "Africa Investment Forum (AIF) Market Days",
+      "edition": "édition 2027 — non annoncée",
+      "category": "watchlist",
+      "start": null,
+      "end": null,
+      "date_display": "2027 — date et ville non annoncées",
+      "date_status": "to_confirm",
+      "city": "Rabat (hypothèse : les éditions 2024 et 2025 y ont eu lieu)",
+      "country": "Maroc",
+      "venue": "à confirmer (Sofitel Rabat Jardin des Roses pour 2024 et 2025)",
+      "organizer": "African Development Bank Group (AfDB) et partenaires fondateurs (Afreximbank, Africa Finance Corporation, Africa50, BADEA, DBSA, TDB)",
+      "attendees": "2 000+",
+      "exhibitors": null,
+      "investor_score": 5,
+      "investor_why": "C'est le rendez-vous d'investissement le plus important du continent en valeur, et il tombe en Afrique du Nord :-market de projets bankables, tableaux clos avec fonds de pension, fonds souverains et DFI, sous haut patronage royal. Rien n'est calé pour 2026 ni 2027 à ce jour, ce qui en fait la ligne à surveiller en priorité du tracker pour la zone.",
+      "capital_actors": [
+        "BAD",
+        "DFI",
+        "fonds de pension",
+        "fonds souverains",
+        "fonds d'investissement",
+        "banques",
+        "institutions publiques"
+      ],
+      "themes": [
+        "marché des capitaux",
+        "projets bankables",
+        "infrastructure et immobilier",
+        "financement",
+        "PPP",
+        "private equity"
+      ],
+      "ticket_url": null,
+      "source_url": "https://www.africainvestmentforum.com/",
+      "source_name": "Africa Investment Forum — site officiel (AfDB)",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "date: « 25-27 juin 2027, Rabat » (liners.com, agrégateur tiers) — non corroborée ; ni africainvestmentforum.com ni afdb.org n'annoncent d'édition 2026 ni 2027 au 06/11/2026",
+        "cadence historique: toujours en nov.-déc. (2022 Abidjan, 2023 Marrakech, 2024 Rabat, 2025 Rabat) ; la date de juin 2027 est hors cadence",
+        "eventsindex.org (03/09/2026) rejette explicitement les dates d'agrégateurs tiers comme non corroborées et indique que la prochaine édition n'est pas annoncée",
+        "édition 2026: ni la ville ni les dates n'étaient annoncées au 03/09/2026 (capitalmobilization.com)",
+        "effectif: 2 000+ participants et 80 pays pour l'édition 2025 (compteurs du site officiel) — non reconfirmé pour l'édition à venir"
+      ]
+    },
+    {
+      "name": "ImmoExpo",
+      "edition": "édition 2027 (première édition ?)",
+      "category": "watchlist",
+      "start": null,
+      "end": null,
+      "date_display": "2027 — dates non fixées (« bientôt »)",
+      "date_status": "to_confirm",
+      "city": "Casablanca",
+      "country": "Maroc",
+      "venue": "Casablanca (site à confirmer)",
+      "organizer": "ImmoExpo",
+      "attendees": null,
+      "exhibitors": null,
+      "investor_score": 2,
+      "investor_why": "Le seul salon immobilier dédié de Casablanca à structure banks et funding track (« Forum Marché et investissement », présence de banques et d'investisseurs annoncée), donc à surveiller comme possible héritier du vide laissé par l'absence de salon immobilier national au Maroc. Mais rien n'est calé et la continuité de l'événement n'est pas établie : à traiter comme une promesse, pas comme un rendez-vous.",
+      "capital_actors": [
+        "banques",
+        "investisseurs",
+        "promoteurs"
+      ],
+      "themes": [
+        "immobilier",
+        "BTP",
+        "financement",
+        "forum marché et investissement"
+      ],
+      "ticket_url": null,
+      "source_url": "https://immoexpo.ma/fr/",
+      "source_name": "ImmoExpo — site officiel",
+      "last_verified": "2026-11-06",
+      "conflicts": [
+        "dates non publiées au 06/11/2026 (la page indique « bientôt »)",
+        "continuité non établie: les chiffres publiés (250+ exposants, 15+ pays, 10 000+ visiteurs) sont des objectifs 2027 et non des résultats d'éditions passées ; aucune édition 2025 ou 2026 n'a été identifiée",
+        "lieu: ville annoncée Casablanca mais parc des expositions non précisé"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "DZ IMMO — Salon algérien de l'immobilier",
+      "city": "Alger",
+      "date": "22-25 oct. 2026",
+      "reason": "Édition 2027 non annoncée. La 3e édition (22-25 oct. 2026, 30+ exposants) est antérieure au début de l'horizon (01/11/2026) et ne peut donc pas être retenue ; à re-surveiller pour l'automne 2027.",
+      "source_url": "https://algeriaexhibitions.dz/public/en/events/dz-immo-2026"
+    },
+    {
+      "name": "Best5 Algeria (International Construction, Building Materials & Technologies Exhibition)",
+      "city": "Alger",
+      "date": "16-19 nov. 2026",
+      "reason": "Échec du filtre strict adjacent_construction : salon de matériaux et d'équipements (groupes Build, Climate, Decor, Windoor, Stone & Flooring) sans track immobilier ni présence confirmée de promoteurs ou investisseurs immobiliers. Le profil visiteur type mentionnant « property developers » est un argumentaire générique d'Elan Expo, pas un programme. 12e édition, 9 700 visiteurs pro, 204 marques, 21 pays — l'échelle est réelle mais l'événement reste un salon de matériaux.",
+      "source_url": "https://techeco.sidaliassoul.com/fr/events/best5-algeria-2026-international-construction-building-materials-technologies-exhibition"
+    },
+    {
+      "name": "SITP — Salon International des Travaux Publics",
+      "city": "Alger",
+      "date": "23-26 nov. 2026",
+      "reason": "Échec du filtre strict adjacent_construction : 21e édition sous l'égide du ministère des Travaux publics, consacrée aux infrastructures, au génie civil et aux technologies de chantier. Aucun track immobilier ou de promotion, malgré la présence de banques et d'institutions financières citées par l'organisateur.",
+      "source_url": "https://www.algeriaexhibitions.dz/manifestations/SITP-2026"
+    },
+    {
+      "name": "SIVECC — Salon international de la ventilation, électricité, chauffage et climatisation",
+      "city": "Alger",
+      "date": "16-19 nov. 2026",
+      "reason": "Salon technique CVC / électricité / plomberie sans dimension immobilière : aucun promoteur, aucun track real estate/development, aucune dimension panafricaine.",
+      "source_url": "https://www.algeriaexhibitions.dz/en/events/sivecc-2026"
+    },
+    {
+      "name": "Mega Clima Expo Algeria",
+      "city": "Alger",
+      "date": "16-19 nov. 2026",
+      "reason": "Salon CVC / refrigeration / traitement des eaux / isolation organisé par Elan Expo : purement équipement, aucun contenu immobilier.",
+      "source_url": "https://www.showsbee.com/events-169-1.html"
+    },
+    {
+      "name": "WOODTECH Algeria",
+      "city": "Alger",
+      "date": "21-24 nov. 2026",
+      "reason": "Salon du bois, du travail du bois et des équipements : hors périmètre immobilier.",
+      "source_url": "https://techeco.sidaliassoul.com/fr/events/category/construction"
+    },
+    {
+      "name": "LIFT EXPO ALGERIA",
+      "city": "Alger",
+      "date": "1-3 déc. 2026",
+      "reason": "Salon des ascenseurs et escaliers : hors périmètre immobilier.",
+      "source_url": "https://www.algeriaexhibitions.dz/en/events/lift-expo-algeria-2026"
+    },
+    {
+      "name": "BATIMATEC — Salon algérien international du bâtiment, des matériaux de construction et des travaux publics",
+      "city": "Alger",
+      "date": "mai 2027 (date exacte non fixée)",
+      "reason": "Échec du filtre strict adjacent_construction : salon de matériaux et d'équipements, sans track immobilier ni promoteurs confirmés. L'édition 2027 est bien annoncée (29e édition) mais ne peut être retenue faute de substance immobilière.",
+      "source_url": "https://www.eventseye.com/fairs/f-batimatec-2912-0.html"
+    },
+    {
+      "name": "BATIWEST — Salon international du bâtiment et des travaux publics de l'Ouest",
+      "city": "Oran",
+      "date": "21-25 oct. 2026",
+      "reason": "Édition 2027 non annoncée et édition 2026 antérieure à l'horizon. Par ailleurs salon de construction/matériaux : même si l'édition 2026 a battu un record de 20 000 visiteurs professionnels, aucune dimension immobilière ne justifie sa retenue.",
+      "source_url": "https://techeco.sidaliassoul.com/fr/events/category/construction"
+    },
+    {
+      "name": "BATIMEX — Algerian Building and Development Exhibition",
+      "city": "Annaba",
+      "date": "24-27 mars 2027",
+      "reason": "Salon du bâtiment d'Annaba (Sheraton Annaba) : aucun promoteur, investisseur immobilier ni track real estate/development confirmé ; la dimension « development » du nom est celle du bâtiment, pas de la promotion immobilière.",
+      "source_url": "https://www.eventseye.com/fairs/c1_trade-shows_algeria.html"
+    },
+    {
+      "name": "SPHERE EXPO — Libya Real Estate Investment Exhibition",
+      "city": "Tripoli",
+      "date": "10-12 mai 2026 (dernière édition)",
+      "reason": "Édition 2027 non annoncée au 06/11/2026 : la page officielle de l'organisateur (ADD Events) n'affiche toujours que les dates 2026. Événement pourtant très pertinent pour un investisseur (plateforme d'investissement immobilier de reconstruction, avec investisseurs, promoteurs et officiels) — à re-surveiller pour une probable édition 2027 en mai.",
+      "source_url": "https://add-events.ly/sphere-expo/"
+    },
+    {
+      "name": "Libya Build Tripoli",
+      "city": "Tripoli",
+      "date": "8-11 nov. 2026",
+      "reason": "Plateforme de construction (ATEX International Exhibitions) : aucune présence de promoteurs ou investisseurs immobiliers confirmée, aucun track immobilier — échec du filtre strict.",
+      "source_url": "https://www.expoassist.net/events/city/libya"
+    },
+    {
+      "name": "Libya Build Benghazi",
+      "city": "Benghazi",
+      "date": "3-6 mai 2027",
+      "reason": "19e édition d'un salon de construction : aucun track immobilier ni présence de promoteurs/investisseurs immobiliers confirmée — échec du filtre strict.",
+      "source_url": "https://www.expoassist.net/events/city/libya"
+    },
+    {
+      "name": "Libya Energy & Economic Summit (LEES)",
+      "city": "Tripoli",
+      "date": "23-25 janv. 2027",
+      "reason": "Sommet énergie et économie macro : aucune orientation immobilière. Seule exception de la série FHS-like à surveiller : aucun volet foncier identifié.",
+      "source_url": "https://www.expoassist.net/events/city/libya"
+    },
+    {
+      "name": "GITEX Africa",
+      "city": "Marrakech",
+      "date": "26-28 avr. 2027",
+      "reason": "Salon technologique (tech, IA, startups) organisé à Marrakech : hors périmètre immobilier malgré la localisation et la date dans l'horizon.",
+      "source_url": "https://liners.com/events/gitex-africa-2027"
+    },
+    {
+      "name": "Morocco Home",
+      "city": "Casablanca",
+      "date": "1-4 avr. 2027",
+      "reason": "Salon de la décoration et de l'aménagement de l'habitat (OFEC) : public grand public, aucun contenu décisionnel immobilier.",
+      "source_url": "https://www.ntradeshows.com/morocco/"
+    },
+    {
+      "name": "Egypt Forum",
+      "city": "Le Caire",
+      "date": "19-24 oct. 2026",
+      "reason": "Édition 2026 antérieure à l'horizon et édition 2027 non annoncée. Forum économique généraliste (8 000 participants) sans pivot immobilier identifié.",
+      "source_url": "https://www.egypt-forum.org/"
+    },
+    {
+      "name": "Egypt Economic Summit (EES)",
+      "city": "Le Caire",
+      "date": "décembre (dernière édition identifiée : 14 déc. 2021)",
+      "reason": "Aucune édition 2026 ou 2027 annoncée. La 3e édition remonte à décembre 2021 (2e édition le 2 déc. 2020, St. Regis Cairo, sous l patronage du Premier ministre) : l'événement semble inactif malgré un poids institutionnel historique — à surveiller pour une relance.",
+      "source_url": "https://www.fabmisr.com.eg/en/press-room/2021/egypt-economic-summit"
+    },
+    {
+      "name": "Neo Gen Conference — PropTech, FinTech & Smart Cities Sustainability",
+      "city": "Le Caire",
+      "date": "15 déc. 2026",
+      "reason": "Conférence thématique d'échelle réduite, sans audience décisionnelle ni taille confirmée : ne coche que la case substance, insuffisant.",
+      "source_url": "https://www.eventseye.com/fairs/c1_trade-shows_egypt.html"
+    },
+    {
+      "name": "D-8 Summit for Economic Development",
+      "city": "Le Caire",
+      "date": "5 nov. 2026",
+      "reason": "Sommet macroéconomique (investissement dans la jeunesse et soutien aux PME) : aucune dimension immobilière.",
+      "source_url": "https://www.d-8.org/"
+    },
+    {
+      "name": "Salon de l'Immobilier de Dubaï à Casablanca",
+      "city": "Casablanca",
+      "date": "6-7 déc. (année non confirmée)",
+      "reason": "Organisé à Casablanca (donc géographiquement dans la zone) mais entièrement consacré à la promotion de biens à Dubaï pour des acheteurs/MRE : aucune substance sur le foncier ou le capital immobilier africain, public non décisionnel, pas de continuité.",
+      "source_url": "https://www.eventbrite.com/e/participez-au-salon-de-limmobilier-de-dubai-a-casablanca-6-7-decembre-tickets-1976700738119"
+    },
+    {
+      "name": "AMIC — Conférence du Capital Investissement",
+      "city": "Casablanca",
+      "date": "2027 non annoncé (projection tierce : fin mai 2027)",
+      "reason": "Édition 2027 non annoncée et aucune édition 2026 identifiée ; seule projection d'un répertoire d'événements de capital privé. À re-surveiller (11e édition les 29-30 mai 2025) mais hors périmètre retenu faute d'annonce et sans pivot immobilier confirmé.",
+      "source_url": "https://www.capitalmobilization.com/private-capital-events"
+    },
+    {
+      "name": "Casablanca Business Forum",
+      "city": "Casablanca",
+      "date": "2027 non annoncé (2026 : 2 oct.)",
+      "reason": "Édition 2027 non annoncée par la Casablanca Finance City Authority ; projection tierce seulement. Forum d'investissement généraliste sans focus immobilier documenté.",
+      "source_url": "https://www.capitalmobilization.com/private-capital-events"
+    },
+    {
+      "name": "EU–Mauritania Business Forum",
+      "city": "Nouakchott",
+      "date": "20-21 avr. 2027",
+      "reason": "Forum économique multilatéral centré sur les énergies renouvelables, l'hydrogène vert, l'agroalimentaire et la pêche : aucune orientation immobilière.",
+      "source_url": "https://www.eventseye.com/fairs/c1_trade-shows_mauritania.html"
+    },
+    {
+      "name": "Mauritanides",
+      "city": "Nouakchott",
+      "date": "2027 (dates non fixées)",
+      "reason": "Salon minier et pétrolier : hors périmètre immobilier.",
+      "source_url": "https://www.eventseye.com/fairs/c1_trade-shows_mauritania.html"
+    },
+    {
+      "name": "AFIS — Africa Financial Summit",
+      "city": "Luanda",
+      "date": "3-4 nov. 2026",
+      "reason": "Hors périmètre géographique : Angola (Afrique australe), et non Maghreb / Afrique du Nord. Signalé ici pour éviter tout double comptage avec la zone Afrique australe.",
+      "source_url": "https://www.africa-financialsummit.com/"
+    }
+  ],
+  "negative_findings": [
+    "Soudan : aucun salon, forum ou sommet immobilier ou d'investissement found sur l'horizon 2026-11 → 2027-12 ; EventsEye ne recense aucun salon soudanais sur la période. L'instabilité du pays rend très peu probable l'éclosion d'un tel événement.",
+    "Mauritanie : aucune manifestation immobilière trouvée. Les seuls événements confirmés à l'agenda 2027 sont l'EU–Mauritania Business Forum (énergie, agriculture) et Mauritanides (mines), tous deux hors périmètre.",
+    "Libye : aucun sommet de capital ni salon immobilier avec édition future annoncée. Les seuls rendez-vous identifiés sont Sphere Expo (édition 2026 passée, 2027 non annoncée) et Libya Build (construction). Le risque pays rend l'horizon 2027 très incomplet — c'est la zone la plus sous-documentée du périmètre.",
+    "Algérie : aucun salon immobilier national avec édition future annoncée au 06/11/2026 — DZ IMMO est le rendez-vous national (3e éd. le 22-25 oct. 2026) mais l'édition 2027 n'est pas calée. Le calendrier SAFEX est par ailleurs saturé de construction, énergie et industrie : sur la seule période 16 nov.-3 déc. 2026, dix manifestations se partagent les pavillons, dont une seule est financière (TASHIL) et une seule immobilière (DZ IMMO, hors horizon).",
+    "Maroc : le « SIAM » n'existe pas comme salon immobilier — SIAM est le salon de l'agriculture à Meknès. Il n'existe pas de « Foire Internationale de l'Immobilier » au Maroc sous ce nom ; les equivalents sont SIB (El Jadida) et ImmoExpo (Casablanca, non daté).",
+    "Égypte : l'Egypt Economic Summit, longtemps le sommet institutionnel du pays, semble dormant depuis décembre 2021 ; l'Egypt Forum n'a pas d'édition 2027 annoncée ; Cityscape Egypt a changé de format en 2026 (Forum d'une journée) avant de revenir en exposition en 2027.",
+    "Aucun événement consacré aux REIT, au crédit foncier coté, au logement institutionnel ou au family office immobilier n'a été trouvé dans la zone ; les instruments de capital immobilier structuré ne sont pas encore un objet de salon dédié.",
+    "Les prochaines éditions FHS Around the World sont Riyad (21-22 mars 2027), une date non attribuée (28-29 avril 2027) et Ouganda (2-3 févr. 2027) : aucune en Égypte dans l'horizon confirmé.",
+    "Fiches opérateurs consultées sans date future exploitable : arisummit.com, immoexpo.ma, elogia-dz.com (accès direct instable, contenus récupérés via index de recherche), salon-proimmo.net (délai de connexion dépassé le 06/11/2026).",
+    "Plusieurs sources-secondary (liners.com, eventsindex.org, capitalmobilization.com) se contredisent sur l'Afrique Investment Forum 2026/2027 : seule la source officielle (africainvestmentforum.com) fait foi, et elle n'annonce rien à ce jour."
+  ],
+  "sources": [
+    {
+      "url": "https://www.arisummit.com/en",
+      "name": "ARIIS — site officiel de l'organisateur (Immotify)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.dz-immobilier.com/en/blog/events-16/ariis-2026-immobilier-africain-alger-bilan-158",
+      "name": "dz-immobilier.com — bilan ARIIS 2026 (source en conflit)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://algeriaexhibitions.dz/public/en/events/dz-immo-2026",
+      "name": "Algeria Exhibitions (groupe SAFEX) — DZ IMMO 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://algeriaexhibitions.dz/en/events",
+      "name": "Algeria Exhibitions (groupe SAFEX) — calendrier des manifestations",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://algeriaexhibitions.dz/en/events/tashil-2026",
+      "name": "Algeria Exhibitions — fiche officielle TASHIL 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.algeriaexhibitions.dz/manifestations/tashil-2026",
+      "name": "Algeria Exhibitions — TASHIL 2026 (version française)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.algeriaexhibitions.dz/manifestations/expofinances-2026",
+      "name": "Algeria Exhibitions — fiche officielle EXPOFINANCES 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.algeriaexhibitions.dz/manifestations/SITP-2026",
+      "name": "Algeria Exhibitions — SITP 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.algeriaexhibitions.dz/ar/rouznama/export/pdf?year=2026",
+      "name": "Algeria Exhibitions — programme officiel des manifestations 2026 (PDF)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://techeco.sidaliassoul.com/fr/events/category/construction",
+      "name": "TechEco DZ — calendrier bâtiment et immobilier en Algérie",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://techeco.sidaliassoul.com/fr/events/month/2026-11",
+      "name": "TechEco DZ — salons d'Algérie, novembre 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://techeco.sidaliassoul.com/fr/events/month/2026-12",
+      "name": "TechEco DZ — salons d'Algérie, décembre 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://techeco.sidaliassoul.com/fr/events/best5-algeria-2026-international-construction-building-materials-technologies-exhibition",
+      "name": "TechEco DZ — fiche BEST5 Algeria 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://elogia-dz.com/",
+      "name": "e-logia — site officiel (Master Edition Oran)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.yadra.fr/e-logia-oran-2026/",
+      "name": "yadra.fr — e-logia Oran, dates et numérotation (source en conflit)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://lesenjeuxeco.dz/foire-salon/",
+      "name": "Les Enjeux Eco — revue des salons algériens (e-logia, DZ IMMO, Batiwest)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.dzevent.com/events/tasshiil-2026-salon-du-cr-dit-leasing-et-de-l-investissement-mt9xas5u",
+      "name": "DZ Event — TASSHIIL 2026 (effectif, secteur du logement)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://tasshiil.com/",
+      "name": "TASSHIIL — site officiel de l'organisateur (SARL NETINOU)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.sib.ma/",
+      "name": "SIB — site officiel (Salon International du Bâtiment, El Jadida)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.ntradeshows.com/morocco/",
+      "name": "ntradeshows — agenda des salons du Maroc",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://exposale.net/en/exhibitions/all/117/all",
+      "name": "Exposale — calendrier des expositions du Maroc 2026-2027",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://immoexpo.ma/fr/",
+      "name": "ImmoExpo — site officiel",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.afriwallstreet.com/morocco-showcase-2026/",
+      "name": "AfriWallStreet — Morocco Showcase Summit 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://moroccan.biz/events",
+      "name": "Moroccan.biz — agenda des événements businessmen du Maroc",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.africainvestmentforum.com/",
+      "name": "Africa Investment Forum — site officiel (AfDB)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.capitalmobilization.com/private-capital-events",
+      "name": "Capital Mobilization — répertoire mondial des événements de capital privé 2026-2027",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://eventsindex.org/events/africa-investment-forum",
+      "name": "EventsIndex — Africa Investment Forum (analyse contradictoire de l'agenda)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://liners.com/events/africa-investment-forum-2027",
+      "name": "Liners — Africa Investment Forum 2027 (date non corroborée)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.salon-medibat.com/",
+      "name": "MEDIBAT — site officiel de la CCI de Sfax",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.salon-medibat.com/en/home",
+      "name": "MEDIBAT — page English (19e session, 21-24 avril 2027)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.nessma.tv/fr/nationale/actu/le-ministre-de-lequipement-examine-les-preparatifs-de-medibat-2027/597374",
+      "name": "Nessma — préparation de MEDIBAT 2027 par le ministère de l'Équipement",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.salon-medibat.com/forum/forum-economique/programme-forum-economique/",
+      "name": "MEDIBAT — programme du forum économique (PPP)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/f-pro-immo-29244-0.html",
+      "name": "EventsEye — PRO-IMMO 2026 (Tunis)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/f-pro-immo-29244-1.html",
+      "name": "EventsEye — PRO-IMMO, cycle et éditions futures",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/c0_salons_tunisie.html",
+      "name": "EventsEye — salons en Tunisie 2026-2027",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/zt1_trade-shows_africa-middle-east_real-estate.html",
+      "name": "EventsEye — salons immobiliers Afrique / Moyen-Orient 2026-2027",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://add-events.ly/sphere-expo/",
+      "name": "ADD Events — Sphere Expo (Libye), site officiel de l'organisateur",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://libyaherald.com/2026/05/sphere-expo-2026-held-in-tripoli-from-10-to-12-may-offered-a-real-estate-investment-platform-for-reconstruction-opportunities-in-libya/",
+      "name": "Libya Herald — bilan Sphere Expo 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.cityscape-events.com/egypt/",
+      "name": "Cityscape Events — Égypte",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://futurehospitality.com/egypt",
+      "name": "Future Hospitality Summit — FHS Egypt (page officielle)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://futurehospitality.com/egypt/content-library/category/press-room",
+      "name": "FHS Egypt — communiqués de presse (lancement, FHS Living)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://futurehospitality.com/",
+      "name": "Future Hospitality Summit — calendrier des prochains événements",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://futurehospitality.com/ar/living",
+      "name": "FHS Living — « l'hôtelisation de l'immobilier » (Cairo 11 nov. 2026)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://forbesmiddleeastevents.com/",
+      "name": "Forbes Middle East Events — calendrier officiel",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.fabmisr.com.eg/en/press-room/2021/egypt-economic-summit",
+      "name": "FABMISR — 3e édition de l'Egypt Economic Summit (14 déc. 2021)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://invest-gate.me/tag/egypt-economic-summit/",
+      "name": "Invest-Gate — Egypt Economic Summit (2e et 3e éditions)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/c1_trade-shows_algeria.html",
+      "name": "EventsEye — salons en Algérie 2026-2027 (BATIMEX, BATIMATEC)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/f-batimatec-2912-0.html",
+      "name": "EventsEye — BATIMATEC 2027 (mai 2027, date non fixée)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.showsbee.com/events-169-1.html",
+      "name": "Showsbee — calendrier SAFEX (SIVECC, Mega Clima, Best5, SITP)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.expofinder.com/en/detail/RvJb2elh",
+      "name": "Expofinder — SITP 2026 et Best5 Algeria 2026",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://ecotimesdz.com/salon-dz-immo-immobilier-alger/",
+      "name": "EcoTimes DZ — DZ IMMO, 3e édition",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://algerieconfluences.dz/plus-de-30-exposants-reunis-pour-renforcer-la-confiance-dans-limmobilier-dz-immo-revient-pour-sa-3e-edition-a-alger/",
+      "name": "Algérie Confluences — DZ IMMO 2026 (pavillon Ahaggar)",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.dzevent.com/event-type/salons-et-expositions",
+      "name": "DZ Event — agenda des salons algériens",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventseye.com/fairs/c1_trade-shows_mauritania.html",
+      "name": "EventsEye — salons en Mauritanie 2026-2027",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.eventbrite.com/e/participez-au-salon-de-limmobilier-de-dubai-a-casablanca-6-7-decembre-tickets-1976700738119",
+      "name": "Eventbrite — Salon de l'Immobilier de Dubaï à Casablanca",
+      "accessed": "2026-11-06"
+    }
+  ]
+}

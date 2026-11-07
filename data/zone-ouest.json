@@ -1,0 +1,1340 @@
+{
+ "zone": "Afrique de l'Ouest",
+ "generated": "2026-11-06",
+ "events": [
+  {
+   "name": "AIHS 2027 — 21st Africa International Housing Show",
+   "edition": "21e édition (créé en 2007 sous le nom Abuja International Housing Show)",
+   "category": "flagship_continental",
+   "start": "2027-07-12",
+   "end": "2027-07-17",
+   "date_display": "12-17 juil. 2027",
+   "date_status": "probable",
+   "city": "Abuja",
+   "country": "Nigeria",
+   "venue": "Transcorp Hilton Abuja, 1 Aguiyi Ironsi Street, Maitama, Abuja",
+   "organizer": "International Housing and Construction Show Limited (Africa International Housing Show), affilié à l'African Union for Housing and Urban Development",
+   "attendees": "40 000+ visiteurs professionnels annoncés",
+   "exhibitors": "400+ exposants de 25 pays annoncés",
+   "investor_score": 5,
+   "investor_why": "Le plus gros rendez-vous panafricain du logement et de la construction : 400+ exposants de 25 pays, 40 000+ visiteurs, et la présence annoncée des ministres du logement de plus de 10 pays africains, de Shelter Afrique, de l'IFC et de la Banque mondiale. Un espace dédié au financement du logement (crédit hypothécaire, assurance, trust infrastructure, fonds public) en fait le meilleur point de rencontre entre institutionnels et pipelines de projets de la zone.",
+   "capital_actors": [
+    "DFI",
+    "décideurs publics",
+    "banques",
+    "institutions de financement",
+    "investisseurs institutionnels"
+   ],
+   "themes": [
+    "logement et construction",
+    "financement du logement",
+    "développement immobilier",
+    "urbanisation et villes intelligentes",
+    "matériaux et équipement",
+    "table ronde ministérielle"
+   ],
+   "ticket_url": "https://www.africahousingshow.com/",
+   "source_url": "http://info.afrindex.com/detail_3708/",
+   "source_name": "Afrindex — fiche AIHS 2027 (communiqué organisateur)",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "dates: 12-17 juillet 2027 (afrindex, detail_1_3708) vs 13-18 juillet 2027 (afrindex, detail_3708) — la 20e édition s'est tenue du 13 au 18 juillet 2026, le créneau 12-17 juillet 2027 respecte la tradition d'un début au lundi",
+    "date de référence: le site officiel africahousingshow.com affiche encore la 20e édition (13-18 juillet 2026) et n'a pas de page 2027 en ligne",
+    "effort: 40 000+ visiteurs annoncés pour 2026 (Vanguard, 20e éd.) — chiffre 2027 reconduit par l'organisateur sans confirmation indépendante"
+   ]
+  },
+  {
+   "name": "SICI 2027 — Salon de l'Immobilier de Côte d'Ivoire",
+   "edition": "10e édition (édition anniversaire)",
+   "category": "national_anchor",
+   "start": "2027-01-29",
+   "end": "2027-01-31",
+   "date_display": "29-31 janv. 2027",
+   "date_status": "confirmed",
+   "city": "Abidjan",
+   "country": "Côte d'Ivoire",
+   "venue": "Parc des Expositions d'Abidjan, Boulevard de l'Aéroport",
+   "organizer": "MIND'ICI CORPORATION (organisateur du groupe de salons MIIAF / Africa Real Estate Expo)",
+   "attendees": "25 000 à 50 000 visiteurs annoncés",
+   "exhibitors": "près de 200 exposants annoncés",
+   "investor_score": 4,
+   "investor_why": "Plus grand rendez-vous immobilier institutionnel d'Afrique de l'Ouest en début d'année, avec un programme de 15 thématiques qui traite frontalement du financement acquéreur, du financement de la diaspora et de la « vision des investisseurs » sur l'immobilier africain. Banques, assureurs, promoteurs, institutions publiques et investisseurs de toute la sous-région et de la diaspora sont attendus : c'est la principale vitrine de projets à sourcer pour un financeur ouest-africain.",
+   "capital_actors": [
+    "banques",
+    "assureurs",
+    "décideurs publics",
+    "investisseurs institutionnels"
+   ],
+   "themes": [
+    "financement acquéreur",
+    "financement de la diaspora",
+    "investissement immobilier africain",
+    "immobilier commercial",
+    "immobilier résidentiel",
+    "smart city",
+    "données immobilières",
+    "copropriété",
+    "construire durable"
+   ],
+   "ticket_url": "https://www.tickettailor.com/events/miiaf/1946811",
+   "source_url": "https://www.si-ci.com/",
+   "source_name": "SICI — site officiel (Salon de l'Immobilier de Côte d'Ivoire)",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "effectif visiteurs: 25 000 à 50 000 (batirici, si-ci.com) vs « Plus de 50 000 clients, partenaires et investisseurs » (Eventbrite) vs « 25 000 visiteurs » affiché sur la page d'accueil de si-ci.com",
+    "durée: 3 jours affichés (29-31 janv.) vs « 2 days 10 hours » dans le bloc Eventbrite",
+    "organisation: le nom de l'organisateur varie entre MIND'ICI CORPORATION (Eventbrite, mindici.net) et le groupe de salons MIIAF / Africa Real Estate Expo (batirici, tickettailor)"
+   ]
+  },
+  {
+   "name": "Abuja Real Estate & Infrastructure Summit 2026",
+   "edition": "1re édition",
+   "category": "national_anchor",
+   "start": "2026-11-09",
+   "end": "2026-11-10",
+   "date_display": "9-10 nov. 2026",
+   "date_status": "confirmed",
+   "city": "Abuja",
+   "country": "Nigeria",
+   "venue": "Sandralia Hotel, Jabi, Abuja (1 Solomon Lar Road)",
+   "organizer": "AREIS (convener : Tunde Imolehin), avec ChangeVision Nigeria et The Inside Abuja Magazine",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 2,
+   "investor_why": "Format court (2 jours, 3 sessions) qui met sur la table les arbitrages politiques et financiers du marché immobilier d'Abuja, avec un thème « Adequate Housing for All » et des sessions dédiées à la finance. À confirmer avant d'y engager du budget : effectif, présence ministérielle et continuité de l'édition 2027 ne sont pas documentés.",
+   "capital_actors": [
+    "décideurs publics",
+    "investisseurs",
+    "financiers"
+   ],
+   "themes": [
+    "politique du logement",
+    "finance",
+    "infrastructure",
+    "développement immobilier",
+    "design urbain"
+   ],
+   "ticket_url": null,
+   "source_url": "https://abujarealestateinfrastructure.com/",
+   "source_name": "Abuja Real Estate & Infrastructure Summit — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "effectif et présence d'institutionnels non communiqués (programme encore présenté comme « à confirmer »)",
+    "problème de voisinage: se tient du 9 au 10 nov. 2026, soit 2 jours avant l'Abuja Real Estate Fest du 12 nov. 2026, également à Abuja"
+   ]
+  },
+  {
+   "name": "Benk International Real Estate Conference and Proptech Expo 2026",
+   "edition": "édition 2026",
+   "category": "national_anchor",
+   "start": "2026-11-12",
+   "end": "2026-11-13",
+   "date_display": "12-13 nov. 2026",
+   "date_status": "probable",
+   "city": "Lagos",
+   "country": "Nigeria",
+   "venue": "Lagos State, Nigeria (salle exacte non précisée)",
+   "organizer": "The Benk International (thebenkandhampton.com)",
+   "attendees": "500+ développeurs, investisseurs et décideurs publics annoncés",
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "Conférence + expo PropTech qui annonce réunir plus de 500 développeurs, investisseurs et décideurs publics sur un marché nigérian qui a peu de rendez-vous dédiés. Utile pour le sourcing de projets et l'accès aux promoteurs, mais les chiffres d'audience émanent de l'organisateur et doivent être vérifiés sur place.",
+   "capital_actors": [
+    "investisseurs",
+    "décideurs publics",
+    "promoteurs immobiliers"
+   ],
+   "themes": [
+    "PropTech",
+    "développement immobilier",
+    "investissement",
+    "innovation",
+    "exposition"
+   ],
+   "ticket_url": "https://thebenkandhampton.com/",
+   "source_url": "https://thebenkandhampton.com/",
+   "source_name": "The Benk International — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: le bloc « The Benk International Real Estate Conference and Proptech Expo 2026 » indique « November 12-13, 2026 » tandis que la FAQ du même site annonce « October 22-23 2026 » pour le Benk Real Estate Expo 2026 (date qui tombait hors fenêtre) — la FAQ semble obsolète, mais aucune source externe n'a permis de trancher"
+   ]
+  },
+  {
+   "name": "Abuja Real Estate Fest 2026",
+   "edition": "2e édition",
+   "category": "national_anchor",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "date_display": "12 nov. 2026",
+   "date_status": "probable",
+   "city": "Abuja",
+   "country": "Nigeria",
+   "venue": "Shehu Musa Yar'Adua Centre, Wuse, Abuja",
+   "organizer": "Eventhive.ng (Africa Real Estate Series)",
+   "attendees": "1 000+ participants annoncés (dont 45 % de profils C-level)",
+   "exhibitors": "30+ exposants annoncés",
+   "investor_score": 4,
+   "investor_why": "Rendez-vous annoncé comme majeur pour le marché immobilier d'Abuja, avec 1 000+ participants, 30+ speakers dont le président de REDAN, Azubike Emodi (Afriland Properties), Saadiya Aliyu (Urban Shelter) et Odunayo Ojo (UPDC), et un thème centré sur « Investing, Developing and Transforming Nigeria's Real Estate Capital ». C'est le point d'entrée le plus direct vers les promoteurs et financiers du marché d'Abuja.",
+   "capital_actors": [
+    "investisseurs",
+    "banques",
+    "décideurs publics",
+    "promoteurs immobiliers"
+   ],
+   "themes": [
+    "investissement immobilier",
+    "développement",
+    "exposition",
+    "property showcase",
+    "finance"
+   ],
+   "ticket_url": "https://tix.africa/abuja-real-estate-fest-2026",
+   "source_url": "https://www.eventbrite.com/e/abuja-real-estate-fest-2026-tickets-2000425274847",
+   "source_name": "Eventbrite — page officielle Eventhive.ng",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "arbitrage verifie le 06/11/2026 : le 12 novembre est confirme par le site dedie de l'evenement (are.eventhive.ng, 'November 12th, 2026 | Shehu Musa Yar'Adua Centre') et par la billetterie officielle Eventbrite de l'organisateur ('Thursday, November 12, 8 AM - 4 PM'), ainsi que par glowupchannel et visitabuja.org (8h-17h). Le 19 novembre n'apparait que sur la page portfolio eventhive.ng/events/abuja-real-estate-fest/, a considerer comme obsolete.",
+    "date: 12 novembre 2026 (page Eventbrite de l'organisateur, glowupchannel, Inside Abuja) vs 19 novembre 2026 (eventhive.ng/events/abuja-real-estate-fest/ et wetinuneed.com) — conflit sur le site même de l'organisateur",
+    "lieu: Shehu Musa Yar'Adua Centre, Wuse (Eventbrite) vs Shehu Musa Yar'Adua Foundation, One Memorial Drive, Municipal (wetinuneed.com)",
+    "l'édition 2027 est positionnée au 9 novembre 2027 par le calendrier Eventhive 2027, ce qui suggérait un rythme annuel et non l'autre",
+    "tarifs: N5 000 - N50 000 selon visitabuja.org ; horaires 8h-16h (Eventbrite) ou 8h-17h (visitabuja.org)"
+   ]
+  },
+  {
+   "name": "New Africa Capital Champions Awards 2026",
+   "edition": "édition 2026",
+   "category": "capital_markets",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "date_display": "5 nov. 2026",
+   "date_status": "confirmed",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": "Movenpick Ambassador Hotel Accra, Independence Avenue",
+   "organizer": "VX Global (Velocity Xperiences Global LLC) / VX Live",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 2,
+   "investor_why": "Gala de clôture du New Africa Capital Forum, qui récompense les institutions et fonds qui « façonnent l'avenir financier de l'Afrique ». Entrée 49 à 950 $ : format de networking de fonds, d'intérêt direct pour un financeur immobilier ; la part réelle des joueurs immobiliers doit être vérifié dans la liste des lauréats 2026.",
+   "capital_actors": [
+    "fonds de pension",
+    "investisseurs institutionnels",
+    "banques",
+    "DFI"
+   ],
+   "themes": [
+    "capital privé",
+    "allocation de capital",
+    "awards",
+    "réseautage de fonds"
+   ],
+   "ticket_url": null,
+   "source_url": "https://www.eventbrite.com/e/new-africa-capital-champions-awards-2026-accra-tickets-1992308669863",
+   "source_name": "Eventbrite — VX Global",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: 5 novembre 2026 (Eventbrite, allevents.in, svents.com) vs 6 novembre 2026 (viewghana.com)",
+    "contenu: forum général de capital privé (startups, LP/GP) — aucun track immobilier dédié confirmé dans le programme 2026"
+   ]
+  },
+  {
+   "name": "New Africa Capital Forum 2026 (NACF 2026)",
+   "edition": "édition 2026",
+   "category": "capital_markets",
+   "start": "2026-11-04",
+   "end": "2026-11-05",
+   "date_display": "4-5 nov. 2026",
+   "date_status": "probable",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": "Movenpick Ambassador Hotel Accra, Independence Avenue",
+   "organizer": "VX Global / VX Live (Velocity Xperiences Global LLC)",
+   "attendees": "300+ délégués attendus (LPs, GPs, DFIs, private capital leaders)",
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "Rassemble LP/GP, fonds de pension, assureurs, fonds souverains, DFIs et family offices autour de l'allocation de capital en Afrique, avec un expo floor et un pavillon international. Forum généraliste — le pan immobilier n'est pas un track identifié en 2026 — mais c'est le rendez-vous où se tiennent lesallocateurs de long terme susceptibles de financer le foncier ouest-africain.",
+   "capital_actors": [
+    "fonds de pension",
+    "DFI",
+    "fonds souverains",
+    "family offices",
+    "private equity",
+    "banques"
+   ],
+   "themes": [
+    "capital privé",
+    "allocation de capital",
+    "LP/GP",
+    "DFI",
+    "levée de fonds",
+    "exposition"
+   ],
+   "ticket_url": null,
+   "source_url": "https://nacapitalforum.com/",
+   "source_name": "New Africa Capital Forum — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: 4-5 novembre 2026 (page d'accueil, page « VX Events Lineup 2026 », page « Latest News », Eventbrite, riotimesonline) vs 29-30 octobre 2026 (page « NACF 2026 » du même site officiel) — la version 29-30 octobre tomberait hors fenêtre, d'où un statut « probable »",
+    "contenu: aucun track immobilier ou bâti identifié dans le programme 2026"
+   ]
+  },
+  {
+   "name": "Africa Real Estate Magazine and Awards 2026",
+   "edition": "édition 2026",
+   "category": "national_anchor",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "date_display": "13 déc. 2026",
+   "date_status": "confirmed",
+   "city": "Lagos",
+   "country": "Nigeria",
+   "venue": "Lekki Coliseum Rooftop, Lekki, Lagos",
+   "organizer": "Mshel Group (Africa Real Estate Magazine & Awards ; CEO Kingsley Amafibe)",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 2,
+   "investor_why": "Soirée d'awards continentale hébergée à Lagos, qui met en scène promoteurs, investisseurs, institutions financières et représentants gouvernementaux sur les marchés de Lagos, Nairobi, Johannesburg, Accra, Le Caire et Kigali. Format de networking d'apparatch plutôt que de conférence de capital : à traiter comme un rendez-vous de relationships, pas comme un salon d'investissement.",
+   "capital_actors": [
+    "investisseurs",
+    "banques",
+    "décideurs publics",
+    "promoteurs immobiliers"
+   ],
+   "themes": [
+    "awards du secteur",
+    "mise en réseau",
+    "marchés immobiliers africains",
+    "proptech",
+    "logement abordable"
+   ],
+   "ticket_url": null,
+   "source_url": "https://www.vanguardngr.com/2026/10/africa-real-estate-magazine-and-awards-2026-to-celebrate-excellence-in-lagos/",
+   "source_name": "Vanguard Nigeria",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "effectif et nombre d'exposants non communiqués",
+    "lieu: « Lekki Coliseum Rooftop » (BusinessDay, Vanguard, Leadership) vs « Lekki Coliseum Centre » (iPropty, PMNews)"
+   ]
+  },
+  {
+   "name": "Ghana Property & Lifestyle Expo 2026 | Accra Edition",
+   "edition": "10e édition anniversaire (4e édition d'Accra)",
+   "category": "national_anchor",
+   "start": "2026-12-18",
+   "end": "2026-12-19",
+   "date_display": "18-19 déc. 2026",
+   "date_status": "confirmed",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": "Alisa Hotel, 21 Doctor Isert Street, North Ridge, Accra",
+   "organizer": "On Point Property (avec Clifton Homes, Jolly Homes, Landmark Homes)",
+   "attendees": null,
+   "exhibitors": "plusieurs centaines d'exposants et partenaires annoncés",
+   "investor_score": 3,
+   "investor_why": "Le plus ancien rendez-vous immobilier du Ghana (10 ans) avec une édition d'Accra dédiée aux promoteurs, aux banques, aux offres de private banking et aux prestataires de crédit hypothécaire : format très concret pour sourcer des projets et identifier les channels de financement locaux. L'offre est financièrement plus mixte que le reste de la série (mode, beauté, art, restauration), ce qui impose un filtrage.",
+   "capital_actors": [
+    "banques",
+    "institutions de financement",
+    "investisseurs institutionnels",
+    "promoteurs immobiliers",
+    "décideurs publics"
+   ],
+   "themes": [
+    "développement résidentiel et commercial",
+    "crédit hypothécaire",
+    "investissement foncier",
+    "diaspora",
+    "logement abordable"
+   ],
+   "ticket_url": "https://www.ghanapropertyexpo.com/",
+   "source_url": "https://ghanapropertyexpo.com/",
+   "source_name": "Ghana Property & Lifestyle Expo — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "la série comporte des éditions hors d'Afrique (Londres 16-17 oct. 2026, Washington, Dubaï) : seule l'édition d'Accra est retenue ici",
+    "effectif: « hundreds of exhibitors and partners » et « thousands of visitors » (Eventbrite) — pas de chiffres chiffrés par l'organisateur pour l'édition d'Accra"
+   ]
+  },
+  {
+   "name": "Lagos Real Estate Fest 2027",
+   "edition": "édition 2027",
+   "category": "national_anchor",
+   "start": "2027-05-24",
+   "end": "2027-05-25",
+   "date_display": "24-25 mai 2027",
+   "date_status": "probable",
+   "city": "Lagos",
+   "country": "Nigeria",
+   "venue": "Lagos, Nigeria (salle exacte non publiée)",
+   "organizer": "Eventhive.ng (Africa Real Estate Series)",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "La version 2026 (25-26 mai 2026) a fait de ce rendez-vous l'un des plus grands du calendrier immobilier nigérian, avec le même format que l'Abuja Real Estate Fest (conférences, exposition, property showcases, engagements investisseurs). À booker en priorité pour 2027, sous réserve de la confirmation de la salle et du programme.",
+   "capital_actors": [
+    "investisseurs",
+    "banques",
+    "décideurs publics",
+    "promoteurs immobiliers"
+   ],
+   "themes": [
+    "investissement immobilier",
+    "développement",
+    "exposition",
+    "property showcase",
+    "réseautage"
+   ],
+   "ticket_url": null,
+   "source_url": "https://eventhive.ng/calendar/2027-eventhive-calendar.pdf",
+   "source_name": "Eventhive — calendrier officiel 2027 (PDF)",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "le calendrier Eventhive 2027 précise lui-même « Please note that the event dates are subjected to change »",
+    "date de l'édition 2026 (25-26 mai 2026) non recoupée par une seconde source indépendante dans cette campagne"
+   ]
+  },
+  {
+   "name": "Abuja Real Estate Fest 2027",
+   "edition": "édition 2027",
+   "category": "national_anchor",
+   "start": "2027-11-09",
+   "end": "2027-11-09",
+   "date_display": "9 nov. 2027",
+   "date_status": "probable",
+   "city": "Abuja",
+   "country": "Nigeria",
+   "venue": "Abuja, Nigeria (salle exacte non publiée)",
+   "organizer": "Eventhive.ng (Africa Real Estate Series)",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "Deuxième édition annoncée au calendrier Eventhive 2027, sur le modèle de l'édition 2026 (1 000+ participants, 30+ speakers, 30+ exposants, 45 % de C-level, avec REDAN, Afriland, Urban Shelter et UPDC). Rendez-vous à placer en priorité dans l'agenda Abuja de fin d'année.",
+   "capital_actors": [
+    "investisseurs",
+    "banques",
+    "décideurs publics",
+    "promoteurs immobiliers"
+   ],
+   "themes": [
+    "investissement immobilier",
+    "développement",
+    "exposition",
+    "property showcase",
+    "finance"
+   ],
+   "ticket_url": null,
+   "source_url": "https://eventhive.ng/calendar/2027-eventhive-calendar.pdf",
+   "source_name": "Eventhive — calendrier officiel 2027 (PDF)",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "le calendrier Eventhive 2027 précise « event dates are subjected to change »",
+    "cohérence à vérifier : la 2e édition est au 12 nov. 2026 (Eventbrite) ou au 19 nov. 2026 (eventhive.ng) — la position au 9 nov. 2027 suivrait la première hypothèse"
+   ]
+  },
+  {
+   "name": "Africa Build Show Ghana 2027 (ABS Ghana)",
+   "edition": "édition 2027",
+   "category": "adjacent_construction",
+   "start": "2027-07-06",
+   "end": "2027-07-08",
+   "date_display": "6-8 juil. 2027",
+   "date_status": "confirmed",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": "The Palms Convention Center, Accra",
+   "organizer": "MIE Events DMCC (MIE Group)",
+   "attendees": "8 000+ visiteurs professionnels annoncés",
+   "exhibitors": null,
+   "investor_score": 2,
+   "investor_why": "Salon de matériaux et d'équipement de construction qui couvre toute la chaîne « du projet à l'ouvrage » et declare dans son visitor profile la présence de project developers, investors et real estate professionals, avec un sommet associant Ghana Real Estate Developers Association et Ghana Institution of Engineering. À traiter comme un rendez-vous de sourcing de fournisseurs et de promoteurs, non comme un salon de capital.",
+   "capital_actors": [
+    "promoteurs immobiliers",
+    "investisseurs",
+    "décideurs publics"
+   ],
+   "themes": [
+    "matériaux de construction",
+    "équipement",
+    "aménagement",
+    "développement de projets",
+    "architecture",
+    "smart building"
+   ],
+   "ticket_url": "https://africabuildshow.com/registration/",
+   "source_url": "https://africabuildshow.com/",
+   "source_name": "Africa Build Show Ghana — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "lieu: The Palms Convention Center (site officiel, tradefairdates) vs Accra International Conference Centre (exposale, jufair) vs La Palm Royal Beach Hotel (eventseye)",
+    "dates: 6-8 juillet 2027 (site officiel, tradefairdates, exposale, jufair) vs 7-9 juillet 2027 (afrindex)",
+    "l'édition 2026 s'est tenue du 7 au 9 juillet 2026, le créneau 6-8 juillet 2027 suit la tradition d'un début au mardi"
+   ]
+  },
+  {
+   "name": "Big 5 Construct Nigeria 2027",
+   "edition": "7e édition (la 6e édition a eu lieu en septembre 2026)",
+   "category": "adjacent_construction",
+   "start": "2027-09-21",
+   "end": "2027-09-23",
+   "date_display": "21-23 sept. 2027",
+   "date_status": "confirmed",
+   "city": "Lagos",
+   "country": "Nigeria",
+   "venue": "Landmark Centre, Lagos, Nigeria",
+   "organizer": "Big 5 Construct Nigeria (groupe Big 5 Global / dmg events)",
+   "attendees": "11 000+ professionnels annoncés",
+   "exhibitors": "200+ marques exposantes annoncées (150+ selon la fiche produit)",
+   "investor_score": 2,
+   "investor_why": "Le salon de référence de la construction au Nigeria (200+ exposants de 20+ pays, 60+ speakers en 30+ sessions CPD certifiées) avec la présence annoncée de contractors, developers, consultants, government representatives et facility managers. Pertinent pour un investisseur qui cherche des pipelines de promoteurs et de projets de construction, mais le contenu reste orienté technique et achats plutôt que capital.",
+   "capital_actors": [
+    "promoteurs immobiliers",
+    "décideurs publics",
+    "investisseurs"
+   ],
+   "themes": [
+    "construction",
+    "matériaux et équipement",
+    "infrastructure",
+    "développement de projets",
+    "facility management",
+    "conference CPD"
+   ],
+   "ticket_url": "https://www.big5constructnigeria.com/",
+   "source_url": "https://www.big5constructnigeria.com/",
+   "source_name": "Big 5 Construct Nigeria — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "co-location: le site officiel mentionne « co-located with » une infrastructure expo mais affiche dans le même bloc le portfolio sud-africain (« South Africa Infrastructure Expo ») ; Luminik la désigne comme West Africa Infrastructure Expo",
+    "le site affiche la date 2027 alors que ses pages Média et Industry News parlent encore de « l'édition 2026 »",
+    "chiffres d'audience non datés : 11 000+ industry peers et 150 à 200+ exposants peuvent correspondre à l'édition 2026"
+   ]
+  },
+  {
+   "name": "ARCHIBAT 2027 — Salon de l'Architecture et du Bâtiment",
+   "edition": "11e édition (20e anniversaire du salon, créé en 2007)",
+   "category": "adjacent_construction",
+   "start": "2027-10-14",
+   "end": "2027-10-18",
+   "date_display": "14-18 oct. 2027",
+   "date_status": "confirmed",
+   "city": "Abidjan",
+   "country": "Côte d'Ivoire",
+   "venue": "Parc des Expositions d'Abidjan, Port-Bouët",
+   "organizer": "Ordre des Architectes de Côte d'Ivoire (OACI) et Axes Marketing",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "Biennale régionale qui a gardé la position de « laboratoire d'idées » et de cadre de dialogue entre pouvoirs publics, professionnels, investisseurs et collectivités territoriales, avec un soutien explicite du ministre de l'Urbanisme, du Logement et du Cadre de vie. Son pôle « Habiter et Décorer » et ses six panels « experts, decision-makers and investors » en font un bon radar sur les pipelines de promoteurs et les politiques d'urbanisme ouest-africaines.",
+   "capital_actors": [
+    "décideurs publics",
+    "promoteurs immobiliers",
+    "investisseurs",
+    "collectivités territoriales"
+   ],
+   "themes": [
+    "architecture",
+    "construction",
+    "urbanisme",
+    "habitat",
+    "villes vivables",
+    "aménagement",
+    "BIM et numérique"
+   ],
+   "ticket_url": "https://archibat.ci/visiter/",
+   "source_url": "https://archibat.ci/home/",
+   "source_name": "ARCHIBAT 2027 — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "thème: « Villes vivables, villes innovantes, architecture de demain » (site officiel, oarchitectes.ci, FratMat) vs « Villes vivables, villes durables, architecture de demain » (Abidjan.net, AIP)",
+    "date: 14-18 octobre 2027 (site officiel, FratMat, oarchitectes.ci, AIP) vs « avril 2027 (?) » (eventseye) — l'hypothèse eventseye est contredite par le lancement officiel du 22 oct. 2026",
+    "lieu: « Parc des Expositions d'Abidjan » (site officiel) vs « Parc des Expositions de Port-Bouët » (FratMat)"
+   ]
+  },
+  {
+   "name": "Nigeria Private Capital Summit 2027",
+   "edition": "édition 2027",
+   "category": "capital_markets",
+   "start": "2027-09-09",
+   "end": "2027-09-09",
+   "date_display": "9 sept. 2027",
+   "date_status": "probable",
+   "city": "Lagos",
+   "country": "Nigeria",
+   "venue": "Lagos, Nigeria (salle exacte non publiée ; l'édition 2026 était au Fourpoints by Sheraton, Victoria Island)",
+   "organizer": "Eventhive.ng (capital.eventhive.ng), partenaire de PEVCA",
+   "attendees": "200+ gérants de fonds et investisseurs annoncés",
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "Le point de rendez-vous du capital privé nigérian : 200+ fonds, administrateurs de fonds de pension, assureurs, fonds souverains, DFIs et family offices, avec les investisseurs d'infrastructure explicitement conviés. C'est le bon endroit pour sourcer des investisseurs capables de porter des actifs immobiliers nigérians ; à noter qu'aucun track immobilier dédié n'est confirmé pour l'édition 2027.",
+   "capital_actors": [
+    "private equity",
+    "fonds de pension",
+    "assureurs",
+    "DFI",
+    "fonds souverains",
+    "family offices",
+    "investisseurs d'infrastructure"
+   ],
+   "themes": [
+    "capital privé",
+    "allocation d'actifs",
+    "pension funds",
+    "DFI",
+    "infrastructure",
+    "opportunités d'investissement"
+   ],
+   "ticket_url": null,
+   "source_url": "https://eventhive.ng/calendar/2027-eventhive-calendar.pdf",
+   "source_name": "Eventhive — calendrier officiel 2027 (PDF)",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "contenu: l'édition 2026 (8 sept. 2026, Fourpoints by Sheraton, Lagos) est un forum PE/VC généraliste ; la place de l'immobilier n'y est pas explicitée",
+    "le calendrier Eventhive 2027 précise « event dates are subjected to change »"
+   ]
+  },
+  {
+   "name": "National Conference on Housing Finance (Ghana) — édition 2027",
+   "edition": "2e édition (1re édition : 7-8 octobre 2026, Accra)",
+   "category": "capital_markets",
+   "start": null,
+   "end": null,
+   "date_display": "2027 (date non encore fixée ; la 1re édition a eu lieu les 7-8 oct. 2026)",
+   "date_status": "to_confirm",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": null,
+   "organizer": "National Housing Fund Limited (ex National Homeownership Fund), avec le Ministry of Works, Housing and Water Resources",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 5,
+   "investor_why": "C'est là que se joue le pipeline de crédit foncier ghanéen : GH¢1 Md du budget 2027 fléché vers un fonds revolving de GH¢3 Md, taux hypothécaires ramenés à 8,4 % (13,5 % avant) et 10,4 % pour le financement des promoteurs, avec appel explicite aux fonds de pension, assureurs, IFD et diaspora. À suivre en priorité même si la date 2027 n'est pas publiée.",
+   "capital_actors": [
+    "décideurs publics",
+    "banques",
+    "fonds de pension",
+    "assureurs",
+    "DFI",
+    "investisseurs institutionnels"
+   ],
+   "themes": [
+    "financement du logement",
+    "crédit hypothécaire",
+    "fonds revolving",
+    "finance mixte",
+    "partenariat public-privé",
+    "refinancement hypothécaire",
+    "marché locatif"
+   ],
+   "ticket_url": null,
+   "source_url": "https://www.myjoyonline.com/mahama-announces-gh%C2%A21bn-allocation-for-revolving-national-housing-fund/",
+   "source_name": "MyJoyOnline (GNA) — annonce de la National Conference on Housing Finance",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: aucune date 2027 publiée ; le ministre des Travaux, du Logement et des Ressources en eau a seulement proposé d'institutionnaliser une « annual National Housing Finance Conference »",
+    "contenu: 1re édition à l'Accra International Conference Centre ou au Movenpick non précisé par les sources"
+   ]
+  },
+  {
+   "name": "ARCE 2027 — Africa Real Estate Conference & Expo",
+   "edition": "7e édition (6e édition en 2026)",
+   "category": "watchlist",
+   "start": null,
+   "end": null,
+   "date_display": "2027 (date à confirmer)",
+   "date_status": "to_confirm",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": null,
+   "organizer": "GREPA (Ghana Real Estate Professionals Association, fondée en 2011)",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 4,
+   "investor_why": "La plateforme continentale de référence du secteur immobilier africain : politique foncière, PropTech, financement, logements abordables et villes intelligentes y sont traités au niveau des États, avec 2 000+ délégués annoncés en 2026. À surveiller pour l'agenda panafricain du secteur, même si la date 2027 n'est pas encore publiée.",
+   "capital_actors": [
+    "décideurs publics",
+    "banques",
+    "investisseurs institutionnels",
+    "DFI"
+   ],
+   "themes": [
+    "politique foncière",
+    "PropTech",
+    "financement immobilier",
+    "durabilité",
+    "urbanisation",
+    "logement abordable"
+   ],
+   "ticket_url": null,
+   "source_url": "https://www.arceconference.com/",
+   "source_name": "ARCE — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "édition: « 6TH EDITION » (site officiel) vs « Fifth Edition » (page the-event du site) et « Fifth Edition » (calendrier FIABCI)",
+    "lieu 2026: The Palms Convention Center (site officiel, Eventbrite) vs Destiny Arena / The Maker's House (calendrier FIABCI)",
+    "effectif 2026: 2 000+ délégués (Eventbrite) vs 1 500+ (calendrier FIABCI)",
+    "date 2027: seule une inscription « Be Part of ARCE 2027 » est en ligne, aucune date publiée"
+   ]
+  },
+  {
+   "name": "AREF 2027 — Africa Real Estate Festival",
+   "edition": "2e édition (1re édition : 18-19 avril 2026, Accra)",
+   "category": "watchlist",
+   "start": null,
+   "end": null,
+   "date_display": "2027 (date à confirmer ; l'édition 2026 était en avril)",
+   "date_status": "to_confirm",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": "The Palms Convention Center (édition 2026)",
+   "organizer": "AREF — Africa Real Estate Festival (Desmond Oteng, fondateur et CEO)",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "Festival panafricain qui positionne explicitement le foncier africain comme actif d'investissement et vise 200 M$ de transactions, avec une cible de policymakers, developers, institutions financières et diaspora. Format culture + investissement intéressant pour la diaspora et les capitaux panafricains, à confirmer dès la publication de l'annonce.",
+   "capital_actors": [
+    "investisseurs institutionnels",
+    "décideurs publics",
+    "banques"
+   ],
+   "themes": [
+    "investissement immobilier",
+    "urbanisation",
+    "diaspora",
+    "PropTech",
+    "culture et identité urbaine"
+   ],
+   "ticket_url": null,
+   "source_url": "https://africarealestatefestival.com/",
+   "source_name": "AREF — site officiel",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: le site officiel affiche « AREF 2027 ANNOUNCEMENT COMING SOON » ; l'édition 2026 (18-19 avril 2026, The Palms Convention Center, 1 500+ délégués annoncés) laisse penser à un rendez-vous de printemps",
+    "qualification: la 1re édition est qualifiée de « maiden edition » par la presse ghanéenne alors que d'autres sources évoquent un retour de l'événement"
+   ]
+  },
+  {
+   "name": "SENHABITAT 2027 — Salon international de l'immobilier et de l'habitat",
+   "edition": "7e édition",
+   "category": "watchlist",
+   "start": null,
+   "end": null,
+   "date_display": "2027 (dates non fixées)",
+   "date_status": "to_confirm",
+   "city": "Dakar",
+   "country": "Sénégal",
+   "venue": null,
+   "organizer": "AME Trade Sénégal Sarl, sous l'égide du Ministère de l'Urbanisme (MUCTAT)",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 4,
+   "investor_why": "Le rendez-vous ministériel ouest-africain du logement : les ministres de l'Habitat et de l'Urbanisme du Sénégal, du Maroc, du Mali, de Côte d'Ivoire, du Burkina Faso, du Niger, du Togo et de la Gambie y participent, avec un forum d'investisseurs et d'institutions de financement. C'est le meilleur accès au marché public du logement de la sous-région, à condition de fixer la date.",
+   "capital_actors": [
+    "décideurs publics",
+    "banques",
+    "institutions de financement",
+    "investisseurs institutionnels"
+   ],
+   "themes": [
+    "habitat",
+    "politique du logement",
+    "financement",
+    "coopération régionale",
+    "urbanisme"
+   ],
+   "ticket_url": null,
+   "source_url": "https://showsbee.com/africa/senegal/tradeshows/senhabitat-dakar-2027",
+   "source_name": "Showsbee — fiche SENHABITAT Dakar",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date 2027: non fixée sur showsbee ; eventseye indique « mai 2027 (?) » (King Fahd Palace), une autre fiche eventseye renvoie à « juin 2028 (?) » (CICAD), lookchem affiche 01/05/2027",
+    "édition 2026: 22-24 octobre 2026 au King Fahd Palace (site officiel, APS, showsbee, eventseye) vs 5-7 juin 2026 au parc des expositions de Diamniadio (senegal-export.com, au-senegal.com)",
+    "cycle: l'événement est présenté comme biennal (2017, 2020, 2022, 2024, 2026), ce qui rend une édition 2027 peu probable"
+   ]
+  },
+  {
+   "name": "Ghana Property Awards 2026 (GAPOA)",
+   "edition": "19e édition",
+   "category": "watchlist",
+   "start": null,
+   "end": null,
+   "date_display": "2026 (date à confirmer ; la 18e édition était le 29 nov. 2025)",
+   "date_status": "to_confirm",
+   "city": "Accra",
+   "country": "Ghana",
+   "venue": null,
+   "organizer": "Property Express Group Ltd (PE Group) — Ghana Property Awards, en collaboration avec le Ministry of Works and Housing",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 3,
+   "investor_why": "La cérémonie de référence du secteur immobilier ghanéen, organisée par Property Express Group avec le ministère des Travaux et du Logement, qui rassemble la chaîne complète (promoteurs, financiers, professionnels, institutionnels) et sert de cartographie des contreparties locales. Billetterie déjà en ligne pour 2026, mais date et lieu non encore publiés.",
+   "capital_actors": [
+    "décideurs publics",
+    "banques",
+    "investisseurs institutionnels",
+    "promoteurs immobiliers"
+   ],
+   "themes": [
+    "awards immobilier",
+    "marché du foncier",
+    "construction",
+    "reconnaissance des acteurs"
+   ],
+   "ticket_url": "https://registration.propertyexpressgroup.org/ticket/",
+   "source_url": "https://africanpropertymagazine.com/Ghana-Property-Awards-2026",
+   "source_name": "African Property Magazine / Property Express Ghana",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: la 18e édition a eu lieu le samedi 29 novembre 2025 à l'Accra International Conference Centre ; aucune date 2026 n'est publiée",
+    "numérotation des éditions: la page « About » du site officiel mentionne « Sixteenth (17th) Edition » pour le 29 nov. 2025, la presse le qualifiant de 18e édition ; l'édition 2026 est donc annoncée comme la 19e",
+    "lieu 2026 non communiqué"
+   ]
+  },
+  {
+   "name": "Africa Real Estate Summit, Awards & Expo — Abuja 2027",
+   "edition": "édition 2027 (série itinérante Lagos → Accra → Abuja → Nairobi)",
+   "category": "watchlist",
+   "start": null,
+   "end": null,
+   "date_display": "2027 (date à confirmer ; l'index Eventbrite affiche le 22 août 2027)",
+   "date_status": "to_confirm",
+   "city": "Abuja",
+   "country": "Nigeria",
+   "venue": "Sandralia Hotel by Whitestone, 1 Solomon Lar road, Jabi, Abuja",
+   "organizer": "Africa Real Estate International Ltd",
+   "attendees": null,
+   "exhibitors": null,
+   "investor_score": 2,
+   "investor_why": "Itinéraire panafricain d'un opérateur spécialisé dans l'immobilier, avec keynotes, panels, exposition et remise de prix, utile pour croiser Lagos, Accra et Abuja sur une même séquence de marché. L'échelle de l'édition d'Abuja n'est pas documentée : à traiter comme un rendez-vous de réseau plutôt que comme une conférence de capital.",
+   "capital_actors": [
+    "investisseurs institutionnels",
+    "décideurs publics"
+   ],
+   "themes": [
+    "keynotes",
+    "exposition",
+    "awards",
+    "réseautage",
+    "panoramique africain"
+   ],
+   "ticket_url": null,
+   "source_url": "https://www.eventbrite.com/e/pre-registration-africa-real-estate-summit-awards-expo-abuja-2027-tickets-1979059816185",
+   "source_name": "Eventbrite — Africa Real Estate International Ltd",
+   "last_verified": "2026-11-06",
+   "conflicts": [
+    "date: l'index Eventbrite affiche « Sun, Aug 22 » (22 août 2027) mais la page renvoie une erreur (404/noindex) en accès direct et son texte mentionne encore « Africa Real Estate Summit, Awards & Expo 2026 » ; la durée affichée est « 5 days 6 hours »",
+    "édition 2026 à Abuja: 22 août 2026 au Sandralia Hotel (Eventbrite) vs 8 août 2026 (flux ICS idoff.net)",
+    "le site de l'organisateur (africarealestateinternational.org/events) ne liste à ce jour que des éditions 2026"
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "ARCE 2026 — Africa Real Estate Conference & Expo",
+   "city": "Accra",
+   "date": "14-16 oct. 2026",
+   "reason": "Édition 2026 déjà passée (avant le 01/11/2026) ; l'édition 2027 est annoncée mais non datée et est donc retenue en watchlist.",
+   "source_url": "https://www.arceconference.com/"
+  },
+  {
+   "name": "Lagos Real Estate Fest 2026",
+   "city": "Lagos",
+   "date": "25-26 mai 2026",
+   "reason": "Édition 2026 passée ; l'édition 2027 (24-25 mai 2027) est retenue.",
+   "source_url": "https://eventhive.ng/calendar/2027-eventhive-calendar.pdf"
+  },
+  {
+   "name": "REDA — Real Estate Discussions and Awards 2026 (7e édition)",
+   "city": "Lagos",
+   "date": "20-21 oct. 2026",
+   "reason": "Édition 2026 passée (Radisson Blu Ikeja, thème « Economic Development and Real Estate Linkages »). Aucune édition 2027 annoncée à ce jour — à surveiller.",
+   "source_url": "https://punchng.com/lagos-tackling-3-3m-housing-deficit-says-sanwo-olu/?amp"
+  },
+  {
+   "name": "National Conference on Housing Finance 2026 (1re édition)",
+   "city": "Accra",
+   "date": "7-8 oct. 2026",
+   "reason": "Édition 2026 passée (deux jours, ouverte par le président Mahama). L'édition 2027 est annoncée comme annuelle par le ministre mais non datée — elle est retenue en capital_markets.",
+   "source_url": "https://www.graphic.com.gh/news/general-news/president-mahama-directs-finance-minister-to-allocate-ghc1bn-for-housing-fund-in-2027-budget.html"
+  },
+  {
+   "name": "RECON Expo 2026 (8e Real Estate and Construction Expo)",
+   "city": "Abuja",
+   "date": "28-30 oct. 2026",
+   "reason": "Édition 2026 passée. Organisé par Afrinet Group et Shelter Aid Organisation avec l'Abuja Chamber of Commerce ; aucune édition 2027 annoncée.",
+   "source_url": "https://nannews.ng/estate/"
+  },
+  {
+   "name": "Wemabod Real Estate Outlook Conference 2026",
+   "city": "Lagos",
+   "date": "3 fév. 2026 (début février)",
+   "reason": "Édition 2026 passée (1 800+ participants, thème « Unlocking Land and Infrastructure for Inclusive Housing », keynote de l'ancien vice-président Osinbajo). Aucune édition 2027 annoncée.",
+   "source_url": "https://allafrica.com/stories/202602130438.html"
+  },
+  {
+   "name": "SENHABITAT 2026 (6e édition)",
+   "city": "Dakar",
+   "date": "22-24 oct. 2026 (ou 5-7 juin 2026 selon les sources)",
+   "reason": "Édition 2026 passée. Cycle biennal : la prochaine édition attendue est 2028, pas 2027 — l'entrée 2027 reste en watchlist par prudence.",
+   "source_url": "https://showsbee.com/africa/senegal/tradeshows/senhabitat-dakar-2027"
+  },
+  {
+   "name": "AREF 2026 — Africa Real Estate Festival (1re édition)",
+   "city": "Accra",
+   "date": "18-19 avril 2026",
+   "reason": "Édition 2026 passée ; l'édition 2027 est annoncée (« announcement coming soon ») et retenue en watchlist.",
+   "source_url": "https://africarealestatefestival.com/"
+  },
+  {
+   "name": "Property Connect (Accra)",
+   "city": "Accra",
+   "date": "10 oct. 2026",
+   "reason": "Édition 2026 passée (Nexus 9 Lounge & Spaces). Format « a more intimate kind of real estate gathering » ; aucune édition 2027 annoncée.",
+   "source_url": "https://www.eventbrite.com/e/property-connect-accra-tickets-1995520316600"
+  },
+  {
+   "name": "Africa Real Estate Summit, Awards & Expo — Lagos 2026",
+   "city": "Lagos",
+   "date": "27 juin 2026",
+   "reason": "Édition 2026 passée (Lagos Oriental Hotel).",
+   "source_url": "https://www.africarealestateinternational.org/events/"
+  },
+  {
+   "name": "Africa Real Estate Summit, Awards & Expo — Accra 2026",
+   "city": "Accra",
+   "date": "5 sept. 2026",
+   "reason": "Édition 2026 passée (Accra Marriott Hotel).",
+   "source_url": "https://www.africarealestateinternational.org/events/"
+  },
+  {
+   "name": "Africa Real Estate Summit, Awards & Expo — Abuja 2026",
+   "city": "Abuja",
+   "date": "22 août 2026 (vs 8 août 2026 selon le flux ICS)",
+   "reason": "Édition 2026 passée (Sandralia Hotel by Whitestone).",
+   "source_url": "https://www.eventbrite.com/d/nigeria--federal-capital-territory/real-estate-networking/"
+  },
+  {
+   "name": "African Women in Real Estate Summit & Awards (Lagos / Abuja / Accra 2026)",
+   "city": "Lagos, Abuja, Accra",
+   "date": "7 mars, 8 août, 4-5 sept. 2026",
+   "reason": "Toutes les éditions ouest-africaines 2026 sont passées ; l'édition de Nairobi du 28 nov. 2026 est hors zone géographique. Aucune édition ouest-africaine 2027 annoncée.",
+   "source_url": "https://www.africarealestateinternational.org/"
+  },
+  {
+   "name": "African Youth and Real Estate Summit, Lagos 2026",
+   "city": "Lagos",
+   "date": "7 nov. 2026 (Eventbrite indique le 17 nov. 2026)",
+   "reason": "Dans la fenêtre mais ÉCHEC du test 2 sur 6 : public ciblé = étudiants, jeunes diplômés et jeunes agents (9h-3h, places limitées, registration LASRERA, youth awards), pas d'institutionnels annoncés, aucun effectif publié, édition 2026 qualifiée « Lagos 2.0 » donc pas de continuité, portée limitée à Lagos.",
+   "source_url": "https://www.eventbrite.com/e/pre-registration-african-youth-and-real-estate-summit-lagos-2026-tickets-1979080092833"
+  },
+  {
+   "name": "International Investors Summit Nigeria 2026",
+   "city": "Abuja",
+   "date": "10-11 nov. 2026",
+   "reason": "Dans la fenêtre et très capital-intensive (50+ pays, 100+ investisseurs, objectif 100 Md $) mais REJETÉ : le programme sectoriel (pétrole, énergie renouvelable, tech, IA, fintech, santé, agro, mines, infrastructures, éducation) ne comporte aucun track immobilier ni foncier identifié.",
+   "source_url": "https://thewillnews.com/nigeria-set-to-benefit-from-100bn-investment-push-across-oil-tech-energy"
+  },
+  {
+   "name": "New Africa Capital Forum 2026",
+   "city": "Accra",
+   "date": "4-5 nov. 2026",
+   "reason": "Retenu en capital_markets malgré un programme non-immobilier : forum généraliste de capital privé à 300+ délégués, utile comme radar sur les allocateurs de capital ouest-africains.",
+   "source_url": "https://nacapitalforum.com/nacf-2026/"
+  },
+  {
+   "name": "Africa-Dubai Home Expo — Accra 2026",
+   "city": "Accra",
+   "date": "5 sept. 2026",
+   "reason": "Édition 2026 passée et format consumer/homeowners (architecture, décoration, design) sans audience institutionnelle — hors périmètre B2B immobilier.",
+   "source_url": "https://www.eventbrite.com/e/africa-dubai-home-expo-accra-2026-tickets-1982175629667"
+  },
+  {
+   "name": "Africa-Dubai Home Expo — Lagos 2026",
+   "city": "Lagos",
+   "date": "27 juin 2026",
+   "reason": "Édition 2026 passée et format consumer/homeowners, sans dimension B2B/institutionnelle.",
+   "source_url": "https://www.eventbrite.com/d/nigeria/expos/"
+  },
+  {
+   "name": "International NIGERIA BUILDEXPO 2026",
+   "city": "Lagos",
+   "date": "25 août 2026",
+   "reason": "Édition 2026 passée et salon BTP/matériaux sans track « real estate » ni présence documentée de promoteurs ou investisseurs immobiliers — ne franchit pas le filtre strict des salons adjacents.",
+   "source_url": "https://www.eventbrite.com/d/nigeria--lagos/expos/"
+  },
+  {
+   "name": "Ibadan Youth Real Estate & Investment Summit (Ibadan Edition 2026)",
+   "city": "Ibadan",
+   "date": "2026 (date exacte non confirmée)",
+   "reason": "Salon de ville, public jeune, pas d'audience décisionnelle ni d'échelle — ne coche pas le test 2 sur 6.",
+   "source_url": "https://www.eventbrite.com.au/b/nigeria/business/real-estate/"
+  },
+  {
+   "name": "FEST'IMMO — Salon International de l'Immobilier et de l'Habitat (Togo)",
+   "city": "Lomé",
+   "date": "12-14 mai 2017 (dernière édition trouvée)",
+   "reason": "Aucune édition 2026 ou 2027 trouvée ; l'événement paraît inactif. Seule trace : 3e édition en 2017 au CETEF-TOGO 2000, avec inauguration par le ministre de l'Urbanisme de l'époque.",
+   "source_url": "http://www.alome.com/m/actualites/article.asp?ID=99122"
+  },
+  {
+   "name": "FIERA-DOUALA (Foire Internationale sur les Énergies Renouvelables)",
+   "city": "Douala",
+   "date": "28-31 oct. 2026",
+   "reason": "Énergie renouvelable, pas d'immobilier ; l'édition 2026 est de plus passée. Aucune édition 2027 dans la fenêtre.",
+   "source_url": "https://www.cameroontradehub.cm/actualite/tag/100/1/en"
+  },
+  {
+   "name": "Diaspora Property Expo (DPE) 2027",
+   "city": "Berlin et Toronto",
+   "date": "mars 2027 et 22-23 mai 2027",
+   "reason": "Hors périmètre géographique : les deux éditions 2027 confirmées sont en Allemagne et au Canada (expos de la diaspora hors d'Afrique). L'édition d'Accra n'est pas annoncée dans la fenêtre.",
+   "source_url": "https://www.myjoyonline.com/ghana-consulate-to-host-dpe-canada-2027-launch/"
+  },
+  {
+   "name": "ConstructAfrica Summit & Awards (CSA) 2026",
+   "city": "Nairobi puis en ligne",
+   "date": "27 nov. 2026 (en ligne)",
+   "reason": "Hors zone (Afrique de l'Est) et passage en ligne : exclu.",
+   "source_url": "https://www.businessghana.com/site/events/more"
+  },
+  {
+   "name": "Glitz Africa Fashion Week",
+   "city": "Accra",
+   "date": "10-13 nov. 2026",
+   "reason": "Mode, hors sujet immobilier.",
+   "source_url": "https://www.glitzafrica.com/events"
+  }
+ ],
+ "negative_findings": [
+  "Cameroun : aucun salon ni conférence immobilière B2B/institutionnel trouvé dans la fenêtre pour Douala ou Yaoundé. Le MINHDU publie un guide d'agents et promoteurs immobiliers, mais aucun événement. Les seuls salons doualaïs identifiés sont hors sujet (FIERA-DOUALA, énergies renouvelables ; Worldview Education Fair).",
+  "Burkina Faso : aucun événement immobilier trouvé. Les-agences/promoteurs sont très actifs (LAGRO Group, Harmony Immo Housing à Ouagadougou) mais aucun salon ni conférence n'est organisé dans la fenêtre.",
+  "Mali : aucun événement immobilier trouvé ; aucun salon immobilier de Bamako identifié pour 2026-2027.",
+  "Niger : aucun événement immobilier trouvé pour Niamey ; la presse immobilière nigériane référence le marché nigérien mais sans manifestation.",
+  "Bénin : aucun événement immobilier trouvé à Cotonou ; le marché est structuré autour d'agences et de promoteurs (BackHome Africa à Lomé, E-immobilier.bj) sans salon.",
+  "Togo : le FEST'IMMO de Lomé semble inactif (dernière édition trouvée : 2017). Aucun salon immobilier annoncé pour 2026-2027.",
+  "Sierra Leone : aucun événement immobilier B2B/institutionnel trouvé pour Freetown.",
+  "Libéria : aucun événement immobilier trouvé ; le pays n'apparaît que comme participant à des summits nigérians (président Boakai annoncé à l'International Investors Summit d'Abuja).",
+  "Gambie : aucun événement trouvé, malgré la présence d'un acteur immobilier notable (Mustapha Njie, NJIE Properties, cité par la presse panafricaine).",
+  "Guinée : aucun événement immobilier trouvé pour Conakry.",
+  "Guinée-Bissau : aucun événement immobilier trouvé.",
+  "Cap-Vert : aucun événement immobilier trouvé ; les regards montreront que le pays n'apparaît pas dans les calendriers immobiliers panafricains.",
+  "São Tomé-et-Príncipe : aucun événement immobilier trouvé.",
+  "Nigeria — Wemabod Real Estate Outlook : pas d'édition 2027 annoncée au 06/11/2026, alors que le rendez-vous compte 1 800+ participants et des interventions de premier plan (Stanbic IBTC, Osinbajo). À surveiller de près.",
+  "Nigeria — REDA (ThinkMint) : pas d'édition 2027 annoncée ; la 7e édition (oct. 2026) est la dernière connue.",
+  "Nigeria — RECON Expo : pas d'édition 2027 annoncée.",
+  "Nigeria — Property Connect (Accra) et Africa Real Estate International : pas d'édition ouest-africaine 2027 datée, à l'exception d'ARCE 2027 (annonce sans date) et d'ARES Abuja 2027 (annonce Eventbrite à vérifier).",
+  "Ghana — FID Congress / AREDI / Ghana Real Estate Conference : aucune édition 2026-2027 dans la fenêtre n'a pu être confirmée ; les organisations citées dans la liste des ancres n'ont pas de rendez-vous immobilier daté.",
+  "Nigeria Private Capital Summit 2027 : date retenue au 9 septembre 2027 d'après le seul calendrier Eventhive 2027 ; aucun programme n'est publié, donc l'absence de track immobilier dédié est à confirmer."
+ ],
+ "sources": [
+  {
+   "url": "https://www.arceconference.com/",
+   "name": "ARCE — site officiel (6e édition 2026 + teaser ARCE 2027)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://fiabci.org/es/calendar?month=10-2026",
+   "name": "FIABCI — calendrier (ARCE 2026, lieu et effectif contradictoires)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.com/e/africa-real-estate-conference-expo-arce-2026-tickets-1996341621530",
+   "name": "Eventbrite — ARCE 2026 (2 000+ délégués, The Palms Convention Center)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://eventhive.ng/calendar/2027-eventhive-calendar.pdf",
+   "name": "Eventhive — calendrier officiel 2027 (PDF)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://eventhive.ng/events/abuja-real-estate-fest/",
+   "name": "Eventhive — page Abuja Real Estate Fest 2026 (date 19 nov. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.com/e/abuja-real-estate-fest-2026-tickets-2000425274847",
+   "name": "Eventbrite — Abuja Real Estate Fest 2026 (12 nov. 2026, Shehu Musa Yar'Adua Centre)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.glowupchannel.com/events/6ae4faae33907e8cf956a75d",
+   "name": "Glowup Channel — Abuja Real Estate Fest 2026 (2e édition, 12 nov. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.vanguardngr.com/2026/09/investors-developers-policymakers-converge-for-abuja-real-estate-fest-2026/",
+   "name": "Vanguard Nigeria — Abuja Real Estate Fest 2026 (thème, panels)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://are.eventhive.ng/",
+   "name": "Eventhive — Africa Real Estate Series (Abuja / Lagos Real Estate Fest)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://abujarealestateinfrastructure.com/",
+   "name": "Abuja Real Estate & Infrastructure Summit 2026 — site officiel",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://thebenkandhampton.com/",
+   "name": "The Benk International — site officiel (dates contradictoires 12-13 nov. vs 22-23 oct. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.si-ci.com/",
+   "name": "SICI 2027 — site officiel (29-31 janv. 2027, 15 thématiques)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://batirici-immobilier.com/sici-2027-le-grand-retour-du-salon-de-limmobilier-de-cote-divoire-au-parc-des-expositions-dabidjan/",
+   "name": "Batirici Immobilier — SICI 2027 (10e édition, ~200 exposants, 25 000-50 000 visiteurs)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://mindici.net/etn/",
+   "name": "MIND'ICI — calendrier des événements",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.ca/e/salon-de-limmobilier-de-cote-divoire-10e-edition-sici-2027-tickets-2002125214412",
+   "name": "Eventbrite — SICI 2027 (29-31 janv. 2027)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.tickettailor.com/events/miiaf/1946811",
+   "name": "TicketTailor/MIIAF — SICI 2027",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://archibat.ci/home/",
+   "name": "ARCHIBAT 2027 — site officiel (14-18 oct. 2027, 11e édition)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.fratmat.info/article/2645415/economie/urbanisme/archibat-2027-rendez-vous-pris-du-14-au-18-octobre",
+   "name": "FratMat — lancement ARCHIBAT 2027 et soutien du ministre de l'Urbanisme",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.aip.ci/cote-divoire-aip-archibat-2027-met-le-cap-sur-les-villes-vivables-et-durables/",
+   "name": "AIP (Agence Ivoirienne de Presse) — ARCHIBAT 2027",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://oarchitectes.ci/actualites/archibat-2027-lancement-officiel-de-la-11e-edition",
+   "name": "Ordre des Architectes de Côte d'Ivoire — lancement ARCHIBAT 2027",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://africabuildshow.com/",
+   "name": "Africa Build Show Ghana — site officiel (6-8 juil. 2027)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.tradefairdates.com/Africa-Build-Show-Ghana-M8618/Accra.html",
+   "name": "TradeFairDates — Africa Build Show Ghana 2027 (visiteurs : developers, investors, real estate professionals)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventseye.com/fairs/dst1_trade-shows_july_1_building-construction.html",
+   "name": "Eventseye — Africa Build Show Ghana (venue contradictoire)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.big5constructnigeria.com/",
+   "name": "Big 5 Construct Nigeria — site officiel (21-23 sept. 2027, Landmark Centre)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.big5constructnigeria.com/visit/why-visit/",
+   "name": "Big 5 Construct Nigeria — visitor profile (11 000+ industry peers)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.africahousingshow.com/",
+   "name": "AIHS — site officiel (20e édition, 13-18 juil. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "http://info.afrindex.com/detail_3708/",
+   "name": "Afrindex — AIHS 2027 (13-18 juil. 2027, 400+ exposants, 40 000+ visiteurs)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "http://info.afrindex.com/detail_1_3708/",
+   "name": "Afrindex — AIHS 2027 (12-17 juil. 2027, dates contradictoires)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.vanguardngr.com/2026/09/global-leaders-institutions-endorse-africa-international-housing-show/",
+   "name": "Vanguard Nigeria — AIHS (Shelter Afrique, DFI, ministers)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.com/e/africa-international-housing-show-tickets-1979589397176",
+   "name": "Eventbrite — AIHS (Transcorp Hilton Abuja)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.graphic.com.gh/news/general-news/ghana-news-president-directs-ghc1bn-into-housing-fund-its-to-tackle-1-8m-deficit.html",
+   "name": "Graphic — National Conference on Housing Finance 2026 (7-8 oct. 2026, AICC)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.myjoyonline.com/mahama-announces-gh%C2%A21bn-allocation-for-revolving-national-housing-fund/",
+   "name": "MyJoyOnline / GNA — conference logement et possibilité d'une édition annuelle",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.aljazeera.com/news/2026/11/5/why-more-investment-is-not-making-housing-affordable-in-ghana",
+   "name": "Al Jazeera — contexte crédit foncier ghanéen post-ARCE",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://ghanapropertyexpo.com/",
+   "name": "Ghana Property & Lifestyle Expo — site officiel (Accra, 18-19 déc. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://amaghanaonline.com/2026/09/07/ghana-property-lifestyle-expo-launches-10th-anniversary-edition-at-ghana-high-commission-in-london/",
+   "name": "AmaGhanaonline — dates des éditions Londres et Accra 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.ghanaweb.com/GhanaHomePage/business/Ghana-Property-Lifestyle-Expo-launches-10th-anniversary-edition-in-London-2051146",
+   "name": "GhanaWeb — Ghana Property & Lifestyle Expo (10e édition)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://housinginghana.com/articles/ghana-property-lifestyle-expo-launches-10th-anniversary-edition-at-ghana-high-commission-in-london",
+   "name": "Housing in Ghana — Ghana Property & Lifestyle Expo 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://africanpropertymagazine.com/Ghana-Property-Awards-2026",
+   "name": "African Property Magazine — Ghana Property Awards 2026 (19e édition, thème)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.ghanapropertyawards.com/about",
+   "name": "Ghana Property Awards — page About (édition 2025, AICC, ministère)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://registration.propertyexpressgroup.org/ticket/",
+   "name": "Property Express Group — billetterie Ghana Property Awards 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://africarealestatefestival.com/",
+   "name": "AREF — site officiel (annonce AREF 2027)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://yen.com.gh/real-estate/298134-ghana-host-2026-africa-real-estate-festival-bridging-investment-policy-culture/",
+   "name": "YEN Ghana — AREF 2026 (1 500+ délégués, objectif 200 M$)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://showsbee.com/africa/senegal/tradeshows/senhabitat-dakar-2027",
+   "name": "Showsbee — SENHABITAT Dakar (historique et 2027 sans date)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventseye.com/fairs/zst0_salons_afrique-moyen-orient_immobilier.html",
+   "name": "Eventseye — salons immobilier Afrique / Moyen-Orient (hypothèses contradictoires)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://nacapitalforum.com/",
+   "name": "New Africa Capital Forum — site officiel (4-5 nov. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://nacapitalforum.com/nacf-2026/",
+   "name": "New Africa Capital Forum — page NACF 2026 (dates contradictoires 29-30 oct.)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.com/e/new-africa-capital-champions-awards-2026-accra-tickets-1992308669863",
+   "name": "Eventbrite — New Africa Capital Champions Awards 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.riotimesonline.com/what-to-do-in-accra-in-november-2026/",
+   "name": "Riotimes — agenda Accra novembre 2026 (NACF, 300+ délégués)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://capital.eventhive.ng/",
+   "name": "Eventhive — Nigeria Private Capital Summit (200+ fonds, PFAs, DFIs, family offices)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.africarealestateinternational.org/events/",
+   "name": "Africa Real Estate International — calendrier des événements",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.com/e/pre-registration-africa-real-estate-summit-awards-expo-abuja-2027-tickets-1979059816185",
+   "name": "Eventbrite — ARES Abuja 2027 (page à accès direct instable)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.vanguardngr.com/2026/10/africa-real-estate-magazine-and-awards-2026-to-celebrate-excellence-in-lagos/",
+   "name": "Vanguard Nigeria — Africa Real Estate Magazine & Awards 2026 (13 déc. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://businessday.ng/life/article/contribution-to-industry-growth-earns-mshel-group-boss-nomination-for-award/",
+   "name": "BusinessDay NG — Africa Real Estate Magazine and Awards 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://pmnewsnigeria.com/2026/09/16/africa-real-estate-magazine-awards-2026-set-for-lagos",
+   "name": "PM News — Africa Real Estate Magazine & Awards 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://punchng.com/lagos-tackling-3-3m-housing-deficit-says-sanwo-olu/?amp",
+   "name": "PUNCH Nigeria — REDA 2026 (7e édition, 20-21 oct. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://allafrica.com/stories/202602130438.html",
+   "name": "AllAfrica/This Day — Wemabod Real Estate Outlook 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://nannews.ng/estate/",
+   "name": "NAN — RECON Expo 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://thewillnews.com/nigeria-set-to-benefit-from-100bn-investment-push-across-oil-tech-energy",
+   "name": "The Will — International Investors Summit Nigeria 2026 (programme sectoriel)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.myjoyonline.com/ghana-consulate-to-host-dpe-canada-2027-launch/",
+   "name": "MyJoyOnline — DPE 2027 (Allemagne et Canada, hors périmètre)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://www.eventbrite.com/e/pre-registration-african-youth-and-real-estate-summit-lagos-2026-tickets-1979080092833",
+   "name": "Eventbrite — African Youth and Real Estate Summit Lagos 2026 (17 nov. 2026)",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://allevents.in/lagos/professionals",
+   "name": "AllEvents — African Youth and Real Estate Summit (7 nov. 2026) et REDA 2026",
+   "accessed": "2026-11-06"
+  },
+  {
+   "url": "https://exposale.net/fr/exhibitions/all/all/1233",
+   "name": "Exposale — salons de Douala 2026-2027 (aucun salon immobilier)",
+   "accessed": "2026-11-06"
+  }
+ ]
+}

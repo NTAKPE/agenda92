@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "Corrections de périmètre et de compteurs",
+    "detail": "Le compteur de pays affiché sur l'accueil et les visuels de partage indiquait 23 pays : il en compte 22. La nomenclature des 54 États africains ne listait ni le Tchad ni le Malawi, et la liste des pays sans rendez-vous documenté citait des pays pourtant couverts (Cameroun, Namibie, Botswana, Zimbabwe) tout en en omettant 22 autres. Corrigé, et vérifié désormais par check_countries.py et check_numbers.py. Le filtre pays propose désormais « Non précisé », pour pouvoir isoler l'événement dont le pays n'est pas confirmé."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "Visuels de partage, données structurées et partage",
+    "detail": "Ajout de 105 visuels de partage au format Open Graph (1200×630), d'un favicon, de balises Twitter Card, d'une URL canonique par page, de données structurées JSON-LD (WebSite sur l'accueil, Event sur les fiches), de boutons de partage X, LinkedIn, WhatsApp et Telegram, et de la page « À propos » qui pose la ligne éditoriale et la politique de correction."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "Arbitrage de la date de l'Abuja Real Estate Fest 2026",
+    "detail": "Trois sources donnent le 12 novembre 2026 (site dédié de l'événement are.eventhive.ng, billetterie officielle Eventbrite de l'organisateur, post LinkedIn d'origine). Une seule donne le 19 novembre : la page portfolio de l'organisateur sur eventhive.ng, vraisemblablement obsolète. Date retenue : 12 novembre 2026. Le conflit reste tracé sur la fiche."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "Première publication de l'agenda",
+    "detail": "83 événements retenus dans 22 pays sur l'horizon novembre 2026 – décembre 2027, après consolidation de 97 fiches sources et rejet documenté de 97 événements candidats. 49 événements portent une contradiction entre sources, 33 une date à confirmer."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "Passage de re-vérification initial",
+    "detail": "51 événements datés recontrôlés contre leur page officielle : 32 dates confirmées à la source, 16 pages non exploitables (rendu JavaScript ou accès bloqué), 3 événements signalés à contrôler manuellement (Namibia Public-Private Forum, EXPOFINANCES Alger, SENCON)."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "32 pays sans rendez-vous documenté",
+    "detail": "Libye, Soudan, Bénin, Burkina Faso, Cap-Vert, Gambie, Guinée, Guinée-Bissau, Liberia, Mali, Mauritanie, Niger, Sierra Leone, Togo, Angola, Tchad, Guinée équatoriale, République centrafricaine, São Tomé-et-Príncipe, Burundi, Comores, Djibouti, Érythrée, Madagascar, Malawi, Mozambique, Rwanda, Seychelles, Somalie, Soudan du Sud, Eswatini, Lesotho. Zones ouvertes à contribution via le formulaire d'intake."
+  }
+]
