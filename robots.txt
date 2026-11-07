@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://NTAKPE.github.io/agenda92/sitemap.xml
