@@ -241,6 +241,19 @@ with open(os.path.join(EXPORT, "tracker-data.json"), "r", encoding="utf-8") as f
     payload = json.load(fh)
 EVENTS = payload["events"]
 
+# Date de la derniere passe de re-verification : elle vient du rapport
+# ecrit par refresh.py, pas d'une date saisie a la main. En son absence, on
+# retombe sur la date d'edition des donnees.
+REFRESH_DATE = ""
+_refresh_report = os.path.join(EXPORT, "refresh-report.json")
+if os.path.exists(_refresh_report):
+    try:
+        with open(_refresh_report, "r", encoding="utf-8") as fh:
+            _r = json.load(fh)
+        REFRESH_DATE = str(_r.get("generated") or "")[:10]
+    except (ValueError, OSError):
+        REFRESH_DATE = ""
+
 changelog_path = os.path.join(DATA, "changelog.json")
 if os.path.exists(changelog_path):
     with open(changelog_path, "r", encoding="utf-8") as fh:
@@ -479,7 +492,7 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
     <p><b>Agenda des événements immobiliers en Afrique</b> — un outil de travail à destination des
     investisseurs et financiers. Les dates non confirmées sont signalées explicitement : vérifiez
     toujours sur le site officiel avant de déplacer ou de payer.</p>
-    <p>Édition du %s · %d événements retenus · %d pays · dernière vérification : %s.</p>
+    <p>Édition du %s · %d événements retenus · %d pays · dernière passe de re-vérification : %s.</p>
     <p>Les sources et les contradictions entre sources sont consultables sur chaque fiche.
     <a href="%smethodologie.html">Comprendre la méthode</a> ·
     <a href="%sa-propos.html">À propos et politique de correction</a> ·
@@ -495,7 +508,8 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
        ld, extra_head, extra_class,
        prefix, prefix, prefix, prefix, prefix, prefix, prefix,
        body,
-       gen, len(EVENTS), len(REAL_COUNTRIES), gen, prefix, prefix, prefix, prefix)
+       gen, len(EVENTS), len(REAL_COUNTRIES), fmt_gen_date(REFRESH_DATE or gen),
+       prefix, prefix, prefix, prefix)
 
 
 # --------------------------------------------------------------------------

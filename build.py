@@ -709,7 +709,10 @@ print("  -> %s (%d evenements dates)" % (ics_path, len(dated)))
 # --------------------------------------------------------------------------
 
 payload = {
-    "generated": "2026-11-06",
+    # La date d'edition est derivee des donnees : la verification la plus
+    # recente des fiches. Elle n'est jamais saisie a la main.
+    "generated": max([r["last_verified"] for r in records if r.get("last_verified")]
+                     or ["2026-11-06"]),
     "totals": {
         "all": len(records),
         "dated": len(dated),
