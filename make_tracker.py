@@ -262,7 +262,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     h += '<div class="block"><h4>Sources</h4><ul>';
     if(e.source_url) h += '<li><a href="'+esc(e.source_url)+'" target="_blank" rel="noopener">'+esc(e.source_name||e.source_url)+'</a></li>';
     else h += '<li>'+esc(e.source_name||'&mdash;')+'</li>';
-    if(e.ticket_url) h += '<li><a href="'+esc(e.ticket_url)+'" target="_blank" rel="noopener">Billetterie / inscription</a></li>';
+    if(e.ticket_url && e.ticket_url !== e.source_url) h += '<li><a href="'+esc(e.ticket_url)+'" target="_blank" rel="noopener">Billetterie / inscription</a></li>';
     h += '</ul>';
     if(e.conflicts) h += '<p style="margin:10px 0 0"><b style="color:var(--danger)">Conflits&nbsp;:</b> '+esc(e.conflicts)+'</p>';
     if(e.notes) h += '<p style="margin:6px 0 0"><b>Signaux et lacunes&nbsp;:</b> '+esc(e.notes)+'</p>';

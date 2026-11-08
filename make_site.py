@@ -883,8 +883,10 @@ def detail_block(e):
         src += '<li><a href="%s" rel="noopener">%s</a></li>' % (esc(e["source_url"]), esc(e.get("source_name") or e["source_url"]))
     else:
         src += '<li>%s</li>' % esc(e.get("source_name") or "—")
-    if e.get("ticket_url"):
+    if e.get("ticket_url") and e["ticket_url"] != e.get("source_url"):
         src += '<li><a href="%s" rel="noopener">Billetterie / inscription</a></li>' % esc(e["ticket_url"])
+    for s in e.get("cited_sources") or []:
+        src += '<li><a href="%s" rel="noopener">%s</a></li>' % (esc(s.get("url") or ""), esc(s.get("name") or ""))
     extra = ""
     if conflicts:
         extra += '<p style="margin:10px 0 0"><b style="color:var(--danger)">Contradictions entre sources :</b> %s</p>' % esc(conflicts)
