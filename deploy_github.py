@@ -71,6 +71,40 @@ def force_rmtree(path):
         shutil.rmtree(path, onerror=_fix)     # Python 3.11 et anterieur
 
 
+def clear_dir_except(path, keep=(".git",)):
+    """Vide un dossier de travail en conservant certains entrees.
+
+    Permet de regenerer le contenu d'un depot deja initialise sans perdre
+    son historique git : sans cela, chaque execution recreerait un commit
+    racine orphelin et le push suivant serait refuse (pas d'ancetre commun).
+    """
+    if not os.path.isdir(path):
+        return
+    for entry in os.listdir(path):
+        if entry in keep:
+            continue
+        target = os.path.join(path, entry)
+        if os.path.isdir(target) and not os.path.islink(target):
+            force_rmtree(target)
+        else:
+            try:
+                os.chmod(target, stat.S_IWRITE)
+                os.remove(target)
+            except OSError:
+                pass
+
+
+def commit_all(folder, message, author):
+    """Ajoute et valide les modifications ; renvoie False si rien n'a change."""
+    run([GIT, "add", "-A"], cwd=folder)
+    code, out, _ = run([GIT, "status", "--porcelain"], cwd=folder, check=False, capture=True)
+    if not (out or "").strip():
+        return False
+    run([GIT, "-c", "user.name=%s" % author, "-c", "user.email=%s@users.noreply.github.com" % author,
+         "commit", "-m", message], cwd=folder)
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser(description="Deploie l'agenda sur GitHub Pages.")
     ap.add_argument("--github-user", default="NTAKPE",
@@ -104,8 +138,10 @@ def main():
     # ---- depot des sources (branche main) --------------------------------
     section("2. Depot des sources (branche main)")
     src_dir = os.path.join(BASE, ".deploy-source")
-    force_rmtree(src_dir)
-    os.makedirs(src_dir)
+    src_exists = os.path.isdir(os.path.join(src_dir, ".git"))
+    if not src_exists:
+        force_rmtree(src_dir)
+        os.makedirs(src_dir)
 
     ignore = [
         "site/", "export/", ".deploy-source/", ".deploy-pages/",
@@ -121,9 +157,10 @@ def main():
         fh.write("* -text\n")
 
     keep_root = ["build.py", "make_tracker.py", "make_site.py", "refresh.py",
-                 "deploy_github.py",
+                 "deploy_github.py", "siteutil.py",
                  "check_links.py", "check_tracker.py", "check_countries.py",
-                 "check_numbers.py", "check_figures.py", "peek.py",
+                 "check_numbers.py", "check_figures.py", "check_cited.py",
+                 "check_ics.py", "make_archive.py", "peek.py", "peek_history.py",
                  "README.md", "PUBLICATION.md", "DEPLOIEMENT.md"]
     for fn in keep_root:
         src = os.path.join(BASE, fn)
@@ -131,23 +168,36 @@ def main():
             shutil.copy2(src, os.path.join(src_dir, fn))
     for sub in ("data",):
         s = os.path.join(BASE, sub)
+        d = os.path.join(src_dir, sub)
         if os.path.isdir(s):
-            shutil.copytree(s, os.path.join(src_dir, sub),
-                            ignore=shutil.ignore_patterns("__pycache__"))
+            if os.path.isdir(d):
+                shutil.rmtree(d)
+            shutil.copytree(s, d, ignore=shutil.ignore_patterns("__pycache__"))
 
-    run([GIT, "init", "-b", "main"], cwd=src_dir)
-    run([GIT, "config", "user.name", user], cwd=src_dir)
-    run([GIT, "config", "user.email", "%s@users.noreply.github.com" % user], cwd=src_dir)
-    run([GIT, "add", "-A"], cwd=src_dir)
-    run([GIT, "commit", "-m",
-         "Agenda des evenements immobiliers en Afrique - sources et donnees"], cwd=src_dir)
-    run([GIT, "remote", "add", "origin", remote], cwd=src_dir)
-    print("  sources pretes dans .deploy-source (branche main)")
+    if src_exists:
+        changed = commit_all(src_dir,
+                             "Mise a jour des sources et des scripts de controle",
+                             user)
+        print("  sources mises a jour dans .deploy-source (%s)"
+              % ("modifications" if changed else "aucun changement"))
+    else:
+        run([GIT, "init", "-b", "main"], cwd=src_dir)
+        run([GIT, "config", "user.name", user], cwd=src_dir)
+        run([GIT, "config", "user.email", "%s@users.noreply.github.com" % user], cwd=src_dir)
+        run([GIT, "add", "-A"], cwd=src_dir)
+        run([GIT, "commit", "-m",
+             "Agenda des evenements immobiliers en Afrique - sources et donnees"], cwd=src_dir)
+        run([GIT, "remote", "add", "origin", remote], cwd=src_dir)
+        print("  sources pretes dans .deploy-source (branche main)")
 
     # ---- depot du site construit (branche gh-pages) ----------------------
     section("3. Depot du site construit (branche gh-pages)")
     pages_dir = os.path.join(BASE, ".deploy-pages")
-    force_rmtree(pages_dir)
+    pages_exists = os.path.isdir(os.path.join(pages_dir, ".git"))
+    if pages_exists:
+        clear_dir_except(pages_dir, keep=(".git",))
+    else:
+        force_rmtree(pages_dir)
     shutil.copytree(os.path.join(BASE, "site"), pages_dir)
     # Jekyll ne doit pas interpreter le site : branche et underscores neutres
     with open(os.path.join(pages_dir, ".nojekyll"), "w", encoding="utf-8", newline="\n") as fh:
@@ -163,16 +213,24 @@ def main():
               encoding="utf-8", newline="\n") as fh:
         fh.write("* -text\n")
 
-    run([GIT, "init", "-b", "gh-pages"], cwd=pages_dir)
-    run([GIT, "config", "user.name", user], cwd=pages_dir)
-    run([GIT, "config", "user.email", "%s@users.noreply.github.com" % user], cwd=pages_dir)
-    run([GIT, "add", "-A"], cwd=pages_dir)
-    run([GIT, "commit", "-m",
-         "Publication du site - edition du %s" % __import__("datetime").date.today().isoformat()],
-        cwd=pages_dir)
-    run([GIT, "remote", "add", "origin", remote], cwd=pages_dir)
-    n_files = sum(len(filenames) for _, _dirnames, filenames in os.walk(pages_dir))
-    print("  site pret dans .deploy-pages (branche gh-pages, %d fichiers)" % n_files)
+    if pages_exists:
+        changed = commit_all(
+            pages_dir,
+            "Publication du site - edition du %s" % __import__("datetime").date.today().isoformat(),
+            user)
+        print("  site mis a jour dans .deploy-pages (%s)"
+              % ("modifications" if changed else "aucun changement"))
+    else:
+        run([GIT, "init", "-b", "gh-pages"], cwd=pages_dir)
+        run([GIT, "config", "user.name", user], cwd=pages_dir)
+        run([GIT, "config", "user.email", "%s@users.noreply.github.com" % user], cwd=pages_dir)
+        run([GIT, "add", "-A"], cwd=pages_dir)
+        run([GIT, "commit", "-m",
+             "Publication du site - edition du %s" % __import__("datetime").date.today().isoformat()],
+            cwd=pages_dir)
+        run([GIT, "remote", "add", "origin", remote], cwd=pages_dir)
+        n_files = sum(len(filenames) for _, _dirnames, filenames in os.walk(pages_dir))
+        print("  site pret dans .deploy-pages (branche gh-pages, %d fichiers)" % n_files)
 
     # ---- push ------------------------------------------------------------
     section("4. Envoi vers GitHub")

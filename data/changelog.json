@@ -2,6 +2,18 @@
   {
     "date": "2026-11-06",
     "date_display": "6 novembre 2026",
+    "title": "Les sources citées deviennent des liens, la billetterie apparaît",
+    "detail": "Chaque fiche n'exposait qu'une seule URL alors que son arbitrage en cite souvent cinq ou six. Les zones avaient noté les 264 pages réellement lues, avec leur URL et la date de consultation : le registre est désormais rapproché, fiche par fiche, des domaines cités dans l'arbitrage. 38 sources sont ainsi rattachées à 20 fiches, chacune affichant son nom et sa date de consultation. Les 14 domaines cités sans page de référence restent écrits en clair, jamais transformés en lien deviné. Les fiches exposent aussi le lien de billetterie de l'organisateur lorsqu'il existe (30 événements sur 83), avec un bouton « Billetterie / inscription ». Le CSV passe de 24 à 25 colonnes, l'export calendrier mentionne les sources citées, et le contrôle check_cited.py vérifie que chaque URL affichée provient bien du registre."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
+    "title": "Un domaine de source corrigé",
+    "detail": "L'arbitrage de l'édition 2026 du Morocco Showcase citait « hospitalitynet.net » ; la page lue était hospitalitynet.org. Le relevé est corrigé sur ce point. Les 14 domaines cités sans page de référence au 6 novembre 2026 (wetinuneed.com, egypt-business.com, svents.com, viewghana.com, afdb.org, senegal-export.com, au-senegal.com, idoff.net, travelandtourworld.com, masscomglobal.com, abidjan.net, salon-proimmo.net, nairobipropertyexpo.com) restent affichés en clair : les trois derniers ne répondaient pas lors de la vérification."
+  },
+  {
+    "date": "2026-11-06",
+    "date_display": "6 novembre 2026",
     "title": "Corrections de périmètre et de compteurs",
     "detail": "Le compteur de pays affiché sur l'accueil et les visuels de partage indiquait 23 pays : il en compte 22. La nomenclature des 54 États africains ne listait ni le Tchad ni le Malawi, et la liste des pays sans rendez-vous documenté citait des pays pourtant couverts (Cameroun, Namibie, Botswana, Zimbabwe) tout en en omettant 22 autres. Corrigé, et vérifié désormais par check_countries.py et check_numbers.py. Le filtre pays propose désormais « Non précisé », pour pouvoir isoler l'événement dont le pays n'est pas confirmé."
   },
@@ -27,7 +39,7 @@
     "date": "2026-11-06",
     "date_display": "6 novembre 2026",
     "title": "Passage de re-vérification initial",
-    "detail": "51 événements datés recontrôlés contre leur page officielle : 32 dates confirmées à la source, 16 pages non exploitables (rendu JavaScript ou accès bloqué), 3 événements signalés à contrôler manuellement (Namibia Public-Private Forum, EXPOFINANCES Alger, SENCON)."
+    "detail": "51 événements datés recontrôlés contre leur page officielle : 32 dates confirmées à la source, 17 pages non exploitables (rendu JavaScript ou accès bloqué), 2 événements signalés à contrôler manuellement (EXPOFINANCES Alger, SENCON)."
   },
   {
     "date": "2026-11-06",
