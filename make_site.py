@@ -1036,6 +1036,7 @@ def build():
         body,
         og_image="assets/og-default.png",
         og_title="Agenda des événements immobiliers en Afrique 2026-2027",
+        canonical="index.html",
         jsonld={
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -1343,7 +1344,9 @@ def build():
         "À propos — agenda des événements immobiliers en Afrique",
         "Ligne éditoriale, sources, politique de correction et zones non couvertes de l'agenda "
         "des événements immobiliers en Afrique.",
-        about_body))
+        about_body,
+        canonical="a-propos.html",
+        og_type="article"))
 
     # ---- methodologie ---------------------------------------------------
     method_body = """
@@ -1420,7 +1423,9 @@ def build():
         "Méthodologie — agenda des événements immobiliers en Afrique",
         "Filtre d'inclusion, statuts de date, exclusions et méthode de vérification continue "
         "de l'agenda des événements immobiliers en Afrique.",
-        method_body))
+        method_body,
+        canonical="methodologie.html",
+        og_type="article"))
 
     # ---- changelog ------------------------------------------------------
     entries = []
@@ -1449,7 +1454,9 @@ def build():
         "Journal des changements — agenda immobilier Afrique",
         "Historique des corrections de dates, de lieux et d'ajouts dans l'agenda des événements "
         "immobiliers en Afrique.",
-        cl_body))
+        cl_body,
+        canonical="changelog.html",
+        og_type="article"))
 
     # ---- sponsors --------------------------------------------------------
     sponsor_body = """
@@ -1510,7 +1517,8 @@ def build():
         "Partenaires — agenda immobilier Afrique",
         "Emplacement partenaire disponible sur l'agenda des événements immobiliers en Afrique : "
         "audience qualifiée d'investisseurs et de financiers.",
-        sponsor_body))
+        sponsor_body,
+        canonical="sponsors.html"))
 
     # ---- contribuer ------------------------------------------------------
     from urllib.parse import quote
@@ -1584,7 +1592,9 @@ def build():
         "Signaler un événement — agenda immobilier Afrique",
         "Formulaire de contribution à l'agenda des événements immobiliers en Afrique : "
         "aidez à couvrir les %d pays où aucun rendez-vous n'est documenté." % UNCOVERED_COUNTRIES,
-        contribute_body))
+        contribute_body,
+        canonical="contribuer.html",
+        og_type="article"))
 
     # ---- flux RSS, sitemap, robots ---------------------------------------
     rss_items = []

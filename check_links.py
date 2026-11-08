@@ -88,6 +88,34 @@ for f in html_files:
 
 orphans = [f for f in html_files if f not in referenced]
 
+# canonical et og:url : chaque page doit se declarer elle-meme. Sans cela,
+# une page secondaire se presente comme l'accueil et le moteur peut
+# desindexer la bonne page au profit de la mauvaise.
+canonical_re = re.compile(r'<link rel="canonical" href="([^"]+)"')
+ogurl_re = re.compile(r'<meta property="og:url" content="([^"]+)"')
+canon_problems = []
+for f in html_files:
+    with open(os.path.join(SITE, f), encoding="utf-8") as fh:
+        content = fh.read()
+    m = canonical_re.search(content)
+    if not m:
+        canon_problems.append("%s : aucun canonical" % f)
+        continue
+    href = m.group(1)
+    if SITE_BASE:
+        if not href.startswith(SITE_BASE):
+            canon_problems.append("%s : canonical hors base (%s)" % (f, href))
+        else:
+            target = href[len(SITE_BASE):]
+            if target != f:
+                canon_problems.append("%s : canonical pointe vers %s" % (f, target))
+    else:
+        if href.rstrip("/").split("/")[-1] != f.rstrip("/").split("/")[-1]:
+            canon_problems.append("%s : canonical inattendu (%s)" % (f, href))
+    mo = ogurl_re.search(content)
+    if mo and mo.group(1) != href:
+        canon_problems.append("%s : og:url different du canonical" % f)
+
 print("fichiers html          : %d" % len(html_files))
 print("base publique         : %s" % (SITE_BASE or "(relative, build local)"))
 print("liens internes verifies: %d" % total)
@@ -97,5 +125,8 @@ for f, lst in list(broken.items())[:15]:
 print("pages orphelines       : %d" % len(orphans))
 for f in orphans[:15]:
     print("   %s" % f)
+print("canonical incoherent   : %d" % len(canon_problems))
+for p in canon_problems[:15]:
+    print("   %s" % p)
 
-raise SystemExit(1 if broken else 0)
+raise SystemExit(1 if (broken or canon_problems) else 0)
