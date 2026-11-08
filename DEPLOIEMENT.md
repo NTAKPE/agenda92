@@ -49,6 +49,12 @@ python deploy_github.py
 Le script affiche les deux commandes de push. Elles n'ont pas encore été
 lancées.
 
+> Le dépôt est déjà en ligne. Pour les mises à jour suivantes, utilisez
+> `python deploy_github.py --push` : le jeton GitHub étant en cache, le
+> script enchaîne build, commit et push sans intervention. Il conserve
+> l'historique des dépôts locaux (il ne les recrée pas), donc les pushes
+> restent des fast-forward.
+
 ### 3. Pousser (une seule authentification)
 
 ```powershell
@@ -95,9 +101,7 @@ Le cycle mensuel, à partir du dossier du projet :
 ```powershell
 python refresh.py                      # re-vérification des dates
 #   ... arbitrer les écarts, corriger data/zone-*.json, data/changelog.json ...
-python deploy_github.py
-git -C .deploy-source push -u origin main
-git -C .deploy-pages  push -u origin gh-pages
+python deploy_github.py --push
 ```
 
 Aucune authentification n'est redemandée.

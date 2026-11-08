@@ -155,6 +155,7 @@ python check_links.py      # 3 688 liens internes vérifiés
 python check_tracker.py    # structure du tracker pré-rendu
 python check_countries.py  # nomenclature et périmètre
 python check_cited.py      # chaque source affichée vient du registre des pages lues
+python check_ics.py        # conformité RFC 5545 de l'export calendrier
 python refresh.py          # relit les pages officielles et signale les écarts
 ```
 
