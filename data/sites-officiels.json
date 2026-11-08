@@ -1,0 +1,353 @@
+{
+  "note": "Site officiel de l'evenement ou de l'organisateur, selon le cas. Les URL proviennent du registre des pages reellement lues. Un site absent est signale comme non identifie, jamais devine.",
+  "sites": {
+    "15th AREA Conference 2026 — Cities Series (Kampala & Jinja)": {
+      "site": "https://areauganda.org/cities2026",
+      "type": "evenement"
+    },
+    "New Africa Capital Forum 2026 (NACF 2026)": {
+      "site": "https://nacapitalforum.com/",
+      "type": "evenement"
+    },
+    "Botswana Investment Forum 2026": {
+      "site": "http://www.bdc.bw/events",
+      "type": "organisateur"
+    },
+    "New Africa Capital Champions Awards 2026": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "Cityscape Egypt Forum": {
+      "site": "https://www.cityscape-events.com/egypt/",
+      "type": "organisateur"
+    },
+    "Abuja Real Estate & Infrastructure Summit 2026": {
+      "site": "https://abujarealestateinfrastructure.com/",
+      "type": "evenement"
+    },
+    "ARIIS (Africa Real Estate Innovation & Investment Summit)": {
+      "site": "https://www.arisummit.com/en",
+      "type": "evenement"
+    },
+    "AUHF Annual Conference & AGM (African Union for Housing Finance)": {
+      "site": "https://housingfinanceafrica.org/",
+      "type": "organisateur"
+    },
+    "FHS Egypt — Future Hospitality Summit Egypt": {
+      "site": "https://futurehospitality.com/egypt",
+      "type": "organisateur"
+    },
+    "Capital & Legacy Forum 2026": {
+      "site": "https://nacapitalforum.com/",
+      "type": "organisateur"
+    },
+    "16th Africa PPP Infrastructure Finance, Investment & Partnerships Summit (APPP 2026)": {
+      "site": "https://africappp.com/",
+      "type": "evenement"
+    },
+    "Abuja Real Estate Fest 2026": {
+      "site": "https://are.eventhive.ng/",
+      "type": "evenement"
+    },
+    "Benk International Real Estate Conference and Proptech Expo 2026": {
+      "site": "https://thebenkandhampton.com/",
+      "type": "evenement"
+    },
+    "TASSHIIL — Salon du Crédit, du Leasing et de l'Investissement (TASHIL)": {
+      "site": "https://tasshiil.com/",
+      "type": "evenement"
+    },
+    "40th Kenya Homes Expo": {
+      "site": "https://www.kenyahomesexpo.com/",
+      "type": "evenement"
+    },
+    "TAREX 2026 — Tanzania Real Estate Expo and Forum": {
+      "site": "https://tarex.co.tz/home",
+      "type": "evenement"
+    },
+    "Namibia Public-Private Forum (NamPPF II)": {
+      "site": "https://www.nampa.org/text/23038615",
+      "type": "organisateur"
+    },
+    "SIB — Salon International du Bâtiment": {
+      "site": "https://www.sib.ma/",
+      "type": "evenement"
+    },
+    "Morocco Showcase Summit": {
+      "site": "https://www.afriwallstreet.com/morocco-showcase-2026/",
+      "type": "organisateur"
+    },
+    "Africa Real Estate Summit, Awards & Expo 2026 — East African Edition (Nairobi)": {
+      "site": "https://www.africarealestateinternational.org/events/",
+      "type": "organisateur"
+    },
+    "Forbes Middle East Building the Future Summit — Egypt": {
+      "site": "https://forbesmiddleeastevents.com/",
+      "type": "organisateur"
+    },
+    "e-logia — Master Edition (Salon international des promoteurs immobiliers, de l'habitat intelligent et de la décoration)": {
+      "site": "https://elogia-dz.com/",
+      "type": "evenement"
+    },
+    "Africa Real Estate Magazine and Awards 2026": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "EXPOFINANCES — Salon des Banques, Assurances et Produits Financiers": {
+      "site": "https://www.algeriaexhibitions.dz/manifestations/expofinances-2026",
+      "type": "evenement"
+    },
+    "Ghana Property & Lifestyle Expo 2026 | Accra Edition": {
+      "site": "https://ghanapropertyexpo.com/",
+      "type": "evenement"
+    },
+    "Ethio Build Connect Expo — Ethiopia Real Estate Expo and Construction Exhibition 2027": {
+      "site": "https://ethiobuildconnect.et/",
+      "type": "evenement"
+    },
+    "Salon Immobilier Congolais (SIC)": {
+      "site": "https://www.si-congolais.com/",
+      "type": "evenement"
+    },
+    "SICI 2027 — Salon de l'Immobilier de Côte d'Ivoire": {
+      "site": "https://www.si-ci.com/",
+      "type": "evenement"
+    },
+    "SENCON — International Exhibition for Construction Materials and Machinery": {
+      "site": "https://senconexpo.com/",
+      "type": "evenement"
+    },
+    "Sankalp Africa Summit 2027": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "LMA & ICMA Annual Africa Summit 2027": {
+      "site": "https://blog.lma.eu.com/annual-africa-summit-2027/",
+      "type": "organisateur"
+    },
+    "PI Africa 2027 — 10th Annual Africa Pension Funds & Alternative Investments Conference": {
+      "site": "https://pensionfundsafrica.com/",
+      "type": "evenement"
+    },
+    "Big 5 Construct Ethiopia 2027": {
+      "site": "https://www.big5constructethiopia.com/",
+      "type": "evenement"
+    },
+    "MEDIBAT — Salon Méditerranéen du Bâtiment": {
+      "site": "https://www.salon-medibat.com/",
+      "type": "evenement"
+    },
+    "FHS Africa 2027 (ex-AHIF — Africa Hotel Investment Summit)": {
+      "site": "https://futurehospitality.com/africa",
+      "type": "organisateur"
+    },
+    "EAPI Summit 2027 — East Africa Property Investment Summit (14e édition)": {
+      "site": "https://eapisummit.com/",
+      "type": "evenement"
+    },
+    "Lagos Real Estate Fest 2027": {
+      "site": "https://eventhive.ng/events/abuja-real-estate-fest/",
+      "type": "organisateur"
+    },
+    "Big 5 Construct South Africa": {
+      "site": "https://www.big5constructsouthafrica.com/book-your-stand/",
+      "type": "evenement"
+    },
+    "Big 5 Construct Egypt": {
+      "site": "https://www.big5constructegypt.com/request-information-about-exhibiting/",
+      "type": "evenement"
+    },
+    "Buildexpo Africa Kenya 2027 (28e édition)": {
+      "site": "https://www.expogr.com/buildexpoKenya/",
+      "type": "organisateur"
+    },
+    "Africa Build Show Ghana 2027 (ABS Ghana)": {
+      "site": "https://africabuildshow.com/",
+      "type": "evenement"
+    },
+    "AIHS 2027 — 21st Africa International Housing Show": {
+      "site": "https://www.africahousingshow.com/",
+      "type": "evenement"
+    },
+    "Africa Real Estate Summit, Awards & Expo — édition Abuja": {
+      "site": "https://www.africarealestateinternational.org/events/",
+      "type": "organisateur"
+    },
+    "Nigeria Private Capital Summit 2027": {
+      "site": "https://eventhive.ng/events/abuja-real-estate-fest/",
+      "type": "organisateur"
+    },
+    "Africa Property Investment (API) Summit": {
+      "site": "https://www.apisummit.co.za/",
+      "type": "evenement"
+    },
+    "Big 5 Construct Nigeria 2027": {
+      "site": "https://www.big5constructnigeria.com/",
+      "type": "evenement"
+    },
+    "SAPOA Annual Convention & Property Exhibition": {
+      "site": "https://sapoaconvention.co.za/",
+      "type": "evenement"
+    },
+    "Cityscape Egypt — International Real Estate Exhibition (édition 2027)": {
+      "site": "https://www.cityscape-events.com/egypt/",
+      "type": "organisateur"
+    },
+    "Big 5 Construct Kenya (10e édition)": {
+      "site": "https://www.big5constructkenya.com/",
+      "type": "evenement"
+    },
+    "ARCHIBAT 2027 — Salon de l'Architecture et du Bâtiment": {
+      "site": "https://archibat.ci/home/",
+      "type": "evenement"
+    },
+    "Abuja Real Estate Fest 2027": {
+      "site": "https://are.eventhive.ng/",
+      "type": "evenement"
+    },
+    "Africa Investment Forum (AIF) Market Days": {
+      "site": "https://www.africainvestmentforum.com/",
+      "type": "evenement"
+    },
+    "National Conference on Housing Finance (Ghana) — édition 2027": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "ARCE (Africa Real Estate Conference & Expo)": {
+      "site": "https://www.arceconference.com/",
+      "type": "evenement"
+    },
+    "Africa Urban Forum (AUF3)": {
+      "site": "https://unhabitat.org/sites/default/files/2026/04/programme_auf2.pdf",
+      "type": "organisateur"
+    },
+    "African REIT Conference": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "IHS Affordable Housing Conference": {
+      "site": "https://cib.nedbank.co.za/insights/conferences/ihs-affordable-housing-conference.html",
+      "type": "organisateur"
+    },
+    "SENHABITAT 2027 — Salon international de l'immobilier et de l'habitat": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "AREF 2027 — Africa Real Estate Festival": {
+      "site": "https://africarealestatefestival.com/",
+      "type": "evenement"
+    },
+    "Africa Real Estate Festival (AREF)": {
+      "site": "https://africarealestatefestival.com/",
+      "type": "evenement"
+    },
+    "Cityscape Egypt Summit (édition 2027)": {
+      "site": "https://www.cityscape-events.com/egypt/",
+      "type": "organisateur"
+    },
+    "Ghana Property Awards 2026 (GAPOA)": {
+      "site": "https://www.propertyexpressgroup.org/",
+      "type": "organisateur"
+    },
+    "Green Building Convention (GBCSA)": {
+      "site": "https://www.gbcsa.org.za/",
+      "type": "organisateur"
+    },
+    "PRO-IMMO — Salon de la promotion immobilière et du financement": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "RICS Africa Conference": {
+      "site": "https://www.rics.org/content/dam/ricsglobal/documents/event-programmes/africa-conference-programme-2026.pdf",
+      "type": "organisateur"
+    },
+    "Semaine de l'Habitat / Journée mondiale de l'Habitat au Cameroun (JMH)": {
+      "site": "https://www.minhdu.gov.cm/point-de-presse-le-minhdu-lance-officiellement-la-celebration-de-la-40e-edition-de-la-journee-mondiale-de-lhabitat-a-maroua/",
+      "type": "organisateur"
+    },
+    "Showcase Indian Ocean 2027": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "ZAMREAL Property Forum": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "ZimReal Property Investment Forum & Zimbabwe Future Capital Forum": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "Africa Real Estate Summit, Awards & Expo — Abuja 2027": {
+      "site": "https://www.africarealestateinternational.org/events/",
+      "type": "organisateur"
+    },
+    "BATIMATEC": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "Big 5 Construct Kenya (ex-East Africa)": {
+      "site": "https://www.big5constructkenya.com/",
+      "type": "evenement"
+    },
+    "Building African Financial Markets (BAFM) Forum": {
+      "site": "https://www.tantrade.go.tz/public/downloads-implementation/90a813f9-b404-4b16-8a70-a442099086fe",
+      "type": "organisateur"
+    },
+    "Connected Africa Summit": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "EAPCA Annual Private Capital Conference": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "East Africa International Real Estate Expo (EAIREE)": {
+      "site": "https://www.expoafrica.co.ke/",
+      "type": "evenement"
+    },
+    "ImmoExpo": {
+      "site": "https://immoexpo.ma/fr/",
+      "type": "evenement"
+    },
+    "KIICO 2027 — Kenya International Investment Conference": {
+      "site": "https://kiico.investkenya.go.ke/about-kiico/",
+      "type": "organisateur"
+    },
+    "Salon de l'Habitat / Journées portes ouvertes du logement": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "Salon de l'immobilier de Brazzaville": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    },
+    "Zanzibar Investment Summit (ZIS) 2027": {
+      "site": "https://zis.zipa.go.tz/",
+      "type": "evenement"
+    },
+    "Buildexpo Africa Tanzania 2027 (28e édition)": {
+      "site": "https://www.expogr.com/buildexpoKenya/",
+      "type": "organisateur"
+    },
+    "Nairobi Property Expo (NPE)": {
+      "site": null,
+      "type": null,
+      "note": "site officiel non identifie"
+    }
+  }
+}

@@ -160,7 +160,9 @@ def main():
                  "deploy_github.py", "siteutil.py",
                  "check_links.py", "check_tracker.py", "check_countries.py",
                  "check_numbers.py", "check_figures.py", "check_cited.py",
-                 "check_ics.py", "make_archive.py", "peek.py", "peek_history.py",
+                 "check_ics.py", "check_official.py",
+                 "build_sites_officiels.py", "peek_official.py", "peek_page.py",
+                 "make_archive.py", "peek.py", "peek_history.py",
                  "README.md", "PUBLICATION.md", "DEPLOIEMENT.md"]
     for fn in keep_root:
         src = os.path.join(BASE, fn)

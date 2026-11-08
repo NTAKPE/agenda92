@@ -273,6 +273,11 @@ for fn in sorted(os.listdir(DATA)):
     for r in z.get("rejected", []):
         negative.append((z.get("zone", "?"), "ECARTE — %s : %s" % (r.get("name", ""), r.get("reason", ""))))
 
+# constats (information introuvable) et rejets (evenement ecarte) sont
+# comptes separement : la methode les presente distinctement.
+NEG_CONSTATS = [(z, n) for z, n in negative if not n.startswith("ECARTE")]
+NEG_REJECTS = [(z, n) for z, n in negative if n.startswith("ECARTE")]
+
 COUNTRIES = {}
 for e in EVENTS:
     COUNTRIES.setdefault(e["country"], []).append(e)
@@ -651,6 +656,20 @@ tbody tr.open{background:var(--panel2)}
   padding:9px 15px;font-size:13px;text-decoration:none}
 .cta-row .btn:hover{filter:brightness(1.08);color:#12161c}
 .cta-note{font-size:11.5px;color:var(--ink3)}
+table.spec{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:13.5px}
+table.spec th,table.spec td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);
+  vertical-align:top}
+table.spec th{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);
+  font-weight:600}
+table.spec td:first-child{color:var(--ink);font-weight:600}
+details{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+  padding:10px 14px;margin-top:12px}
+details summary{cursor:pointer;font-size:13px;color:var(--ink2)}
+details[open] summary{margin-bottom:10px;color:var(--ink)}
+.officiel{margin:14px 0 0;padding:10px 12px;border:1px solid var(--line);border-left:3px solid var(--accent2);
+  border-radius:8px;background:var(--panel2);font-size:13.5px}
+.officiel a{font-weight:600}
+.officiel-note{margin:6px 0 0;font-size:11.5px;color:var(--ink3)}
 .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
 .pill{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:3px 10px;color:var(--ink2);background:var(--panel2)}
 
@@ -877,6 +896,16 @@ def detail_block(e):
            ("Zone", e.get("zone")),
            ("Vérifié le", fmt_date_fr(e.get("last_verified")) or e.get("last_verified"))]
     org_html = "".join('<div><b>%s :</b> %s</div>' % (k, esc(v) if v else "—") for k, v in org)
+    # site officiel : indispensable pour qu'on ne puisse pas croire que
+    # l'agenda organise l'evenement qu'il recense
+    off = e.get("official_site") or {}
+    if off.get("url"):
+        label = ("Site officiel de l'événement" if off.get("type") == "evenement"
+                 else "Site de l'organisateur")
+        org_html += ('<div><b>%s :</b> <a href="%s" rel="noopener" target="_blank">%s</a></div>'
+                     % (label, esc(off["url"]), esc(host_of(off["url"]))))
+    else:
+        org_html += ('<div><b>Site officiel :</b> <span class="muted">non identifié</span></div>')
     blocks.append('<div class="block"><h3>Organisation</h3><div class="meta">%s</div></div>' % org_html)
     src = ""
     if e.get("source_url"):
@@ -1132,12 +1161,41 @@ def build():
                           'l\'arbitrage, sans page de référence publiée ici : %s</p>'
                           % esc(", ".join(unlinked)))
 
+        # ---- site officiel ------------------------------------------------
+        # Indispensable pour qu'on ne puisse pas croire que cet agenda organise
+        # les evenements qu'il recense.
+        off = e.get("official_site") or {}
+        off_url = (off.get("url") or "").strip()
+        off_type = off.get("type") or ""
+        organizer = (e.get("organizer") or "").strip()
+        if off_url and off_type == "evenement":
+            off_line = ('<b>Site officiel de l\'événement :</b> <a href="%s" rel="noopener" '
+                        'target="_blank">%s</a>' % (esc(off_url), esc(host_of(off_url))))
+        elif off_url and off_type == "organisateur":
+            off_line = ('<b>Site de l\'organisateur :</b> <a href="%s" rel="noopener" '
+                        'target="_blank">%s</a> <span class="muted">(site dédié à l\'événement '
+                        'non identifié)</span>' % (esc(off_url), esc(host_of(off_url))))
+        elif e.get("source_url"):
+            off_line = ('<b>Site officiel de l\'événement :</b> <span class="muted">non '
+                        'identifié</span> — <a href="%s" rel="noopener" target="_blank">%s</a>'
+                        % (esc(e["source_url"]), esc(host_of(e["source_url"]))))
+        else:
+            off_line = ('<b>Site officiel de l\'événement :</b> <span class="muted">non '
+                        'identifié</span>')
+        if organizer and organizer.lower() not in ("non communiqué", "non communique"):
+            off_line += (' <span class="muted">— organisé par %s</span>' % esc(organizer))
+        official_block = ('<p class="officiel">%s</p>'
+                          '<p class="officiel-note">Cette fiche est un récapitulatif '
+                          'indépendant : l\'agenda n\'organise ni ne finance aucun de ces '
+                          'événements.</p>' % off_line)
+
         body_ev = """
 <main><div class="wrap">
  <p class="eyebrow">%s · %s</p>
  <div class="event-hero">
   <h1>%s</h1>
   <div class="pill-row">%s %s</div>
+  %s
   <p class="lede" style="margin-bottom:0">%s</p>
   <dl class="kv">
    <div><dt>Date</dt><dd>%s</dd></div>
@@ -1173,6 +1231,7 @@ def build():
             esc(e.get("category_label") or ""), esc(e.get("country") or ""),
             esc(e.get("name") or ""),
             category_badge(e.get("category", "")), status_badge(e.get("status", "")),
+            official_block,
             esc(e.get("why") or ""),
             esc(fmt_range_fr(e.get("start"), e.get("end"))),
             status_badge(e.get("status", "")),
@@ -1285,63 +1344,51 @@ def build():
     # ---- a propos -------------------------------------------------------
     about_body = """
 <main><div class="wrap">
- <p class="eyebrow">À propos</p>
- <h1>Qui fait quoi, et dans quelles conditions</h1>
- <p class="lede">Un agenda immobilier africain n'a de valeur que si l'on sait qui l'a construit, avec
- quelles sources, et ce qu'il se passe quand une information est fausse. Cette page répond aux trois.</p>
+ <p class="eyebrow">\u00c0 propos</p>
+ <h1>Qui fait quoi</h1>
+ <p class="lede">Cet agenda est un r\u00e9capitulatif ind\u00e9pendant. Il n\u2019organise, ne finance et ne vend aucun des \u00e9v\u00e9nements qu\u2019il recense : chacun reste la propri\u00e9t\u00e9 de son organisateur.</p>
 
- <h2>La ligne éditoriale</h2>
- <p>Un événement n'entre dans cet agenda que s'il est susceptible d'être pertinent pour quelqu'un
- qui décide d'y engager de l'argent : un investisseur, un financier, un promoteur, un conseil.
- Les salons de preuves, les événements lifestyle, les manifestations à audience grand public et les
- rendez-vous organisés hors d'Afrique sont exclus — cette dernière exclusion étant la plus
- discutable, et c'est pourquoi <a href="methodologie.html">la méthode</a> l'explique en détail.</p>
+ <h2>Ce que nous faisons</h2>
+ <ul class="meta">
+  <li>Retenir les rendez-vous susceptibles d\u2019int\u00e9resser quelqu\u2019un qui d\u00e9cide d\u2019y engager de l\u2019argent.</li>
+  <li>Publier pour chacun la source, le statut de la date et les contradictions entre sources.</li>
+  <li>Recontr\u00f4ler les dates et tracer chaque correction au <a href="changelog.html">journal</a>.</li>
+ </ul>
+
+ <h2>Ce que nous ne faisons pas</h2>
+ <ul class="meta">
+  <li>Nous ne payons pas pour figurer dans l\u2019agenda.</li>
+  <li>L\u2019emplacement partenaire n\u2019ach\u00e8te aucune mention d\u2019\u00e9v\u00e9nement : il n\u2019achat que de l\u2019emplacement.</li>
+  <li>Nous ne lissons pas un conflit entre deux sources : il est affich\u00e9 sur la fiche.</li>
+ </ul>
 
  <h2>Les sources</h2>
- <div class="grid2">
-  <div class="block"><h3>Primaires</h3><p>La page de l'organisateur, la billetterie officielle, la
-  page de l'événement sur la plateforme de billetterie. C'est la source qui fait foi pour la date
-  et le lieu.</p></div>
-  <div class="block"><h3>Secondaires</h3><p>La presse sectorielle, les portails d'agenda, les
-  associations professionnelles. Utilisées pour recouper, et pour signaler une divergence.</p></div>
-  <div class="block"><h3>Chiffres</h3><p>Les effectifs affichés sont ceux publiés par
-  l'organisateur et ne sont pas audités. Ils sont signalés comme tels sur chaque fiche.</p></div>
-  <div class="block"><h3>Ce que nous ne faisons pas</h3><p>Nous ne payment pas pour figurer dans
-  l'agenda, et l'emplacement partenaire ne conditionne aucune mention d'événement. La seule
-  influence possible d'un partenaire est sur l'emplacement, jamais sur la sélection.</p></div>
- </div>
+ <table class="spec">
+  <tr><th>Primaires</th><td>page de l\u2019organisateur, billetterie officielle. Elles font foi pour la date et le lieu.</td></tr>
+  <tr><th>Secondaires</th><td>presse sectorielle, portails d\u2019agenda, associations professionnelles. Pour recouper et signaler une divergence.</td></tr>
+  <tr><th>Chiffres</th><td>publi\u00e9s par l\u2019organisateur, non audit\u00e9s. Signal\u00e9s comme tels.</td></tr>
+ </table>
 
  <h2>Politique de correction</h2>
- <p>Les événements se déplacent. Un agenda qui ne le dit pas devient un piège. La règle est simple&nbsp;:</p>
  <ol class="meta">
-  <li>Une erreur constatée est corrigée et inscrite dans le
-  <a href="changelog.html">journal des changements</a>, avec la date de correction et l'ancienne
-  valeur.</li>
-  <li>Les dates sont recontrôlées contre les pages officielles au moins une fois par mois&nbsp;;
-  les corrections issues de ce contrôle sont tracées de la même façon.</li>
-  <li>Quand deux sources se contredisent et que l'arbitrage n'est pas certain, la contradiction est
-  <b>conservée et affichée</b> sur la fiche, avec les deux versions et leurs sources. Elle n'est
-  jamais lissée.</li>
-  <li>Une fiche porte toujours la date de sa dernière vérification.</li>
+  <li>Une erreur constat\u00e9e est corrig\u00e9e et inscrite au journal, avec la date et l\u2019ancienne valeur.</li>
+  <li>Les dates sont recontr\u00f4l\u00e9es au moins une fois par mois.</li>
+  <li>Quand deux sources se contredisent, la contradiction est <b>conserv\u00e9e et affich\u00e9e</b>, avec les deux versions.</li>
+  <li>Chaque fiche porte la date de sa derni\u00e8re v\u00e9rification.</li>
  </ol>
- <p><b>Signaler une erreur&nbsp;:</b> le <a href="contribuer.html">formulaire</a> sert aussi à cela.
- Un événement qui n'a pas sa place, ou une date fausse, se signalent de la même façon.</p>
 
- <h2>Ce que l'agenda ne couvre pas</h2>
- <p>Un agenda exhaustif sur %d pays n'existe pas, et n'existera pas tout de suite : dans de nombreux
- pays, l'information n'est pas publiée en ligne. Les zones où rien n'a été trouvé sont
- <b>documentées publiquement</b> dans la <a href="methodologie.html">méthodologie</a> plutôt que
- passées sous silence — c'est le point de départ du formulaire de contribution.</p>
+ <h2>Ce que l\u2019agenda ne couvre pas</h2>
+ <p>Un agenda exhaustif sur %d pays n\u2019existe pas : dans de nombreux pays, l\u2019information n\u2019est pas publi\u00e9e en ligne. Ces zones sont <b>document\u00e9es publiquement</b> dans la <a href="methodologie.html">m\u00e9thodologie</a> plut\u00f4t que pass\u00e9es sous silence.</p>
 
  <h2>Contact</h2>
- <p>Pour une question, une correction, ou une demande de partenariat&nbsp;:
- <a href="mailto:%s">%s</a>.</p>
+ <p>Une question, une correction, une demande de partenariat&nbsp;: <a href="mailto:%s">%s</a>.</p>
 
  %s
- <p><a href="index.html">← Agenda complet</a></p>
+ <p><a href="index.html">\u2190 Agenda complet</a></p>
 </div></main>
 """ % (AFRICA_TOTAL, esc(CONTACT_EMAIL), esc(CONTACT_EMAIL),
-       sponsor_slot("Soutenez la vérification continue des dates"))
+       sponsor_slot("Soutenez la v\u00e9rification continue des dates"))
+
     write("a-propos.html", page(
         "À propos — agenda des événements immobiliers en Afrique",
         "Ligne éditoriale, sources, politique de correction et zones non couvertes de l'agenda "
@@ -1353,74 +1400,59 @@ def build():
     # ---- methodologie ---------------------------------------------------
     method_body = """
 <main><div class="wrap">
- <p class="eyebrow">Méthodologie</p>
+ <p class="eyebrow">M\u00e9thodologie</p>
  <h1>Comment cet agenda est construit</h1>
- <p class="lede">Un agenda d'événements immobiliers qui se contente de lister ne vaut rien : les
- sources se contredisent, les dates changent, et le bruit est énorme. Cette page décrit les règles
- appliquées, afin que chaque ligne puisse être auditée.</p>
+ <p class="lede">Les r\u00e8gles appliqu\u00e9es, pour que chaque ligne puisse \u00eatre audit\u00e9e.</p>
 
- <h2>Le filtre « 2 sur 6 »</h2>
- <p>Un événement n'est retenu que s'il coche <b>au moins deux</b> de ces six critères&nbsp;:</p>
- <div class="grid2">
-  <div class="block"><h3>1 · Audience décisionnelle</h3><p>Investisseurs, financiers, fonds, banques,
-  institutions, décideurs publics. Ce qui exclut le grand public.</p></div>
-  <div class="block"><h3>2 · Échelle</h3><p>~500+ participants, ou 30+ exposants, ou statut de
-  flagship national ou régional. Ce qui exclut les petits séminaires.</p></div>
-  <div class="block"><h3>3 · Substance</h3><p>Logement, foncier, marchés de capitaux, capital
-  institutionnel, financement, rendements. Ce qui exclut les salons lifestyle.</p></div>
-  <div class="block"><h3>4 · Continuité</h3><p>3ᵉ édition ou plus, ou rendez-vous annuel ancré et
-  stable. Ce qui exclut les one-shot.</p></div>
-  <div class="block"><h3>5 · Influence</h3><p>Ministres, banques centrales, DFIs, fonds de pension,
-  REITs, private equity, grandes banques présents ou annoncés.</p></div>
-  <div class="block"><h3>6 · Portée</h3><p>Multi-pays ou nationale majeure. Ce qui exclut les salons
-  de ville.</p></div>
- </div>
- <p>Ce qui ne coche qu'un seul critère est écarté — et consigné avec sa raison. C'est ce qui rend le
- résultat défendable&nbsp;: on sait ce qui a été écarté et pourquoi.</p>
+ <h2>1 \u00b7 Filtre d\u2019inclusion : 2 crit\u00e8res sur 6</h2>
+ <table class="spec">
+  <tr><th>Crit\u00e8re</th><th>Seuil</th></tr>
+  <tr><td>Audience d\u00e9cisionnelle</td><td>investisseurs, financiers, fonds, banques, d\u00e9cideurs publics \u2014 pas de grand public</td></tr>
+  <tr><td>\u00c9chelle</td><td>~500 participants, 30 exposants, ou statut de flagship national ou r\u00e9gional</td></tr>
+  <tr><td>Substance</td><td>logement, foncier, march\u00e9s de capitaux, financement, rendements</td></tr>
+  <tr><td>Continuit\u00e9</td><td>3\u1d49 \u00e9dition ou plus, ou rendez-vous annuel stable</td></tr>
+  <tr><td>Influence</td><td>ministres, banques centrales, DFIs, fonds de pension, REITs, private equity</td></tr>
+  <tr><td>Port\u00e9e</td><td>multi-pays ou nationale majeure</td></tr>
+ </table>
+ <p class="meta">Un seul crit\u00e8re suffit \u00e0 \u00e9carter un \u00e9v\u00e9nement. Les %d rejets sont trac\u00e9s avec leur raison.</p>
 
- <h2>Les statuts de date</h2>
- <div class="grid2">
-  <div class="block"><h3>Date confirmée</h3><p>Trouvée sur la page officielle de l'événement et
-  recoupée par une seconde source.</p></div>
-  <div class="block"><h3>Date probable</h3><p>Cohérente, mais une seule source, ou des sources qui
-  divergent sur le jour ou le lieu.</p></div>
-  <div class="block"><h3>Date à confirmer</h3><p>Événement annoncé sans date fiable. À revérifier
-  avant tout engagement.</p></div>
-  <div class="block"><h3>Contradiction / signalement</h3><p>Une contradiction entre sources est
-  conservée et tracée ; une simple lacune d'information est signalée séparément.</p></div>
- </div>
+ <h2>2 \u00b7 Statut de date</h2>
+ <table class="spec">
+  <tr><th>Statut</th><th>Quand</th></tr>
+  <tr><td>Confirm\u00e9e</td><td>page officielle de l\u2019\u00e9v\u00e9nement, recoup\u00e9e par une seconde source</td></tr>
+  <tr><td>Probable</td><td>une seule source, ou des sources qui divergent sur le jour ou le lieu</td></tr>
+  <tr><td>\u00c0 confirmer</td><td>\u00e9v\u00e9nement annonc\u00e9 sans date fiable</td></tr>
+ </table>
+ <p class="meta">Une contradiction entre sources est conserv\u00e9e et affich\u00e9e ; une simple lacune d\u2019information est signal\u00e9e s\u00e9par\u00e9ment.</p>
 
- <h2>Ce qui est exclu, et pourquoi</h2>
- <div class="grid2">
-  <div class="block"><h3>Hors du continent</h3><p>Les rendez-vous organisés hors d'Afrique — Dubaï,
-  Londres, New York — et les expos de la diaspora, même s'ils portent sur l'immobilier africain.
-  Une part importante du capital se mobilise là, et c'est précisément pourquoi il faut le savoir :
-  l'agenda les signale comme exclus.</p></div>
-  <div class="block"><h3>Adjacent construction</h3><p>Les salons de construction et de matériaux ne
-  sont pas des événements immobiliers, mais ils pèsent sur la faisabilité et la marge des projets.
-  Ils sont isolés avec un filtre plus strict : présence de promoteurs ou d'investisseurs, un track
-  « real estate », ou une dimension panafricaine.</p></div>
- </div>
+ <h2>3 \u00b7 Exclusions</h2>
+ <ul class="meta">
+  <li><b>Hors du continent</b> \u2014 Duba\u00ef, Londres, New York et expos de la diaspora, m\u00eame s\u2019ils portent sur l\u2019immobilier africain. Une part importante du capital s\u2019y mobilise : l\u2019agenda le signale comme exclu.</li>
+  <li><b>Salons lifestyle</b> et manifestations \u00e0 grand public.</li>
+  <li><b>Adjacent construction</b> \u2014 les salons de construction et de mat\u00e9riaux sont isol\u00e9s, avec un filtre plus strict : promoteurs ou investisseurs pr\u00e9sents, track \u00ab real estate \u00bb, ou dimension panafricaine.</li>
+ </ul>
 
- <h2>La vérification continue</h2>
- <p>Un agenda publié une fois est un document mort. Les dates sont recontrôlées périodiquement
-  contre les pages officielles&nbsp;: le script de rafraîchissement relit chaque source, compare les
-  dates trouvées et signale les écarts, sans jamais modifier les données à l'insu du lecteur. Le
-  <a href="changelog.html">journal des changements</a> conserve la trace de chaque écart.</p>
+ <h2>4 \u00b7 V\u00e9rification continue</h2>
+ <p>Les dates sont recontr\u00f4l\u00e9es p\u00e9riodiquement contre les pages officielles. Le script de rafra\u00eechissement relit chaque source et signale les \u00e9carts, sans modifier les donn\u00e9es \u00e0 l\u2019insu du lecteur. Chaque correction est inscrite au <a href="changelog.html">journal des changements</a>.</p>
 
- <h2>Les zones à blanc</h2>
- <p>L'agenda ne couvre pas uniformément le continent, et il le dit. %d mentions d'information
- introuvable ou d'événement écarté sont tracées dans les fichiers de données.</p>
+ <h2>5 \u00b7 Zones \u00e0 blanc</h2>
+ <p>%d constats d\u2019information introuvable et %d \u00e9v\u00e9nements \u00e9cart\u00e9s, pays par pays.</p>
+ <details><summary>Voir les %d constats</summary>
  <ul class="meta">%s</ul>
+ </details>
 
  %s
- <p><a href="index.html">← Agenda complet</a></p>
+ <p><a href="index.html">\u2190 Agenda complet</a></p>
 </div></main>
 """ % (
-        len(negative),
-        "".join('<li><b>%s</b> — %s</li>' % (esc(z), esc(n)) for z, n in negative[:80]),
-        sponsor_slot("Soutenez la vérification continue des dates"),
+        len(NEG_REJECTS),
+        len(NEG_CONSTATS),
+        len(NEG_REJECTS),
+        len(NEG_CONSTATS) + len(NEG_REJECTS),
+        "".join('<li><b>%s</b> \u2014 %s</li>' % (esc(z), esc(n)) for z, n in negative),
+        sponsor_slot("Soutenez la v\u00e9rification continue des dates"),
     )
+
     write("methodologie.html", page(
         "Méthodologie — agenda des événements immobiliers en Afrique",
         "Filtre d'inclusion, statuts de date, exclusions et méthode de vérification continue "
@@ -1465,56 +1497,35 @@ def build():
 <main><div class="wrap">
  <p class="eyebrow">Partenaires</p>
  <h1>Emplacement partenaire</h1>
- <p class="lede">L'agenda est gratuit et sans publicité programmatique. Un seul emplacement, en
- haut de page et sur les fiches événement, est réservé à un partenaire — de préférence un acteur du
- marché immobilier africain qui veut être identifié là où les investisseurs préparent leurs
- déplacements.</p>
+ <p class="lede">L\u2019agenda est gratuit, sans publicit\u00e9 programmatique. Un seul emplacement, en
+ haut de page et sur les fiches \u00e9v\u00e9nement, est r\u00e9serv\u00e9 \u00e0 un partenaire du march\u00e9
+ immobilier africain.</p>
 
- <h2>Ce que l'emplacement apporte</h2>
- <div class="grid2">
-  <div class="block"><h3>Audience qualifiée</h3><p>Des investisseurs, financiers, courtiers et
-  promoteurs qui consultent l'agenda avant de réserver un vol et de payer une billet.</p></div>
-  <div class="block"><h3>Placement contextuel</h3><p>Bannière en en-tête de l'agenda, sur les pages
-  pays et sur chaque fiche événement. La marque est associée à l'information, pas à un bandeau
-  générique.</p></div>
-  <div class="block"><h3>Visibilité des données</h3><p>Un lien sortant depuis une page qui parle
-  d'un pays, d'une ville ou d'un événement précis. Les pages pays et événement sont les points
-  d'entrée naturels d'une campagne de marque.</p></div>
-  <div class="block"><h3>Newsletter</h3><p>Mention partenaire dans le récapitulatif hebdomadaire
-  des changements, qui est le format le plus lu.</p></div>
- </div>
+ <h2>Ce que l\u2019emplacement apporte</h2>
+ <table class="spec">
+  <tr><th>Audience</th><td>investisseurs et financiers qui consultent l\u2019agenda avant de r\u00e9server un vol et de payer une billet</td></tr>
+  <tr><th>Placement</th><td>banni\u00e8re en en-t\u00eate, pages pays et fiches \u00e9v\u00e9nement \u2014 la marque est associ\u00e9e \u00e0 l\u2019information</td></tr>
+  <tr><th>Formats</th><td>banni\u00e8re d\u2019agenda 1200\u00d7120, newsletter 300\u00d7100, bloc partenaire 300\u00d7250 sur les %d pages pays et les %d fiches \u00e9v\u00e9nement, parrainage d\u2019une page pays</td></tr>
+  <tr><th>Journal</th><td>mention partenaire dans le r\u00e9capitulatif des changements</td></tr>
+ </table>
 
- <h2>Partenaires ciblés</h2>
+ <h2>Partenaires cibl\u00e9s</h2>
  <ul class="meta">
-  <li>Banques et institutions de financement immobilier présentes en Afrique</li>
-  <li>Cabinets d'avocats et de conseil en capital marché sur le continent</li>
-  <li>Fournisseurs de données immobilières et de recherche (valuation, indices)</li>
-  <li>Associations de promoteurs et d'organisateurs de salons</li>
-  <li>Assureurs, fonds et acteurs du titre foncier, proptech</li>
+  <li>Banques et institutions de financement immobilier en Afrique</li>
+  <li>Cabinets d\u2019avocats et de conseil en capital march\u00e9</li>
+  <li>Fournisseurs de donn\u00e9es immobili\u00e8res (valuation, indices)</li>
+  <li>Associations de promoteurs et d\u2019organisateurs de salons</li>
+  <li>Assureurs, fonds, acteurs du titre foncier, proptech</li>
  </ul>
-
- <h2>Formats et tarifs</h2>
- <div class="grid2">
-  <div class="block"><h3>Bannière d'agenda</h3><p>En-tête de la page d'accueil, visible sur
-  toutes les pages. Format 1200×120, newsletter 300×100, mention dans le récapitulatif
-  hebdomadaire. <b>Tarifs sur demande</b> —par an.</p></div>
-  <div class="block"><h3>Fiche partenaire</h3><p>Un bloc dédié sur les %d pages pays et les %d
-  fiches événement, positionné sur les événements de votre marché. Format 300×250, texte libre.
-  <b>Tarifs sur demande</b> —par an.</p></div>
-  <div class="block"><h3>Parrainage d'un pays</h3><p>Vous sponsorisez la page d'un pays
-  (Kenya, Ghana, Côte d'Ivoire…) et vous êtes cité comme partenaire de couverture sur les
-  événements qui y figurent. <b>Tarifs sur demande</b> —par an.</p></div>
-  <div class="block"><h3>Parrainage du journal</h3><p>Votre mention dans le récapitulatif
-  hebdomadaire des changements, le format le plus lu. <b>Tarifs sur demande</b> —par an.</p></div>
- </div>
- <p class="meta">Les tarifs sont indicatifs et donnes sur devis selon le périmètre. L'emplacement
- n'achète jamais une mention d'événement : la sélection reste indépendante du financement.</p>
+ <p class="meta">Tarifs sur devis, au forfait annuel. L\u2019emplacement n\u2019ach\u00e8te jamais une mention
+ d\u2019\u00e9v\u00e9nement : la s\u00e9lection reste ind\u00e9pendante du financement.</p>
 
  %s
- <p><a href="index.html">← Agenda complet</a> ·
- <a href="a-propos.html">Ligne éditoriale et politique de correction</a></p>
+ <p><a href="index.html">\u2190 Agenda complet</a> \u00b7
+ <a href="a-propos.html">Ligne \u00e9ditoriale et politique de correction</a></p>
 </div></main>
 """ % (len(REAL_COUNTRIES), len(EVENTS), sponsor_slot("Votre marque ici"))
+
     write("sponsors.html", page(
         "Partenaires — agenda immobilier Afrique",
         "Emplacement partenaire disponible sur l'agenda des événements immobiliers en Afrique : "
@@ -1529,67 +1540,41 @@ def build():
     contribute_body = """
 <main><div class="wrap">
  <p class="eyebrow">Contribution</p>
- <h1>Signaler un événement</h1>
- <p class="lede">L'agenda ne couvre pas uniformément le continent&nbsp;: %d pays n'ont aujourd'hui
- aucun rendez-vous immobilier institutionnel documenté. Si vous connaissez un salon, un sommet ou
- une conférence sur votre marché, le signaler prend deux minutes et élargit la carte.</p>
+ <h1>Signaler un \u00e9v\u00e9nement</h1>
+ <p class="lede">%d pays n\u2019ont aujourd\u2019hui aucun rendez-vous immobilier institutionnel document\u00e9. Si vous en connaissez un sur votre march\u00e9, le signaler \u00e9largit la carte.</p>
 
- <h2>Ce qu'il faut fournir</h2>
- <div class="grid2">
-  <div class="block"><h3>Minimum utile</h3><ul class="meta">
-   <li>Nom exact de l'événement</li>
-   <li>Date (ou « à confirmer »)</li>
-   <li>Ville et pays</li>
-   <li>Lien vers la page officielle</li>
-  </ul></div>
-  <div class="block"><h3>Utile en plus</h3><ul class="meta">
-   <li>Édition (2ᵉ, 3ᵉ…)</li>
-   <li>Lieu et salle</li>
-   <li>Organisateur</li>
-   <li>Effectif attendu, exposants</li>
-   <li>Présence attendue de fonds, DFIs, banques, ministres</li>
-   <li>Site de billetterie</li>
-  </ul></div>
- </div>
+ <h2>Ce qu\u2019il faut fournir</h2>
+ <table class="spec">
+  <tr><th>Minimum</th><td>nom exact, date (ou \u00ab \u00e0 confirmer \u00bb), ville, pays, lien de la page officielle</td></tr>
+  <tr><th>Utile</th><td>\u00e9dition, lieu et salle, organisateur, effectif et exposants, acteurs financiers attendus, lien de billetterie</td></tr>
+ </table>
 
  <h2>Formulaire</h2>
- <p>Le dispositif d'intake est adossé à une feuille de travail&nbsp;: chaque signalement crée une
- ligne, et chaque ligne est fusionnée dans l'agenda après vérification de la date et du statut de
- confirmation.</p>
-
  <div class="notice" id="form-slot">
-  <b>Le formulaire est en cours de mise en place.</b> L'intake arrive&nbsp;: chaque signalement
-  créera une ligne dans une feuille de travail, et chaque ligne sera vérifiée — date recoupée,
-  statut de confirmation arbitré — avant d'entrer dans l'agenda.
+  <b>Le formulaire est en cours de mise en place.</b> Chaque signalement cr\u00e9era une ligne dans une
+  feuille de travail, puis sera v\u00e9rifi\u00e9 avant d\u2019entrer dans l\u2019agenda.
   <br><br>
-  En attendant, la <a href="methodologie.html">méthodologie</a> publie la liste des
-  %d pays qui n'ont aujourd'hui aucun rendez-vous immobilier institutionnel documenté&nbsp;:
-  c'est là que votre signalement compte le plus.
+  En attendant, un email suffit&nbsp;: <a href="%s">%s</a>.
   <br><br>
-  Vous connaissez un salon, un sommet ou une conférence sur votre marché&nbsp;? Un email
-  suffit pour l'instant&nbsp;:
-  <a href="%s">%s</a>.
-  Le nom exact de l'événement, la date, la ville, le pays et le lien de la page officielle
-  suffisent&nbsp;; le reste est vérifié de notre côté.
+  La <a href="methodologie.html">m\u00e9thodologie</a> publie la liste des %d pays \u00e0 couvrir \u2014 c\u2019est
+  l\u00e0 que votre signalement compte le plus.
  </div>
 
- <h2>Comment votre signalement est traité</h2>
+ <h2>Traitement</h2>
  <ol class="meta">
-  <li>La fiche rejoint la file de vérification, avec son statut « à confirmer ».</li>
-  <li>La date est croisée avec la page officielle de l'organisateur, et avec au moins une seconde
-  source quand c'est possible.</li>
-  <li>Si les sources divergent, l'événement est publié avec un statut « date probable » et le
-  conflit est tracé sur la fiche — il n'est pas masqué.</li>
-  <li>L'événement passe ensuite le filtre « 2 sur 6 » : audience décisionnelle, échelle, substance,
-  continuité, influence, portée. S'il n'en coche pas deux, il est écarté avec la raison, et vous en
-  êtes informé.</li>
+  <li>La fiche entre en file avec le statut \u00ab \u00e0 confirmer \u00bb.</li>
+  <li>La date est crois\u00e9e avec la page officielle et, quand c\u2019est possible, une seconde source.</li>
+  <li>Si les sources divergent, l\u2019\u00e9v\u00e9nement est publi\u00e9 en \u00ab date probable \u00bb, conflit trac\u00e9.</li>
+  <li>Le filtre \u00ab 2 sur 6 \u00bb s\u2019applique. S\u2019il n\u2019est pas franchi, l\u2019\u00e9v\u00e9nement est \u00e9cart\u00e9 avec sa raison, et vous en \u00eates inform\u00e9.</li>
  </ol>
 
  %s
- <p><a href="index.html">← Agenda complet</a></p>
+ <p><a href="index.html">\u2190 Agenda complet</a></p>
 </div></main>
-""" % (UNCOVERED_COUNTRIES, UNCOVERED_COUNTRIES,
-       esc(signal_mailto), esc(CONTACT_EMAIL), sponsor_slot())
+""" % (UNCOVERED_COUNTRIES,
+       esc(signal_mailto), esc(CONTACT_EMAIL), UNCOVERED_COUNTRIES,
+       sponsor_slot())
+
     write("contribuer.html", page(
         "Signaler un événement — agenda immobilier Afrique",
         "Formulaire de contribution à l'agenda des événements immobiliers en Afrique : "

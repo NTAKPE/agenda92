@@ -88,9 +88,27 @@ Au moment de générer le site, `build.py` relève les domaines cités dans l'ar
 portant son nom et sa date de consultation ; ce qui ne correspond pas reste écrit en clair, sans
 jamais de lien deviné. `check_cited.py` vérifie que chaque URL affichée provient bien du registre.
 
-Résultat au 6 novembre 2026 : 265 URL au registre, 39 sources rattachées à 20 fiches, 14 domaines
+Résultat au 8 novembre 2026 : 267 URL au registre, 38 sources rattachées à 20 fiches, 14 domaines
 cités sans page de référence. Chaque fiche affiche aussi le lien de billetterie de l'organisateur
 lorsqu'il existe (30 événements sur 83).
+
+## Le site officiel de chaque événement
+
+Une fiche qui affiche une URL sans dire de qui elle est peut laisser croire que l'agenda organise
+l'événement. Chaque fiche indique donc, en tête de page :
+
+- le **site officiel de l'événement** quand il existe ;
+- à défaut, le **site de l'organisateur**, en signalant que le site dédié à l'événement n'a pas été
+  identifié ;
+- « non identifié » quand aucune page n'a pu être vérifiée.
+
+67 des 83 événements portent une URL, 16 l'annoncent explicitement comme non identifiée. Toutes
+proviennent du registre des pages lues : une racine devinée n'est jamais ajoutée. Le mapping est un
+fichier de données explicite, `data/sites-officiels.json`, produit par `build_sites_officiels.py` et
+contrôlé par `check_official.py`.
+
+Chaque fiche porte aussi la mention d'indépendance : l'agenda n'organise ni ne finance aucun des
+événements qu'il recense.
 
 ## Arborescence
 
@@ -105,9 +123,14 @@ agenda-immobilier-afrique/
 ├── check_tracker.py         structure du tracker pré-rendu (lisibilité sans JS)
 ├── check_countries.py       nomenclature des 54 pays et périmètre réel
 ├── check_cited.py           chaque source affichée vient du registre des pages lues
+├── check_official.py        chaque fiche indique le site officiel de l'événement
+├── check_ics.py             conformité RFC 5545 de l'export calendrier
 ├── check_numbers.py         chiffres du journal recalculés depuis les données
 ├── check_figures.py         chiffres de documentation
 ├── peek.py                  inspection ponctuelle d'une fiche
+├── peek_page.py             relecture d'une page en texte brut
+├── peek_official.py         candidats « site officiel » par événement
+├── build_sites_officiels.py produit data/sites-officiels.json
 ├── siteutil.py              fonctions partagées (domaine, sources citées)
 ├── data/                    un JSON par zone + changelog.json + registre des sources
 ├── export/                  CSV, ICS, tracker HTML, rapports de re-vérification
@@ -155,6 +178,7 @@ python check_links.py      # 3 688 liens internes vérifiés
 python check_tracker.py    # structure du tracker pré-rendu
 python check_countries.py  # nomenclature et périmètre
 python check_cited.py      # chaque source affichée vient du registre des pages lues
+python check_official.py   # chaque fiche indique le site officiel et l'indépendance
 python check_ics.py        # conformité RFC 5545 de l'export calendrier
 python refresh.py          # relit les pages officielles et signale les écarts
 ```

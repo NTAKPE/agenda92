@@ -537,6 +537,27 @@ for rec in records:
     rec["cited_unlinked"] = unlinked
 
 # --------------------------------------------------------------------------
+# site officiel
+#
+# Pour que la fiche ne puisse pas laisser croire que l'agenda organise
+# l'evenement, chaque fiche porte le site officiel trouve : celui de
+# l'evenement quand il existe, celui de l'organisateur a defaut. Le mapping
+# est un fichier de donnees explicite (data/sites-officiels.json), pas une
+# deduction automatique.
+# --------------------------------------------------------------------------
+OFFICIAL_SITES = {}
+_official_path = os.path.join(DATA, "sites-officiels.json")
+if os.path.exists(_official_path):
+    with open(_official_path, "r", encoding="utf-8") as fh:
+        OFFICIAL_SITES = json.load(fh).get("sites", {})
+
+for rec in records:
+    info = OFFICIAL_SITES.get(rec["name"]) or {}
+    url = (info.get("site") or "").strip()
+    rec["official_site"] = {"url": url, "type": info.get("type") or ""} if url else {
+        "url": "", "type": ""}
+
+# --------------------------------------------------------------------------
 # tri : par date, puis score investisseur decroissant
 # --------------------------------------------------------------------------
 
@@ -592,6 +613,8 @@ CSV_COLS = [
     ("Billetterie", lambda r: r["ticket_url"] or ""),
     ("Source", lambda r: r["source_name"] or ""),
     ("Source URL", lambda r: r["source_url"] or ""),
+    ("Site officiel", lambda r: r["official_site"]["url"] or "non identifie"),
+    ("Type de site officiel", lambda r: r["official_site"]["type"] or ""),
     ("Sources citees dans l'arbitrage",
      lambda r: " | ".join("%s <%s>" % (s["name"], s["url"]) for s in r["cited_sources"])),
     ("Conflits de sources", lambda r: as_text(r["hard_conflicts"])),
@@ -746,6 +769,7 @@ payload = {
             "source_url": r["source_url"] or "",
             "cited_sources": r["cited_sources"],
             "cited_unlinked": r["cited_unlinked"],
+            "official_site": r["official_site"],
             "conflicts": r["conflicts_text"],
             "notes": r["notes_text"],
             "has_conflict": r["has_conflict"],

@@ -257,7 +257,15 @@ TEMPLATE = r"""<!DOCTYPE html>
     h += '<div><b>Lieu&nbsp;:</b> '+esc(e.venue||'&mdash;')+'</div>';
     h += '<div><b>Acteurs du capital&nbsp;:</b> '+esc(e.actors||'&mdash;')+'</div>';
     h += '<div><b>Zone&nbsp;:</b> '+esc(e.zone)+'</div>';
-    h += '<div><b>V&eacute;rifi&eacute; le&nbsp;:</b> '+esc(e.last_verified||'&mdash;')+'</div></div>';
+    h += '<div><b>V&eacute;rifi&eacute; le&nbsp;:</b> '+esc(e.last_verified||'&mdash;')+'</div>';
+    var off = e.official_site || {};
+    if(off.url){
+      var lbl = (off.type==='evenement') ? "Site officiel de l'&eacute;v&eacute;nement" : "Site de l'organisateur";
+      h += '<div><b>'+lbl+'&nbsp;:</b> <a href="'+esc(off.url)+'" target="_blank" rel="noopener">'+esc(off.url.replace(/^https?:\/\//,'').split('/')[0])+'</a></div>';
+    } else {
+      h += '<div><b>Site officiel&nbsp;:</b> <span class="muted">non identifi&eacute;</span></div>';
+    }
+    h += '</div>';
     h += '</div>';
     h += '<div class="block"><h4>Sources</h4><ul>';
     if(e.source_url) h += '<li><a href="'+esc(e.source_url)+'" target="_blank" rel="noopener">'+esc(e.source_name||e.source_url)+'</a></li>';
