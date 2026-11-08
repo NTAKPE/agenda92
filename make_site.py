@@ -25,6 +25,8 @@ import re
 import unicodedata
 from datetime import date, datetime
 
+from siteutil import host_of
+
 BASE = os.path.dirname(os.path.abspath(__file__))
 EXPORT = os.path.join(BASE, "export")
 DATA = os.path.join(BASE, "data")
@@ -630,6 +632,11 @@ tbody tr.open{background:var(--panel2)}
 .kv div{border-top:1px solid var(--line);padding-top:9px}
 .kv dt{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 3px}
 .kv dd{margin:0;font-size:13.5px}
+.cta-row{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cta-row .btn{background:var(--accent);border-color:var(--accent);color:#12161c;font-weight:600;
+  padding:9px 15px;font-size:13px;text-decoration:none}
+.cta-row .btn:hover{filter:brightness(1.08);color:#12161c}
+.cta-note{font-size:11.5px;color:var(--ink3)}
 .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
 .pill{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:3px 10px;color:var(--ink2);background:var(--panel2)}
 
@@ -1070,6 +1077,44 @@ def build():
             conflict_block += ('<div class="notice"><b>Signaux et lacunes.</b> %s</div>'
                                % esc(e["notes"]))
 
+        # Lien de billetterie : quand l'organisateur publie une URL de vente,
+        # elle est affichee telle quelle — c'est la seule source d'inscription
+        # verifiee pour l'evenement.
+        cta_row = ""
+        if e.get("ticket_url"):
+            cta_row = ('<p class="cta-row"><a class="btn" href="%s" rel="noopener" target="_blank">'
+                       'Billetterie / inscription</a>'
+                       '<span class="cta-note">lien de l\'organisateur, non verifie pour le tarif</span></p>'
+                       % esc(e["ticket_url"]))
+
+        # Bloc « Sources » : la source principale, la billetterie, et les sources
+        # reellement citees dans l'arbitrage. Les URL viennent du registre des
+        # pages consultees ; un domaine cite sans page referencee reste en
+        # clair, il n'est jamais transforme en lien devine.
+        src_items = []
+        if e.get("source_url"):
+            src_items.append('<li><a href="%s" rel="noopener" target="_blank">%s</a></li>'
+                             % (esc(e["source_url"]), esc(e.get("source_name") or e["source_url"])))
+        elif e.get("source_name"):
+            src_items.append("<li>%s</li>" % esc(e["source_name"]))
+        if e.get("ticket_url") and e["ticket_url"] != e.get("source_url"):
+            src_items.append('<li><a href="%s" rel="noopener" target="_blank">Billetterie / inscription</a>'
+                             ' <span class="muted">%s</span></li>'
+                             % (esc(e["ticket_url"]), esc(host_of(e["ticket_url"]))))
+        for s in e.get("cited_sources") or []:
+            src_items.append('<li><a href="%s" rel="noopener" target="_blank">%s</a>'
+                             ' <span class="muted">%s</span></li>'
+                             % (esc(s.get("url") or ""), esc(s.get("name") or ""),
+                                esc(fmt_date_fr(s.get("accessed") or ""))))
+        src_items = "".join(src_items) or "<li>—</li>"
+
+        unlinked = e.get("cited_unlinked") or []
+        cited_note = ""
+        if unlinked:
+            cited_note = ('<p class="meta muted" style="margin-top:8px">Domaines cités dans '
+                          'l\'arbitrage, sans page de référence publiée ici : %s</p>'
+                          % esc(", ".join(unlinked)))
+
         body_ev = """
 <main><div class="wrap">
  <p class="eyebrow">%s · %s</p>
@@ -1088,6 +1133,7 @@ def build():
    <div><dt>Score investisseur</dt><dd>%s</dd></div>
    <div><dt>Vérifié le</dt><dd>%s</dd></div>
   </dl>
+%s
  </div>
 
  %s
@@ -1097,7 +1143,7 @@ def build():
   <div class="block"><h3>Pertinence</h3><p>%s</p></div>
   <div class="block"><h3>Acteurs du capital</h3><p>%s</p></div>
   <div class="block"><h3>Thèmes</h3><p>%s</p></div>
-  <div class="block"><h3>Sources</h3><ul class="meta">%s</ul></div>
+  <div class="block"><h3>Sources</h3><ul class="meta">%s</ul>%s</div>
  </div>
 
  %s
@@ -1120,12 +1166,13 @@ def build():
                if (e.get("attendees") or e.get("exhibitors")) else ""),
             score_bars(e.get("score", 0)),
             esc(fmt_date_fr(e.get("last_verified")) or e.get("last_verified") or "—"),
+            cta_row,
             conflict_block,
             esc(e.get("why") or "—"),
             esc(e.get("actors") or "—"),
             esc(e.get("themes") or "—"),
-            ('<li><a href="%s" rel="noopener">%s</a></li>' % (esc(e["source_url"]), esc(e.get("source_name") or e["source_url"])))
-            if e.get("source_url") else ("<li>%s</li>" % esc(e.get("source_name") or "—")),
+            src_items,
+            cited_note,
             share_buttons(page_canonical("evenements/%s.html" % slug, prefix),
                           "%s — %s" % (e.get("name", ""), fmt_range_fr(e.get("start"), e.get("end")))),
             '<p class="meta"><a href="%scontribuer.html">Une erreur sur cette fiche&nbsp;? Signalez-la</a> '

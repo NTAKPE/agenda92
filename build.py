@@ -15,6 +15,8 @@ import sys
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
 
+from siteutil import host_of, cited_domains
+
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BASE, "data")
 OUT = os.path.join(BASE, "export")
@@ -266,6 +268,68 @@ for fn in files:
         fn, payload.get("zone", "?"), len(payload.get("events", []))))
 
 # --------------------------------------------------------------------------
+# registre des sources consultees
+#
+# Chaque zone a note les pages reellement lues, avec leur URL et la date de
+# consultation. Ce registre est la seule source de liens publiee : aucune URL
+# n'est inventee. Les sources citees dans l'arbitrage d'un evenement sont
+# ensuite rattachees a la fiche, par domaine.
+# --------------------------------------------------------------------------
+# Sources complementaires : releve hors zone (pages citees dans un arbitrage
+# et verifiees a part). Meme schema que les sources de zone.
+EXTRA_SOURCES_FILE = "sources-additionnels.json"
+extra_path = os.path.join(DATA, EXTRA_SOURCES_FILE)
+extra_payload = {}
+if os.path.exists(extra_path):
+    with open(extra_path, "r", encoding="utf-8") as fh:
+        extra_payload = json.load(fh)
+    print("  lu %-28s sources complementaires=%d" % (
+        EXTRA_SOURCES_FILE, len(extra_payload.get("sources", []))))
+
+SOURCE_REGISTRY = []
+_seen_urls = set()
+
+
+def add_sources(entries, zone):
+    for s in entries:
+        url = (s.get("url") or "").strip()
+        if not url or url in _seen_urls:
+            continue
+        _seen_urls.add(url)
+        SOURCE_REGISTRY.append({
+            "url": url,
+            "name": (s.get("name") or url).strip(),
+            "accessed": (s.get("accessed") or "").strip(),
+            "zone": zone,
+            "host": host_of(url),
+        })
+
+
+for z in zones:
+    add_sources(z.get("sources", []), z.get("zone", "?"))
+add_sources(extra_payload.get("sources", []), "Complement")
+print("  registre de sources : %d URL" % len(SOURCE_REGISTRY))
+
+
+def match_sources(domain):
+    """Sources du registre correspondant a un domaine cite.
+
+    Regle volontairement stricte : correspondance exacte du domaine. Une
+    correspondance par parenté n'est acceptee que si elle est unique, sinon
+    on risque de rattacher a une fiche la page d'un autre evenement (par
+    exemple capital.eventhive.ng sur la fiche Abuja Real Estate Fest).
+    """
+    exact = [s for s in SOURCE_REGISTRY if s["host"] == domain]
+    if exact:
+        return exact[:3]
+    parents = [s for s in SOURCE_REGISTRY
+               if s["host"] and domain.endswith("." + s["host"])]
+    hosts = {s["host"] for s in parents}
+    if len(hosts) == 1:
+        return parents[:3]
+    return []
+
+# --------------------------------------------------------------------------
 # normalisation + dedoublonnage
 # --------------------------------------------------------------------------
 
@@ -441,6 +505,38 @@ for rec in records:
         rec["date_status"] = "probable"
 
 # --------------------------------------------------------------------------
+# sources citees par fiche
+#
+# Les domaines cites dans l'arbitrage (contradictions, signaux et lacunes) sont
+# rapproches du registre des sources reellement consultees. Un domaine cite
+# sans correspondance reste affiche en clair : il n'est jamais transforme en
+# lien devine.
+# --------------------------------------------------------------------------
+for rec in records:
+    domains = cited_domains(
+        {"conflicts": as_text(rec["conflicts"]), "notes": as_text(rec["soft_notes"])},
+        exclude=(host_of(rec.get("source_url") or ""), host_of(rec.get("ticket_url") or "")),
+    )
+    linked, seen_urls, unlinked = [], set(), []
+    for d in domains:
+        hits = match_sources(d)
+        if not hits:
+            unlinked.append(d)
+            continue
+        for s in hits:
+            if s["url"] in seen_urls:
+                continue
+            seen_urls.add(s["url"])
+            linked.append({
+                "domain": d,
+                "url": s["url"],
+                "name": s["name"],
+                "accessed": s["accessed"],
+            })
+    rec["cited_sources"] = linked
+    rec["cited_unlinked"] = unlinked
+
+# --------------------------------------------------------------------------
 # tri : par date, puis score investisseur decroissant
 # --------------------------------------------------------------------------
 
@@ -496,6 +592,8 @@ CSV_COLS = [
     ("Billetterie", lambda r: r["ticket_url"] or ""),
     ("Source", lambda r: r["source_name"] or ""),
     ("Source URL", lambda r: r["source_url"] or ""),
+    ("Sources citees dans l'arbitrage",
+     lambda r: " | ".join("%s <%s>" % (s["name"], s["url"]) for s in r["cited_sources"])),
     ("Conflits de sources", lambda r: as_text(r["hard_conflicts"])),
     ("Signaux et lacunes", lambda r: as_text(r["soft_notes"])),
     ("Verifie le", lambda r: r["last_verified"] or ""),
@@ -546,6 +644,9 @@ for rec in dated:
         desc_parts.append("Signaux et lacunes : %s" % rec["notes_text"])
     desc_parts.append("Statut de la date : %s" % rec["status_label"])
     desc_parts.append("Source : %s %s" % (rec["source_name"] or "", rec["source_url"] or ""))
+    if rec["cited_sources"]:
+        desc_parts.append("Sources citees : %s" % " | ".join(
+            "%s <%s>" % (s["name"], s["url"]) for s in rec["cited_sources"]))
     desc_parts.append("Verifie le %s" % (rec["last_verified"] or ""))
     desc = "\n".join(desc_parts)
 
@@ -640,6 +741,8 @@ payload = {
             "ticket_url": r["ticket_url"] or "",
             "source_name": r["source_name"] or "",
             "source_url": r["source_url"] or "",
+            "cited_sources": r["cited_sources"],
+            "cited_unlinked": r["cited_unlinked"],
             "conflicts": r["conflicts_text"],
             "notes": r["notes_text"],
             "has_conflict": r["has_conflict"],

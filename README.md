@@ -77,6 +77,21 @@ des projets, mais ce ne sont pas des événements immobiliers.
 Tout changement de date ou de lieu est conservé dans `conflicts` avec les deux versions et leurs
 sources. Ces conflits ne sont pas un défaut : ils localisent l'information fragile.
 
+## Les sources affichées
+
+Chaque zone a noté, dans `data/zone-*.json`, les pages réellement lues avec leur URL et la date de
+consultation. `data/sources-additionnels.json` complète le registre pour les pages citées dans un
+arbitrage et vérifiées à part.
+
+Au moment de générer le site, `build.py` relève les domaines cités dans l'arbitrage de chaque fiche
+(contradictions, signaux et lacunes) et les rapproche du registre. Ce qui correspond devient un lien
+portant son nom et sa date de consultation ; ce qui ne correspond pas reste écrit en clair, sans
+jamais de lien deviné. `check_cited.py` vérifie que chaque URL affichée provient bien du registre.
+
+Résultat au 6 novembre 2026 : 265 URL au registre, 39 sources rattachées à 20 fiches, 14 domaines
+cités sans page de référence. Chaque fiche affiche aussi le lien de billetterie de l'organisateur
+lorsqu'il existe (30 événements sur 83).
+
 ## Arborescence
 
 ```
@@ -89,10 +104,12 @@ agenda-immobilier-afrique/
 ├── check_links.py           intégrité des liens internes
 ├── check_tracker.py         structure du tracker pré-rendu (lisibilité sans JS)
 ├── check_countries.py       nomenclature des 54 pays et périmètre réel
+├── check_cited.py           chaque source affichée vient du registre des pages lues
 ├── check_numbers.py         chiffres du journal recalculés depuis les données
 ├── check_figures.py         chiffres de documentation
 ├── peek.py                  inspection ponctuelle d'une fiche
-├── data/                    un JSON par zone + changelog.json
+├── siteutil.py              fonctions partagées (domaine, sources citées)
+├── data/                    un JSON par zone + changelog.json + registre des sources
 ├── export/                  CSV, ICS, tracker HTML, rapports de re-vérification
 ├── site/                    site statique prêt à publier
 │   ├── index.html                 tracker interactif, 83 lignes pré-rendues
@@ -125,8 +142,8 @@ déplie pour le détail : pertinence investisseur, thèmes, acteurs du capital, 
 Apple Calendar). Les événements à date `probable` y entrent en `TENTATIVE`, les confirmés en
 `CONFIRMED`. Les événements sans date n'y figurent pas.
 
-**Le tableur** — `export/agenda-immobilier-afrique.csv`, 24 colonnes, une ligne par événement, avec
-les conflits et l'URL source.
+**Le tableur** — `export/agenda-immobilier-afrique.csv`, 25 colonnes, une ligne par événement, avec
+les conflits, l'URL source et les sources citées dans l'arbitrage.
 
 **Rafraîchir et contrôler** —
 
@@ -137,6 +154,7 @@ python make_site.py        # regénère site/ (111 pages)
 python check_links.py      # 3 688 liens internes vérifiés
 python check_tracker.py    # structure du tracker pré-rendu
 python check_countries.py  # nomenclature et périmètre
+python check_cited.py      # chaque source affichée vient du registre des pages lues
 python refresh.py          # relit les pages officielles et signale les écarts
 ```
 
