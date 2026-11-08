@@ -198,7 +198,7 @@ def main():
         clear_dir_except(pages_dir, keep=(".git",))
     else:
         force_rmtree(pages_dir)
-    shutil.copytree(os.path.join(BASE, "site"), pages_dir)
+    shutil.copytree(os.path.join(BASE, "site"), pages_dir, dirs_exist_ok=True)
     # Jekyll ne doit pas interpreter le site : branche et underscores neutres
     with open(os.path.join(pages_dir, ".nojekyll"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("")
