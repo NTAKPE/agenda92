@@ -1358,7 +1358,7 @@ def build():
  <h2>Ce que nous ne faisons pas</h2>
  <ul class="meta">
   <li>Nous ne payons pas pour figurer dans l\u2019agenda.</li>
-  <li>L\u2019emplacement partenaire n\u2019ach\u00e8te aucune mention d\u2019\u00e9v\u00e9nement : il n\u2019achat que de l\u2019emplacement.</li>
+  <li>L\u2019emplacement partenaire n\u2019ach\u00e8te aucune mention d\u2019\u00e9v\u00e9nement : il n\u2019ach\u00e8te que l\u2019emplacement.</li>
   <li>Nous ne lissons pas un conflit entre deux sources : il est affich\u00e9 sur la fiche.</li>
  </ul>
 
