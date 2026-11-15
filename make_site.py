@@ -1515,7 +1515,7 @@ def build():
  <ul class="meta">
   <li><b>Hors du continent</b> \u2014 Duba\u00ef, Londres, New York et expos de la diaspora, m\u00eame s\u2019ils portent sur l\u2019immobilier africain. Une part importante du capital s\u2019y mobilise : l\u2019agenda le signale comme exclu.</li>
   <li><b>Salons lifestyle</b> et manifestations \u00e0 grand public.</li>
-  <li><b>Adjacent construction</b> \u2014 les salons de construction et de mat\u00e9riaux sont isol\u00e9s, avec un filtre plus strict : promoteurs ou investisseurs pr\u00e9sents, track \u00ab real estate \u00bb, ou dimension panafricaine.</li>
+  <li><b>Adjacent construction</b> \u2014 les salons de construction et de mat\u00e9riaux sont isol\u00e9s, avec un filtre plus strict : promoteurs ou investisseurs pr\u00e9sents, un volet immobilier identifi\u00e9, ou dimension panafricaine.</li>
  </ul>
 
  <h2>4 \u00b7 V\u00e9rification continue</h2>

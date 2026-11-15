@@ -96,7 +96,7 @@
       "attendees": null,
       "exhibitors": null,
       "investor_score": 4,
-      "investor_why": "Un sommet d'investissement hôtelier centré sur l'immobilier : hôtels, developments mixtes, resorts et résidences brandées, avec un track dédié « FHS Living » (hôtelisation de l'immobilier sur 9 classes d'actifs) le 11 novembre. C'est la porte d'entrée la plus directe vers les pipelines de développement et les asset managers sur le marché égyptien, même si l'échelle reste celle d'un summit et non d'un salon.",
+      "investor_why": "Un sommet d'investissement hôtelier centré sur l'immobilier : hôtels, developments mixtes, resorts et résidences brandées, avec un volet dédié « FHS Living » (hôtelisation de l'immobilier sur 9 classes d'actifs) le 11 novembre. C'est la porte d'entrée la plus directe vers les projets de développement et les asset managers sur le marché égyptien, même si l'échelle reste celle d'un summit et non d'un salon.",
       "capital_actors": [
         "investisseurs et propriétaires",
         "développeurs",
@@ -178,7 +178,7 @@
       "attendees": null,
       "exhibitors": null,
       "investor_score": 3,
-      "investor_why": "Le salon financier national algérien, avec les banques, assureurs, sociétés de leasing et institutions publiques réunis, et un programme sur le financement, l'investissement et la finance islamique. Utile pour un financeur immobilier qui veut toucher en dix jours l'ensemble de l'offre de crédit algérienne ; à noter que le lien immobilier passe par le leasing et non par un track foncier dédié.",
+      "investor_why": "Le salon financier national algérien, avec les banques, assureurs, sociétés de leasing et institutions publiques réunis, et un programme sur le financement, l'investissement et la finance islamique. Utile pour un financeur immobilier qui veut toucher en dix jours l'ensemble de l'offre de crédit algérienne ; à noter que le lien immobilier passe par le leasing et non par un volet foncier dédié.",
       "capital_actors": [
         "banques",
         "compagnies d'assurance et de réassurance",
@@ -199,7 +199,7 @@
       "source_name": "Algeria Exhibitions (groupe SAFEX) — fiche officielle EXPOFINANCES",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "substance : le programme officiel mentionne « financement des entreprises », « investissement » et « finance islamique » mais aucun track « crédit foncier / financement immobilier » explicite — la Sélection 2/6 passe surtout sur l'audience, l'échelle, la continuité, l'influence et la portée",
+        "substance : le programme officiel mentionne « financement des entreprises », « investissement » et « finance islamique » mais aucun volet « crédit foncier / financement immobilier » explicite — la Sélection 2/6 passe surtout sur l'audience, l'échelle, la continuité, l'influence et la portée",
         "édition : EXPOFINANCES 2025 s'est tenu du 18 au 27 déc. 2025 (pavillon Casbah) ; le 15e millésime est cohérent",
         "dates affichées simultanément sur deux pavillons (EXPOFINANCES et FPA) : conflit de programmation SAFEX à signaler avant tout déplacement"
       ]
@@ -430,7 +430,7 @@
       "source_name": "SIB — site officiel",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "qualification : salon de bâtiment et de matériaux avant tout ; le secteur « IMMOBILIER, FINANCEMENT & INVESTISSEMENT » figure dans la brochure officielle 2026 et la description eventseye mentionne les secteurs « Urbanisme, Décoration et Immobilier », mais aucune présence de promoteurs ni conference track immobilier n'a pu être vérifiée nominalement",
+        "qualification : salon de bâtiment et de matériaux avant tout ; le secteur « IMMOBILIER, FINANCEMENT & INVESTISSEMENT » figure dans la brochure officielle 2026 et la description eventseye mentionne les secteurs « Urbanisme, Décoration et Immobilier », mais aucune présence de promoteurs ni volet immobilier n'a pu être vérifiée nominalement",
         "dénomination : eventseye le présente comme le « Salon international du bâtiment de Casablanca » (créé en 1986) alors qu'il se tient à El Jadida",
         "effectif : non communiqué dans les sources lues"
       ]
@@ -529,7 +529,7 @@
       "attendees": "2 000+",
       "exhibitors": null,
       "investor_score": 5,
-      "investor_why": "C'est le rendez-vous d'investissement le plus important du continent en valeur, et il tombe en Afrique du Nord :-market de projets bankables, tableaux clos avec fonds de pension, fonds souverains et DFI, sous haut patronage royal. Rien n'est calé pour 2026 ni 2027 à ce jour, ce qui en fait la ligne à surveiller en priorité du tracker pour la zone.",
+      "investor_why": "C'est le rendez-vous d'investissement le plus important du continent en valeur, et il tombe en Afrique du Nord :-market de projets bankables, tableaux clos avec fonds de pension, fonds souverains et DFI, sous haut patronage royal. Rien n'est calé pour 2026 ni 2027 à ce jour, ce qui en fait la ligne à surveiller en priorité du voleter pour la zone.",
       "capital_actors": [
         "BAD",
         "DFI",
@@ -574,7 +574,7 @@
       "attendees": null,
       "exhibitors": null,
       "investor_score": 2,
-      "investor_why": "Le seul salon immobilier dédié de Casablanca à structure banks et funding track (« Forum Marché et investissement », présence de banques et d'investisseurs annoncée), donc à surveiller comme possible héritier du vide laissé par l'absence de salon immobilier national au Maroc. Mais rien n'est calé et la continuité de l'événement n'est pas établie : à traiter comme une promesse, pas comme un rendez-vous.",
+      "investor_why": "Le seul salon immobilier dédié de Casablanca à structure banks et funding volet (« Forum Marché et investissement », présence de banques et d'investisseurs annoncée), donc à surveiller comme possible héritier du vide laissé par l'absence de salon immobilier national au Maroc. Mais rien n'est calé et la continuité de l'événement n'est pas établie : à traiter comme une promesse, pas comme un rendez-vous.",
       "capital_actors": [
         "banques",
         "investisseurs",
@@ -609,21 +609,21 @@
       "name": "Best5 Algeria (International Construction, Building Materials & Technologies Exhibition)",
       "city": "Alger",
       "date": "16-19 nov. 2026",
-      "reason": "Échec du filtre strict adjacent_construction : salon de matériaux et d'équipements (groupes Build, Climate, Decor, Windoor, Stone & Flooring) sans track immobilier ni présence confirmée de promoteurs ou investisseurs immobiliers. Le profil visiteur type mentionnant « property developers » est un argumentaire générique d'Elan Expo, pas un programme. 12e édition, 9 700 visiteurs pro, 204 marques, 21 pays — l'échelle est réelle mais l'événement reste un salon de matériaux.",
+      "reason": "Échec du filtre strict adjacent_construction : salon de matériaux et d'équipements (groupes Build, Climate, Decor, Windoor, Stone & Flooring) sans volet immobilier ni présence confirmée de promoteurs ou investisseurs immobiliers. Le profil visiteur type mentionnant « property developers » est un argumentaire générique d'Elan Expo, pas un programme. 12e édition, 9 700 visiteurs pro, 204 marques, 21 pays — l'échelle est réelle mais l'événement reste un salon de matériaux.",
       "source_url": "https://techeco.sidaliassoul.com/fr/events/best5-algeria-2026-international-construction-building-materials-technologies-exhibition"
     },
     {
       "name": "SITP — Salon International des Travaux Publics",
       "city": "Alger",
       "date": "23-26 nov. 2026",
-      "reason": "Échec du filtre strict adjacent_construction : 21e édition sous l'égide du ministère des Travaux publics, consacrée aux infrastructures, au génie civil et aux technologies de chantier. Aucun track immobilier ou de promotion, malgré la présence de banques et d'institutions financières citées par l'organisateur.",
+      "reason": "Échec du filtre strict adjacent_construction : 21e édition sous l'égide du ministère des Travaux publics, consacrée aux infrastructures, au génie civil et aux technologies de chantier. Aucun volet immobilier ou de promotion, malgré la présence de banques et d'institutions financières citées par l'organisateur.",
       "source_url": "https://www.algeriaexhibitions.dz/manifestations/SITP-2026"
     },
     {
       "name": "SIVECC — Salon international de la ventilation, électricité, chauffage et climatisation",
       "city": "Alger",
       "date": "16-19 nov. 2026",
-      "reason": "Salon technique CVC / électricité / plomberie sans dimension immobilière : aucun promoteur, aucun track real estate/development, aucune dimension panafricaine.",
+      "reason": "Salon technique CVC / électricité / plomberie sans dimension immobilière : aucun promoteur, aucun volet real estate/development, aucune dimension panafricaine.",
       "source_url": "https://www.algeriaexhibitions.dz/en/events/sivecc-2026"
     },
     {
@@ -651,7 +651,7 @@
       "name": "BATIMATEC — Salon algérien international du bâtiment, des matériaux de construction et des travaux publics",
       "city": "Alger",
       "date": "mai 2027 (date exacte non fixée)",
-      "reason": "Échec du filtre strict adjacent_construction : salon de matériaux et d'équipements, sans track immobilier ni promoteurs confirmés. L'édition 2027 est bien annoncée (29e édition) mais ne peut être retenue faute de substance immobilière.",
+      "reason": "Échec du filtre strict adjacent_construction : salon de matériaux et d'équipements, sans volet immobilier ni promoteurs confirmés. L'édition 2027 est bien annoncée (29e édition) mais ne peut être retenue faute de substance immobilière.",
       "source_url": "https://www.eventseye.com/fairs/f-batimatec-2912-0.html"
     },
     {
@@ -665,7 +665,7 @@
       "name": "BATIMEX — Algerian Building and Development Exhibition",
       "city": "Annaba",
       "date": "24-27 mars 2027",
-      "reason": "Salon du bâtiment d'Annaba (Sheraton Annaba) : aucun promoteur, investisseur immobilier ni track real estate/development confirmé ; la dimension « development » du nom est celle du bâtiment, pas de la promotion immobilière.",
+      "reason": "Salon du bâtiment d'Annaba (Sheraton Annaba) : aucun promoteur, investisseur immobilier ni volet real estate/development confirmé ; la dimension « development » du nom est celle du bâtiment, pas de la promotion immobilière.",
       "source_url": "https://www.eventseye.com/fairs/c1_trade-shows_algeria.html"
     },
     {
@@ -679,14 +679,14 @@
       "name": "Libya Build Tripoli",
       "city": "Tripoli",
       "date": "8-11 nov. 2026",
-      "reason": "Plateforme de construction (ATEX International Exhibitions) : aucune présence de promoteurs ou investisseurs immobiliers confirmée, aucun track immobilier — échec du filtre strict.",
+      "reason": "Plateforme de construction (ATEX International Exhibitions) : aucune présence de promoteurs ou investisseurs immobiliers confirmée, aucun volet immobilier — échec du filtre strict.",
       "source_url": "https://www.expoassist.net/events/city/libya"
     },
     {
       "name": "Libya Build Benghazi",
       "city": "Benghazi",
       "date": "3-6 mai 2027",
-      "reason": "19e édition d'un salon de construction : aucun track immobilier ni présence de promoteurs/investisseurs immobiliers confirmée — échec du filtre strict.",
+      "reason": "19e édition d'un salon de construction : aucun volet immobilier ni présence de promoteurs/investisseurs immobiliers confirmée — échec du filtre strict.",
       "source_url": "https://www.expoassist.net/events/city/libya"
     },
     {
@@ -782,7 +782,7 @@
     }
   ],
   "negative_findings": [
-    "Soudan : un rendez-vous existe sur l'horizon et n'avait pas été repéré. Sudan Construct Show, 11e édition, 1-4 décembre 2026, Khartoum International Fairground, qui annonce un secteur « Real Estate & Urban Development ». Il n'est pas retenu : salon de construction et d'équipement, sans track investisseur ni présence de promoteurs vérifiés. Aucun autre rendez-vous identifié. Revérifié le 15 novembre 2026.",
+    "Soudan : un rendez-vous existe sur l'horizon et n'avait pas été repéré. Sudan Construct Show, 11e édition, 1-4 décembre 2026, Khartoum International Fairground, qui annonce un secteur « Real Estate & Urban Development ». Il n'est pas retenu : salon de construction et d'équipement, sans volet investisseur ni présence de promoteurs vérifiés. Aucun autre rendez-vous identifié. Revérifié le 15 novembre 2026.",
     "Mauritanie : aucune manifestation immobilière trouvée. Les seuls événements confirmés à l'agenda 2027 sont l'EU–Mauritania Business Forum (énergie, agriculture) et Mauritanides (mines), tous deux hors périmètre.",
     "Libye : aucun sommet de capital ni salon immobilier avec édition future annoncée. Les seuls rendez-vous identifiés sont Sphere Expo (édition 2026 passée, 2027 non annoncée) et Libya Build (construction). Le risque pays rend l'horizon 2027 très incomplet — c'est la zone la plus sous-documentée du périmètre.",
     "Algérie : aucun salon immobilier national avec édition future annoncée au 06/11/2026 — DZ IMMO est le rendez-vous national (3e éd. le 22-25 oct. 2026) mais l'édition 2027 n'est pas calée. Le calendrier SAFEX est par ailleurs saturé de construction, énergie et industrie : sur la seule période 16 nov.-3 déc. 2026, dix manifestations se partagent les pavillons, dont une seule est financière (TASHIL) et une seule immobilière (DZ IMMO, hors horizon).",

@@ -10,7 +10,7 @@
       "end": "2027-03-18",
       "date_display": "17-18 mars 2027",
       "date_status": "confirmed",
-      "city": "Cape Town",
+      "city": "Le Cap",
       "country": "Afrique du Sud",
       "venue": "Century City Conference Centre",
       "organizer": "Loan Market Association (LMA) et International Capital Market Association (ICMA)",
@@ -26,7 +26,7 @@
       "last_verified": "2026-11-06",
       "conflicts": [
         "effectif : chiffres de l'édition 2026 (1 100+ délégués, 450 institutions) non confirmés pour 2027",
-        "adresse : aucune information contradictoire entre les sources ; le centre de congrès (Century City Conference Centre) est précisé par la page LMA, la page ICMA mentionnant seulement 'Cape Town'",
+        "adresse : aucune information contradictoire entre les sources ; le centre de congrès (Century City Conference Centre) est précisé par la page LMA, la page ICMA mentionnant seulement 'Le Cap'",
         "tarifs : la page LMA indique 1 500 GBP en tarif anticipé contre 2 000 GBP standard pour les représentants d'organisations africaines (montant non vérifié sur la page ICMA)"
       ]
     },
@@ -100,7 +100,7 @@
       "attendees": null,
       "exhibitors": null,
       "investor_score": 3,
-      "investor_why": "Forum d'investissement national organisé par le bras d'investissement de l'État, avec un Investor Council, des deal rooms et un accès curaté aux projets d'agrobusiness, d'industrie, de services et de property. L'immobilier est l'un des quatre secteurs d'intervention de la BDC et c'est à ce jour la seule date d'événement confirmée pour le Botswana dans l'horizon.",
+      "investor_why": "Forum d'investissement national organisé par le bras d'investissement de l'État, avec un Investor Council, des salles de négociation et un accès curaté aux projets d'agrobusiness, d'industrie, de services et de property. L'immobilier est l'un des quatre secteurs d'intervention de la BDC et c'est à ce jour la seule date d'événement confirmée pour le Botswana dans l'horizon.",
       "capital_actors": ["décideurs publics"],
       "themes": ["déploiement du capital", "investissement sectoriel", "PPP", "property"],
       "ticket_url": null,
@@ -109,7 +109,7 @@
       "last_verified": "2026-11-06",
       "conflicts": [
         "édition 2027: aucune information publiée par la BDC au 06/11/2026",
-        "effectif : l'accueil est décrit comme curaté (Investor Council, deal rooms), le nombre de participants étant non communiqué"
+        "effectif : l'accueil est décrit comme curaté (Investor Council, salles de négociation), le nombre de participants étant non communiqué"
       ]
     },
     {
@@ -122,7 +122,7 @@
       "date_status": "to_confirm",
       "city": "Harare",
       "country": "Zimbabwe",
-      "venue": "Hyatt Regency Harare (The Meikles) — venue de l'édition 2026",
+      "venue": "Hyatt Regency Harare (The Meikles) — lieu de l'édition 2026",
       "organizer": "API Events",
       "attendees": null,
       "exhibitors": null,
@@ -201,7 +201,7 @@
       "end": null,
       "date_display": "Édition 2027 — date non annoncée (19e édition : 27-29 oct. 2026)",
       "date_status": "to_confirm",
-      "city": "Cape Town",
+      "city": "Le Cap",
       "country": "Afrique du Sud",
       "venue": "Century City Conference Centre",
       "organizer": "Green Building Council South Africa (GBCSA)",
@@ -362,7 +362,7 @@
       "name": "SAAMA 2027 Conference",
       "city": "Stellenbosch",
       "date": "9-10 juin 2027",
-      "reason": "Conférence généraliste de gestion d'actifs (asset managers d'Afrique du Sud et d'Australie) sans track immobilier identifié : seule l'échelle est acquise, pas de substance foncière.",
+      "reason": "Conférence généraliste de gestion d'actifs (asset managers d'Afrique du Sud et d'Australie) sans volet immobilier identifié : seule l'échelle est acquise, pas de substance foncière.",
       "source_url": "https://saama.org.za/events/2027-conference"
     },
     {
@@ -376,35 +376,35 @@
       "name": "Finance Indaba 2027",
       "city": "Johannesburg",
       "date": "7 oct. 2027",
-      "reason": "Conférence et salon de la fonction finance (CFO South Africa, Sandton Convention Centre) orientés CFO, directeurs financiers et éditeurs de logiciels financiers : aucun track immobilier ni capital institutionnel.",
+      "reason": "Conférence et salon de la fonction finance (CFO South Africa, Sandton Convention Centre) orientés CFO, directeurs financiers et éditeurs de logiciels financiers : aucun volet immobilier ni capital institutionnel.",
       "source_url": "https://cfo.co.za/events/"
     },
     {
-      "name": "FMAS - Finance Magnates Africa Summit (rebaptisé The Trading Festival Cape Town)",
-      "city": "Cape Town",
+      "name": "FMAS - Finance Magnates Africa Summit (rebaptisé The Trading Festival Le Cap)",
+      "city": "Le Cap",
       "date": "mai 2027 (mois seul, date non fixée)",
-      "reason": "Rebaptisé en festival de trading de détail (The Trading Festival Cape Town) : summit fintech/brokers sans track immobilier, et la date 2027 n'est affichée que comme un mois incertain.",
+      "reason": "Rebaptisé en festival de trading de détail (The Trading Festival Le Cap) : summit fintech/brokers sans volet immobilier, et la date 2027 n'est affichée que comme un mois incertain.",
       "source_url": "https://africa.com/finance-magnates-africa-summit-evolves-into-the-trading-festival-cape-town-south-africa"
     },
     {
       "name": "Eswatini Investment Conference (EIC)",
       "city": "Ezulwini",
       "date": "29-31 juil. 2026",
-      "reason": "Édition 2026 passée hors horizon, forum d'attractivité multi-secteurs sans track foncier identifié ; aucune édition 2027 annoncée.",
+      "reason": "Édition 2026 passée hors horizon, forum d'attractivité multi-secteurs sans volet foncier identifié ; aucune édition 2027 annoncée.",
       "source_url": "https://comesaria.org/blog/eswatini-investment-forum/"
     },
     {
       "name": "AviaDev Africa 2027",
       "city": "Lusaka",
       "date": "9-11 juin 2027",
-      "reason": "Conférence aéronautique sur le développement des aéroports et le financement d'avions : hors périmètre immobilier, malgré un venue en Zambie.",
+      "reason": "Conférence aéronautique sur le développement des aéroports et le financement d'avions : hors périmètre immobilier, malgré un lieu en Zambie.",
       "source_url": "https://www.thebench.com/events"
     },
     {
       "name": "Canada-Africa Business Conference",
       "city": "Windhoek",
       "date": "2-4 févr. 2027",
-      "reason": "Forum d'affaires et minier sans track foncier ni promoteurs immobiliers annoncés : seule la portée nationale est acquise.",
+      "reason": "Forum d'affaires et minier sans volet foncier ni promoteurs immobiliers annoncés : seule la portée nationale est acquise.",
       "source_url": "https://www.thebench.com/events"
     },
     {
@@ -417,17 +417,17 @@
   ],
   "negative_findings": [
     "Angola : aucun salon immobilier national actif trouvé dans l'horizon. La SIMA (Feira do Imobiliário) n'est documentée que pour ses 1re et 2e éditions (2010-2011, APIMA avec la FIL Luanda), sans édition récente ni date 2027 ; \"Kwanza Imobiliária\" est introuvable ; la FILDA 2026 (21-26 juil. 2026, ZEE Luanda-Bengo) est une foire multisectorielle sans édition 2027 publiée ; Projekta (foire construction/urbanisme) n'est pas documentée pour 2027. À revérifier lors des éditions 2027.",
-    "Mozambique : aucun événement daté dans l'horizon au 15 novembre 2026. La référence du marché est MozamReal, forum immobilier bilingue annuel de Maputo (API Events) : l'édition 2026 s'est tenue en juin, aucune édition 2027 n'est annoncée. La FACIM (Maputo International Trade Fair) et la MMEC restent multisectoriels ou miniers, sans track foncier identifié. Revérifié le 15 novembre 2026.",
+    "Mozambique : aucun événement daté dans l'horizon au 15 novembre 2026. La référence du marché est MozamReal, forum immobilier bilingue annuel de Maputo (API Events) : l'édition 2026 s'est tenue en juin, aucune édition 2027 n'est annoncée. La FACIM (Maputo International Trade Fair) et la MMEC restent multisectoriels ou miniers, sans volet foncier identifié. Revérifié le 15 novembre 2026.",
     "Malawi : aucun \"Malawi Property Conference\" ni équivalent trouvé ; aucune association de promoteurs avec un rendez-vous 2026-2027 documenté. Les seules pistes locales relevées sont des formations immobilières, hors périmètre.",
-    "Lesotho : aucun rendez-vous immobilier trouvé ; seuls des séminaires de formation et d'accréditation apparaissent, sans date 2027 ni substance capitalistique. Le \"Boleswa summit\" (Maseru) est un sommet d'affaires généraliste sans track immobilier identifié.",
-    "Eswatini : aucune édition 2027 de l'Eswatini Investment Conference (EIC) annoncée (édition 2026 : 29-31 juil. 2026, Ezulwini), et le sujet reste multi-secteurs sans track foncier. La SADC Sustainable Energy Week 2027 (Eswatini) relève de l'énergie.",
-    "Namibie : aucune conférence d'investissement immobilier dédiée trouvée (type \"Namibia Property Investment Conference\" ou NAMP, l'acronyme désignant ailleurs d'autres structures) ; le seul événement décisionnel daté dans l'horizon est le NamPPF II (25-26 nov. 2026). Le Canada-Africa Business Conference (Windhoek, 2-4 févr. 2027) est un forum minier et d'affaires générales sans track immobilier.",
+    "Lesotho : aucun rendez-vous immobilier trouvé ; seuls des séminaires de formation et d'accréditation apparaissent, sans date 2027 ni substance capitalistique. Le \"Boleswa summit\" (Maseru) est un sommet d'affaires généraliste sans volet immobilier identifié.",
+    "Eswatini : aucune édition 2027 de l'Eswatini Investment Conference (EIC) annoncée (édition 2026 : 29-31 juil. 2026, Ezulwini), et le sujet reste multi-secteurs sans volet foncier. La SADC Sustainable Energy Week 2027 (Eswatini) relève de l'énergie.",
+    "Namibie : aucune conférence d'investissement immobilier dédiée trouvée (type \"Namibia Property Investment Conference\" ou NAMP, l'acronyme désignant ailleurs d'autres structures) ; le seul événement décisionnel daté dans l'horizon est le NamPPF II (25-26 nov. 2026). Le Canada-Africa Business Conference (Windhoek, 2-4 févr. 2027) est un forum minier et d'affaires générales sans volet immobilier.",
     "Cameroun : aucun \"Salon International de l'Immobilier de Douala\" ni salon immobilier de Yaoundé n'a été trouvé ; la seule manifestation foncier et habitat national identifiée est la Semaine de l'Habitat (JMH) du MINHDU, dont l'édition 2027 n'est pas annoncée. FIERA-DOUALA relève des énergies renouvelables.",
     "Zambie : aucune date 2027 confirmée pour le ZAMREAL Property Forum ni pour les Zambia Real Estate Awards (ZREA) ; seule la 6e édition du ZAMREAL (9 avril 2025, InterContinental Lusaka) et l'édition 2026 des ZREA (11 déc. 2026, rejetée car gala de récompenses) sont documentées.",
     "Botswana : aucun \"Botswana Property Week\" trouvé. Les rendez-vous immobiliers documentés (conférence du REIB du 28 août 2026 à Gaborone, Real Estate Conference and Expo de Property267, 2e édition en octobre 2023) sont hors horizon et sans édition 2027 annoncée ; seule la conférence d'investissement de la BDC (5 nov. 2026) est retenue.",
     "Zimbabwe : aucune édition 2027 annoncée pour le ZimReal Property Investment Forum ni pour le Zimbabwe Future Capital Forum ; l'édition 2026 (26 août 2026) est passée et les sites API Events et zimreal.com n'affichent que 2026.",
     "Afrique du Sud : le calendrier est très bruité (séminaires de formation et d'accréditation IEASA, SAIF, CFA, webinaires de 50 personnes du REI, conférences d'éditeurs de logiciels) ; aucun n'est retenu au titre du test 2 sur 6. Aucun salon de crédit hypothécaire panafricain autonome n'a été trouvé en Afrique du Sud, le volet crédit étant couvert par l'ICMA/LMA et l'AUHF (zone continentale).",
-    "Afrique du Sud : hors événements déjà traités par la zone continentale (API Summit 2027, Big 5 Construct South Africa 2027, African Property Awards), plusieurs événements repérés ont été écartés faute de track immobilier identifié : CITE - Cape Industrial Technology Exhibition (mars 2027, Cape Town), Africa's Green Economy Summit (23-26 févr. 2027, CTICC), RE+ South Africa (juin 2027, Johannesburg), Sustainability & ESG Africa Conference & Expo (6-7 oct. 2027, Johannesburg), South Africa Infrastructure Expo (8-10 juin 2027, Johannesburg), ISTR Africa Regional Conference (15-16 sept. 2027, Durban), Hotel & Hospitality Expo Africa (22-24 juin 2027, Cape Town) et Finance Transformation Africa (21-22 avr. 2027, Johannesburg).",
+    "Afrique du Sud : hors événements déjà traités par la zone continentale (API Summit 2027, Big 5 Construct South Africa 2027, African Property Awards), plusieurs événements repérés ont été écartés faute de volet immobilier identifié : CITE - Cape Industrial Technology Exhibition (mars 2027, Le Cap), Africa's Green Economy Summit (23-26 févr. 2027, CTICC), RE+ South Africa (juin 2027, Johannesburg), Sustainability & ESG Africa Conference & Expo (6-7 oct. 2027, Johannesburg), South Africa Infrastructure Expo (8-10 juin 2027, Johannesburg), ISTR Africa Regional Conference (15-16 sept. 2027, Durban), Hotel & Hospitality Expo Africa (22-24 juin 2027, Le Cap) et Finance Transformation Africa (21-22 avr. 2027, Johannesburg).",
     "Règle de traitement appliquée : les séries d'événements dont la dernière édition précède le 01/11/2026 et dont l'édition 2027 n'est pas encore publiée sont conservées en catégorie watchlist avec dates nulles et date_status \"to_confirm\" (GBCSA, IHS, Gabon, Congo, JMH Cameroun, ZAMREAL, ZimReal/ZFCF). Aucune date n'a été inventée pour ces éditions ; SAPOA 2027 est la seule entrée watchlist portant une date, celle-ci provenant d'un annuaire tiers et non d'une confirmation de l'organisateur."
   ],
   "sources": [
@@ -483,7 +483,7 @@
     {"url": "https://bfsiitsummit.com/south-africa/", "name": "BFSI Innovation and Technology Summit South Africa 2027", "accessed": "2026-11-06"},
     {"url": "https://cfo.co.za/events/", "name": "CFO South Africa - Finance Indaba 2027 (7 octobre 2027)", "accessed": "2026-11-06"},
     {"url": "https://finance-indaba.co.za/", "name": "Finance Indaba - site officiel", "accessed": "2026-11-06"},
-    {"url": "https://africa.com/finance-magnates-africa-summit-evolves-into-the-trading-festival-cape-town-south-africa", "name": "Africa.com - rebaptisement de FMAS en The Trading Festival Cape Town", "accessed": "2026-11-06"},
+    {"url": "https://africa.com/finance-magnates-africa-summit-evolves-into-the-trading-festival-cape-town-south-africa", "name": "Africa.com - rebaptisement de FMAS en The Trading Festival Le Cap", "accessed": "2026-11-06"},
     {"url": "https://comesaria.org/blog/eswatini-investment-forum/", "name": "Eswatini Investment Conference", "accessed": "2026-11-06"},
     {"url": "https://siimea.com/", "name": "SIIMEA - salon de l'investissement, de l'immobilier et des énergies pour l'Afrique (Paris, 9-11 avril 2027)", "accessed": "2026-11-06"},
     {"url": "https://www.angocasa.com/apima/", "name": "APIMA Angola - SIMA, feira do imobiliário (éditions 2010-2011)", "accessed": "2026-11-06"},

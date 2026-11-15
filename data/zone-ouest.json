@@ -17,7 +17,7 @@
    "attendees": "40 000+ visiteurs professionnels annoncés",
    "exhibitors": "400+ exposants de 25 pays annoncés",
    "investor_score": 5,
-   "investor_why": "Le plus gros rendez-vous panafricain du logement et de la construction : 400+ exposants de 25 pays, 40 000+ visiteurs, et la présence annoncée des ministres du logement de plus de 10 pays africains, de Shelter Afrique, de l'IFC et de la Banque mondiale. Un espace dédié au financement du logement (crédit hypothécaire, assurance, trust infrastructure, fonds public) en fait le meilleur point de rencontre entre institutionnels et pipelines de projets de la zone.",
+   "investor_why": "Le plus gros rendez-vous panafricain du logement et de la construction : 400+ exposants de 25 pays, 40 000+ visiteurs, et la présence annoncée des ministres du logement de plus de 10 pays africains, de Shelter Afrique, de l'IFC et de la Banque mondiale. Un espace dédié au financement du logement (crédit hypothécaire, assurance, trust infrastructure, fonds public) en fait le meilleur point de rencontre entre institutionnels et portefeuilles de projets de la zone.",
    "capital_actors": [
     "DFI",
     "décideurs publics",
@@ -171,10 +171,10 @@
    "country": "Nigeria",
    "venue": "Shehu Musa Yar'Adua Centre, Wuse, Abuja",
    "organizer": "Eventhive.ng (Africa Real Estate Series)",
-   "attendees": "1 000+ participants annoncés (dont 45 % de profils C-level)",
+   "attendees": "1 000+ participants annoncés (dont 45 % de profils dirigeants)",
    "exhibitors": "30+ exposants annoncés",
    "investor_score": 4,
-   "investor_why": "Rendez-vous annoncé comme majeur pour le marché immobilier d'Abuja, avec 1 000+ participants, 30+ speakers dont le président de REDAN, Azubike Emodi (Afriland Properties), Saadiya Aliyu (Urban Shelter) et Odunayo Ojo (UPDC), et un thème centré sur « Investing, Developing and Transforming Nigeria's Real Estate Capital ». C'est le point d'entrée le plus direct vers les promoteurs et financiers du marché d'Abuja.",
+   "investor_why": "Rendez-vous annoncé comme majeur pour le marché immobilier d'Abuja, avec 1 000+ participants, 30+ intervenants dont le président de REDAN, Azubike Emodi (Afriland Properties), Saadiya Aliyu (Urban Shelter) et Odunayo Ojo (UPDC), et un thème centré sur « Investing, Developing and Transforming Nigeria's Real Estate Capital ». C'est le point d'entrée le plus direct vers les promoteurs et financiers du marché d'Abuja.",
    "capital_actors": [
     "investisseurs",
     "banques",
@@ -210,12 +210,12 @@
    "date_status": "confirmed",
    "city": "Accra",
    "country": "Ghana",
-   "venue": "Movenpick Ambassador Hotel Accra, Independence Avenue",
+   "venue": "Movenpick Ambassador Hotel Accra, Independence Alieu",
    "organizer": "VX Global (Velocity Xperiences Global LLC) / VX Live",
    "attendees": null,
    "exhibitors": null,
    "investor_score": 2,
-   "investor_why": "Gala de clôture du New Africa Capital Forum, qui récompense les institutions et fonds qui « façonnent l'avenir financier de l'Afrique ». Entrée 49 à 950 $ : format de networking de fonds, d'intérêt direct pour un financeur immobilier ; la part réelle des joueurs immobiliers doit être vérifié dans la liste des lauréats 2026.",
+   "investor_why": "Gala de clôture du New Africa Capital Forum, qui récompense les institutions et fonds qui « façonnent l'avenir financier de l'Afrique ». Entrée 49 à 950 $ : format de réseautage de fonds, d'intérêt direct pour un financeur immobilier ; la part réelle des joueurs immobiliers doit être vérifié dans la liste des lauréats 2026.",
    "capital_actors": [
     "fonds de pension",
     "investisseurs institutionnels",
@@ -234,7 +234,7 @@
    "last_verified": "2026-11-06",
    "conflicts": [
     "date : 5 novembre 2026 (Eventbrite, allevents.in, svents.com) vs 6 novembre 2026 (viewghana.com)",
-    "contenu : forum général de capital privé (startups, LP/GP) — aucun track immobilier dédié confirmé dans le programme 2026"
+    "contenu : forum général de capital privé (startups, LP/GP) — aucun volet immobilier dédié confirmé dans le programme 2026"
    ]
   },
   {
@@ -247,12 +247,12 @@
    "date_status": "probable",
    "city": "Accra",
    "country": "Ghana",
-   "venue": "Movenpick Ambassador Hotel Accra, Independence Avenue",
+   "venue": "Movenpick Ambassador Hotel Accra, Independence Alieu",
    "organizer": "VX Global / VX Live (Velocity Xperiences Global LLC)",
    "attendees": "300+ délégués attendus (LPs, GPs, DFIs, private capital leaders)",
    "exhibitors": null,
    "investor_score": 3,
-   "investor_why": "Rassemble LP/GP, fonds de pension, assureurs, fonds souverains, DFIs et family offices autour de l'allocation de capital en Afrique, avec un expo floor et un pavillon international. Forum généraliste — le pan immobilier n'est pas un track identifié en 2026 — mais c'est le rendez-vous où se tiennent les allocateurs de long terme susceptibles de financer le foncier ouest-africain.",
+   "investor_why": "Rassemble LP/GP, fonds de pension, assureurs, fonds souverains, DFIs et family offices autour de l'allocation de capital en Afrique, avec un expo floor et un pavillon international. Forum généraliste — le pan immobilier n'est pas un volet identifié en 2026 — mais c'est le rendez-vous où se tiennent les allocateurs de long terme susceptibles de financer le foncier ouest-africain.",
    "capital_actors": [
     "fonds de pension",
     "DFI",
@@ -275,7 +275,7 @@
    "last_verified": "2026-11-06",
    "conflicts": [
     "date : 4-5 novembre 2026 (page d'accueil, page « VX Events Lineup 2026 », page « Latest News », Eventbrite, riotimesonline) vs 29-30 octobre 2026 (page « NACF 2026 » du même site officiel) — la version 29-30 octobre tomberait hors fenêtre, d'où un statut « probable »",
-    "contenu : aucun track immobilier ou bâti identifié dans le programme 2026"
+    "contenu : aucun volet immobilier ou bâti identifié dans le programme 2026"
    ]
   },
   {
@@ -293,7 +293,7 @@
    "attendees": null,
    "exhibitors": null,
    "investor_score": 2,
-   "investor_why": "Soirée d'awards continentale hébergée à Lagos, qui met en scène promoteurs, investisseurs, institutions financières et représentants gouvernementaux sur les marchés de Lagos, Nairobi, Johannesburg, Accra, Le Caire et Kigali. Format de networking d'apparatch plutôt que de conférence de capital : à traiter comme un rendez-vous de relationships, pas comme un salon d'investissement.",
+   "investor_why": "Soirée d'awards continentale hébergée à Lagos, qui met en scène promoteurs, investisseurs, institutions financières et représentants gouvernementaux sur les marchés de Lagos, Nairobi, Johannesburg, Accra, Le Caire et Kigali. Format de réseautage d'apparatch plutôt que de conférence de capital : à traiter comme un rendez-vous de relationships, pas comme un salon d'investissement.",
    "capital_actors": [
     "investisseurs",
     "banques",
@@ -408,7 +408,7 @@
    "attendees": null,
    "exhibitors": null,
    "investor_score": 3,
-   "investor_why": "Deuxième édition annoncée au calendrier Eventhive 2027, sur le modèle de l'édition 2026 (1 000+ participants, 30+ speakers, 30+ exposants, 45 % de C-level, avec REDAN, Afriland, Urban Shelter et UPDC). Rendez-vous à placer en priorité dans l'agenda Abuja de fin d'année.",
+   "investor_why": "Deuxième édition annoncée au calendrier Eventhive 2027, sur le modèle de l'édition 2026 (1 000+ participants, 30+ intervenants, 30+ exposants, 45 % de dirigeants, avec REDAN, Afriland, Urban Shelter et UPDC). Rendez-vous à placer en priorité dans l'agenda Abuja de fin d'année.",
    "capital_actors": [
     "investisseurs",
     "banques",
@@ -485,7 +485,7 @@
    "attendees": "11 000+ professionnels annoncés",
    "exhibitors": "200+ marques exposantes annoncées (150+ selon la fiche produit)",
    "investor_score": 2,
-   "investor_why": "Le salon de référence de la construction au Nigeria (200+ exposants de 20+ pays, 60+ speakers en 30+ sessions CPD certifiées) avec la présence annoncée de contractors, developers, consultants, government representatives et facility managers. Pertinent pour un investisseur qui cherche des pipelines de promoteurs et de projets de construction, mais le contenu reste orienté technique et achats plutôt que capital.",
+   "investor_why": "Le salon de référence de la construction au Nigeria (200+ exposants de 20+ pays, 60+ intervenants en 30+ sessions CPD certifiées) avec la présence annoncée de contractors, developers, consultants, government representatives et facility managers. Pertinent pour un investisseur qui cherche des projets de promoteurs et de projets de construction, mais le contenu reste orienté technique et achats plutôt que capital.",
    "capital_actors": [
     "promoteurs immobiliers",
     "décideurs publics",
@@ -524,7 +524,7 @@
    "attendees": null,
    "exhibitors": null,
    "investor_score": 3,
-   "investor_why": "Biennale régionale qui a gardé la position de « laboratoire d'idées » et de cadre de dialogue entre pouvoirs publics, professionnels, investisseurs et collectivités territoriales, avec un soutien explicite du ministre de l'Urbanisme, du Logement et du Cadre de vie. Son pôle « Habiter et Décorer » et ses six panels « experts, decision-makers and investors » en font un bon radar sur les pipelines de promoteurs et les politiques d'urbanisme ouest-africaines.",
+   "investor_why": "Biennale régionale qui a gardé la position de « laboratoire d'idées » et de cadre de dialogue entre pouvoirs publics, professionnels, investisseurs et collectivités territoriales, avec un soutien explicite du ministre de l'Urbanisme, du Logement et du Cadre de vie. Son pôle « Habiter et Décorer » et ses six tables rondes « experts, decision-makers and investors » en font un bon radar sur les projets de promoteurs et les politiques d'urbanisme ouest-africaines.",
    "capital_actors": [
     "décideurs publics",
     "promoteurs immobiliers",
@@ -565,7 +565,7 @@
    "attendees": "200+ gérants de fonds et investisseurs annoncés",
    "exhibitors": null,
    "investor_score": 3,
-   "investor_why": "Le point de rendez-vous du capital privé nigérian : 200+ fonds, administrateurs de fonds de pension, assureurs, fonds souverains, DFIs et family offices, avec les investisseurs d'infrastructure explicitement conviés. C'est le bon endroit pour sourcer des investisseurs capables de porter des actifs immobiliers nigérians ; à noter qu'aucun track immobilier dédié n'est confirmé pour l'édition 2027.",
+   "investor_why": "Le point de rendez-vous du capital privé nigérian : 200+ fonds, administrateurs de fonds de pension, assureurs, fonds souverains, DFIs et family offices, avec les investisseurs d'infrastructure explicitement conviés. C'est le bon endroit pour sourcer des investisseurs capables de porter des actifs immobiliers nigérians ; à noter qu'aucun volet immobilier dédié n'est confirmé pour l'édition 2027.",
    "capital_actors": [
     "private equity",
     "fonds de pension",
@@ -607,7 +607,7 @@
    "attendees": null,
    "exhibitors": null,
    "investor_score": 5,
-   "investor_why": "C'est là que se joue le pipeline de crédit foncier ghanéen : GH¢1 Md du budget 2027 fléché vers un fonds revolving de GH¢3 Md, taux hypothécaires ramenés à 8,4 % (13,5 % avant) et 10,4 % pour le financement des promoteurs, avec appel explicite aux fonds de pension, assureurs, IFD et diaspora. À suivre en priorité même si la date 2027 n'est pas publiée.",
+   "investor_why": "C'est là que se joue le portefeuille de projets de crédit foncier ghanéen : GH¢1 Md du budget 2027 fléché vers un fonds revolving de GH¢3 Md, taux hypothécaires ramenés à 8,4 % (13,5 % avant) et 10,4 % pour le financement des promoteurs, avec appel explicite aux fonds de pension, assureurs, IFD et diaspora. À suivre en priorité même si la date 2027 n'est pas publiée.",
    "capital_actors": [
     "décideurs publics",
     "banques",
@@ -804,13 +804,13 @@
    "attendees": null,
    "exhibitors": null,
    "investor_score": 2,
-   "investor_why": "Itinéraire panafricain d'un opérateur spécialisé dans l'immobilier, avec keynotes, panels, exposition et remise de prix, utile pour croiser Lagos, Accra et Abuja sur une même séquence de marché. L'échelle de l'édition d'Abuja n'est pas documentée : à traiter comme un rendez-vous de réseau plutôt que comme une conférence de capital.",
+   "investor_why": "Itinéraire panafricain d'un opérateur spécialisé dans l'immobilier, avec plénières, tables rondes, exposition et remise de prix, utile pour croiser Lagos, Accra et Abuja sur une même séquence de marché. L'échelle de l'édition d'Abuja n'est pas documentée : à traiter comme un rendez-vous de réseau plutôt que comme une conférence de capital.",
    "capital_actors": [
     "investisseurs institutionnels",
     "décideurs publics"
    ],
    "themes": [
-    "keynotes",
+    "plénières",
     "exposition",
     "awards",
     "réseautage",
@@ -867,7 +867,7 @@
    "name": "Wemabod Real Estate Outlook Conference 2026",
    "city": "Lagos",
    "date": "3 fév. 2026 (début février)",
-   "reason": "Édition 2026 passée (1 800+ participants, thème « Unlocking Land and Infrastructure for Inclusive Housing », keynote de l'ancien vice-président Osinbajo). Aucune édition 2027 annoncée.",
+   "reason": "Édition 2026 passée (1 800+ participants, thème « Unlocking Land and Infrastructure for Inclusive Housing », intervention liminaire de l'ancien vice-président Osinbajo). Aucune édition 2027 annoncée.",
    "source_url": "https://allafrica.com/stories/202602130438.html"
   },
   {
@@ -910,7 +910,7 @@
    "city": "Abuja",
    "date": "22 août 2026 (vs 8 août 2026 selon le flux ICS)",
    "reason": "Édition 2026 passée (Sandralia Hotel by Whitestone).",
-   "source_url": "https://www.eventbrite.com/d/nigeria--federal-capital-territory/real-estate-networking/"
+   "source_url": "https://www.eventbrite.com/d/nigeria--federal-capital-territory/real-estate-réseautage/"
   },
   {
    "name": "African Women in Real Estate Summit & Awards (Lagos / Abuja / Accra 2026)",
@@ -930,7 +930,7 @@
    "name": "International Investors Summit Nigeria 2026",
    "city": "Abuja",
    "date": "10-11 nov. 2026",
-   "reason": "Dans la fenêtre et très capital-intensive (50+ pays, 100+ investisseurs, objectif 100 Md $) mais REJETÉ : le programme sectoriel (pétrole, énergie renouvelable, tech, IA, fintech, santé, agro, mines, infrastructures, éducation) ne comporte aucun track immobilier ni foncier identifié.",
+   "reason": "Dans la fenêtre et très capital-intensive (50+ pays, 100+ investisseurs, objectif 100 Md $) mais REJETÉ : le programme sectoriel (pétrole, énergie renouvelable, tech, IA, fintech, santé, agro, mines, infrastructures, éducation) ne comporte aucun volet immobilier ni foncier identifié.",
    "source_url": "https://thewillnews.com/nigeria-set-to-benefit-from-100bn-investment-push-across-oil-tech-energy"
   },
   {
@@ -958,7 +958,7 @@
    "name": "International NIGERIA BUILDEXPO 2026",
    "city": "Lagos",
    "date": "25 août 2026",
-   "reason": "Édition 2026 passée et salon BTP/matériaux sans track « real estate » ni présence documentée de promoteurs ou investisseurs immobiliers — ne franchit pas le filtre strict des salons adjacents.",
+   "reason": "Édition 2026 passée et salon BTP/matériaux sans volet « real estate » ni présence documentée de promoteurs ou investisseurs immobiliers — ne franchit pas le filtre strict des salons adjacents.",
    "source_url": "https://www.eventbrite.com/d/nigeria--lagos/expos/"
   },
   {
@@ -1023,7 +1023,7 @@
   "Nigeria — RECON Expo : pas d'édition 2027 annoncée.",
   "Nigeria — Property Connect (Accra) et Africa Real Estate International : pas d'édition ouest-africaine 2027 datée, à l'exception d'ARCE 2027 (annonce sans date) et d'ARES Abuja 2027 (annonce Eventbrite à vérifier).",
   "Ghana — FID Congress / AREDI / Ghana Real Estate Conference : aucune édition 2026-2027 dans la fenêtre n'a pu être confirmée ; les organisations citées dans la liste des ancres n'ont pas de rendez-vous immobilier daté.",
-  "Nigeria Private Capital Summit 2027 : date retenue au 9 septembre 2027 d'après le seul calendrier Eventhive 2027 ; aucun programme n'est publié, donc l'absence de track immobilier dédié est à confirmer."
+  "Nigeria Private Capital Summit 2027 : date retenue au 9 septembre 2027 d'après le seul calendrier Eventhive 2027 ; aucun programme n'est publié, donc l'absence de volet immobilier dédié est à confirmer."
  ],
  "sources": [
   {
@@ -1063,7 +1063,7 @@
   },
   {
    "url": "https://www.vanguardngr.com/2026/09/investors-developers-policymakers-converge-for-abuja-real-estate-fest-2026/",
-   "name": "Vanguard Nigeria — Abuja Real Estate Fest 2026 (thème, panels)",
+   "name": "Vanguard Nigeria — Abuja Real Estate Fest 2026 (thème, tables rondes)",
    "accessed": "2026-11-06"
   },
   {
@@ -1138,7 +1138,7 @@
   },
   {
    "url": "https://www.eventseye.com/fairs/dst1_trade-shows_july_1_building-construction.html",
-   "name": "Eventseye — Africa Build Show Ghana (venue contradictoire)",
+   "name": "Eventseye — Africa Build Show Ghana (lieu contradictoire)",
    "accessed": "2026-11-06"
   },
   {
