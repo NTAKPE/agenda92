@@ -499,7 +499,7 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
     <p><b>Agenda des événements immobiliers en Afrique</b> — un outil de travail à destination des
     investisseurs et financiers. Les dates non confirmées sont signalées explicitement : vérifiez
     toujours sur le site officiel avant de déplacer ou de payer.</p>
-    <p>Édition du %s · %d événements retenus · %d pays · dernière passe de re-vérification : %s.</p>
+    <p>Édition du %s · %d événements retenus · %d pays · dernière passe de revérification : %s.</p>
     <p>Les sources et les contradictions entre sources sont consultables sur chaque fiche.
     <a href="%smethodologie.html">Comprendre la méthode</a> ·
     <a href="%sa-propos.html">À propos et politique de correction</a> ·
@@ -1026,7 +1026,7 @@ def build():
   <div class="notice"><b>Périmètre.</b> Uniquement les événements organisés sur le continent
   africain. Les rendez-vous organisés hors d'Afrique (Dubaï, Londres, New York) et les expos de la
   diaspora sont exclus, même s'ils portent sur l'immobilier africain. Filtre d'inclusion&nbsp;:
-  à moins deux des six critères (audience décisionnelle, échelle, substance, continuité, influence,
+  à moins de deux des six critères (audience décisionnelle, échelle, substance, continuité, influence,
   portée). <a href="methodologie.html">La méthode en détail</a>.</div>
 
   %s
@@ -1135,7 +1135,7 @@ def build():
         if e.get("ticket_url"):
             cta_row = ('<p class="cta-row"><a class="btn" href="%s" rel="noopener" target="_blank">'
                        'Billetterie / inscription</a>'
-                       '<span class="cta-note">lien de l\'organisateur, non verifie pour le tarif</span></p>'
+                       '<span class="cta-note">lien de l\'organisateur, tarif non vérifié</span></p>'
                        % esc(e["ticket_url"]))
 
         # Bloc « Sources » : la source principale, la billetterie, et les sources
@@ -1311,12 +1311,13 @@ def build():
 <main><div class="wrap">
  <p class="eyebrow">Par pays</p>
  <h1>Événements immobiliers — %s</h1>
- <p class="lede">%d événement(s) retenu(s) sur l'horizon novembre 2026 – décembre 2027, avec le
- statut de date et les sources. Les événements sans date sont annoncés mais pas encore fixées.</p>
+ <p class="lede">Les rendez-vous retenus sur l'horizon novembre 2026 – décembre 2027, avec leur
+ statut de date et leurs sources. Les événements sans date sont annoncés, mais leur date n'est
+ pas encore fixée.</p>
  %s
  <div class="stats">
-  <div class="stat"><b>%d</b><span>événements</span></div>
-  <div class="stat"><b>%d</b><span>datés</span></div>
+  <div class="stat"><b>%d</b><span>%s</span></div>
+  <div class="stat"><b>%d</b><span>%s</span></div>
   <div class="stat"><b>%d</b><span>à confirmer</span></div>
  </div>
  %s
@@ -1326,8 +1327,10 @@ def build():
  <a href="%scontribuer.html">Signaler un événement manquant</a></p>
 </div></main>
 """ % (
-            esc(country), len(evs), warning,
-            len(evs), len([x for x in evs if x.get("start")]),
+            esc(country), warning,
+            len(evs), "événement" if len(evs) == 1 else "événements",
+            len([x for x in evs if x.get("start")]),
+            "daté" if len([x for x in evs if x.get("start")]) == 1 else "datés",
             len([x for x in evs if x.get("status") == "to_confirm"]),
             sections,
             '<div class="chips">%s</div>' % "".join(
@@ -1417,20 +1420,20 @@ def build():
  Chaque refus porte son motif — un salon de décoration à Accra n'est pas un rendez-vous
  d'investisseurs, un séminaire d'accréditation de cinquante personnes non plus.</p>
  <p>Le filtre tient en six critères : audience décisionnelle, échelle, substance, continuité,
- influence, portée. Deux suffisent pour être retenu, un seul suffit à être écarté. Ce seuil
+ influence, portée. Deux critères suffisent pour retenir un événement ; un seul suffit à l'écarter. Ce seuil
  est une décision, pas une vérité : il privilégie le capital et le financement, au détriment
  des salons grand public.</p>
 
  <h2>97 fiches, 83 dossiers</h2>
  <p>Quatorze doublons. Le même événement change de nom d'une édition à l'autre — AHIF,
  FHS Africa et Africa Hotel Investment Summit sont une seule et même chose. Un premier
- passage par clé canonique et table d'alias, un second par similarité de noms sur même pays,
- même ville et même date de départ. La fusion garde la fiche la plus complète et
+ passage par clé canonique et table d'alias, un second par similarité de noms sur le même pays,
+ la même ville et la même date de départ. La fusion garde la fiche la plus complète et
  <b>fait l'union des conflits</b> : consolider ne doit jamais faire perdre une contradiction.</p>
 
  <h2>Le statut des dates</h2>
  <p>Onze dates confirmées, trente-trois à confirmer, le reste probable. Le statut n'est pas
- saisi à la main, il est recalculé : une contradiction entre sources — deux dates distinctes,
+ saisi à la main : il est recalculé. une contradiction entre sources — deux dates distinctes,
  ou un marqueur explicite — rétrograde automatiquement une date « confirmée » en
  « probable ». On ne peut pas se mentir sur une date dans ses propres données sans que le
  statut bouge.</p>
@@ -1509,7 +1512,7 @@ def build():
 
    <h2>5 · Zones à blanc</h2>
   <p>%d constats d'information introuvable, arrêtés le 6 novembre 2026 ; trois d'entre eux ont
-  été re-vérifiés et corrigés le 15 novembre 2026. Les deux listes sont séparées à dessein : un
+  été revérifiés et corrigés le 15 novembre 2026. Les deux listes sont séparées à dessein : un
   constat dit qu'une recherche n'a rien donné à cette date ; un rejet dit qu'un événement existe
   et a été exclu.</p>
   <details><summary>Voir les %d constats</summary>

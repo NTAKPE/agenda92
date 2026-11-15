@@ -180,6 +180,7 @@ python check_countries.py  # nomenclature et périmètre
 python check_cited.py      # chaque source affichée vient du registre des pages lues
 python check_official.py   # chaque fiche indique le site officiel et l'indépendance
 python check_ics.py        # conformité RFC 5545 de l'export calendrier
+python check_langue.py     # français publié : colons, accords, accents
 python refresh.py          # relit les pages officielles et signale les écarts
 ```
 

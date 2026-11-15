@@ -25,8 +25,8 @@
       "source_name": "API Summit (site officiel)",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "édition: le site officiel annonce la 18e édition en 2027 (Property Flash qualifiait l'édition 2026 de 17e) — cohérent",
-        "lieu: CTICC depuis 2026, l'édition 2025 s'était tenue dans un autre venue de Cape Town (changement assumé par l'organisateur)"
+        "édition : le site officiel annonce la 18e édition en 2027 (Property Flash qualifiait l'édition 2026 de 17e) — cohérent",
+        "lieu : CTICC depuis 2026, l'édition 2025 s'était tenue dans un autre venue de Cape Town (changement assumé par l'organisateur)"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "source_name": "API Events — calendrier 2027",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: 12-13 mai 2027 selon le calendrier API Events ; un agrégateur tiers (XPOIQ) indique seulement « Wed, May 12 » — cohérent",
+        "date : 12-13 mai 2027 selon le calendrier API Events ; un agrégateur tiers (XPOIQ) indique seulement « Wed, May 12 » — cohérent",
         "la 2e édition s'est tenue les 13-14 mai 2026 au Radisson Blu Upperhill"
       ]
     },
@@ -79,7 +79,7 @@
       "source_name": "FHS Africa (site officiel)",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: 2-3 février 2027 initialement annoncé (UDP, Breaking Travel News, 19 oct. 2026) → décalé au 28-29 avril 2027 pour s'aligner sur le Pearl of Africa Tourism Expo (POATE) et l'AFCON (atta.travel, futurehospitality.com)"
+        "date : 2-3 février 2027 initialement annoncé (UDP, Breaking Travel News, 19 oct. 2026) → décalé au 28-29 avril 2027 pour s'aligner sur le Pearl of Africa Tourism Expo (POATE) et l'AFCON (atta.travel, futurehospitality.com)"
       ]
     },
     {
@@ -105,9 +105,9 @@
       "source_name": "AIHS 2027 — fiche événement (afrindex) + Eventbrite organisateur",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: 12-17 juillet 2027 (afrindex, fiche 1) vs 13-18 juillet 2027 (afrindex, fiche 2) — les deux versions de la même source divergent",
-        "repère: l'édition 2026 (20e anniversaire) s'est tenue du 13 au 18 juillet 2026 (Vanguard) ; l'édition 2025, du 27 juillet au 1er août 2025",
-        "lieu: Transcorp Hilton Abuja confirmé par la page billetterie Eventbrite de l'organisateur"
+        "date : 12-17 juillet 2027 (afrindex, fiche 1) vs 13-18 juillet 2027 (afrindex, fiche 2) — les deux versions de la même source divergent",
+        "repère : l'édition 2026 (20e anniversaire) s'est tenue du 13 au 18 juillet 2026 (Vanguard) ; l'édition 2025, du 27 juillet au 1er août 2025",
+        "lieu : Transcorp Hilton Abuja confirmé par la page billetterie Eventbrite de l'organisateur"
       ]
     },
     {
@@ -133,8 +133,8 @@
       "source_name": "CAHF — AUHF Annual Conference",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "titre: plusieurs sources ELIGibles nomment l'événement « Future Capital & Legacy Forum » pour la date du 10 nov. 2026 à Nairobi — dédoublement probable avec le Capital & Legacy Forum (API Events) à vérifier auprès des organisateurs",
-        "lieu: le salle n'est pas précisé dans les sources consultées"
+        "titre : plusieurs sources ELIGibles nomment l'événement « Future Capital & Legacy Forum » pour la date du 10 nov. 2026 à Nairobi — dédoublement probable avec le Capital & Legacy Forum (API Events) à vérifier auprès des organisateurs",
+        "lieu : le salle n'est pas précisé dans les sources consultées"
       ]
     },
     {
@@ -160,8 +160,8 @@
       "source_name": "API Events — Morocco Showcase",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "effectif: 300+ délégués (apievents.com, hospitalitynet, afriwallstreet) vs 350+ délégués (brochure officielle API Events) — même ordre de grandeur",
-        "historique de format: la 1re édition ( Morocco Showcase Summit, nov. 2024) s'est tenue les 19-20 nov. au Marriott, puis une 2e édition le 26 nov. 2025"
+        "effectif : 300+ délégués (apievents.com, hospitalitynet, afriwallstreet) vs 350+ délégués (brochure officielle API Events) — même ordre de grandeur",
+        "historique de format : la 1re édition ( Morocco Showcase Summit, nov. 2024) s'est tenue les 19-20 nov. au Marriott, puis une 2e édition le 26 nov. 2025"
       ]
     },
     {
@@ -187,10 +187,10 @@
       "source_name": "API Events — Capital & Legacy Forum",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date/lieu: la page événements de Suntera affiche « Capital & Legacy Forum 2026 — Lagos, Nigeria — October 15, 2026 » et « All Raise VC Summit 2026 — Nairobi — November 10, 2026 » : le calendrier du partenaire est manifestement mal aligné (intitulé/date croisés) ; la date Nairobi 10 nov. 2026 est confirmée par API Events, la presse et le sponsor",
-        "nom: désigné « Future Capital & Legacy Forum » dans les communiqués AfriWallStreet / platformafrica / APO Group",
-        "effectif: aucune chiffres publié (« qualité avant le nombre de billets ») — à ne pas estimer",
-        "continuité: édition inaugurale, donc pas de rendez-vous annuel encore établi"
+        "date/lieu : la page événements de Suntera affiche « Capital & Legacy Forum 2026 — Lagos, Nigeria — October 15, 2026 » et « All Raise VC Summit 2026 — Nairobi — November 10, 2026 » : le calendrier du partenaire est manifestement mal aligné (intitulé/date croisés) ; la date Nairobi 10 nov. 2026 est confirmée par API Events, la presse et le sponsor",
+        "nom : désigné « Future Capital & Legacy Forum » dans les communiqués AfriWallStreet / platformafrica / APO Group",
+        "effectif : aucune chiffres publié (« qualité avant le nombre de billets ») — à ne pas estimer",
+        "continuité : édition inaugurale, donc pas de rendez-vous annuel encore établi"
       ]
     },
     {
@@ -244,9 +244,9 @@
       "source_name": "Eventbrite — Africa Real Estate International",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: la fiche Eventbrite de l'organisateur affiche « Sun, Aug 22 » pour l'édition 2027, cohérent avec le dimanche 22 août 2027, mais le jour/mois a été recopié de l'édition 2026 (dont la date affichée est erronée : 28 nov. 2026 est un samedi)",
-        "lieu: pour l'édition Nairobi du 28 nov. 2026, trois lieux différents circulent (PrideInn Azure Hotel / Best Western Plus Meridian / Best Western Hotel selon l'organisateur)",
-        "contenu: pour le même slot, l'organisateur annonce le 28 nov. 2026 l'African Women in Real Estate Summit & Awards à Nairobi, l'Eventbrite le Africa Real Estate Summit, Awards & Expo — recouvrement de programme non expliqué"
+        "date : la fiche Eventbrite de l'organisateur affiche « Sun, Aug 22 » pour l'édition 2027, cohérent avec le dimanche 22 août 2027, mais le jour/mois a été recopié de l'édition 2026 (dont la date affichée est erronée : 28 nov. 2026 est un samedi)",
+        "lieu : pour l'édition Nairobi du 28 nov. 2026, trois lieux différents circulent (PrideInn Azure Hotel / Best Western Plus Meridian / Best Western Hotel selon l'organisateur)",
+        "contenu : pour le même slot, l'organisateur annonce le 28 nov. 2026 l'African Women in Real Estate Summit & Awards à Nairobi, l'Eventbrite le Africa Real Estate Summit, Awards & Expo — recouvrement de programme non expliqué"
       ]
     },
     {
@@ -320,7 +320,7 @@
       "source_name": "EventsEye — Big 5 Construct Nigeria",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: seul EventsEye date l'édition 2027 (21-23 sept. 2027) ; la page dmg events n'expose pas encore l'edition nigériane — date à confirmer auprès de l'organisateur"
+        "date : seul EventsEye date l'édition 2027 (21-23 sept. 2027) ; la page dmg events n'expose pas encore l'edition nigériane — date à confirmer auprès de l'organisateur"
       ]
     },
     {
@@ -346,8 +346,8 @@
       "source_name": "Showsbee — Sencon 2027",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: 4-6 février 2027 (Showsbee, EventsEye) vs 28-30 janvier 2027 au Z Excenter, Rufisque (exposale.net) — conflit de dates et de salle à vérifier sur senconexpo.com",
-        "calendrier historique: 5-7 fév. 2026, 6-8 fév. 2025, 8-10 fév. 2024 — le créneau de début février est stable, ce qui fragilise la variante fin janvier"
+        "date : 4-6 février 2027 (Showsbee, EventsEye) vs 28-30 janvier 2027 au Z Excenter, Rufisque (exposale.net) — conflit de dates et de salle à vérifier sur senconexpo.com",
+        "calendrier historique : 5-7 fév. 2026, 6-8 fév. 2025, 8-10 fév. 2024 — le créneau de début février est stable, ce qui fragilise la variante fin janvier"
       ]
     },
     {
@@ -397,7 +397,7 @@
       "source_name": "Africa Build Show Ghana — page d'inscription officielle",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "lieu: The Palms Convention Center (site officiel, tradefairdates) vs La Palm Royal Beach Hotel (EventsEye) vs Accra International Conference Centre (exposale.net)"
+        "lieu : The Palms Convention Center (site officiel, tradefairdates) vs La Palm Royal Beach Hotel (EventsEye) vs Accra International Conference Centre (exposale.net)"
       ]
     },
     {
@@ -423,7 +423,7 @@
       "source_name": "ExpoFinder — événements liés (Big 5 Construct Ethiopia 2027)",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: 8-10 avril 2027 selon un agrégateur (ExpoFinder, bloc « événements liés ») ; aucune page officielle dmg lue ne confirme cette édition — date à confirmer"
+        "date : 8-10 avril 2027 selon un agrégateur (ExpoFinder, bloc « événements liés ») ; aucune page officielle dmg lue ne confirme cette édition — date à confirmer"
       ]
     },
     {
@@ -449,9 +449,9 @@
       "source_name": "EventsEye — BATIMATEC 2027",
       "last_verified": "2026-11-06",
       "conflicts": [
-        "date: « mai 2027 (?) » (EventsEye, avec mention explicite que les dates sont provisoires) vs 25-29 avril 2027 (steelplatform) vs 1 mai 2027 (expogage) — aucune date officielle trouvée",
-        "lieu: aucune source officielle lue ; Palais des Expositions d'Alger - Safex de façon concordante",
-        "structure: BATIMATEC se déroule dans le cadre de Batimatec Expo, avec Alger Ceramica Expo en parallèle (Alger Ceramica Expo affiché comme inclus dans Batimatec sur EventsEye, comme salon distinct sur Eventseye)"
+        "date : « mai 2027 (?) » (EventsEye, avec mention explicite que les dates sont provisoires) vs 25-29 avril 2027 (steelplatform) vs 1 mai 2027 (expogage) — aucune date officielle trouvée",
+        "lieu : aucune source officielle lue ; Palais des Expositions d'Alger - Safex de façon concordante",
+        "structure : BATIMATEC se déroule dans le cadre de Batimatec Expo, avec Alger Ceramica Expo en parallèle (Alger Ceramica Expo affiché comme inclus dans Batimatec sur EventsEye, comme salon distinct sur Eventseye)"
       ]
     },
     {

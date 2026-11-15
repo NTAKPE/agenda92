@@ -3,7 +3,7 @@
     "date": "2026-11-15",
     "date_display": "15 novembre 2026",
     "title": "Le site devient une publication signée",
-    "detail": "L'emplacement partenaire disparaît, et avec lui la seule surface commerciale du site. Toutes les pages portent désormais la signature de leur auteur, avec une page dédiée et une étude de cas qui expose la méthode. Le balisage destiné aux moteurs ne déclare plus comme programmées les dates « probables » ou « à confirmer » : seules les dates confirmées sont exposées en résultat enrichi, et le site officiel remplace la page de provenance dans ce même balisage. Enfin, trois constats pays ont été corrigés après re-vérification : le Togo (une édition Fest'Immo s'est tenue à Lomé en 2026), le Soudan (le Sudan Construct Show du 1er au 4 décembre 2026 n'avait pas été repéré) et le Mozambique (MozamReal n'était pas mentionné). Les constats d'information introuvable portent maintenant leur date d'arrêté, et sont séparés des événements écartés qui, eux, existent."
+    "detail": "L'emplacement partenaire disparaît, et avec lui la seule surface commerciale du site. Toutes les pages portent désormais la signature de leur auteur, avec une page dédiée et une étude de cas qui expose la méthode. Le balisage destiné aux moteurs ne déclare plus comme programmées les dates « probables » ou « à confirmer » : seules les dates confirmées sont exposées en résultat enrichi, et le site officiel remplace la page de provenance dans ce même balisage. Enfin, trois constats pays ont été corrigés après revérification : le Togo (une édition Fest'Immo s'est tenue à Lomé en 2026), le Soudan (le Sudan Construct Show du 1er au 4 décembre 2026 n'avait pas été repéré) et le Mozambique (MozamReal n'était pas mentionné). Les constats d'information introuvable portent maintenant leur date d'arrêté, et sont séparés des événements écartés qui, eux, existent."
   },
   {
     "date": "2026-11-08",
@@ -62,7 +62,7 @@
   {
     "date": "2026-11-06",
     "date_display": "6 novembre 2026",
-    "title": "Passage de re-vérification initial",
+    "title": "Passage de revérification initial",
     "detail": "51 événements datés recontrôlés contre leur page officielle : 32 dates confirmées à la source, 17 pages non exploitables (rendu JavaScript ou accès bloqué), 2 événements à contrôler manuellement (EXPOFINANCES Alger, SENCON)."
   },
   {
