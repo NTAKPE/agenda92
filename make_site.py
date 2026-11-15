@@ -1414,6 +1414,15 @@ def build():
  Les informations sont dispersées entre les sites des organisateurs, les billetteries, les
  portails de salons et la presse sectorielle. Elles se contredisent, et elles se périment.</p>
 
+ <figure style="margin:26px 0">
+  <img src="assets/carte-afrique.png" alt="Carte de l'Afrique : 22 pays accueillent au moins un
+  rendez-vous immobilier institutionnel documenté, 32 n'en ont aucun au 6 novembre 2026."
+  style="width:100%;height:auto;border:1px solid var(--line);border-radius:10px">
+  <figcaption class="meta" style="margin-top:8px">22 pays accueillent au moins un rendez-vous
+  documenté ; 32 n'en ont aucun au 6 novembre 2026. Trois de ces constats ont été revérifiés
+  et corrigés depuis.</figcaption>
+ </figure>
+
  <h2>194 candidats</h2>
  <p>Cinq passes de recherche, une par zone, sur un horizon qui va de novembre 2026 à
  décembre 2027. À l'arrivée, 194 candidats examinés : 97 jugés recevables, 97 écartés.
@@ -1468,6 +1477,8 @@ def build():
         "Comment l'agenda des événements immobiliers en Afrique a été construit : filtre "
         "d'inclusion, consolidation des doublons, statut des dates et zones à blanc.",
         case_body,
+        og_image="assets/carte-afrique.png",
+        og_title="Où se réunit l'immobilier institutionnel africain",
         canonical="etude-de-cas.html",
         og_type="article"))
 
@@ -1667,6 +1678,14 @@ def build():
         if os.path.exists(src):
             with open(src, "rb") as r, open(os.path.join(SITE, fn), "wb") as w:
                 w.write(r.read())
+
+    # ---- carte de couverture -------------------------------------------
+    try:
+        from make_carte import make_carte
+        if make_carte(os.path.join(SITE, "assets", "carte-afrique.png"), EVENTS):
+            print("  assets/carte-afrique.png")
+    except Exception as exc:  # noqa: BLE001
+        print("  carte non generee : %s" % exc)
 
     print("Site genere dans %s" % SITE)
     print("  index.html            tracker pre-rendu (%d lignes)" % len(EVENTS))
