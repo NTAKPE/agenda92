@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Africa/Lagos
 BEGIN:VEVENT
 UID:15th-area-conference-cities-series-kampala-jinja-20261103@agenda-immob
  ilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261205
 SUMMARY:15th AREA Conference 2026 — Cities Series (Kampala & Jinja) - 15
@@ -16,38 +16,38 @@ SUMMARY:15th AREA Conference 2026 — Cities Series (Kampala & Jinja) - 15
 LOCATION:Mestil Hotel\, Kampala (Phase I — Policy & Innovation Summit) p
  uis Jinja (Phase II — Investment Deal Room)\, avec visites de sites\, Ka
  mpala et Jinja\, Ouganda
-DESCRIPTION:Mécanique de deal-making la plus concrète de la zone : 50 pr
- ojets juridiquement vérifiés (titres Land title) et évalués par un com
- ité indépendant\, puis mis en relation directe avec des investisseurs au
-  Deal Room de Jinja\, avec signature de MoU. C'est le meilleur point d'ent
- rée pour un financeur cherchant des pipelines immobiliers ougandais déj
- à filtrés sur le foncier.\nThemes : investment Deal Room \; vérificatio
- n des titres fonciers \; urbanisation touristique \; investissement immobi
- lier durable \; prospectus d'investissement des villes \; MoU\nActeurs du 
- capital : investisseurs \; développeurs \; banques \; décideurs publics 
- \; fonds d'investissement \; juridiques fonciers\nConflits de sources : fe
- nêtre d'investissement stratégique : 6-24 nov. 2026 (site officiel AREA 
- Uganda\, cities2026) vs 16-24 nov. 2026 (UBC\, 28 oct. 2026) \; projets ex
- aminés : 50 projets screens (site officiel AREA) vs « screen 100 project
- s down to 50 investable ventures » (UBC)\nStatut de la date : Probable\nS
- ource : AREA Uganda — page officielle Cities Series 2026 (+ programme PD
- F) https://areauganda.org/cities2026\nVerifie le 2026-11-06
+DESCRIPTION:Mécanique de négociation de transactions la plus concrète d
+ e la zone : 50 projets juridiquement vérifiés (titres Land title) et év
+ alués par un comité indépendant\, puis mis en relation directe avec des
+  investisseurs au Deal Room de Jinja\, avec signature de MoU. C'est le mei
+ lleur point d'entrée pour un financeur cherchant des projets immobiliers 
+ ougandais déjà filtrés sur le foncier.\nThemes : investment Deal Room \
+ ; vérification des titres fonciers \; urbanisation touristique \; investi
+ ssement immobilier durable \; prospectus d'investissement des villes \; Mo
+ U\nActeurs du capital : investisseurs \; développeurs \; banques \; déci
+ deurs publics \; fonds d'investissement \; juridiques fonciers\nConflits d
+ e sources : fenêtre d'investissement stratégique : 6-24 nov. 2026 (site 
+ officiel AREA Uganda\, cities2026) vs 16-24 nov. 2026 (UBC\, 28 oct. 2026)
+  \; projets examinés : 50 projets screens (site officiel AREA) vs « scre
+ en 100 projects down to 50 investable ventures » (UBC)\nStatut de la date
+  : Probable\nSource : AREA Uganda — page officielle Cities Series 2026 (
+ + programme PDF) https://areauganda.org/cities2026\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Ancre nationale
 URL:https://areauganda.org/cities2026
 END:VEVENT
 BEGIN:VEVENT
 UID:new-africa-capital-forum-nacf-20261104@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261106
 SUMMARY:New Africa Capital Forum 2026 (NACF 2026) - édition 2026
-LOCATION:Movenpick Ambassador Hotel Accra\, Independence Avenue\, Accra\, 
- Ghana
+LOCATION:Movenpick Ambassador Hotel Accra\, Independence Alieu\, Accra\, G
+ hana
 DESCRIPTION:Rassemble LP/GP\, fonds de pension\, assureurs\, fonds souvera
  ins\, DFIs et family offices autour de l'allocation de capital en Afrique\
  , avec un expo floor et un pavillon international. Forum généraliste —
-  le pan immobilier n'est pas un track identifié en 2026 — mais c'est le
+  le pan immobilier n'est pas un volet identifié en 2026 — mais c'est le
   rendez-vous où se tiennent les allocateurs de long terme susceptibles de
   financer le foncier ouest-africain.\nThemes : capital privé \; allocatio
  n de capital \; LP/GP \; DFI \; levée de fonds \; exposition\nActeurs du 
@@ -57,7 +57,7 @@ DESCRIPTION:Rassemble LP/GP\, fonds de pension\, assureurs\, fonds souvera
  »\, Eventbrite\, riotimesonline) vs 29-30 octobre 2026 (page « NACF 2026
   » du même site officiel) — la version 29-30 octobre tomberait hors fe
  nêtre\, d'où un statut « probable »\nSignaux et lacunes : contenu : au
- cun track immobilier ou bâti identifié dans le programme 2026\nStatut de
+ cun volet immobilier ou bâti identifié dans le programme 2026\nStatut de
   la date : Probable\nSource : New Africa Capital Forum — site officiel h
  ttps://nacapitalforum.com/\nVerifie le 2026-11-06
 STATUS:TENTATIVE
@@ -66,51 +66,52 @@ URL:https://nacapitalforum.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:botswana-investment-forum-20261105@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Botswana Investment Forum 2026 - édition 2026
 LOCATION:Fairground Holdings\, Gaborone\, Botswana
 DESCRIPTION:Forum d'investissement national organisé par le bras d'invest
- issement de l'État\, avec un Investor Council\, des deal rooms et un acc
- ès curaté aux projets d'agrobusiness\, d'industrie\, de services et de p
- roperty. L'immobilier est l'un des quatre secteurs d'intervention de la BD
- C et c'est à ce jour la seule date d'événement confirmée pour le Botsw
- ana dans l'horizon.\nThemes : déploiement du capital \; investissement se
- ctoriel \; PPP \; property\nActeurs du capital : décideurs publics\nSigna
- ux et lacunes : édition 2027: aucune information publiée par la BDC au 0
- 6/11/2026 \; effectif : l'accueil est décrit comme curaté (Investor Coun
- cil\, deal rooms)\, le nombre de participants étant non communiqué\nStat
- ut de la date : Confirme\nSource : Botswana Development Corporation - cale
- ndrier des événements http://www.bdc.bw/events\nVerifie le 2026-11-06
+ issement de l'État\, avec un Investor Council\, des salles de négociatio
+ n et un accès curaté aux projets d'agrobusiness\, d'industrie\, de servi
+ ces et de property. L'immobilier est l'un des quatre secteurs d'interventi
+ on de la BDC et c'est à ce jour la seule date d'événement confirmée po
+ ur le Botswana dans l'horizon.\nThemes : déploiement du capital \; invest
+ issement sectoriel \; PPP \; property\nActeurs du capital : décideurs pub
+ lics\nSignaux et lacunes : édition 2027: aucune information publiée par 
+ la BDC au 06/11/2026 \; effectif : l'accueil est décrit comme curaté (In
+ vestor Council\, salles de négociation)\, le nombre de participants étan
+ t non communiqué\nStatut de la date : Confirme\nSource : Botswana Develop
+ ment Corporation - calendrier des événements http://www.bdc.bw/events\nV
+ erifie le 2026-11-06
 STATUS:CONFIRMED
 CATEGORIES:Marches de capitaux
 URL:http://www.bdc.bw/events
 END:VEVENT
 BEGIN:VEVENT
 UID:new-africa-capital-champions-awards-20261105@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:New Africa Capital Champions Awards 2026 - édition 2026
-LOCATION:Movenpick Ambassador Hotel Accra\, Independence Avenue\, Accra\, 
- Ghana
+LOCATION:Movenpick Ambassador Hotel Accra\, Independence Alieu\, Accra\, G
+ hana
 DESCRIPTION:Gala de clôture du New Africa Capital Forum\, qui récompense
   les institutions et fonds qui « façonnent l'avenir financier de l'Afriq
- ue ». Entrée 49 à 950 $ : format de networking de fonds\, d'intérêt d
- irect pour un financeur immobilier \; la part réelle des joueurs immobili
- ers doit être vérifié dans la liste des lauréats 2026.\nThemes : capit
- al privé \; allocation de capital \; awards \; réseautage de fonds\nActe
- urs du capital : fonds de pension \; investisseurs institutionnels \; banq
- ues \; DFI\nConflits de sources : date : 5 novembre 2026 (Eventbrite\, all
- events.in\, svents.com) vs 6 novembre 2026 (viewghana.com)\nSignaux et lac
- unes : contenu : forum général de capital privé (startups\, LP/GP) — 
- aucun track immobilier dédié confirmé dans le programme 2026\nStatut de
-  la date : Probable\nSource : Eventbrite — VX Global https://www.eventbr
- ite.com/e/new-africa-capital-champions-awards-2026-accra-tickets-199230866
- 9863\nSources citees : AllEvents — African Youth and Real Estate Summit 
- (7 nov. 2026) et REDA 2026 <https://allevents.in/lagos/professionals>\nVer
- ifie le 2026-11-06
+ ue ». Entrée 49 à 950 $ : format de réseautage de fonds\, d'intérêt 
+ direct pour un financeur immobilier \; la part réelle des joueurs immobil
+ iers doit être vérifié dans la liste des lauréats 2026.\nThemes : capi
+ tal privé \; allocation de capital \; awards \; réseautage de fonds\nAct
+ eurs du capital : fonds de pension \; investisseurs institutionnels \; ban
+ ques \; DFI\nConflits de sources : date : 5 novembre 2026 (Eventbrite\, al
+ levents.in\, svents.com) vs 6 novembre 2026 (viewghana.com)\nSignaux et la
+ cunes : contenu : forum général de capital privé (startups\, LP/GP) —
+  aucun volet immobilier dédié confirmé dans le programme 2026\nStatut d
+ e la date : Probable\nSource : Eventbrite — VX Global https://www.eventb
+ rite.com/e/new-africa-capital-champions-awards-2026-accra-tickets-19923086
+ 69863\nSources citees : AllEvents — African Youth and Real Estate Summit
+  (7 nov. 2026) et REDA 2026 <https://allevents.in/lagos/professionals>\nVe
+ rifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Marches de capitaux
 URL:https://www.eventbrite.com/e/new-africa-capital-champions-awards-2026-
@@ -118,7 +119,7 @@ URL:https://www.eventbrite.com/e/new-africa-capital-champions-awards-2026-
 END:VEVENT
 BEGIN:VEVENT
 UID:cityscape-egypt-forum-20261109@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Cityscape Egypt Forum - édition 2026 du Forum (après l'expositio
@@ -148,7 +149,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:abuja-real-estate-infrastructure-summit-20261109@agenda-immobilier-afr
  ique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261111
 SUMMARY:Abuja Real Estate & Infrastructure Summit 2026 - 1re édition
@@ -175,7 +176,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ariis-africa-real-estate-innovation-investment-summit-20261110@agenda-
  immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261112
 SUMMARY:ARIIS (Africa Real Estate Innovation & Investment Summit) - 3e éd
@@ -183,37 +184,37 @@ SUMMARY:ARIIS (Africa Real Estate Innovation & Investment Summit) - 3e éd
 LOCATION:Hôtel Golden Tulip Royaume\, Les Eucalyptus\, Algiers\, Algérie
 DESCRIPTION:Plateforme B2B Maghreb-Afrique où se rencontrent cadres de ba
  nques et DFI\, promotes\, fonds et acteurs du crédit\, avec 1 200 rendez-
- vous B2B ciblés annoncés. Utile pour origination de deals Algérie-Maghr
- eb et accroche sur des promoteurs cotés.\nThemes : innovation \; investis
- sement \; B2B matchmaking \; crédit \; PropTech \; Maghreb-Afrique\nActeu
- rs du capital : banques \; DFI \; décideurs publics \; private equity\nCo
- nflits de sources : édition/date : le site officiel annonce la 3e éditio
- n les 10-11 nov. 2026 à Alger \; dz-immobilier.com décrit un « ARIIS 20
- 26 (African Real Estate Innovation Show) » de 2e édition tenu du 8 au 10
-  avril 2026 à l'Expo Palace d'Alger (120 exposants\, 8 000 visiteurs) et 
- une 3e édition à Oran en avril 2027 — récit incompatible avec le site
-  officiel\nSignaux et lacunes : identité de l'événement : le site offic
- iel décrit ARIIS 2026 les 10-11 nov. 2026 à l'Hôtel Golden Tulip Royaum
- e (3e édition)\, alors qu'un article de dz-immobilier décrit un « ARIIS
-  2026 » les 8-10 avril 2026 au Palais des Expositions d'Alger (2e éditio
- n\, 120 exposants\, 8 000 visiteurs) et annonce une 3e édition à Oran en
-  avril 2027 — probablement un autre-organisateur sous la même acronymie
-  \; acronyme partagé : un agrégateur (lidyafair) liste un « ARIIS » à
-  Dar es Salaam (Tanzanie) les 18-20 nov. 2026 et une édition à Koweït (
- ville non résolue) — à ne pas confondre avec le summit d'Alger \; aucu
- ne édition 2027 annoncée au 06/11/2026 \; identité : le sigle ARIIS dé
- signe vraisemblablement deux manifestations distinctes (un salon d'avril 
- à l'Expo Palace et un sommet d'automne en hôtel) — clarifier avant de 
- réserver \; capacité : 500 participants (capacité maximale annoncée) e
- t 35 stands pour 2026 \; l'édition 2025 avait fait 350+ participants (Mar
- riott Bab Ezzouar\, 18-19 nov. 2025) \; doublon fusionne : ARIIS (Africa R
- eal Estate Innovation & Investment Summit) (Continental\, finance & adjace
- nt) et ARIIS — Africa Real Estate Innovation & Investment Summit (Maghre
- b & Afrique du Nord)\nStatut de la date : Probable\nSource : ARIIS 2026 (s
- ite officiel) https://arisummit.com/en\nSources citees : dz-immobilier.com
-  — bilan ARIIS 2026 (source en conflit) <https://www.dz-immobilier.com/e
- n/blog/events-16/ariis-2026-immobilier-africain-alger-bilan-158>\nVerifie 
- le 2026-11-06
+ vous B2B ciblés annoncés. Utile pour origination de transactions Algéri
+ e-Maghreb et accroche sur des promoteurs cotés.\nThemes : innovation \; i
+ nvestissement \; B2B mise en relation \; crédit \; PropTech \; Maghreb-Af
+ rique\nActeurs du capital : banques \; DFI \; décideurs publics \; privat
+ e equity\nConflits de sources : édition/date : le site officiel annonce l
+ a 3e édition les 10-11 nov. 2026 à Alger \; dz-immobilier.com décrit un
+  « ARIIS 2026 (African Real Estate Innovation Show) » de 2e édition ten
+ u du 8 au 10 avril 2026 à l'Expo Palace d'Alger (120 exposants\, 8 000 vi
+ siteurs) et une 3e édition à Oran en avril 2027 — récit incompatible 
+ avec le site officiel\nSignaux et lacunes : identité de l'événement : l
+ e site officiel décrit ARIIS 2026 les 10-11 nov. 2026 à l'Hôtel Golden 
+ Tulip Royaume (3e édition)\, alors qu'un article de dz-immobilier décrit
+  un « ARIIS 2026 » les 8-10 avril 2026 au Palais des Expositions d'Alger
+  (2e édition\, 120 exposants\, 8 000 visiteurs) et annonce une 3e éditio
+ n à Oran en avril 2027 — probablement un autre-organisateur sous la mê
+ me acronymie \; acronyme partagé : un agrégateur (lidyafair) liste un «
+  ARIIS » à Dar es Salaam (Tanzanie) les 18-20 nov. 2026 et une édition 
+ à Koweït (ville non résolue) — à ne pas confondre avec le summit d'A
+ lger \; aucune édition 2027 annoncée au 06/11/2026 \; identité : le sig
+ le ARIIS désigne vraisemblablement deux manifestations distinctes (un sal
+ on d'avril à l'Expo Palace et un sommet d'automne en hôtel) — clarifie
+ r avant de réserver \; capacité : 500 participants (capacité maximale a
+ nnoncée) et 35 stands pour 2026 \; l'édition 2025 avait fait 350+ partic
+ ipants (Marriott Bab Ezzouar\, 18-19 nov. 2025) \; doublon fusionne : ARII
+ S (Africa Real Estate Innovation & Investment Summit) (Continental\, finan
+ ce & adjacent) et ARIIS — Africa Real Estate Innovation & Investment Sum
+ mit (Maghreb & Afrique du Nord)\nStatut de la date : Probable\nSource : AR
+ IIS 2026 (site officiel) https://arisummit.com/en\nSources citees : dz-imm
+ obilier.com — bilan ARIIS 2026 (source en conflit) <https://www.dz-immob
+ ilier.com/en/blog/events-16/ariis-2026-immobilier-africain-alger-bilan-158
+ >\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:https://arisummit.com/en/attend#passes
@@ -221,7 +222,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:auhf-annual-conference-agm-african-union-for-housing-finance-20261110@
  agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261114
 SUMMARY:AUHF Annual Conference & AGM (African Union for Housing Finance) -
@@ -247,7 +248,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:fhs-egypt-future-hospitality-summit-egypt-20261110@agenda-immobilier-a
  frique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261112
 SUMMARY:FHS Egypt — Future Hospitality Summit Egypt - 1re édition en É
@@ -255,29 +256,29 @@ SUMMARY:FHS Egypt — Future Hospitality Summit Egypt - 1re édition en É
 LOCATION:Sofitel Downtown Cairo Nile\, Le Caire\, Le Caire\, Égypte
 DESCRIPTION:Un sommet d'investissement hôtelier centré sur l'immobilier 
  : hôtels\, developments mixtes\, resorts et résidences brandées\, avec 
- un track dédié « FHS Living » (hôtelisation de l'immobilier sur 9 cla
+ un volet dédié « FHS Living » (hôtelisation de l'immobilier sur 9 cla
  sses d'actifs) le 11 novembre. C'est la porte d'entrée la plus directe ve
- rs les pipelines de développement et les asset managers sur le marché é
- gyptien\, même si l'échelle reste celle d'un summit et non d'un salon.\n
- Themes : hôtellerie et investissement \; résidences brandées \; dévelo
- ppements mixtes \; asset management \; hôtelisation de l'immobilier (FHS 
- Living)\nActeurs du capital : investisseurs et propriétaires \; développ
- eurs \; opérateurs hôteliers \; gouvernements et décideurs publics \; a
- sset managers\nConflits de sources : édition 2027 non annoncée au 06/11/
- 2026 : les prochaines échéances FHS Around the World sont Riyad 21-22 ma
- rs 2027\, 28-29 avril 2027 (ville non précisée) et Ouganda 2-3 févr. 20
- 27 — aucune en Égypte\nSignaux et lacunes : continuité : FHS Egypt est
-  une création (lancement annoncé le 11 févr. 2026)\, donc pas encore un
-  rendez-vous ancré \; effectif : aucune donnée publiée\nStatut de la da
- te : Probable\nSource : Future Hospitality Summit — page officielle FHS 
- Egypt https://futurehospitality.com/egypt\nVerifie le 2026-11-06
+ rs les projets de développement et les asset managers sur le marché égy
+ ptien\, même si l'échelle reste celle d'un summit et non d'un salon.\nTh
+ emes : hôtellerie et investissement \; résidences brandées \; développ
+ ements mixtes \; asset management \; hôtelisation de l'immobilier (FHS Li
+ ving)\nActeurs du capital : investisseurs et propriétaires \; développeu
+ rs \; opérateurs hôteliers \; gouvernements et décideurs publics \; ass
+ et managers\nConflits de sources : édition 2027 non annoncée au 06/11/20
+ 26 : les prochaines échéances FHS Around the World sont Riyad 21-22 mars
+  2027\, 28-29 avril 2027 (ville non précisée) et Ouganda 2-3 févr. 2027
+  — aucune en Égypte\nSignaux et lacunes : continuité : FHS Egypt est u
+ ne création (lancement annoncé le 11 févr. 2026)\, donc pas encore un r
+ endez-vous ancré \; effectif : aucune donnée publiée\nStatut de la date
+  : Probable\nSource : Future Hospitality Summit — page officielle FHS Eg
+ ypt https://futurehospitality.com/egypt\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Marches de capitaux
 URL:https://futurehospitality.com/egypt
 END:VEVENT
 BEGIN:VEVENT
 UID:capital-legacy-forum-20261110@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Capital & Legacy Forum 2026 - 1re édition (forum panafricain de p
@@ -326,73 +327,73 @@ END:VEVENT
 BEGIN:VEVENT
 UID:16th-africa-ppp-infrastructure-finance-investment-partnerships-summit-
  appp-20261111@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261114
 SUMMARY:16th Africa PPP Infrastructure Finance\, Investment & Partnerships
   Summit (APPP 2026) - 16e édition
 LOCATION:JW Marriott Hotel Nairobi\, Chiromo Lane\, Nairobi\, Kenya
 DESCRIPTION:Le rendez-vous d'infrastructure financière le plus dense de l
- 'horizon pour un financeur africain : pipeline de projets Kenya (ports\, t
- ransmission électrique\, eau\, santé\, data centres\, logements abordabl
- es\, parcs industriels) présenté en Deal Room à des DFIs et investisseu
- rs. Africa50\, IFC et British International Investment figurent au program
- me\, avec une table ronde ministérielle de la Côte d'Ivoire et de la Tan
- zanie.\nThemes : PPP \; financement d'infrastructure \; bankabilité des p
- rojets \; Deal Room \; intégration régionale \; logement abordable \; ta
- ble ronde ministérielle\nActeurs du capital : DFI \; fonds de pension \; 
- investisseurs institutionnels \; banques \; décideurs publics \; souverai
- ns\nConflits de sources : programme : 1 journée masterclass (11 nov.) + c
- onférence de 2 jours (12-13 nov.) vs format global 11-13 nov. (brochure A
- PPP 2026) — les deux lectures concordent sur la date totale\nStatut de l
- a date : Probable\nSource : AME Trade / Africa PPP — communiqué de pres
- se officiel (28 oct. 2026) https://africappp.com/press-release/\nVerifie l
- e 2026-11-06
+ 'horizon pour un financeur africain : portefeuille de projets Kenya (ports
+ \, transmission électrique\, eau\, santé\, data centres\, logements abor
+ dables\, parcs industriels) présenté en Deal Room à des DFIs et investi
+ sseurs. Africa50\, IFC et British International Investment figurent au pro
+ gramme\, avec une table ronde ministérielle de la Côte d'Ivoire et de la
+  Tanzanie.\nThemes : PPP \; financement d'infrastructure \; bankabilité d
+ es projets \; Deal Room \; intégration régionale \; logement abordable \
+ ; table ronde ministérielle\nActeurs du capital : DFI \; fonds de pension
+  \; investisseurs institutionnels \; banques \; décideurs publics \; souv
+ erains\nConflits de sources : programme : 1 journée masterclass (11 nov.)
+  + conférence de 2 jours (12-13 nov.) vs format global 11-13 nov. (brochu
+ re APPP 2026) — les deux lectures concordent sur la date totale\nStatut 
+ de la date : Probable\nSource : AME Trade / Africa PPP — communiqué de 
+ presse officiel (28 oct. 2026) https://africappp.com/press-release/\nVerif
+ ie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:https://africappp.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:abuja-real-estate-fest-20261112@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Abuja Real Estate Fest 2026 - 2e édition
 LOCATION:Shehu Musa Yar'Adua Centre\, Wuse\, Abuja\, Abuja\, Nigeria
 DESCRIPTION:Rendez-vous annoncé comme majeur pour le marché immobilier d
- 'Abuja\, avec 1 000+ participants\, 30+ speakers dont le président de RED
- AN\, Azubike Emodi (Afriland Properties)\, Saadiya Aliyu (Urban Shelter) e
- t Odunayo Ojo (UPDC)\, et un thème centré sur « Investing\, Developing 
- and Transforming Nigeria's Real Estate Capital ». C'est le point d'entré
- e le plus direct vers les promoteurs et financiers du marché d'Abuja.\nTh
- emes : investissement immobilier \; développement \; exposition \; proper
- ty showcase \; finance\nActeurs du capital : investisseurs \; banques \; d
- écideurs publics \; promoteurs immobiliers\nConflits de sources : date : 
- 12 novembre 2026 (page Eventbrite de l'organisateur\, glowupchannel\, Insi
- de Abuja) vs 19 novembre 2026 (eventhive.ng/events/abuja-real-estate-fest/
-  et wetinuneed.com) — conflit sur le site même de l'organisateur \; lie
- u : Shehu Musa Yar'Adua Centre\, Wuse (Eventbrite) vs Shehu Musa Yar'Adua 
- Foundation\, One Memorial Drive\, Municipal (wetinuneed.com) \; l'édition
-  2027 est positionnée au 9 novembre 2027 par le calendrier Eventhive 2027
- \, ce qui suggérait un rythme annuel et non l'autre\nSignaux et lacunes :
-  arbitrage vérifié le 06/11/2026 : le 12 novembre est confirmé par le s
- ite dédié de l'événement (are.eventhive.ng\, 'November 12th\, 2026 | S
- hehu Musa Yar'Adua Centre') et par la billetterie officielle Eventbrite de
-  l'organisateur ('Thursday\, November 12\, 8 AM - 4 PM')\, ainsi que par g
- lowupchannel et visitabuja.org (8h-17h). Le 19 novembre n'apparaît que su
- r la page portfolio eventhive.ng/events/abuja-real-estate-fest/\, à consi
- dérer comme obsolète. \; tarifs : N5 000 - N50 000 selon visitabuja.org 
- \; horaires 8h-16h (Eventbrite) ou 8h-17h (visitabuja.org)\nStatut de la d
- ate : Probable\nSource : Eventbrite — page officielle Eventhive.ng https
- ://www.eventbrite.com/e/abuja-real-estate-fest-2026-tickets-2000425274847\
- nSources citees : Eventhive — Africa Real Estate Series (Abuja / Lagos R
- eal Estate Fest) <https://are.eventhive.ng/> | Visit Abuja - Abuja Real Es
- tate Fest 2026 (horaires 8h-17h\, tarifs N5 000 - N50 000) <https://visita
- buja.org/event/abuja-real-estate-fest-2026/> | Eventhive — calendrier of
- ficiel 2027 (PDF) <https://eventhive.ng/calendar/2027-eventhive-calendar.p
- df> | Eventhive — page Abuja Real Estate Fest 2026 (date 19 nov. 2026) <
- https://eventhive.ng/events/abuja-real-estate-fest/>\nVerifie le 2026-11-0
- 6
+ 'Abuja\, avec 1 000+ participants\, 30+ intervenants dont le président de
+  REDAN\, Azubike Emodi (Afriland Properties)\, Saadiya Aliyu (Urban Shelte
+ r) et Odunayo Ojo (UPDC)\, et un thème centré sur « Investing\, Develop
+ ing and Transforming Nigeria's Real Estate Capital ». C'est le point d'en
+ trée le plus direct vers les promoteurs et financiers du marché d'Abuja.
+ \nThemes : investissement immobilier \; développement \; exposition \; pr
+ operty showcase \; finance\nActeurs du capital : investisseurs \; banques 
+ \; décideurs publics \; promoteurs immobiliers\nConflits de sources : dat
+ e : 12 novembre 2026 (page Eventbrite de l'organisateur\, glowupchannel\, 
+ Inside Abuja) vs 19 novembre 2026 (eventhive.ng/events/abuja-real-estate-f
+ est/ et wetinuneed.com) — conflit sur le site même de l'organisateur \;
+  lieu : Shehu Musa Yar'Adua Centre\, Wuse (Eventbrite) vs Shehu Musa Yar'A
+ dua Foundation\, One Memorial Drive\, Municipal (wetinuneed.com) \; l'édi
+ tion 2027 est positionnée au 9 novembre 2027 par le calendrier Eventhive 
+ 2027\, ce qui suggérait un rythme annuel et non l'autre\nSignaux et lacun
+ es : arbitrage vérifié le 06/11/2026 : le 12 novembre est confirmé par 
+ le site dédié de l'événement (are.eventhive.ng\, 'November 12th\, 2026
+  | Shehu Musa Yar'Adua Centre') et par la billetterie officielle Eventbrit
+ e de l'organisateur ('Thursday\, November 12\, 8 AM - 4 PM')\, ainsi que p
+ ar glowupchannel et visitabuja.org (8h-17h). Le 19 novembre n'apparaît qu
+ e sur la page portfolio eventhive.ng/events/abuja-real-estate-fest/\, à c
+ onsidérer comme obsolète. \; tarifs : N5 000 - N50 000 selon visitabuja.
+ org \; horaires 8h-16h (Eventbrite) ou 8h-17h (visitabuja.org)\nStatut de 
+ la date : Probable\nSource : Eventbrite — page officielle Eventhive.ng h
+ ttps://www.eventbrite.com/e/abuja-real-estate-fest-2026-tickets-2000425274
+ 847\nSources citees : Eventhive — Africa Real Estate Series (Abuja / Lag
+ os Real Estate Fest) <https://are.eventhive.ng/> | Visit Abuja - Abuja Rea
+ l Estate Fest 2026 (horaires 8h-17h\, tarifs N5 000 - N50 000) <https://vi
+ sitabuja.org/event/abuja-real-estate-fest-2026/> | Eventhive — calendrie
+ r officiel 2027 (PDF) <https://eventhive.ng/calendar/2027-eventhive-calend
+ ar.pdf> | Eventhive — page Abuja Real Estate Fest 2026 (date 19 nov. 202
+ 6) <https://eventhive.ng/events/abuja-real-estate-fest/>\nVerifie le 2026-
+ 11-06
 STATUS:TENTATIVE
 CATEGORIES:Ancre nationale
 URL:https://tix.africa/abuja-real-estate-fest-2026
@@ -400,7 +401,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:benk-international-real-estate-conference-and-proptech-expo-20261112@a
  genda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261114
 SUMMARY:Benk International Real Estate Conference and Proptech Expo 2026 -
@@ -428,7 +429,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tasshiil-salon-du-credit-du-leasing-et-de-l-investissement-tashil-2026
  1116@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261119
 SUMMARY:TASSHIIL — Salon du Crédit\, du Leasing et de l'Investissement 
@@ -465,7 +466,7 @@ URL:https://algeriaexhibitions.dz/en/events/tashil-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:40th-kenya-homes-expo-20261119@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261123
 SUMMARY:40th Kenya Homes Expo - 40e édition (20 ans d'existence \; 40e an
@@ -494,7 +495,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tarex-tanzania-real-estate-expo-and-forum-20261120@agenda-immobilier-a
  frique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:TAREX 2026 — Tanzania Real Estate Expo and Forum - 1re édition 
@@ -525,7 +526,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:namibia-public-private-forum-namppf-ii-20261125@agenda-immobilier-afri
  que
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261127
 SUMMARY:Namibia Public-Private Forum (NamPPF II) - 2e édition
@@ -553,7 +554,7 @@ URL:https://www.namibian.com.na/namibia-to-host-second-public-private-foru
 END:VEVENT
 BEGIN:VEVENT
 UID:sib-salon-international-du-batiment-20261125@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261130
 SUMMARY:SIB — Salon International du Bâtiment - 20e édition
@@ -571,19 +572,19 @@ DESCRIPTION:Le rendez-vous du bâtiment le plus ancien du Maroc (40 ans) e
  ment et de matériaux avant tout \; le secteur « IMMOBILIER\, FINANCEMENT
   & INVESTISSEMENT » figure dans la brochure officielle 2026 et la descrip
  tion eventseye mentionne les secteurs « Urbanisme\, Décoration et Immobi
- lier »\, mais aucune présence de promoteurs ni conference track immobili
- er n'a pu être vérifiée nominalement \; dénomination : eventseye le pr
- ésente comme le « Salon international du bâtiment de Casablanca » (cr
- éé en 1986) alors qu'il se tient à El Jadida \; effectif : non communiq
- ué dans les sources lues\nStatut de la date : Confirme\nSource : SIB — 
- site officiel https://sib.ma/\nVerifie le 2026-11-06
+ lier »\, mais aucune présence de promoteurs ni volet immobilier n'a pu 
+ être vérifiée nominalement \; dénomination : eventseye le présente co
+ mme le « Salon international du bâtiment de Casablanca » (créé en 198
+ 6) alors qu'il se tient à El Jadida \; effectif : non communiqué dans le
+ s sources lues\nStatut de la date : Confirme\nSource : SIB — site offici
+ el https://sib.ma/\nVerifie le 2026-11-06
 STATUS:CONFIRMED
 CATEGORIES:Adjacent construction
 URL:https://sib.ma/
 END:VEVENT
 BEGIN:VEVENT
 UID:morocco-showcase-summit-20261126@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Morocco Showcase Summit - 3e édition
@@ -624,7 +625,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:africa-real-estate-summit-awards-expo-east-african-nairobi-20261128@ag
  enda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Africa Real Estate Summit\, Awards & Expo 2026 — East African Ed
@@ -636,23 +637,23 @@ DESCRIPTION:Rendez-vous de remise de prix et de mise en réseau de la sér
  ie panafricaine\, à l'édition Nairobi : un point d'entrée court (6 h) p
  our serrer les mains de promoteurs et d'intermédiaires d'Afrique de l'Est
   et du reste du continent. Format award/expo plus léger que les grands so
- mmets\, donc priorité secondaire face à EAPI ou APPP.\nThemes : keynotes
-  \; remise de prix et labels de marque \; exposition \; networking \; pane
- ls Q&A\nActeurs du capital : promoteurs \; investisseurs \; décideurs pub
- lics \; realtors \; banques\nConflits de sources : lieu : PrideInn Azure H
- otel Nairobi\, Westlands (page organisateur Eventbrite) vs Best Western Pl
- us Meridian Hotel\, Off Moi Avenue (listings Eventbrite agrégés\, alleve
- nts.in\, Eventbrite UK) vs « Venue To Be Confirmed » (autre liste Eventb
- rite) — la date du 28 nov. 2026 est commune aux trois \; attention : les
-  déclinaisons « Africa Real Estate Summit & Masterclass Kampala 2026 » 
- et « Africa Real Estate Summit & Masterclass Tanzania 2026 » sont elles 
- aussi listées au Best Western Plus Meridian de Nairobi\, et non à Kampal
- a ni à Dar es Salaam\nStatut de la date : Probable\nSource : Eventbrite 
- — page organisateur (Africa Real Estate International Ltd) https://www.e
- ventbrite.com/e/africa-real-estate-summit-awards-expo-2026-tickets-2002304
- 349209\nSources citees : AllEvents — African Youth and Real Estate Summi
- t (7 nov. 2026) et REDA 2026 <https://allevents.in/lagos/professionals>\nV
- erifie le 2026-11-06
+ mmets\, donc priorité secondaire face à EAPI ou APPP.\nThemes : pléniè
+ res \; remise de prix et labels de marque \; exposition \; réseautage \; 
+ tables rondes\nActeurs du capital : promoteurs \; investisseurs \; décide
+ urs publics \; realtors \; banques\nConflits de sources : lieu : PrideInn 
+ Azure Hotel Nairobi\, Westlands (page organisateur Eventbrite) vs Best Wes
+ tern Plus Meridian Hotel\, Off Moi Alieu (listings Eventbrite agrégés\, 
+ allevents.in\, Eventbrite UK) vs « Venue To Be Confirmed » (autre liste 
+ Eventbrite) — la date du 28 nov. 2026 est commune aux trois \; attention
+  : les déclinaisons « Africa Real Estate Summit & Masterclass Kampala 20
+ 26 » et « Africa Real Estate Summit & Masterclass Tanzania 2026 » sont 
+ elles aussi listées au Best Western Plus Meridian de Nairobi\, et non à 
+ Kampala ni à Dar es Salaam\nStatut de la date : Probable\nSource : Eventb
+ rite — page organisateur (Africa Real Estate International Ltd) https://
+ www.eventbrite.com/e/africa-real-estate-summit-awards-expo-2026-tickets-20
+ 02304349209\nSources citees : AllEvents — African Youth and Real Estate 
+ Summit (7 nov. 2026) et REDA 2026 <https://allevents.in/lagos/professional
+ s>\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:https://www.eventbrite.com/e/africa-real-estate-summit-awards-expo-202
@@ -661,7 +662,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:forbes-middle-east-building-future-summit-egypt-20261129@agenda-immobi
  lier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261201
 SUMMARY:Forbes Middle East Building the Future Summit — Egypt - 1re édi
@@ -688,7 +689,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:e-logia-master-salon-international-des-promoteurs-immobiliers-de-l-hab
  itat-intelligent-et-de-la-decoration-20261203@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261208
 SUMMARY:e-logia — Master Edition (Salon international des promoteurs imm
@@ -723,7 +724,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:africa-real-estate-magazine-and-awards-20261213@agenda-immobilier-afri
  que
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Africa Real Estate Magazine and Awards 2026 - édition 2026
@@ -731,17 +732,17 @@ LOCATION:Lekki Coliseum Rooftop\, Lekki\, Lagos\, Lagos\, Nigeria
 DESCRIPTION:Soirée d'awards continentale hébergée à Lagos\, qui met en
   scène promoteurs\, investisseurs\, institutions financières et représe
  ntants gouvernementaux sur les marchés de Lagos\, Nairobi\, Johannesburg\
- , Accra\, Le Caire et Kigali. Format de networking d'apparatch plutôt que
-  de conférence de capital : à traiter comme un rendez-vous de relationsh
- ips\, pas comme un salon d'investissement.\nThemes : awards du secteur \; 
- mise en réseau \; marchés immobiliers africains \; proptech \; logement 
- abordable\nActeurs du capital : investisseurs \; banques \; décideurs pub
- lics \; promoteurs immobiliers\nConflits de sources : lieu : « Lekki Coli
- seum Rooftop » (BusinessDay\, Vanguard\, Leadership) vs « Lekki Coliseum
-  Centre » (iPropty\, PMNews)\nSignaux et lacunes : effectif et nombre d'e
- xposants non communiqués\nStatut de la date : Probable\nSource : Vanguard
-  Nigeria https://www.vanguardngr.com/2026/10/africa-real-estate-magazine-a
- nd-awards-2026-to-celebrate-excellence-in-lagos/\nVerifie le 2026-11-06
+ , Accra\, Le Caire et Kigali. Format de réseautage d'apparatch plutôt qu
+ e de conférence de capital : à traiter comme un rendez-vous de relations
+ hips\, pas comme un salon d'investissement.\nThemes : awards du secteur \;
+  mise en réseau \; marchés immobiliers africains \; proptech \; logement
+  abordable\nActeurs du capital : investisseurs \; banques \; décideurs pu
+ blics \; promoteurs immobiliers\nConflits de sources : lieu : « Lekki Col
+ iseum Rooftop » (BusinessDay\, Vanguard\, Leadership) vs « Lekki Coliseu
+ m Centre » (iPropty\, PMNews)\nSignaux et lacunes : effectif et nombre d'
+ exposants non communiqués\nStatut de la date : Probable\nSource : Vanguar
+ d Nigeria https://www.vanguardngr.com/2026/10/africa-real-estate-magazine-
+ and-awards-2026-to-celebrate-excellence-in-lagos/\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Ancre nationale
 URL:https://www.vanguardngr.com/2026/10/africa-real-estate-magazine-and-aw
@@ -750,7 +751,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:expofinances-salon-des-banques-assurances-et-produits-financiers-20261
  217@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261227
 SUMMARY:EXPOFINANCES — Salon des Banques\, Assurances et Produits Financ
@@ -762,13 +763,13 @@ DESCRIPTION:Le salon financier national algérien\, avec les banques\, ass
  rogramme sur le financement\, l'investissement et la finance islamique. Ut
  ile pour un financeur immobilier qui veut toucher en dix jours l'ensemble 
  de l'offre de crédit algérienne \; à noter que le lien immobilier passe
-  par le leasing et non par un track foncier dédié.\nThemes : financement
+  par le leasing et non par un volet foncier dédié.\nThemes : financement
   \; investissement \; leasing \; finance islamique \; digitalisation banca
  ire \; inclusion financière\nActeurs du capital : banques \; compagnies d
  'assurance et de réassurance \; sociétés de leasing \; établissements 
  financiers \; institutions et organismes publics\nSignaux et lacunes : sub
  stance : le programme officiel mentionne « financement des entreprises »
- \, « investissement » et « finance islamique » mais aucun track « cr
+ \, « investissement » et « finance islamique » mais aucun volet « cr
  édit foncier / financement immobilier » explicite — la Sélection 2/6 
  passe surtout sur l'audience\, l'échelle\, la continuité\, l'influence e
  t la portée \; édition : EXPOFINANCES 2025 s'est tenu du 18 au 27 déc. 
@@ -784,7 +785,7 @@ URL:https://www.algeriaexhibitions.dz/manifestations/expofinances-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:ghana-property-lifestyle-expo-accra-20261218@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261220
 SUMMARY:Ghana Property & Lifestyle Expo 2026 | Accra Edition - 10e éditio
@@ -815,36 +816,36 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ethio-build-connect-expo-ethiopia-real-estate-expo-and-construction-ex
  hibition-20270109@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270114
 SUMMARY:Ethio Build Connect Expo — Ethiopia Real Estate Expo and Constru
  ction Exhibition 2027 - 1re édition annoncée pour 2027
 LOCATION:Addis Convention Center\, Addis Ababa\, Addis-Abeba\, Éthiopie
 DESCRIPTION:Seul rendez-vous immobilier dédié identifié en Éthiopie su
- r l'horizon\, avec une track « real estate » explicite et la mention de 
- banques et assureurs comme exposants. Utile comme porte d'entrée sur un m
- arché où l'information est rare\, mais l'organisateur est une structure 
- jeune et aucun effectif ni pipeline de projets n'est vérifiable.\nThemes 
- : exposition immobilière \; construction \; promoteurs \; banques et assu
- reurs \; masterplans \; mise en réseau décisionnaires\nActeurs du capita
- l : développeurs \; banques \; assureurs \; décideurs publics \; investi
- sseurs\nConflits de sources : chiffres annoncés : « 300+ exposants » et
-  « 500+ speakers » circulent pour cette manifestation vs aucun effectif 
- ni nombre de speakers n'apparaît sur les pages officielles lues (accueil\
- , FAQ) — chiffres non vérifiables et vraisemblablement gonflés\nSignau
- x et lacunes : effectif : non communiqué \; il s'agit à la fois d'une ex
- position et d'une place de marché immobilière (annonces de biens) : le p
- érimètre réel de la conférence est à confirmer\nStatut de la date : P
- robable\nSource : Ethio Build Connect — site officiel (JSON-LD Exhibitio
- nEvent) https://ethiobuildconnect.et/\nVerifie le 2026-11-06
+ r l'horizon\, avec un volet « real estate » explicite et la mention de b
+ anques et assureurs comme exposants. Utile comme porte d'entrée sur un ma
+ rché où l'information est rare\, mais l'organisateur est une structure j
+ eune et aucun effectif ni portefeuille de projets n'est vérifiable.\nThem
+ es : exposition immobilière \; construction \; promoteurs \; banques et a
+ ssureurs \; masterplans \; mise en réseau décisionnaires\nActeurs du cap
+ ital : développeurs \; banques \; assureurs \; décideurs publics \; inve
+ stisseurs\nConflits de sources : chiffres annoncés : « 300+ exposants »
+  et « 500+ speakers » circulent pour cette manifestation vs aucun effect
+ if ni nombre de intervenants n'apparaît sur les pages officielles lues (a
+ ccueil\, FAQ) — chiffres non vérifiables et vraisemblablement gonflés\
+ nSignaux et lacunes : effectif : non communiqué \; il s'agit à la fois d
+ 'une exposition et d'une place de marché immobilière (annonces de biens)
+  : le périmètre réel de la conférence est à confirmer\nStatut de la d
+ ate : Probable\nSource : Ethio Build Connect — site officiel (JSON-LD Ex
+ hibitionEvent) https://ethiobuildconnect.et/\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Adjacent construction
 URL:https://ethiobuildconnect.et/
 END:VEVENT
 BEGIN:VEVENT
 UID:salon-immobilier-congolais-sic-20270122@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270122
 DTEND;VALUE=DATE:20270125
 SUMMARY:Salon Immobilier Congolais (SIC) - 2e édition
@@ -874,7 +875,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sici-salon-de-l-immobilier-de-cote-d-ivoire-20270129@agenda-immobilier
  -afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270201
 SUMMARY:SICI 2027 — Salon de l'Immobilier de Côte d'Ivoire - 10e éditi
@@ -910,7 +911,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sencon-international-exhibition-for-construction-materials-and-machine
  ry-20270204@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270204
 DTEND;VALUE=DATE:20270207
 SUMMARY:SENCON — International Exhibition for Construction Materials and
@@ -942,39 +943,39 @@ URL:https://www.senconexpo.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:sankalp-africa-summit-20270224@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270224
 DTEND;VALUE=DATE:20270226
 SUMMARY:Sankalp Africa Summit 2027 - édition 2027 (organisé par Intellec
  ap / Sankalp Forum avec Aavishkaar Group)
 LOCATION:The Edge Convention Centre\, Nairobi\, Nairobi\, Kenya
 DESCRIPTION:Conférence d'impact investing panafricaine qui réunit invest
- isseurs\, fonds et porteurs de projets dans des deal rooms\, avec l'immobi
- lier comme l'un des secteurs représentés. Intérêt réel pour un financ
- eur cherchant des deals d'impact\, mais l'événement reste multisecteur (
- agriculture\, fintech\, santé) et l'arrière-plan immobilier n'est pas ga
- ranti.\nThemes : impact investing \; deal rooms \; levée de fonds \; capi
- tal d'impact \; multisecteur\nActeurs du capital : investisseurs \; fonds 
- d'impact \; développeurs \; banques\nConflits de sources : dates : 24-25 
- févr. 2027 au The Edge Convention Centre (space.ke\, startupmaphub\, foun
- dercal) vs 24-26 févr. 2027 (vc4a) vs 22-26 févr. 2027 (vc4a\, mention 
- « Conference February 22-26 »)\nSignaux et lacunes : la date n'est repri
- se que par des calendriers tiers\, sans confirmation sur un site officiel 
- lu\nStatut de la date : A confirmer\nSource : Space Kenya — calendrier i
- mmobilier 2026-2027 (source agrégée\, non organisateur) https://space.ke
- /events/\nVerifie le 2026-11-06
+ isseurs\, fonds et porteurs de projets dans des salles de négociation\, a
+ vec l'immobilier comme l'un des secteurs représentés. Intérêt réel po
+ ur un financeur cherchant des transactions d'impact\, mais l'événement r
+ este multisecteur (agriculture\, fintech\, santé) et l'arrière-plan immo
+ bilier n'est pas garanti.\nThemes : impact investing \; salles de négocia
+ tion \; levée de fonds \; capital d'impact \; multisecteur\nActeurs du ca
+ pital : investisseurs \; fonds d'impact \; développeurs \; banques\nConfl
+ its de sources : dates : 24-25 févr. 2027 au The Edge Convention Centre (
+ space.ke\, startupmaphub\, foundercal) vs 24-26 févr. 2027 (vc4a) vs 22-2
+ 6 févr. 2027 (vc4a\, mention « Conference February 22-26 »)\nSignaux et
+  lacunes : la date n'est reprise que par des calendriers tiers\, sans conf
+ irmation sur un site officiel lu\nStatut de la date : A confirmer\nSource 
+ : Space Kenya — calendrier immobilier 2026-2027 (source agrégée\, non 
+ organisateur) https://space.ke/events/\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Marches de capitaux
 URL:https://space.ke/events/
 END:VEVENT
 BEGIN:VEVENT
 UID:lma-icma-annual-africa-summit-20270317@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270319
 SUMMARY:LMA & ICMA Annual Africa Summit 2027 - 2e édition du sommet panaf
  ricain (1re édition en 2026)
-LOCATION:Century City Conference Centre\, Cape Town\, Afrique du Sud
+LOCATION:Century City Conference Centre\, Le Cap\, Afrique du Sud
 DESCRIPTION:Le rendez-vous africain des marchés de dette : émetteurs sou
  verains\, offices de gestion de la dette\, banques centrales\, banques glo
  bales\, investisseurs institutionnels\, DFIs et régulateurs\, avec la IFC
@@ -990,12 +991,12 @@ DESCRIPTION:Le rendez-vous africain des marchés de dette : émetteurs sou
   chiffres de l'édition 2026 (1 100+ délégués\, 450 institutions) non c
  onfirmés pour 2027 \; adresse : aucune information contradictoire entre l
  es sources \; le centre de congrès (Century City Conference Centre) est p
- récisé par la page LMA\, la page ICMA mentionnant seulement 'Cape Town' 
- \; tarifs : la page LMA indique 1 500 GBP en tarif anticipé contre 2 000 
- GBP standard pour les représentants d'organisations africaines (montant n
- on vérifié sur la page ICMA)\nStatut de la date : Confirme\nSource : Loa
- n Market Association - page de l'événement 2027 https://blog.lma.eu.com/
- annual-africa-summit-2027/\nVerifie le 2026-11-06
+ récisé par la page LMA\, la page ICMA mentionnant seulement 'Le Cap' \; 
+ tarifs : la page LMA indique 1 500 GBP en tarif anticipé contre 2 000 GBP
+  standard pour les représentants d'organisations africaines (montant non 
+ vérifié sur la page ICMA)\nStatut de la date : Confirme\nSource : Loan M
+ arket Association - page de l'événement 2027 https://blog.lma.eu.com/ann
+ ual-africa-summit-2027/\nVerifie le 2026-11-06
 STATUS:CONFIRMED
 CATEGORIES:Marches de capitaux
 URL:https://blog.lma.eu.com/annual-africa-summit-2027/
@@ -1003,7 +1004,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pi-africa-10th-annual-africa-pension-funds-alternative-investments-con
  ference-20270317@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270320
 SUMMARY:PI Africa 2027 — 10th Annual Africa Pension Funds & Alternative 
@@ -1035,7 +1036,7 @@ URL:https://pensionfundsafrica.com/registration
 END:VEVENT
 BEGIN:VEVENT
 UID:big-5-construct-ethiopia-20270408@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270411
 SUMMARY:Big 5 Construct Ethiopia 2027 - édition 2027 (numéro d'édition 
@@ -1066,7 +1067,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:medibat-salon-mediterraneen-du-batiment-20270421@agenda-immobilier-afr
  ique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270425
 SUMMARY:MEDIBAT — Salon Méditerranéen du Bâtiment - 19e édition
@@ -1102,7 +1103,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:fhs-africa-ex-ahif-africa-hotel-investment-summit-20270428@agenda-immo
  bilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270428
 DTEND;VALUE=DATE:20270430
 SUMMARY:FHS Africa 2027 (ex-AHIF — Africa Hotel Investment Summit) - éd
@@ -1114,29 +1115,29 @@ DESCRIPTION:Le rendez-vous africain d'investissement hôtelier\, avec inve
  : c'est le point le plus direct de la zone pour le capital_xml tourism et 
  les actifs à revenus\, où les opportunités de financement se font rare.
   Sa portée panafricaine compense une-différence d'échelle avec EAPI.\nT
- hemes : investissement hôtelier \; opportunités de projets \; deal-makin
- g \; tendances du marché \; finance hôtelier\nActeurs du capital : inves
- tisseurs \; propriétaires d'hôtels \; développeurs \; décideurs public
- s \; banques\nConflits de sources : date et lieu : 28-29 avr. 2027 au Spek
- e Resort Convention Centre (thebench.com) vs « FHS Africa » également l
- isté au même organisateur sous d'autres dates selon les pages de listing
-  — aucune confirmation sur un site de l'événement lui-même n'a pu êt
- re lue \; date : 2-3 février 2027 initialement annoncé (UDP\, Breaking T
- ravel News\, 19 oct. 2026) → décalé au 28-29 avril 2027 pour s'aligner
-  sur le Pearl of Africa Tourism Expo (POATE) et l'AFCON (atta.travel\, fut
- urehospitality.com)\nSignaux et lacunes : effectif : non communiqué \; do
- ublon fusionne : FHS Africa 2027 (ex-AHIF — Africa Hotel Investment Summ
- it) (Afrique de l'Est & Corne) et FHS Africa (Future Hospitality Summit Af
- rica) (Continental\, finance & adjacent)\nStatut de la date : Probable\nSo
- urce : The Bench — page officielle des événements https://www.thebench
- .com/events\nSources citees : ATTA — report des dates de FHS Africa 2027
-  <https://atta.travel/resource/fhs-africa-rescheduled-to-april-2027-to-ali
- gn-with-poate-and-afcon.html> | FHS Africa — site officiel (28-29 avril 
- 2027\, Kampala) <https://futurehospitality.com/africa> | Future Hospitalit
- y Summit — FHS Egypt (page officielle) <https://futurehospitality.com/eg
- ypt> | FHS Egypt — communiqués de presse (lancement\, FHS Living) <http
- s://futurehospitality.com/egypt/content-library/category/press-room>\nVeri
- fie le 2026-11-06
+ hemes : investissement hôtelier \; opportunités de projets \; négociati
+ on de transactions \; tendances du marché \; finance hôtelier\nActeurs d
+ u capital : investisseurs \; propriétaires d'hôtels \; développeurs \; 
+ décideurs publics \; banques\nConflits de sources : date et lieu : 28-29 
+ avr. 2027 au Speke Resort Convention Centre (thebench.com) vs « FHS Afric
+ a » également listé au même organisateur sous d'autres dates selon les
+  pages de listing — aucune confirmation sur un site de l'événement lui
+ -même n'a pu être lue \; date : 2-3 février 2027 initialement annoncé 
+ (UDP\, Breaking Travel News\, 19 oct. 2026) → décalé au 28-29 avril 20
+ 27 pour s'aligner sur le Pearl of Africa Tourism Expo (POATE) et l'AFCON (
+ atta.travel\, futurehospitality.com)\nSignaux et lacunes : effectif : non 
+ communiqué \; doublon fusionne : FHS Africa 2027 (ex-AHIF — Africa Hote
+ l Investment Summit) (Afrique de l'Est & Corne) et FHS Africa (Future Hosp
+ itality Summit Africa) (Continental\, finance & adjacent)\nStatut de la da
+ te : Probable\nSource : The Bench — page officielle des événements htt
+ ps://www.thebench.com/events\nSources citees : ATTA — report des dates d
+ e FHS Africa 2027 <https://atta.travel/resource/fhs-africa-rescheduled-to-
+ april-2027-to-align-with-poate-and-afcon.html> | FHS Africa — site offic
+ iel (28-29 avril 2027\, Kampala) <https://futurehospitality.com/africa> | 
+ Future Hospitality Summit — FHS Egypt (page officielle) <https://futureh
+ ospitality.com/egypt> | FHS Egypt — communiqués de presse (lancement\, 
+ FHS Living) <https://futurehospitality.com/egypt/content-library/category/
+ press-room>\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:https://www.thebench.com/events
@@ -1144,7 +1145,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:eapi-summit-east-africa-property-investment-summit-14e-20270512@agenda
  -immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270512
 DTEND;VALUE=DATE:20270514
 SUMMARY:EAPI Summit 2027 — East Africa Property Investment Summit (14e 
@@ -1156,31 +1157,31 @@ DESCRIPTION:Le sommet immobilier le plus directement utile à un investiss
  ions dédiées aux marchés de capitaux\, à la logistique\, au commerce e
  t au logement abordable. En 2026\, son thème « Re-newed Momentum » a po
  rté la discussion sur l'institutionnalisation du marché immobilier d'Afr
- ique de l'Est.\nThemes : marchés de capitaux immobiliers \; deal-making \
- ; capital raising \; hôtellerie \; logistique \; commerce \; logement abo
- rdable \; institutionnalisation\nActeurs du capital : investisseurs instit
- utionnels \; DFI \; développeurs \; banques \; géants hôteliers \; asse
- t managers\nConflits de sources : date 2026: 13-14 mai 2026 (brochure EAPI
-  2026) vs 7-8 mai 2025\, 12e édition au Pullman Upper Hill\nSignaux et la
- cunes : lecture du calendrier API Events : « Morocco Showcase Summit » a
- ppartient au calendrier 2026 (26 nov. 2026\, Casablanca Marriott) et la ca
- rte « 12-13 MAY 2027 / EAPI SUMMIT / Radisson Blu Upperhill – Nairobi 
- » appartient bien au calendrier 2027 — aucune confusion de date \; date
-  : 12-13 mai 2027 selon le calendrier API Events \; un agrégateur tiers (
- XPOIQ) indique seulement « Wed\, May 12 » — cohérent \; la 2e éditio
- n s'est tenue les 13-14 mai 2026 au Radisson Blu Upperhill \; doublon fusi
- onne : EAPI Summit 2027 — East Africa Property Investment Summit (14e é
- dition) (Afrique de l'Est & Corne) et EAPI Summit (East Africa API Summit)
-  (Continental\, finance & adjacent)\nStatut de la date : Probable\nSource 
- : API Events — calendrier 2027 officiel (carte « EAPI SUMMIT ») https:
- //www.apievents.com/events/\nVerifie le 2026-11-06
+ ique de l'Est.\nThemes : marchés de capitaux immobiliers \; négociation 
+ de transactions \; capital raising \; hôtellerie \; logistique \; commerc
+ e \; logement abordable \; institutionnalisation\nActeurs du capital : inv
+ estisseurs institutionnels \; DFI \; développeurs \; banques \; géants h
+ ôteliers \; asset managers\nConflits de sources : date 2026: 13-14 mai 20
+ 26 (brochure EAPI 2026) vs 7-8 mai 2025\, 12e édition au Pullman Upper Hi
+ ll\nSignaux et lacunes : lecture du calendrier API Events : « Morocco Sho
+ wcase Summit » appartient au calendrier 2026 (26 nov. 2026\, Casablanca M
+ arriott) et la carte « 12-13 MAY 2027 / EAPI SUMMIT / Radisson Blu Upperh
+ ill – Nairobi » appartient bien au calendrier 2027 — aucune confusion
+  de date \; date : 12-13 mai 2027 selon le calendrier API Events \; un agr
+ égateur tiers (XPOIQ) indique seulement « Wed\, May 12 » — cohérent 
+ \; la 2e édition s'est tenue les 13-14 mai 2026 au Radisson Blu Upperhill
+  \; doublon fusionne : EAPI Summit 2027 — East Africa Property Investmen
+ t Summit (14e édition) (Afrique de l'Est & Corne) et EAPI Summit (East Af
+ rica API Summit) (Continental\, finance & adjacent)\nStatut de la date : P
+ robable\nSource : API Events — calendrier 2027 officiel (carte « EAPI S
+ UMMIT ») https://www.apievents.com/events/\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:http://eapisummit.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:lagos-real-estate-fest-20270524@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270524
 DTEND;VALUE=DATE:20270526
 SUMMARY:Lagos Real Estate Fest 2027 - édition 2027
@@ -1205,7 +1206,7 @@ URL:https://eventhive.ng/calendar/2027-eventhive-calendar.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:big-5-construct-south-africa-20270608@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270608
 DTEND;VALUE=DATE:20270611
 SUMMARY:Big 5 Construct South Africa - édition 2027
@@ -1225,7 +1226,7 @@ URL:https://www.big5constructsouthafrica.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:big-5-construct-egypt-20270614@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270617
 SUMMARY:Big 5 Construct Egypt - 9e édition
@@ -1246,7 +1247,7 @@ URL:https://www.big5constructegypt.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:buildexpo-africa-kenya-28e-20270701@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270704
 SUMMARY:Buildexpo Africa Kenya 2027 (28e édition) - 28e édition
@@ -1277,7 +1278,7 @@ URL:https://www.expogr.com/buildexpoKenya/
 END:VEVENT
 BEGIN:VEVENT
 UID:africa-build-show-ghana-abs-ghana-20270706@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270706
 DTEND;VALUE=DATE:20270709
 SUMMARY:Africa Build Show Ghana 2027 (ABS Ghana) - édition 2027
@@ -1316,7 +1317,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aihs-21st-africa-international-housing-show-20270712@agenda-immobilier
  -afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270712
 DTEND;VALUE=DATE:20270718
 SUMMARY:AIHS 2027 — 21st Africa International Housing Show - 21e éditio
@@ -1329,29 +1330,29 @@ DESCRIPTION:Le plus gros rendez-vous panafricain du logement et de la cons
  lter Afrique\, de l'IFC et de la Banque mondiale. Un espace dédié au fin
  ancement du logement (crédit hypothécaire\, assurance\, trust infrastruc
  ture\, fonds public) en fait le meilleur point de rencontre entre institut
- ionnels et pipelines de projets de la zone.\nThemes : logement et construc
- tion \; financement du logement \; développement immobilier \; urbanisati
- on et villes intelligentes \; matériaux et équipement \; table ronde min
- istérielle\nActeurs du capital : DFI \; décideurs publics \; banques \; 
- institutions de financement \; investisseurs institutionnels\nConflits de 
- sources : dates : 12-17 juillet 2027 (afrindex\, detail_1_3708) vs 13-18 j
- uillet 2027 (afrindex\, detail_3708) — la 20e édition s'est tenue du 13
-  au 18 juillet 2026\, le créneau 12-17 juillet 2027 respecte la tradition
-  d'un début au lundi \; date : 12-17 juillet 2027 (afrindex\, fiche 1) vs
-  13-18 juillet 2027 (afrindex\, fiche 2) — les deux versions de la même
-  source divergent\nSignaux et lacunes : date de référence : le site offi
- ciel africahousingshow.com affiche encore la 20e édition (13-18 juillet 2
- 026) et n'a pas de page 2027 en ligne \; effort : 40 000+ visiteurs annonc
- és pour 2026 (Vanguard\, 20e éd.) — chiffre 2027 reconduit par l'organ
- isateur sans confirmation indépendante \; repère : l'édition 2026 (20e 
- anniversaire) s'est tenue du 13 au 18 juillet 2026 (Vanguard) \; l'éditio
- n 2025\, du 27 juillet au 1er août 2025 \; lieu : Transcorp Hilton Abuja 
- confirmé par la page billetterie Eventbrite de l'organisateur \; doublon 
- fusionne : AIHS 2027 — 21st Africa International Housing Show (Afrique d
- e l'Ouest) et Africa International Housing Show (AIHS) (Continental\, fina
- nce & adjacent)\nStatut de la date : Probable\nSource : Afrindex — fiche
-  AIHS 2027 (communiqué organisateur) http://info.afrindex.com/detail_3708
- /\nVerifie le 2026-11-06
+ ionnels et portefeuilles de projets de la zone.\nThemes : logement et cons
+ truction \; financement du logement \; développement immobilier \; urbani
+ sation et villes intelligentes \; matériaux et équipement \; table ronde
+  ministérielle\nActeurs du capital : DFI \; décideurs publics \; banques
+  \; institutions de financement \; investisseurs institutionnels\nConflits
+  de sources : dates : 12-17 juillet 2027 (afrindex\, detail_1_3708) vs 13-
+ 18 juillet 2027 (afrindex\, detail_3708) — la 20e édition s'est tenue d
+ u 13 au 18 juillet 2026\, le créneau 12-17 juillet 2027 respecte la tradi
+ tion d'un début au lundi \; date : 12-17 juillet 2027 (afrindex\, fiche 1
+ ) vs 13-18 juillet 2027 (afrindex\, fiche 2) — les deux versions de la m
+ ême source divergent\nSignaux et lacunes : date de référence : le site 
+ officiel africahousingshow.com affiche encore la 20e édition (13-18 juill
+ et 2026) et n'a pas de page 2027 en ligne \; effort : 40 000+ visiteurs an
+ noncés pour 2026 (Vanguard\, 20e éd.) — chiffre 2027 reconduit par l'o
+ rganisateur sans confirmation indépendante \; repère : l'édition 2026 (
+ 20e anniversaire) s'est tenue du 13 au 18 juillet 2026 (Vanguard) \; l'éd
+ ition 2025\, du 27 juillet au 1er août 2025 \; lieu : Transcorp Hilton Ab
+ uja confirmé par la page billetterie Eventbrite de l'organisateur \; doub
+ lon fusionne : AIHS 2027 — 21st Africa International Housing Show (Afriq
+ ue de l'Ouest) et Africa International Housing Show (AIHS) (Continental\, 
+ finance & adjacent)\nStatut de la date : Probable\nSource : Afrindex — f
+ iche AIHS 2027 (communiqué organisateur) http://info.afrindex.com/detail_
+ 3708/\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:https://www.africahousingshow.com/
@@ -1359,7 +1360,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:africa-real-estate-summit-awards-expo-abuja-20270822@agenda-immobilier
  -afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270822
 DTEND;VALUE=DATE:20270823
 SUMMARY:Africa Real Estate Summit\, Awards & Expo — édition Abuja - éd
@@ -1367,23 +1368,23 @@ SUMMARY:Africa Real Estate Summit\, Awards & Expo — édition Abuja - éd
 LOCATION:Sandralia Hotel by Whitestone\, Abuja\, Abuja\, Nigeria
 DESCRIPTION:Maillon Abuja d'une série panafricaine itinérante de 4 pays 
  (Nigeria\, Ghana\, Kenya) et d'un cycle awards : format compact\, utile po
- ur le networking local et l'accès aux décideurs nigérians. Faible subst
- ance financière documentée : à traiter comme un rendez-vous de réseau\
- , pas comme une conférence de capital.\nThemes : série itinérante \; aw
- ards \; marché nigérian \; réseau\nActeurs du capital : décideurs publ
- ics\nSignaux et lacunes : date : la fiche Eventbrite de l'organisateur aff
- iche « Sun\, Aug 22 » pour l'édition 2027\, cohérent avec le dimanche 
- 22 août 2027\, mais le jour/mois a été recopié de l'édition 2026 (don
- t la date affichée est erronée : 28 nov. 2026 est un samedi) \; lieu : p
- our l'édition Nairobi du 28 nov. 2026\, trois lieux différents circulent
-  (PrideInn Azure Hotel / Best Western Plus Meridian / Best Western Hotel s
- elon l'organisateur) \; contenu : pour le même slot\, l'organisateur anno
- nce le 28 nov. 2026 l'African Women in Real Estate Summit & Awards à Nair
- obi\, l'Eventbrite le Africa Real Estate Summit\, Awards & Expo — recouv
- rement de programme non expliqué\nStatut de la date : Probable\nSource : 
- Eventbrite — Africa Real Estate International https://www.eventbrite.com
- /e/pre-registration-africa-real-estate-summit-awards-expo-abuja-2027-ticke
- ts-2038779408911\nVerifie le 2026-11-06
+ ur le réseautage local et l'accès aux décideurs nigérians. Faible subs
+ tance financière documentée : à traiter comme un rendez-vous de réseau
+ \, pas comme une conférence de capital.\nThemes : série itinérante \; a
+ wards \; marché nigérian \; réseau\nActeurs du capital : décideurs pub
+ lics\nSignaux et lacunes : date : la fiche Eventbrite de l'organisateur af
+ fiche « Sun\, Aug 22 » pour l'édition 2027\, cohérent avec le dimanche
+  22 août 2027\, mais le jour/mois a été recopié de l'édition 2026 (do
+ nt la date affichée est erronée : 28 nov. 2026 est un samedi) \; lieu : 
+ pour l'édition Nairobi du 28 nov. 2026\, trois lieux différents circulen
+ t (PrideInn Azure Hotel / Best Western Plus Meridian / Best Western Hotel 
+ selon l'organisateur) \; contenu : pour le même slot\, l'organisateur ann
+ once le 28 nov. 2026 l'African Women in Real Estate Summit & Awards à Nai
+ robi\, l'Eventbrite le Africa Real Estate Summit\, Awards & Expo — recou
+ vrement de programme non expliqué\nStatut de la date : Probable\nSource :
+  Eventbrite — Africa Real Estate International https://www.eventbrite.co
+ m/e/pre-registration-africa-real-estate-summit-awards-expo-abuja-2027-tick
+ ets-2038779408911\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Flagship continental
 URL:https://www.eventbrite.com/e/pre-registration-africa-real-estate-summi
@@ -1391,7 +1392,7 @@ URL:https://www.eventbrite.com/e/pre-registration-africa-real-estate-summi
 END:VEVENT
 BEGIN:VEVENT
 UID:nigeria-private-capital-summit-20270909@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270909
 DTEND;VALUE=DATE:20270910
 SUMMARY:Nigeria Private Capital Summit 2027 - édition 2027
@@ -1401,7 +1402,7 @@ DESCRIPTION:Le point de rendez-vous du capital privé nigérian : 200+ fon
  ds\, administrateurs de fonds de pension\, assureurs\, fonds souverains\, 
  DFIs et family offices\, avec les investisseurs d'infrastructure explicite
  ment conviés. C'est le bon endroit pour sourcer des investisseurs capable
- s de porter des actifs immobiliers nigérians \; à noter qu'aucun track i
+ s de porter des actifs immobiliers nigérians \; à noter qu'aucun volet i
  mmobilier dédié n'est confirmé pour l'édition 2027.\nThemes : capital 
  privé \; allocation d'actifs \; pension funds \; DFI \; infrastructure \;
   opportunités d'investissement\nActeurs du capital : private equity \; fo
@@ -1420,12 +1421,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:africa-property-investment-api-summit-20270915@agenda-immobilier-afriq
  ue
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270915
 DTEND;VALUE=DATE:20270917
 SUMMARY:Africa Property Investment (API) Summit - 18e édition
-LOCATION:CTICC (Cape Town International Convention Centre)\, Cape Town\, A
- frique du Sud
+LOCATION:CTICC (Le Cap International Convention Centre)\, Le Cap\, Afrique
+  du Sud
 DESCRIPTION:Le rendez-vous de référence du capital immobilier africain :
   fonds de pension\, family offices\, fonds souverains\, banques et develop
  ers y traitent des rendements et des allocations multi-pays. L'édition 20
@@ -1435,45 +1436,45 @@ DESCRIPTION:Le rendez-vous de référence du capital immobilier africain :
  onds de pension \; private equity \; banques \; décideurs publics\nSignau
  x et lacunes : édition : le site officiel annonce la 18e édition en 2027
   (Property Flash qualifiait l'édition 2026 de 17e) — cohérent \; lieu 
- : CTICC depuis 2026\, l'édition 2025 s'était tenue dans un autre venue d
- e Cape Town (changement assumé par l'organisateur)\nStatut de la date : C
- onfirme\nSource : API Summit (site officiel) https://www.apisummit.co.za/\
- nVerifie le 2026-11-06
+ : CTICC depuis 2026\, l'édition 2025 s'était tenue dans un autre lieu de
+  Le Cap (changement assumé par l'organisateur)\nStatut de la date : Confi
+ rme\nSource : API Summit (site officiel) https://www.apisummit.co.za/\nVer
+ ifie le 2026-11-06
 STATUS:CONFIRMED
 CATEGORIES:Flagship continental
 URL:https://www.apisummit.co.za/
 END:VEVENT
 BEGIN:VEVENT
 UID:big-5-construct-nigeria-20270921@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270921
 DTEND;VALUE=DATE:20270924
 SUMMARY:Big 5 Construct Nigeria 2027 - 7e édition (la 6e édition a eu li
  eu en septembre 2026)
 LOCATION:Landmark Centre\, Lagos\, Nigeria\, Lagos\, Nigeria
 DESCRIPTION:Le salon de référence de la construction au Nigeria (200+ ex
- posants de 20+ pays\, 60+ speakers en 30+ sessions CPD certifiées) avec l
- a présence annoncée de contractors\, developers\, consultants\, governme
- nt representatives et facility managers. Pertinent pour un investisseur qu
- i cherche des pipelines de promoteurs et de projets de construction\, mais
-  le contenu reste orienté technique et achats plutôt que capital.\nTheme
- s : construction \; matériaux et équipement \; infrastructure \; dévelo
- ppement de projets \; facility management \; conference CPD\nActeurs du ca
- pital : promoteurs immobiliers \; décideurs publics \; investisseurs\nCon
- flits de sources : le site affiche la date 2027 alors que ses pages Média
-  et Industry News parlent encore de « l'édition 2026 »\nSignaux et lacu
- nes : co-location : le site officiel mentionne « co-located with » une i
- nfrastructure expo mais affiche dans le même bloc le portfolio sud-africa
- in (« South Africa Infrastructure Expo ») \; Luminik la désigne comme W
- est Africa Infrastructure Expo \; chiffres d'audience non datés : 11 000+
-  industry peers et 150 à 200+ exposants peuvent correspondre à l'éditio
- n 2026 \; date : seul EventsEye date l'édition 2027 (21-23 sept. 2027) \;
-  la page dmg events n'expose pas encore l'edition nigériane — date à c
- onfirmer auprès de l'organisateur \; doublon fusionne : Big 5 Construct N
- igeria 2027 (Afrique de l'Ouest) et The Big 5 Construct Nigeria (Continent
- al\, finance & adjacent)\nStatut de la date : Probable\nSource : Big 5 Con
- struct Nigeria — site officiel https://www.big5constructnigeria.com/\nVe
- rifie le 2026-11-06
+ posants de 20+ pays\, 60+ intervenants en 30+ sessions CPD certifiées) av
+ ec la présence annoncée de contractors\, developers\, consultants\, gove
+ rnment representatives et facility managers. Pertinent pour un investisseu
+ r qui cherche des projets de promoteurs et de projets de construction\, ma
+ is le contenu reste orienté technique et achats plutôt que capital.\nThe
+ mes : construction \; matériaux et équipement \; infrastructure \; déve
+ loppement de projets \; facility management \; conference CPD\nActeurs du 
+ capital : promoteurs immobiliers \; décideurs publics \; investisseurs\nC
+ onflits de sources : le site affiche la date 2027 alors que ses pages Méd
+ ia et Industry News parlent encore de « l'édition 2026 »\nSignaux et la
+ cunes : co-location : le site officiel mentionne « co-located with » une
+  infrastructure expo mais affiche dans le même bloc le portfolio sud-afri
+ cain (« South Africa Infrastructure Expo ») \; Luminik la désigne comme
+  West Africa Infrastructure Expo \; chiffres d'audience non datés : 11 00
+ 0+ industry peers et 150 à 200+ exposants peuvent correspondre à l'édit
+ ion 2026 \; date : seul EventsEye date l'édition 2027 (21-23 sept. 2027) 
+ \; la page dmg events n'expose pas encore l'edition nigériane — date à
+  confirmer auprès de l'organisateur \; doublon fusionne : Big 5 Construct
+  Nigeria 2027 (Afrique de l'Ouest) et The Big 5 Construct Nigeria (Contine
+ ntal\, finance & adjacent)\nStatut de la date : Probable\nSource : Big 5 C
+ onstruct Nigeria — site officiel https://www.big5constructnigeria.com/\n
+ Verifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Adjacent construction
 URL:https://www.big5constructnigeria.com/
@@ -1481,7 +1482,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sapoa-annual-convention-property-exhibition-20270927@agenda-immobilier
  -afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270927
 DTEND;VALUE=DATE:20271001
 SUMMARY:SAPOA Annual Convention & Property Exhibition - 61e édition (2027)
@@ -1509,7 +1510,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cityscape-egypt-international-real-estate-exhibition-20270929@agenda-i
  mmobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20270929
 DTEND;VALUE=DATE:20271003
 SUMMARY:Cityscape Egypt — International Real Estate Exhibition (édition
@@ -1535,7 +1536,7 @@ URL:https://www.cityscape-events.com/egypt/
 END:VEVENT
 BEGIN:VEVENT
 UID:big-5-construct-kenya-10e-20271013@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20271013
 DTEND;VALUE=DATE:20271016
 SUMMARY:Big 5 Construct Kenya (10e édition) - 10e édition
@@ -1562,7 +1563,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archibat-salon-de-l-architecture-et-du-batiment-20271014@agenda-immobi
  lier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20271014
 DTEND;VALUE=DATE:20271019
 SUMMARY:ARCHIBAT 2027 — Salon de l'Architecture et du Bâtiment - 11e é
@@ -1573,48 +1574,48 @@ DESCRIPTION:Biennale régionale qui a gardé la position de « laboratoire
   d'idées » et de cadre de dialogue entre pouvoirs publics\, professionne
  ls\, investisseurs et collectivités territoriales\, avec un soutien expli
  cite du ministre de l'Urbanisme\, du Logement et du Cadre de vie. Son pôl
- e « Habiter et Décorer » et ses six panels « experts\, decision-makers
-  and investors » en font un bon radar sur les pipelines de promoteurs et 
- les politiques d'urbanisme ouest-africaines.\nThemes : architecture \; con
- struction \; urbanisme \; habitat \; villes vivables \; aménagement \; BI
- M et numérique\nActeurs du capital : décideurs publics \; promoteurs imm
- obiliers \; investisseurs \; collectivités territoriales\nConflits de sou
- rces : thème : « Villes vivables\, villes innovantes\, architecture de d
- emain » (site officiel\, oarchitectes.ci\, FratMat) vs « Villes vivables
- \, villes durables\, architecture de demain » (Abidjan.net\, AIP) \; date
-  : 14-18 octobre 2027 (site officiel\, FratMat\, oarchitectes.ci\, AIP) vs
-  « avril 2027 (?) » (eventseye) — l'hypothèse eventseye est contredit
- e par le lancement officiel du 22 oct. 2026 \; lieu : « Parc des Expositi
- ons d'Abidjan » (site officiel) vs « Parc des Expositions de Port-Bouët
-  » (FratMat)\nStatut de la date : Probable\nSource : ARCHIBAT 2027 — si
- te officiel https://archibat.ci/home/\nSources citees : Ordre des Architec
- tes de Côte d'Ivoire — lancement ARCHIBAT 2027 <https://oarchitectes.ci
- /actualites/archibat-2027-lancement-officiel-de-la-11e-edition>\nVerifie l
- e 2026-11-06
+ e « Habiter et Décorer » et ses six tables rondes « experts\, decision
+ -makers and investors » en font un bon radar sur les projets de promoteur
+ s et les politiques d'urbanisme ouest-africaines.\nThemes : architecture \
+ ; construction \; urbanisme \; habitat \; villes vivables \; aménagement 
+ \; BIM et numérique\nActeurs du capital : décideurs publics \; promoteur
+ s immobiliers \; investisseurs \; collectivités territoriales\nConflits d
+ e sources : thème : « Villes vivables\, villes innovantes\, architecture
+  de demain » (site officiel\, oarchitectes.ci\, FratMat) vs « Villes viv
+ ables\, villes durables\, architecture de demain » (Abidjan.net\, AIP) \;
+  date : 14-18 octobre 2027 (site officiel\, FratMat\, oarchitectes.ci\, AI
+ P) vs « avril 2027 (?) » (eventseye) — l'hypothèse eventseye est cont
+ redite par le lancement officiel du 22 oct. 2026 \; lieu : « Parc des Exp
+ ositions d'Abidjan » (site officiel) vs « Parc des Expositions de Port-B
+ ouët » (FratMat)\nStatut de la date : Probable\nSource : ARCHIBAT 2027 
+ — site officiel https://archibat.ci/home/\nSources citees : Ordre des Ar
+ chitectes de Côte d'Ivoire — lancement ARCHIBAT 2027 <https://oarchitec
+ tes.ci/actualites/archibat-2027-lancement-officiel-de-la-11e-edition>\nVer
+ ifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Adjacent construction
 URL:https://archibat.ci/visiter/
 END:VEVENT
 BEGIN:VEVENT
 UID:abuja-real-estate-fest-20271109@agenda-immobilier-afrique
-DTSTAMP:20261115T214359Z
+DTSTAMP:20261115T235010Z
 DTSTART;VALUE=DATE:20271109
 DTEND;VALUE=DATE:20271110
 SUMMARY:Abuja Real Estate Fest 2027 - édition 2027
 LOCATION:Abuja\, Nigeria (salle exacte non publiée)\, Abuja\, Nigeria
 DESCRIPTION:Deuxième édition annoncée au calendrier Eventhive 2027\, su
- r le modèle de l'édition 2026 (1 000+ participants\, 30+ speakers\, 30+ 
- exposants\, 45 % de C-level\, avec REDAN\, Afriland\, Urban Shelter et UPD
- C). Rendez-vous à placer en priorité dans l'agenda Abuja de fin d'année
- .\nThemes : investissement immobilier \; développement \; exposition \; p
- roperty showcase \; finance\nActeurs du capital : investisseurs \; banques
-  \; décideurs publics \; promoteurs immobiliers\nSignaux et lacunes : le 
- calendrier Eventhive 2027 précise « event dates are subjected to change 
- » \; cohérence à vérifier : la 2e édition est au 12 nov. 2026 (Eventb
- rite) ou au 19 nov. 2026 (eventhive.ng) — la position au 9 nov. 2027 sui
- vrait la première hypothèse\nStatut de la date : Probable\nSource : Even
- thive — calendrier officiel 2027 (PDF) https://eventhive.ng/calendar/202
- 7-eventhive-calendar.pdf\nVerifie le 2026-11-06
+ r le modèle de l'édition 2026 (1 000+ participants\, 30+ intervenants\, 
+ 30+ exposants\, 45 % de dirigeants\, avec REDAN\, Afriland\, Urban Shelter
+  et UPDC). Rendez-vous à placer en priorité dans l'agenda Abuja de fin d
+ 'année.\nThemes : investissement immobilier \; développement \; expositi
+ on \; property showcase \; finance\nActeurs du capital : investisseurs \; 
+ banques \; décideurs publics \; promoteurs immobiliers\nSignaux et lacune
+ s : le calendrier Eventhive 2027 précise « event dates are subjected to 
+ change » \; cohérence à vérifier : la 2e édition est au 12 nov. 2026 
+ (Eventbrite) ou au 19 nov. 2026 (eventhive.ng) — la position au 9 nov. 2
+ 027 suivrait la première hypothèse\nStatut de la date : Probable\nSource
+  : Eventhive — calendrier officiel 2027 (PDF) https://eventhive.ng/calen
+ dar/2027-eventhive-calendar.pdf\nVerifie le 2026-11-06
 STATUS:TENTATIVE
 CATEGORIES:Ancre nationale
 URL:https://eventhive.ng/calendar/2027-eventhive-calendar.pdf
