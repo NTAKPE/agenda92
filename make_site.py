@@ -191,6 +191,11 @@ def event_jsonld(e, page_url):
     """Schema.org Event : permet a Google d'afficher la date en resultat enrichi."""
     if not e.get("start"):
         return None
+    # Une date « probable » ou « a confirmer » n'est pas une date : elle n'est
+    # pas declaree a Google comme un evenement programme. Seules les dates
+    # confirmees portent un balisage evenementiel.
+    if e.get("status") != "confirmed":
+        return None
     end = e.get("end") or e.get("start")
     ld = {
         "@context": "https://schema.org",
@@ -215,22 +220,19 @@ def event_jsonld(e, page_url):
         }
     if e.get("organizer"):
         ld["organizer"] = {"@type": "Organization", "name": e["organizer"]}
-    if e.get("source_url"):
-        ld["sameAs"] = e["source_url"]
+    official = (e.get("official_site") or {}).get("url")
+    if official:
+        ld["sameAs"] = official
     return ld
 
 
-def sponsor_slot(label="Emplacement partenaire disponible", prefix=""):
-    """Emplacement publicitaire louable, present sur toutes les pages."""
-    return (
-        '<aside class="adslot" aria-label="Emplacement partenaire">'
-        '<span class="adslot-label">Espace partenaire</span>'
-        '<p class="adslot-title">%s</p>'
-        '<p class="adslot-note">Emplacement réservé — réservé aux acteurs du marché immobilier '
-        'africain (banques, cabinets, promoteurs, fournisseurs de données). '
-        '<a href="%ssponsors.html">En savoir plus</a></p>'
-        '</aside>' % (esc(label), prefix)
-    )
+def sponsor_slot(label="", prefix=""):
+    """Aucun emplacement commercial : ce site ne vend rien.
+
+    La fonction est conservee pour ne pas toucher les huit appels : elle rend
+    une chaine vide, ce qui supprime l'encart partout depuis un seul point.
+    """
+    return ""
 
 
 # --------------------------------------------------------------------------
@@ -451,6 +453,7 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jérémie N'Takpé">
 <title>%s</title>
 <meta name="description" content="%s">
 <link rel="canonical" href="%s">
@@ -486,7 +489,6 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
       <a href="%schangelog.html">Changements</a>
       <a href="%smethodologie.html">Méthodologie</a>
       <a href="%sa-propos.html">À propos</a>
-      <a href="%ssponsors.html">Partenaires</a>
       <a href="%scontribuer.html">Contribuer</a>
     </nav>
   </div>
@@ -503,6 +505,9 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
     <a href="%sa-propos.html">À propos et politique de correction</a> ·
     <a href="%schangelog.html">Journal des changements</a> ·
     <a href="%scontribuer.html">Signaler un événement</a>.</p>
+    <p class="site-author"><b>Jérémie N'Takpé</b> — Asset management institutionnel, Abidjan.
+    Stratégie immobilière : audit, doctrine d'arbitrage, évaluation, structuration
+    financière et analyse réglementaire. Projet personnel.</p>
   </div>
 </footer>
 </body>
@@ -511,7 +516,7 @@ def page(title, description, body, extra_head="", extra_class="", prefix="",
        esc(description), esc(canonical), esc(og_img), esc(og_title), esc(description),
        esc(og_img), prefix, prefix, prefix, prefix, prefix,
        ld, extra_head, extra_class,
-       prefix, prefix, prefix, prefix, prefix, prefix, prefix,
+       prefix, prefix, prefix, prefix, prefix, prefix,
        body,
        gen, len(EVENTS), len(REAL_COUNTRIES), fmt_gen_date(REFRESH_DATE or gen),
        prefix, prefix, prefix, prefix)
@@ -1342,59 +1347,125 @@ def build():
             canonical="pays/%s.html" % slug))
 
     # ---- a propos -------------------------------------------------------
+    # ---- a propos (page d'auteur) ----------------------------------------
     about_body = """
 <main><div class="wrap">
- <p class="eyebrow">\u00c0 propos</p>
- <h1>Qui fait quoi</h1>
- <p class="lede">Cet agenda est un r\u00e9capitulatif ind\u00e9pendant. Il n\u2019organise, ne finance et ne vend aucun des \u00e9v\u00e9nements qu\u2019il recense : chacun reste la propri\u00e9t\u00e9 de son organisateur.</p>
+ <p class="eyebrow">Auteur</p>
+ <h1>Jérémie N'Takpé</h1>
+ <p class="lede">Asset management institutionnel, Abidjan.</p>
 
- <h2>Ce que nous faisons</h2>
- <ul class="meta">
-  <li>Retenir les rendez-vous susceptibles d\u2019int\u00e9resser quelqu\u2019un qui d\u00e9cide d\u2019y engager de l\u2019argent.</li>
-  <li>Publier pour chacun la source, le statut de la date et les contradictions entre sources.</li>
-  <li>Recontr\u00f4ler les dates et tracer chaque correction au <a href="changelog.html">journal</a>.</li>
- </ul>
+ <p>J'accompagne des assureurs, des banques, des fonds de pension et des fonds souverains
+ d'Afrique de l'Ouest sur leurs portefeuilles immobiliers : audit, doctrine d'arbitrage,
+ évaluation, structuration financière et analyse réglementaire. Concrètement : auditer des
+ portefeuilles allant jusqu'à 200 milliards de FCFA, et décider — document à l'appui — ce
+ qu'on garde, ce qu'on cède et à quel prix.</p>
 
- <h2>Ce que nous ne faisons pas</h2>
- <ul class="meta">
-  <li>Nous ne payons pas pour figurer dans l\u2019agenda.</li>
-  <li>L\u2019emplacement partenaire n\u2019ach\u00e8te aucune mention d\u2019\u00e9v\u00e9nement : il n\u2019ach\u00e8te que l\u2019emplacement.</li>
-  <li>Nous ne lissons pas un conflit entre deux sources : il est affich\u00e9 sur la fiche.</li>
- </ul>
+ <p>J'ai construit cet agenda pour la même raison qui me fait relire un actif avant de le
+ valoriser : une date sans source ne vaut rien. Mon métier me fait travailler sur l'Afrique
+ de l'Ouest ; cet agenda couvre le continent. C'est cet écart qui m'a donné envie de le
+ documenter.</p>
 
- <h2>Les sources</h2>
- <table class="spec">
-  <tr><th>Primaires</th><td>page de l\u2019organisateur, billetterie officielle. Elles font foi pour la date et le lieu.</td></tr>
-  <tr><th>Secondaires</th><td>presse sectorielle, portails d\u2019agenda, associations professionnelles. Pour recouper et signaler une divergence.</td></tr>
-  <tr><th>Chiffres</th><td>publi\u00e9s par l\u2019organisateur, non audit\u00e9s. Signal\u00e9s comme tels.</td></tr>
- </table>
+ <p class="meta">INP-HB Yamoussoukro (génie civil) · LSE, Real Estate Economics and Finance ·
+ CHIA (CoStar / STR) · français natif, anglais professionnel.</p>
 
- <h2>Politique de correction</h2>
- <ol class="meta">
-  <li>Une erreur constat\u00e9e est corrig\u00e9e et inscrite au journal, avec la date et l\u2019ancienne valeur.</li>
-  <li>Les dates sont recontr\u00f4l\u00e9es au moins une fois par mois.</li>
-  <li>Quand deux sources se contredisent, la contradiction est <b>conserv\u00e9e et affich\u00e9e</b>, avec les deux versions.</li>
-  <li>Chaque fiche porte la date de sa derni\u00e8re v\u00e9rification.</li>
- </ol>
-
- <h2>Ce que l\u2019agenda ne couvre pas</h2>
- <p>Un agenda exhaustif sur %d pays n\u2019existe pas : dans de nombreux pays, l\u2019information n\u2019est pas publi\u00e9e en ligne. Ces zones sont <b>document\u00e9es publiquement</b> dans la <a href="methodologie.html">m\u00e9thodologie</a> plut\u00f4t que pass\u00e9es sous silence.</p>
+ <h2>Ce site</h2>
+ <p>Un récapitulatif indépendant : il n'organise, ne finance et ne vend aucun des événements
+ qu'il recense. Aucun sponsor, aucun revenu, aucune inscription. Chaque fiche porte ses
+ sources, son statut de date et ses contradictions ; le journal des changements trace chaque
+ correction.</p>
 
  <h2>Contact</h2>
- <p>Une question, une correction, une demande de partenariat&nbsp;: <a href="mailto:%s">%s</a>.</p>
+ <p>Une correction, une question : <a href="mailto:%s">%s</a> ·
+ <a href="https://www.linkedin.com/in/jeremie-ntakpe/" rel="me noopener" target="_blank">LinkedIn</a>.</p>
 
- %s
- <p><a href="index.html">\u2190 Agenda complet</a></p>
+ <p><a href="etude-de-cas.html">Comment cet agenda est construit</a> ·
+ <a href="index.html">← Agenda complet</a></p>
 </div></main>
-""" % (AFRICA_TOTAL, esc(CONTACT_EMAIL), esc(CONTACT_EMAIL),
-       sponsor_slot("Soutenez la v\u00e9rification continue des dates"))
+""" % (esc(CONTACT_EMAIL), esc(CONTACT_EMAIL))
 
     write("a-propos.html", page(
-        "À propos — agenda des événements immobiliers en Afrique",
-        "Ligne éditoriale, sources, politique de correction et zones non couvertes de l'agenda "
-        "des événements immobiliers en Afrique.",
+        "Jérémie N'Takpé — agenda des événements immobiliers en Afrique",
+        "L'auteur de l'agenda des événements immobiliers en Afrique : asset management "
+        "institutionnel, Abidjan. Sources, politique de correction, contact.",
         about_body,
         canonical="a-propos.html",
+        og_type="article",
+        jsonld={
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jérémie N'Takpé",
+            "jobTitle": "Asset Management Officer",
+            "address": {"@type": "PostalAddress",
+                        "addressLocality": "Abidjan",
+                        "addressCountry": "CI"},
+            "url": abs_url("a-propos.html"),
+            "sameAs": ["https://www.linkedin.com/in/jeremie-ntakpe/"],
+        }))
+
+    # ---- etude de cas ---------------------------------------------------
+    case_body = """
+<main><div class="wrap">
+ <p class="eyebrow">Étude de cas</p>
+ <h1>83 événements, 97 refus</h1>
+ <p class="lede">Il n'existe pas d'agenda consolidé des rendez-vous immobiliers africains.
+ Les informations sont dispersées entre les sites des organisateurs, les billetteries, les
+ portails de salons et la presse sectorielle. Elles se contredisent, et elles se périment.</p>
+
+ <h2>194 candidats</h2>
+ <p>Cinq passes de recherche, une par zone, sur un horizon qui va de novembre 2026 à
+ décembre 2027. À l'arrivée, 194 candidats examinés : 97 jugés recevables, 97 écartés.
+ Chaque refus porte son motif — un salon de décoration à Accra n'est pas un rendez-vous
+ d'investisseurs, un séminaire d'accréditation de cinquante personnes non plus.</p>
+ <p>Le filtre tient en six critères : audience décisionnelle, échelle, substance, continuité,
+ influence, portée. Deux suffisent pour être retenu, un seul suffit à être écarté. Ce seuil
+ est une décision, pas une vérité : il privilégie le capital et le financement, au détriment
+ des salons grand public.</p>
+
+ <h2>97 fiches, 83 dossiers</h2>
+ <p>Quatorze doublons. Le même événement change de nom d'une édition à l'autre — AHIF,
+ FHS Africa et Africa Hotel Investment Summit sont une seule et même chose. Un premier
+ passage par clé canonique et table d'alias, un second par similarité de noms sur même pays,
+ même ville et même date de départ. La fusion garde la fiche la plus complète et
+ <b>fait l'union des conflits</b> : consolider ne doit jamais faire perdre une contradiction.</p>
+
+ <h2>Le statut des dates</h2>
+ <p>Onze dates confirmées, trente-trois à confirmer, le reste probable. Le statut n'est pas
+ saisi à la main, il est recalculé : une contradiction entre sources — deux dates distinctes,
+ ou un marqueur explicite — rétrograde automatiquement une date « confirmée » en
+ « probable ». On ne peut pas se mentir sur une date dans ses propres données sans que le
+ statut bouge.</p>
+
+ <h2>L'exemple qui résume la méthode</h2>
+ <p>Abuja Real Estate Fest 2026. Trois sources donnent le 12 novembre : le site dédié de
+ l'événement, la billetterie officielle, le post LinkedIn d'origine. Une source donne le
+ 19 novembre : la page portfolio de l'organisateur. La tentation est de trancher. J'ai gardé
+ les deux versions. La page portfolio est précisément l'endroit où l'erreur se cache, parce
+ qu'elle ressemble à une source officielle.</p>
+
+ <h2>Ce que je n'affirme pas</h2>
+ <p>22 pays sur 54 ont un rendez-vous documenté. Les 32 autres n'en ont pas, et je l'écris :
+ 74 lacunes, chacune disant ce qui a été cherché et ce qui existe à la marge. Sur les
+ 83 fiches, 67 portent le site officiel de l'événement ; les autres sont marquées
+ « non identifié » plutôt que de deviner une racine.</p>
+ <p>267 pages lues sont consignées avec leur URL et leur date de consultation. Aucun lien
+ n'est fabriqué : un domaine n'est cliquable que s'il figure au registre.</p>
+
+ <h2>À quoi ça sert</h2>
+ <p>Un rendez-vous vaut un déplacement et un budget, ou il ne vaut rien. Les 83 dossiers
+ sont faits pour répondre à ça — avec leurs sources, leurs conflits, et la date à laquelle
+ quelqu'un est allé vérifier.</p>
+
+ <p><a href="methodologie.html">La méthode complète, en tableaux</a> ·
+ <a href="a-propos.html">L'auteur</a> ·
+ <a href="index.html">← Agenda complet</a></p>
+</div></main>
+"""
+    write("etude-de-cas.html", page(
+        "Étude de cas — 83 événements, 97 refus",
+        "Comment l'agenda des événements immobiliers en Afrique a été construit : filtre "
+        "d'inclusion, consolidation des doublons, statut des dates et zones à blanc.",
+        case_body,
+        canonical="etude-de-cas.html",
         og_type="article"))
 
     # ---- methodologie ---------------------------------------------------
@@ -1402,6 +1473,7 @@ def build():
 <main><div class="wrap">
  <p class="eyebrow">M\u00e9thodologie</p>
  <h1>Comment cet agenda est construit</h1>
+ <p class="meta"><a href="etude-de-cas.html">L'étude de cas : comment 194 candidats sont devenus 83 dossiers</a></p>
  <p class="lede">Les r\u00e8gles appliqu\u00e9es, pour que chaque ligne puisse \u00eatre audit\u00e9e.</p>
 
  <h2>1 \u00b7 Filtre d\u2019inclusion : 2 crit\u00e8res sur 6</h2>
@@ -1435,23 +1507,27 @@ def build():
  <h2>4 \u00b7 V\u00e9rification continue</h2>
  <p>Les dates sont recontr\u00f4l\u00e9es p\u00e9riodiquement contre les pages officielles. Le script de rafra\u00eechissement relit chaque source et signale les \u00e9carts, sans modifier les donn\u00e9es \u00e0 l\u2019insu du lecteur. Chaque correction est inscrite au <a href="changelog.html">journal des changements</a>.</p>
 
- <h2>5 \u00b7 Zones \u00e0 blanc</h2>
- <p>%d constats d\u2019information introuvable et %d \u00e9v\u00e9nements \u00e9cart\u00e9s, pays par pays.</p>
- <details><summary>Voir les %d constats</summary>
- <ul class="meta">%s</ul>
- </details>
-
- %s
- <p><a href="index.html">\u2190 Agenda complet</a></p>
+   <h2>5 · Zones à blanc</h2>
+  <p>%d constats d'information introuvable, arrêtés le 6 novembre 2026 ; trois d'entre eux ont
+  été re-vérifiés et corrigés le 15 novembre 2026. Les deux listes sont séparées à dessein : un
+  constat dit qu'une recherche n'a rien donné à cette date ; un rejet dit qu'un événement existe
+  et a été exclu.</p>
+  <details><summary>Voir les %d constats</summary>
+  <ul class="meta">%s</ul>
+  </details>
+  <details><summary>Voir les %d événements écartés</summary>
+  <ul class="meta">%s</ul>
+  </details>
 </div></main>
 """ % (
         len(NEG_REJECTS),
         len(NEG_CONSTATS),
+        len(NEG_CONSTATS),
+        "".join('<li><b>%s</b> — %s</li>' % (esc(z), esc(n)) for z, n in NEG_CONSTATS),
         len(NEG_REJECTS),
-        len(NEG_CONSTATS) + len(NEG_REJECTS),
-        "".join('<li><b>%s</b> \u2014 %s</li>' % (esc(z), esc(n)) for z, n in negative),
-        sponsor_slot("Soutenez la v\u00e9rification continue des dates"),
+        "".join('<li><b>%s</b> — %s</li>' % (esc(z), esc(n)) for z, n in NEG_REJECTS),
     )
+
 
     write("methodologie.html", page(
         "Méthodologie — agenda des événements immobiliers en Afrique",
@@ -1492,47 +1568,6 @@ def build():
         canonical="changelog.html",
         og_type="article"))
 
-    # ---- sponsors --------------------------------------------------------
-    sponsor_body = """
-<main><div class="wrap">
- <p class="eyebrow">Partenaires</p>
- <h1>Emplacement partenaire</h1>
- <p class="lede">L\u2019agenda est gratuit, sans publicit\u00e9 programmatique. Un seul emplacement, en
- haut de page et sur les fiches \u00e9v\u00e9nement, est r\u00e9serv\u00e9 \u00e0 un partenaire du march\u00e9
- immobilier africain.</p>
-
- <h2>Ce que l\u2019emplacement apporte</h2>
- <table class="spec">
-  <tr><th>Audience</th><td>investisseurs et financiers qui consultent l\u2019agenda avant de r\u00e9server un vol et de payer une billet</td></tr>
-  <tr><th>Placement</th><td>banni\u00e8re en en-t\u00eate, pages pays et fiches \u00e9v\u00e9nement \u2014 la marque est associ\u00e9e \u00e0 l\u2019information</td></tr>
-  <tr><th>Formats</th><td>banni\u00e8re d\u2019agenda 1200\u00d7120, newsletter 300\u00d7100, bloc partenaire 300\u00d7250 sur les %d pages pays et les %d fiches \u00e9v\u00e9nement, parrainage d\u2019une page pays</td></tr>
-  <tr><th>Journal</th><td>mention partenaire dans le r\u00e9capitulatif des changements</td></tr>
- </table>
-
- <h2>Partenaires cibl\u00e9s</h2>
- <ul class="meta">
-  <li>Banques et institutions de financement immobilier en Afrique</li>
-  <li>Cabinets d\u2019avocats et de conseil en capital march\u00e9</li>
-  <li>Fournisseurs de donn\u00e9es immobili\u00e8res (valuation, indices)</li>
-  <li>Associations de promoteurs et d\u2019organisateurs de salons</li>
-  <li>Assureurs, fonds, acteurs du titre foncier, proptech</li>
- </ul>
- <p class="meta">Tarifs sur devis, au forfait annuel. L\u2019emplacement n\u2019ach\u00e8te jamais une mention
- d\u2019\u00e9v\u00e9nement : la s\u00e9lection reste ind\u00e9pendante du financement.</p>
-
- %s
- <p><a href="index.html">\u2190 Agenda complet</a> \u00b7
- <a href="a-propos.html">Ligne \u00e9ditoriale et politique de correction</a></p>
-</div></main>
-""" % (len(REAL_COUNTRIES), len(EVENTS), sponsor_slot("Votre marque ici"))
-
-    write("sponsors.html", page(
-        "Partenaires — agenda immobilier Afrique",
-        "Emplacement partenaire disponible sur l'agenda des événements immobiliers en Afrique : "
-        "audience qualifiée d'investisseurs et de financiers.",
-        sponsor_body,
-        canonical="sponsors.html"))
-
     # ---- contribuer ------------------------------------------------------
     from urllib.parse import quote
     signal_subject = quote("Signalement - Agenda immobilier Afrique")
@@ -1549,16 +1584,10 @@ def build():
   <tr><th>Utile</th><td>\u00e9dition, lieu et salle, organisateur, effectif et exposants, acteurs financiers attendus, lien de billetterie</td></tr>
  </table>
 
- <h2>Formulaire</h2>
- <div class="notice" id="form-slot">
-  <b>Le formulaire est en cours de mise en place.</b> Chaque signalement cr\u00e9era une ligne dans une
-  feuille de travail, puis sera v\u00e9rifi\u00e9 avant d\u2019entrer dans l\u2019agenda.
-  <br><br>
-  En attendant, un email suffit&nbsp;: <a href="%s">%s</a>.
-  <br><br>
-  La <a href="methodologie.html">m\u00e9thodologie</a> publie la liste des %d pays \u00e0 couvrir \u2014 c\u2019est
-  l\u00e0 que votre signalement compte le plus.
- </div>
+ <h2>Comment signaler</h2>
+ <p>Un email suffit : <a href="%s">%s</a>. Indiquez le nom exact, la date (ou « à confirmer »),
+ la ville, le pays et le lien de la page officielle. Les %d pays encore sans rendez-vous
+ documenté sont listés dans la <a href="methodologie.html">méthodologie</a>.</p>
 
  <h2>Traitement</h2>
  <ol class="meta">
@@ -1586,24 +1615,28 @@ def build():
     # ---- flux RSS, sitemap, robots ---------------------------------------
     rss_items = []
     for c in CHANGELOG[:40]:
+        item_url = abs_url("changelog.html")
+        guid = "changelog-%s-%s" % (c.get("date", ""), slugify(c.get("title", "")))
         rss_items.append(
-            "<item><title>%s</title><pubDate>%s</pubDate>"
+            "<item><title>%s</title><link>%s</link>"
+            "<guid isPermaLink=\"false\">%s</guid><pubDate>%s</pubDate>"
             "<description>%s</description></item>"
-            % (esc(c.get("title", "")), esc(c.get("date", "")), esc(c.get("detail", "")))
+            % (esc(c.get("title", "")), esc(item_url), esc(guid),
+               esc(c.get("date", "")), esc(c.get("detail", "")))
         )
     rss = """<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
 <title>Journal des changements — agenda immobilier Afrique</title>
-<link>changelog.html</link>
+<link>%s</link>
 <description>Corrections de dates et ajouts dans l'agenda des événements immobiliers en Afrique.</description>
 <language>fr</language>
 %s
 </channel></rss>
-""" % "\n".join(rss_items)
+""" % (esc(abs_url("changelog.html")), "\n".join(rss_items))
     write("feed.xml", rss)
 
     urls = [("index.html", "1.0"), ("methodologie.html", "0.8"), ("changelog.html", "0.8"),
-            ("a-propos.html", "0.7"), ("sponsors.html", "0.5"), ("contribuer.html", "0.5")]
+            ("a-propos.html", "0.7"), ("etude-de-cas.html", "0.7"), ("contribuer.html", "0.5")]
     for e in EVENTS:
         urls.append(("evenements/%s.html" % slugify(e["name"]), "0.7"))
     for c in REAL_COUNTRIES:
@@ -1636,7 +1669,7 @@ def build():
     print("  index.html            tracker pre-rendu (%d lignes)" % len(EVENTS))
     print("  evenements/           %d pages" % len(EVENTS))
     print("  pays/                 %d pages" % len(REAL_COUNTRIES))
-    print("  methodologie.html, changelog.html, a-propos.html, sponsors.html, contribuer.html")
+    print("  methodologie.html, etude-de-cas.html, changelog.html, a-propos.html, contribuer.html")
     print("  feed.xml, sitemap.xml, robots.txt")
     print("  total : %d fichiers html" % (1 + len(EVENTS) + len(REAL_COUNTRIES) + 5))
 
@@ -1653,16 +1686,6 @@ def build():
         blocking.append(
             "Adresse de contact placeholder : renseignez CONTACT_EMAIL (variable\n"
             "      d'environnement) et relancez make_site.py.")
-    try:
-        with open(os.path.join(SITE, "contribuer.html"), encoding="utf-8") as fh:
-            contrib_html = fh.read()
-    except OSError:
-        contrib_html = ""
-    if "forms.google.com" not in contrib_html:
-        advisory.append(
-            "Formulaire d'intake non branche : la page annonce l'ouverture a venir\n"
-            "      et renvoie vers l'email. Branchez le formulaire Google quand il\n"
-            "      existera (bloc #form-slot dans make_site.py).")
     if blocking:
         print("")
         print("AVANT PUBLICATION - %d point(s) bloquant(s) :" % len(blocking))

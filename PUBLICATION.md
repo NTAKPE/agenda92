@@ -3,6 +3,11 @@
 Ce guide couvre ce qui reste à faire pour mettre l'agenda en ligne. Le site est dans `site/`,
 prêt à être déployé tel quel.
 
+> **Décision du 15 novembre 2026** — le projet est une publication signée, pas une offre
+> commerciale. L'emplacement partenaire, la page `sponsors.html` et le formulaire d'intake
+> ont été retirés du site. Les sections qui les décrivent sont conservées comme historique
+> et ne sont plus à exécuter.
+
 **Configuration retenue pour ce lancement** : GitHub Pages, dépôt
 `NTAKPE/agenda92`, adresse publique
 `https://NTAKPE.github.io/agenda92/`. La procédure complète est dans

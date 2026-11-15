@@ -139,14 +139,14 @@ agenda-immobilier-afrique/
 │   ├── evenements/                83 fiches événement
 │   ├── pays/                      22 pages pays
 │   ├── methodologie.html          le filtre, les statuts, la méthode
-│   ├── a-propos.html              ligne éditoriale, sources, politique de correction
+│   ├── a-propos.html              page d'auteur : qui écrit, sources, politique de correction
+│   ├── etude-de-cas.html          comment l'agenda est construit (194 candidats, 83 dossiers)
 │   ├── changelog.html             journal des changements
-│   ├── sponsors.html              emplacement partenaire et grille tarifaire
-│   ├── contribuer.html            formulaire d'intake (zones à blanc)
+│   ├── contribuer.html            signalement par email (zones à blanc)
 │   ├── feed.xml, sitemap.xml, robots.txt
 │   └── assets/  site.css, tracker.js, favicon.svg/png, og/ (105 visuels 1200×630)
 ├── README.md                ce document
-├── PUBLICATION.md           guide de mise en ligne (hébergement, formulaire, partenaire, Substack)
+├── PUBLICATION.md           historique de mise en ligne (hébergement, formulaire, partenaire)
 └── DEPLOIEMENT.md           pas à pas GitHub Pages, pas à pas
 ```
 
@@ -187,12 +187,11 @@ python refresh.py          # relit les pages officielles et signale les écarts
 événement, `confirme`, `a-verifier` ou `non-verifiable`. Une page sans date lisible (rendue en
 JavaScript, ou bloquée) est marquée « non vérifiable », jamais « contredite ».
 
-`make_site.py` signale à la fin ce qui bloque encore une mise en ligne : `SITE_URL` non défini,
-adresse de contact placeholder, formulaire d'intake non branché.
+`make_site.py` signale à la fin ce qui bloque encore une mise en ligne : `SITE_URL` non défini
+et adresse de contact placeholder.
 
-**Publier** — voir `DEPLOIEMENT.md` pour la mise en ligne pas à pas (GitHub Pages), et
-`PUBLICATION.md` pour le formulaire d'intake Google Forms → Sheets, l'emplacement partenaire et le
-pont avec le Substack.
+**Publier** — voir `DEPLOIEMENT.md` pour la mise en ligne pas à pas (GitHub Pages).
+`PUBLICATION.md` conserve l'historique des décisions de lancement.
 
 **Adresse publique retenue pour ce lancement** :
 `https://NTAKPE.github.io/agenda92/` — le build l'écrit dans les URL absolues
