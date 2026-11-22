@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-22",
+    "date_display": "22 novembre 2026",
+    "title": "Le tracker distingue désormais le passé de l'à-venir",
+    "detail": "Quatorze rendez-vous de novembre 2026 sont déjà terminés. Le tracker les repère par leur date de fin, les marque « Passé », les classe après les rendez-vous à venir et propose un filtre À venir / Passés / Tous — par défaut, À venir. Le WAIIS, ajouté le même jour, n'apparaît donc plus comme un rendez-vous à venir alors qu'il s'est tenu du 16 au 18 novembre."
+  },
+  {
+    "date": "2026-11-22",
+    "date_display": "22 novembre 2026",
+    "title": "Le décompte des pays à blanc était faux",
+    "detail": "Le constat du 6 novembre déclarait 32 pays sans rendez-vous. L'audit de couverture du 22 novembre a retrouvé un rendez-vous dans dix des onze pays ouest-africains déclarés à blanc : six pays entrent dans l'agenda (Sierra Leone, Togo, Soudan, Mali, Niger, Guinée), et quatre ont un événement hors fenêtre ou en attente (Bénin, Burkina Faso, Cap-Vert, Libéria). Le chiffre passe de 32 à 15, dont un seul audité à blanc (Gambie) et quatorze non encore audités. Chaque pays porte désormais son verdict, sa date et ses sources dans data/constats-pays.json ; check_negatives.py refuse tout blanc sans preuve."
+  },
+  {
     "date": "2026-11-15",
     "date_display": "15 novembre 2026",
     "title": "Le site devient une publication signée",

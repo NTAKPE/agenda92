@@ -596,7 +596,45 @@
         "lieu : ville annoncée Casablanca mais parc des expositions non précisé"
       ]
     }
-  ],
+  ,
+    {
+      "name": "Sudan Construct Show",
+      "edition": "11e édition",
+      "category": "adjacent_construction",
+      "start": "2026-12-01",
+      "end": "2026-12-04",
+      "date_display": "1-4 déc. 2026",
+      "date_status": "probable",
+      "city": "Khartoum",
+      "country": "Soudan",
+      "venue": "Khartoum International Fairground",
+      "organizer": "Expert Integrated Solutions / Innovation Exhibitions",
+      "attendees": "non communiqué",
+      "exhibitors": "non communiqué ; participation internationale annoncée de 10 pays",
+      "investor_score": 3,
+      "investor_why": "Le site officiel se présente comme une plateforme construction, infrastructure et investissement, avec un secteur « Real Estate & Urban Development » et une page exposants visant décideurs, promoteurs et investisseurs. Onzième édition : c'est le seul rendez-vous immobilier-construction identifiable au Soudan.",
+      "capital_actors": [
+            "promoteurs",
+            "investisseurs",
+            "contractants",
+            "banques"
+      ],
+      "themes": [
+            "construction",
+            "infrastructure",
+            "real estate & urban development",
+            "matériaux",
+            "équipement"
+      ],
+      "ticket_url": "https://sudanconstruct.com/en/home/",
+      "source_url": "https://sudanconstruct.com/en/home/",
+      "source_name": "Sudan Construct Show — site officiel",
+      "last_verified": "2026-11-22",
+      "conflicts": [
+            "dates : 1-4 décembre 2026 (site officiel, Global Trade Fairs) vs 1er octobre 2026 (TradingChem) vs 1er octobre 2027 (Lookschem) — annuaires mal datés ou obsolètes",
+            "qualification : le constat du 15 novembre écartait l'événement faute de volet investisseur ; le site officiel revendique l'inverse"
+      ]
+}],
   "rejected": [
     {
       "name": "DZ IMMO — Salon algérien de l'immobilier",

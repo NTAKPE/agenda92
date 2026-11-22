@@ -71,6 +71,13 @@ print("evenements retenus    : %d" % retenus)
 print("pays couverts         : %d" % len(pays_couverts))
 print("pays non couverts     : %d" % len(non_couverts))
 print("liste                 : %s" % ", ".join(non_couverts))
+import os as _os
+_jpath = _os.path.join(BASE, "data", "constats-pays.json")
+if _os.path.exists(_jpath):
+    _j = json.load(open(_jpath, encoding="utf-8"))
+    _blank = sum(1 for r in _j
+                 if r.get("verdict") in ("blanc_verifie", "blanc_declare", "non_audite"))
+    print("sans rendez-vous documente (journal) : %d" % _blank)
 
 # ---- 3. repartition des statuts -----------------------------------------
 from collections import Counter

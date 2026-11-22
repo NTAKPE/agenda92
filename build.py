@@ -351,6 +351,7 @@ for z in zones:
         rec["end_dt"] = parse_date(rec["end"])
         if rec["start_dt"] and not rec["end_dt"]:
             rec["end_dt"] = rec["start_dt"]
+        rec["past"] = bool(rec["end_dt"] and rec["end_dt"] < date.today())
         rec["category"] = rec["category"] or "national_anchor"
         rec["date_status"] = rec["date_status"] or "to_confirm"
         rec["investor_score"] = rec["investor_score"] or 0
@@ -567,6 +568,15 @@ def sort_key(rec):
 
 records.sort(key=sort_key)
 
+# Les rendez-vous a venir d'abord, par date croissante ; les passes ensuite,
+# du plus recent au plus ancien. Un agenda qui ouvre sur un evenement termine
+# se trompe de lecteur.
+_upcoming = [r for r in records if not r["past"]]
+_past = [r for r in records if r["past"]]
+_upcoming.sort(key=sort_key)
+_past.sort(key=sort_key)
+records = _upcoming + _past
+
 dated = [r for r in records if r["start_dt"]]
 undated = [r for r in records if not r["start_dt"]]
 undated.sort(key=lambda r: (-r["investor_score"], r["name"] or ""))
@@ -774,6 +784,7 @@ payload = {
             "notes": r["notes_text"],
             "has_conflict": r["has_conflict"],
             "last_verified": r["last_verified"] or "",
+            "past": r["past"],
         }
         for r in records
     ],

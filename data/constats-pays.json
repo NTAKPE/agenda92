@@ -1,0 +1,1655 @@
+[
+  {
+    "country": "Angola",
+    "zone": "Afrique australe & centrale",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "Angola feira imobiliaria 2027",
+        "tool": "bing",
+        "lang": "pt",
+        "hits": 0,
+        "outcome": "moteur degrade : resultats generiques sur l'Angola, aucun evenement"
+      },
+      {
+        "q": "site:expoassist.net Angola",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Angola",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 1,
+        "outcome": "1 foire : Angola Oil & Gas, hors immobilier"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Angola, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/angola",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "EventsEye - Angola, 1 foire (Angola Oil & Gas), hors immobilier",
+        "url": "https://www.eventseye.com/fairs/c1_trade-shows_angola.html",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Angola : aucun salon immobilier national actif trouvé dans l'horizon. La SIMA (Feira do Imobiliário) n'est documentée que pour ses 1re et 2e éditions (2010-2011, APIMA avec la FIL Luanda), sans édition récente ni date 2027 ; \"Kwanza Imobiliária\" est introuvable ; la FILDA 2026 (21-26 juil. 2026, ZEE Luanda-Bengo) est une foire multisectorielle sans édition 2027 publiée ; Projekta (foire construction/urbanisme) n'est pas documentée pour 2027. À revérifier lors des éditions 2027."
+  },
+  {
+    "country": "Burkina Faso",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "hors_fenetre",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Burkina Faso salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 3,
+        "outcome": "MIIAF Burkina et Gala International de l'Immobilier identifies"
+      },
+      {
+        "q": "Burkina Faso investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 4,
+        "outcome": "AES-Germany Business Forum, IBF, ANBIS 2027"
+      },
+      {
+        "q": "site:expoassist.net Burkina Faso",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Burkina Faso",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 2,
+        "outcome": "SIPSIS (sante) et FESPACO (cinema) : hors immobilier"
+      },
+      {
+        "q": "site:mindici.net MIIAF Burkina",
+        "tool": "webfetch",
+        "lang": "fr",
+        "hits": 1,
+        "outcome": "MIIAF BF 2026, 11-12 juillet, SIAO Ouagadougou"
+      },
+      {
+        "q": "Gala International de l'Immobilier Ouagadougou",
+        "tool": "webfetch",
+        "lang": "fr",
+        "hits": 1,
+        "outcome": "evenement 2026 termine, aucune date 2027"
+      }
+    ],
+    "sources": [
+      {
+        "name": "MINDICI - MIIAF Burkina Faso 2026",
+        "url": "https://mindici.net/etn/miiaf-bf-2026/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Gala International de l'Immobilier - site officiel",
+        "url": "https://immoawards-gala.com/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "AES-Germany Business Forum 2027",
+        "url": "https://aesbusiness.de/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ExpoAssist - Burkina Faso, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/burkina-faso",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "EventsEye - Burkina Faso, 2 foires hors immobilier",
+        "url": "https://www.eventseye.com/fairs/c1_trade-shows_burkina-faso.html",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "MIIAF Burkina Faso - Marche de l'Immobilier et de l'Investissement en Afrique",
+      "edition": "edition 2026",
+      "dates": "2026-07-11/2026-07-12",
+      "city": "Ouagadougou",
+      "venue": "SIAO, Ouagadougou",
+      "url": "https://mindici.net/etn/miiaf-bf-2026/",
+      "decision": "hors_fenetre",
+      "category": null,
+      "reason": "Salon immobilier et investissement, edition 2026 en juillet, anterieure a la fenetre ; aucune edition 2027 annoncee."
+    },
+    "also_found": [
+      {
+        "name": "Gala International de l'Immobilier / IMMO AWARDS",
+        "edition": "edition 2026",
+        "dates": "2026",
+        "city": "Ouagadougou",
+        "venue": "Salle des Banquets, Ouaga 2000",
+        "url": "https://immoawards-gala.com/",
+        "decision": "hors_fenetre",
+        "reason": "Trois jours, 1 000+ participants, promoteurs, ministeres et investisseurs ; edition 2026 terminee, aucune date 2027."
+      },
+      {
+        "name": "AES-Germany Business Forum 2027",
+        "dates": "2027-04-19/2027-04-20",
+        "city": "Ouagadougou",
+        "url": "https://aesbusiness.de/",
+        "decision": "a_arbitrer",
+        "reason": "Forum d'affaires et d'investissement AES-Allemagne, sans volet immobilier identifie."
+      }
+    ],
+    "conflicts": [
+      "MIIAF : la page donne 11-12 juillet 2026 en en-tete et 20 juillet 2026 dans le corps du texte."
+    ],
+    "note": "Deux evenements immobiliers reels en 2026, aucun date pour 2027. Le pays n'est pas a blanc.",
+    "supersedes": "Burkina Faso : aucun événement immobilier trouvé. Les-agences/promoteurs sont très actifs (LAGRO Group, Harmony Immo Housing à Ouagadougou) mais aucun salon ni conférence n'est organisé dans la fenêtre."
+  },
+  {
+    "country": "Burundi",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "non_audite",
+    "constat_date": null,
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Burundi",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Burundi, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/burundi",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": null
+  },
+  {
+    "country": "Bénin",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "hors_fenetre",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Benin salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "aucun salon immobilier ; annuaires sans evenement"
+      },
+      {
+        "q": "Benin investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 3,
+        "outcome": "Benin Investment Forum identifie (BIF)"
+      },
+      {
+        "q": "Benin real estate conference 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "annuaires academiques uniquement"
+      },
+      {
+        "q": "site:expoassist.net Benin",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Benin",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 1,
+        "outcome": "1 foire : Maker Faire Cotonou, hors immobilier"
+      },
+      {
+        "q": "Benin Investment Forum 2026 date",
+        "tool": "webfetch",
+        "lang": "fr",
+        "hits": 1,
+        "outcome": "8e edition, 1-2 octobre 2026, Sofitel Cotonou"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Benin Investment Forum - site officiel",
+        "url": "http://www.benininvestmentforum.com/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ExpoAssist - Benin, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/benin",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "EventsEye - Benin, 1 foire (Maker Faire), hors immobilier",
+        "url": "https://www.eventseye.com/fairs/c1_trade-shows_benin.html",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "ConferenceNext - conferences immobilier Benin (aucune date listee)",
+        "url": "https://conferencenext.com/conferences/benin/real-estate",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "Benin Investment Forum (BIF)",
+      "edition": "8e edition",
+      "dates": "2026-10-01/2026-10-02",
+      "city": "Cotonou",
+      "venue": "Sofitel Cotonou Marina",
+      "url": "http://www.benininvestmentforum.com/",
+      "decision": "hors_fenetre",
+      "category": "capital_markets",
+      "reason": "Forum de capital-risque et d'innovation, inclus dans le perimetre depuis la doctrine du 22 novembre 2026 (immobilier large, marches de capitaux). Edition 2026 anterieure a la fenetre (nov. 2026 - dec. 2027) ; aucune edition 2027 annoncee a ce jour."
+    },
+    "conflicts": [],
+    "note": "Aucun evenement immobilier trouve. Un forum de capital existe (BIF) : retenu par la doctrine, mais son edition 2026 precede la fenetre et aucune edition 2027 n'est annoncee.",
+    "supersedes": "Bénin : aucun événement immobilier trouvé à Cotonou ; le marché est structuré autour d'agences et de promoteurs (BackHome Africa à Lomé, E-immobilier.bj) sans salon."
+  },
+  {
+    "country": "Cap-Vert",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "hors_fenetre",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Cape Verde real estate conference 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "annuaires academiques uniquement ; aucun salon immobilier"
+      },
+      {
+        "q": "Cape Verde investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 3,
+        "outcome": "Cabo Verde Investment Forum identifie (edition 2025)"
+      },
+      {
+        "q": "site:expoassist.net Cape Verde Islands",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Cape Verde",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucune page pays : 0 foire referencee"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Banco de Cabo Verde - Cabo Verde Investment Forum, 18-20 juin 2025, Sal",
+        "url": "https://www.bcv.cv/pt/O%20Banco/Sala%20de%20Imprensa/Arquivo/Paginas/Cabo-Verde-Investment-Forum.aspx",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Governo de Cabo Verde - plateforme d'inscription du CVIF",
+        "url": "https://www.governo.cv/plataforma-de-inscricao-do-cabo-verde-investment-forum-ja-esta-disponivel/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "NH21 - Cape Verde Investment Forum, ile de Sal",
+        "url": "https://www.nh21investment.com/sal-island-cape-verde-hosts-international-conference-to-attract-private-investment/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ExpoAssist - Cap-Vert, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/cape-verde-islands",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "Cabo Verde Investment Forum (CVIF)",
+      "edition": "edition 2025",
+      "dates": "2025-06-18/2025-06-20",
+      "city": "Ile de Sal",
+      "venue": null,
+      "url": "https://www.governo.cv/plataforma-de-inscricao-do-cabo-verde-investment-forum-ja-esta-disponivel/",
+      "decision": "hors_fenetre",
+      "category": null,
+      "reason": "Forum d'investissement organise par Cabo Verde TradeInvest avec le gouvernement ; edition 2025 anterieure a la fenetre, aucune edition 2026 ou 2027 annoncee au 22 novembre 2026."
+    },
+    "also_found": [],
+    "conflicts": [],
+    "note": "Aucun salon immobilier. Un forum d'investissement institutionnel existe mais son edition 2025 precede la fenetre et aucune edition future n'est publiee.",
+    "supersedes": "Cap-Vert : aucun événement immobilier trouvé ; les regards montreront que le pays n'apparaît pas dans les calendriers immobiliers panafricains."
+  },
+  {
+    "country": "Comores",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "couverture_indirecte",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": null,
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Comores : aucun rendez-vous immobilier ou d'investissement trouvé ; le marché est couvert indirectement par Showcase Indian Ocean (Maurice)."
+  },
+  {
+    "country": "Djibouti",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Djibouti",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Djibouti, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/djibouti",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Djibouti : aucun événement immobilier ou d'investissement immobilier trouvé sur l'horizon ; le pays n'apparaît dans aucune source consultée pour la zone."
+  },
+  {
+    "country": "Eswatini",
+    "zone": "Afrique australe & centrale",
+    "verdict": "hors_fenetre",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": {
+      "name": "Eswatini Investment Conference (EIC)",
+      "edition": "edition 2026",
+      "dates": "2026-07-29/2026-07-31",
+      "city": "Ezulwini",
+      "venue": null,
+      "url": null,
+      "decision": "hors_fenetre",
+      "reason": "Edition 2026 en juillet ; aucune edition 2027 annoncee ; sujet multi-secteurs sans volet foncier."
+    },
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Eswatini : aucune édition 2027 de l'Eswatini Investment Conference (EIC) annoncée (édition 2026 : 29-31 juil. 2026, Ezulwini), et le sujet reste multi-secteurs sans volet foncier. La SADC Sustainable Energy Week 2027 (Eswatini) relève de l'énergie.",
+    "evidence": "constat_anterieur"
+  },
+  {
+    "country": "Gambie",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "blanc_verifie",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Gambia real estate conference 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "annuaires academiques uniquement"
+      },
+      {
+        "q": "Gambia investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucun forum d'investissement ; GIEPA sans evenement"
+      },
+      {
+        "q": "Gambia property expo 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "portails d'annonces et expositions hors Gambie"
+      },
+      {
+        "q": "site:expoassist.net Gambia",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Gambia",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucune page pays : 0 foire referencee"
+      },
+      {
+        "q": "giepa.gm/events",
+        "tool": "webfetch",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "page 404 ; aucune rubrique evenement publiee"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Gambia, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/gambia",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "EventsEye - aucune page pays Gambie",
+        "url": "https://www.eventseye.com/fairs/c1_trade-shows_gambia.html",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "GIEPA - agence de promotion des investissements, aucune rubrique evenement",
+        "url": "https://www.giepa.gm/",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "ConferenceAlert - Gambie : conferences academiques seulement",
+        "url": "https://conferencealert.com/gambia",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "FinderExpo - calendrier Gambie 2027, aucun salon immobilier",
+        "url": "https://finderexpo.com/gambia-expo-2027",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "also_found": [],
+    "conflicts": [],
+    "note": "Premier blanc verifie du journal : 6 interrogations, 5 sources datees, aucun evenement immobilier ni forum d'investissement identifie. L'agence de promotion des investissements ne publie aucun evenement.",
+    "supersedes": "Gambie : aucun événement trouvé, malgré la présence d'un acteur immobilier notable (Mustapha Njie, NJIE Properties, cité par la presse panafricaine)."
+  },
+  {
+    "country": "Guinée",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "retenu",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Guinee salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 6,
+        "outcome": "SIF Guinee Forestiere, SIIBAGUI, SAFIPIM-GUI, SIG identifies"
+      },
+      {
+        "q": "Guinea investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 2,
+        "outcome": "Guinea Investment Forum (APIP) ; SEEG 14 sept. 2027"
+      },
+      {
+        "q": "site:expoassist.net Guinea",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "sif-guineeforestiere.com - page officielle",
+        "tool": "webfetch",
+        "lang": "fr",
+        "hits": 1,
+        "outcome": "confirme : 15-17 janvier 2027, N'Zerekore, 80+ stands"
+      }
+    ],
+    "sources": [
+      {
+        "name": "SIF Guinee Forestiere - site officiel",
+        "url": "https://sif-guineeforestiere.com/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "SIIBAGUI - Salon international de l'immobilier et des banques en Guinee",
+        "url": "https://siibagui.com/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "SAFIPIM-GUI - Salon et foire d'investissement pour la promotion immobiliere",
+        "url": "https://safipim-guinee.com/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "SIG 2026 - premier salon d'affaires dedie a l'immobilier en Guinee",
+        "url": "http://salonimmobilierguinee.com/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "APIP - Guinea Investment Forum (GUIF)",
+        "url": "https://apip.gov.gn/guinea-investment-forum/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ExpoAssist - Guinee, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/guinea",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "SIF - Salon de l'Immobilier de la Guinee Forestiere",
+      "edition": "edition inaugurale",
+      "dates": "2027-01-15/2027-01-17",
+      "city": "N'Zerekore",
+      "venue": "Palais du Peuple de N'Zerekore",
+      "url": "https://sif-guineeforestiere.com/",
+      "decision": "retenu",
+      "category": "national_anchor",
+      "attendance": "80+ stands vises ; pass professionnel et diaspora",
+      "reason": "Trois jours sur le foncier securise, l'immobilier accessible et l'investissement : notaires, geometres, services domaniaux, promoteurs, banques, rencontres B2B et espace diaspora dedie. Dans la fenetre. Edition inaugurale."
+    },
+    "also_found": [
+      {
+        "name": "Guinea Investment Forum (GUIF)",
+        "url": "https://apip.gov.gn/guinea-investment-forum/",
+        "decision": "a_arbitrer",
+        "category": "capital_markets",
+        "dates": null,
+        "reason": "Forum transactionnel organise par l'APIP avec la Banque mondiale et la BAD ; aucune date d'edition future publiee sur la page lue."
+      },
+      {
+        "name": "SIIBAGUI - Salon international de l'immobilier et des banques",
+        "dates": null,
+        "url": "https://siibagui.com/",
+        "decision": "a_arbitrer",
+        "reason": "Evenement immobilier et bancaire ; date de la prochaine edition non publiee."
+      },
+      {
+        "name": "SAFIPIM-GUI",
+        "dates": null,
+        "url": "https://safipim-guinee.com/",
+        "decision": "a_arbitrer",
+        "reason": "Salon et foire d'investissement immobilier ; date non publiee."
+      }
+    ],
+    "conflicts": [
+      "plusieurs evenements immobiliers concurrents se presentent comme « le premier salon » de Guinee : SIG 2026, SIIBAGUI, SAFIPIM-GUI, SIF 2027 — verifier les organisateurs avant toute reservation."
+    ],
+    "note": "Le pays n'est pas a blanc, et de loin : au moins quatre rendez-vous immobiliers distincts, dont un dans la fenetre (SIF, 15-17 janvier 2027).",
+    "supersedes": "Guinée : aucun événement immobilier trouvé pour Conakry."
+  },
+  {
+    "country": "Guinée équatoriale",
+    "zone": "Afrique australe & centrale",
+    "verdict": "non_audite",
+    "constat_date": null,
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Guinée équatoriale",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Guinée équatoriale, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/equatorial-guinea",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": null
+  },
+  {
+    "country": "Guinée-Bissau",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Guinee-Bissau salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "aucun evenement en Guinee-Bissau"
+      },
+      {
+        "q": "Guinea-Bissau investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "portail d'investissement et Expo Belgrade seulement"
+      },
+      {
+        "q": "site:expoassist.net Guinea Bissau",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Guinea Bissau",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucune page pays : 0 foire referencee"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Guinea Bissau, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/guinea-bissau",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "Invest in Guinea-Bissau - portail officiel, aucun evenement publie",
+        "url": "https://investingb.gw/",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "Guinea Bissau National Investment Agency",
+        "url": "https://guinebissau.com/",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "also_found": [],
+    "conflicts": [],
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Guinée-Bissau : aucun événement immobilier trouvé."
+  },
+  {
+    "country": "Lesotho",
+    "zone": "Afrique australe & centrale",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Lesotho",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Lesotho, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/lesoto",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Lesotho : aucun rendez-vous immobilier trouvé ; seuls des séminaires de formation et d'accréditation apparaissent, sans date 2027 ni substance capitalistique. Le \"Boleswa summit\" (Maseru) est un sommet d'affaires généraliste sans volet immobilier identifié."
+  },
+  {
+    "country": "Liberia",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "a_arbitrer",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Liberia real estate conference 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucun salon immobilier ; annuaires academiques"
+      },
+      {
+        "q": "Liberia investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 4,
+        "outcome": "Liberia Opportunity & Investment Forum (LOIF) 2027 annonce"
+      },
+      {
+        "q": "site:expoassist.net Liberia",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Liberia",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucune page pays : 0 foire referencee"
+      },
+      {
+        "q": "liberiaeconomicforum.org/forum - page officielle",
+        "tool": "webfetch",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucune date 2027 ; derniere session listee en mars 2025"
+      }
+    ],
+    "sources": [
+      {
+        "name": "LinkedIn - Liberia Opportunity & Investment Forum, LOIF 2027",
+        "url": "https://www.linkedin.com/posts/liberia-opportunity-and-investment-forum_loif2027-liberia-investment-activity-7525577565714198529-Y2MW",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Liberia Economic Forum - site officiel, aucune date 2027",
+        "url": "https://liberiaeconomicforum.org/forum/",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "National Investment Commission - Liberia",
+        "url": "https://www.nic.gov.lr/",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      },
+      {
+        "name": "ExpoAssist - Liberia, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/liberia",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "Liberia Opportunity & Investment Forum (LOIF) 2027",
+      "edition": "edition 2027",
+      "dates": null,
+      "city": "Monrovia",
+      "venue": null,
+      "url": "https://www.linkedin.com/posts/liberia-opportunity-and-investment-forum_loif2027-liberia-investment-activity-7525577565714198529-Y2MW",
+      "decision": "a_arbitrer",
+      "category": "capital_markets",
+      "reason": "Forum d'investissement annonce pour 2027 par l'organisateur ; aucune date, aucun site officiel, aucun lieu publie au 22 novembre 2026. A verifier avant integration."
+    },
+    "also_found": [
+      {
+        "name": "Liberia Economic Forum",
+        "dates": null,
+        "city": "Monrovia",
+        "url": "https://liberiaeconomicforum.org/forum/",
+        "decision": "a_arbitrer",
+        "reason": "Plateforme economique nationale ; la page « Forum » ne liste aucune session 2027, la derniere datee est de mars 2025."
+      }
+    ],
+    "conflicts": [],
+    "note": "Aucun evenement immobilier. Deux forums economiques existent, dont un annonce pour 2027 sans date verifiable. Recherche interrompue par un blocage du moteur : audit incomplet.",
+    "supersedes": null
+  },
+  {
+    "country": "Libye",
+    "zone": "Maghreb & Afrique du Nord",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Libye",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 1,
+        "outcome": "1 foire : Libya Food Expo 2027, agroalimentaire au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Libye, 1 foire : Libya Food Expo 2027, agroalimentaire au 22.11.2026",
+        "url": "https://expoassist.net/events/country/libya",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 1 foire : Libya Food Expo 2027, agroalimentaire. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Libye : aucun sommet de capital ni salon immobilier avec édition future annoncée. Les seuls rendez-vous identifiés sont Sphere Expo (édition 2026 passée, 2027 non annoncée) et Libya Build (construction). Le risque pays rend l'horizon 2027 très incomplet — c'est la zone la plus sous-documentée du périmètre."
+  },
+  {
+    "country": "Madagascar",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "couverture_indirecte",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": null,
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Madagascar : aucun événement immobilier propre dans l'horizon ;idem corridor de l'océan Indien via Showcase Indian Ocean."
+  },
+  {
+    "country": "Malawi",
+    "zone": "Afrique australe & centrale",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Malawi",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Malawi, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/malawi",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Malawi : aucun \"Malawi Property Conference\" ni équivalent trouvé ; aucune association de promoteurs avec un rendez-vous 2026-2027 documenté. Les seules pistes locales relevées sont des formations immobilières, hors périmètre."
+  },
+  {
+    "country": "Mali",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "retenu",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Mali salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 2,
+        "outcome": "SIBA 2026 (juillet) identifie ; pas d'edition 2027"
+      },
+      {
+        "q": "Mali investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 6,
+        "outcome": "Forum du Mali Kura identifie, 11-12 decembre 2026"
+      },
+      {
+        "q": "site:eventseye.com Mali",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 1,
+        "outcome": "1 foire : JMP mines et petrole, hors immobilier"
+      },
+      {
+        "q": "site:expoassist.net Mali",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "forumdumalikura.ml - page officielle",
+        "tool": "webfetch",
+        "lang": "fr",
+        "hits": 1,
+        "outcome": "confirme : organisé par le ministere via API-Mali, CICB"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Forum du Mali Kura - site officiel (API-Mali)",
+        "url": "https://forumdumalikura.ml/fr",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "iBamako - Forum du Mali Kura, 11-12 decembre 2026",
+        "url": "https://www.ibamako.com/evenements/forum-mali-kura-investissement-2026/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Maliya - annonce officielle du Forum, CICB Bamako",
+        "url": "https://www.maliya.net/annonce/forum-du-mali-kura/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "MINDICI - SIBA 2026, 25-26 juillet, CICB Bamako",
+        "url": "https://mindici.net/etn/salon-de-limmobilier-de-bamako-siba-2026/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ExpoAssist - Mali, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/mali",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "Forum du Mali Kura - Forum international de l'investissement au Mali",
+      "edition": "1re edition",
+      "dates": "2026-12-11/2026-12-12",
+      "city": "Bamako",
+      "venue": "Centre international de conferences de Bamako (CICB)",
+      "url": "https://forumdumalikura.ml/fr",
+      "decision": "retenu",
+      "category": "capital_markets",
+      "attendance": "pres de 1 000 participants annonces, dont 400 delegues etrangers",
+      "reason": "Forum officiel de l'investissement, organise par le ministere de l'Industrie et du Commerce via l'API-Mali : panels strategiques, B2B et B2G, presentation des opportunites dans les secteurs prioritaires. Dans la fenetre. Premiere edition, donc pas de continuite."
+    },
+    "also_found": [
+      {
+        "name": "SIBA - Salon de l'Immobilier de Bamako",
+        "edition": "edition 2026",
+        "dates": "2026-07-25/2026-07-26",
+        "city": "Bamako",
+        "venue": "CICB, Bamako",
+        "url": "https://mindici.net/etn/salon-de-limmobilier-de-bamako-siba-2026/",
+        "decision": "hors_fenetre",
+        "reason": "Salon immobilier MINDICI, edition 2026 anterieure a la fenetre ; aucune edition 2027 annoncee."
+      }
+    ],
+    "conflicts": [],
+    "note": "Le pays n'est pas a blanc : un forum d'investissement institutionnel se tient dans la fenetre, et un salon immobilier a eu lieu en juillet 2026.",
+    "supersedes": "Mali : aucun événement immobilier trouvé ; aucun salon immobilier de Bamako identifié pour 2026-2027."
+  },
+  {
+    "country": "Mauritanie",
+    "zone": "Maghreb & Afrique du Nord",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Mauritanie",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Mauritanie, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/mauritania",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Mauritanie : aucune manifestation immobilière trouvée. Les seuls événements confirmés à l'agenda 2027 sont l'EU–Mauritania Business Forum (énergie, agriculture) et Mauritanides (mines), tous deux hors périmètre."
+  },
+  {
+    "country": "Mozambique",
+    "zone": "Afrique australe & centrale",
+    "verdict": "hors_fenetre",
+    "constat_date": "2026-11-15",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": {
+      "name": "MozamReal",
+      "edition": "edition 2026",
+      "dates": "2026-06",
+      "city": "Maputo",
+      "venue": null,
+      "url": null,
+      "decision": "hors_fenetre",
+      "reason": "Forum immobilier bilingue annuel de Maputo (API Events) ; edition 2026 tenue en juin, aucune edition 2027 annoncee."
+    },
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Mozambique : aucun événement daté dans l'horizon au 15 novembre 2026. La référence du marché est MozamReal, forum immobilier bilingue annuel de Maputo (API Events) : l'édition 2026 s'est tenue en juin, aucune édition 2027 n'est annoncée. La FACIM (Maputo International Trade Fair) et la MMEC restent multisectoriels ou miniers, sans volet foncier identifié. Revérifié le 15 novembre 2026.",
+    "evidence": "constat_anterieur"
+  },
+  {
+    "country": "Niger",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "retenu",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Niger salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "aucun salon immobilier ; annuaires et annonces seulement"
+      },
+      {
+        "q": "Niger investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 8,
+        "outcome": "F2IN / N2IF 2026 identifie, 24-26 novembre 2026"
+      },
+      {
+        "q": "site:expoassist.net Niger",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      },
+      {
+        "q": "site:eventseye.com Niger",
+        "tool": "eventseye",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "aucune page pays : 0 foire referencee"
+      },
+      {
+        "q": "ANP - lancement des activites preparatoires du F2IN",
+        "tool": "webfetch",
+        "lang": "fr",
+        "hits": 1,
+        "outcome": "confirme : forum du ministere du Commerce, Niamey"
+      }
+    ],
+    "sources": [
+      {
+        "name": "F2IN 2026 - site officiel du Forum Investir au Niger",
+        "url": "https://www.f2in.ne/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Financial Afrik - N2IF/F2IN 2026, 24-26 novembre, Niamey",
+        "url": "https://www.financialafrik.com/en/event/niamey-niger-investment-international-forum-n2if-f2in-2026-first-edition/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ANP - lancement officiel des activites preparatoires (16 oct. 2026)",
+        "url": "https://anp.ne/lancement-officiel-des-activites-preparatoires-du-forum-international-investir-au-niger/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "ExpoAssist - Niger, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/niger",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "F2IN / N2IF 2026 - Forum international Investir au Niger",
+      "edition": "1re edition",
+      "dates": "2026-11-24/2026-11-26",
+      "city": "Niamey",
+      "venue": null,
+      "url": "https://www.f2in.ne/",
+      "decision": "retenu",
+      "category": "capital_markets",
+      "reason": "Forum international de l'investissement, 13 secteurs, presentation de projets, rencontres B2B et G2G, organise sous l'egide du ministere du Commerce et de l'Industrie. Dans la fenetre. Premiere edition."
+    },
+    "also_found": [],
+    "conflicts": [
+      "deux domaines se presentent comme plateforme du forum : f2in.ne et nigerinvestforum.dev ; le premier est cite par la presse officielle (ANP)."
+    ],
+    "note": "Le pays n'est pas a blanc : forum d'investissement institutionnel du 24 au 26 novembre 2026. Aucun salon immobilier dedie identifie.",
+    "supersedes": "Niger : aucun événement immobilier trouvé pour Niamey ; la presse immobilière nigériane référence le marché nigérien mais sans manifestation."
+  },
+  {
+    "country": "Rwanda",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "couverture_indirecte",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": null,
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Rwanda : aucun sommet immobilier d'envergure vérifié sur l'horizon ; la présence rwandaise dans les programmes se fait via les fonds (AFRICORIM, KNOC, RWF) et non via des événements immobiliers dédiés ; seule exception de taille : KIICO (4e édition, mars 2026) est un conference d'investissement multi-secteurs dont le volet immobilier n'est pas documenté."
+  },
+  {
+    "country": "République centrafricaine",
+    "zone": "Afrique australe & centrale",
+    "verdict": "non_audite",
+    "constat_date": null,
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Central African Republic",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Republique centrafricaine, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/central-african-republic",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": null
+  },
+  {
+    "country": "Seychelles",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "couverture_indirecte",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": null,
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Seychelles : aucun événement immobilier propre dans l'horizon ; pays couvert comme territoire du corridor de l'océan Indien par Showcase Indian Ocean (Maurice)."
+  },
+  {
+    "country": "Sierra Leone",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "retenu",
+    "constat_date": "2026-11-06",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Sierra Leone real estate conference expo 2027",
+        "tool": "websearch",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "outil indisponible"
+      },
+      {
+        "q": "Sierra Leone salon immobilier 2027",
+        "tool": "websearch",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "aucun evenement en Sierra Leone ; resultats hors sujet ou hors perimetre"
+      },
+      {
+        "q": "site:10times.com Sierra Leone",
+        "tool": "websearch",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "outil indisponible"
+      },
+      {
+        "q": "Sierra Leone investment summit 2026",
+        "tool": "websearch",
+        "lang": "en",
+        "hits": 5,
+        "outcome": "WAIIS 2026 identifie"
+      },
+      {
+        "q": "Sierra Leone ministry of housing urban development conference 2027",
+        "tool": "websearch",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "outil indisponible"
+      },
+      {
+        "q": "Freetown property expo conference 2027",
+        "tool": "websearch",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "conferences academiques seulement ; aucun salon immobilier"
+      }
+    ],
+    "sources": [
+      {
+        "name": "WAIIS 2026 - site officiel",
+        "url": "https://waiis.org/en",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "WAIIS 2026 - FAQ (dates 17-18 nov., en conflit avec 16-18)",
+        "url": "https://waiis.org/en/faq",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "OPEC Fund, 19 nov. 2026 - plus de 1 000 participants, quatre piliers",
+        "url": "https://opecfund.org/news-events/news/west-africa-means-business",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "EINPresswire, 21 nov. 2026 - 122 projets, environ 19 Md USD",
+        "url": "https://www.einpresswire.com/article/958241032/sierra-leone-s-president-julius-maada-bio-closes-west-africa-integration-and-investment-summit-with-landmark-agreements",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Xinhua, 20 nov. 2026 - cloture a Lungi, 20 resultats",
+        "url": "https://english.news.cn/africa/20261120/77f0418521c2411a9c080411c5e0c1d9/c.html",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "State House Sierra Leone, 14 juin 2026 - annonce de l'initiative",
+        "url": "https://statehouse.gov.sl/west-africa-integration-and-investment-summit-waiis-gains-momentum-as-tony-elumelu-backs-landmark-regional-economic-agenda/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      }
+    ],
+    "event_found": {
+      "name": "WAIIS 2026 - West Africa Integration & Investment Summit",
+      "dates": "2026-11-16/2026-11-18",
+      "city": "Lungi",
+      "venue": "Julius Maada Bio International Conference Centre, Lungi, Port Loko District",
+      "url": "https://waiis.org/en",
+      "convened_by": "H.E. Julius Maada Bio, president de la Sierra Leone, sous mandat CEDEAO",
+      "attendance": "1 000+ participants annonces ; chefs d'Etat et de gouvernement de 8 pays",
+      "pillars": [
+        "energie et industrialisation verte",
+        "minerais strategiques",
+        "agribusiness et securite alimentaire",
+        "transformation numerique"
+      ],
+      "decision": "retenu",
+      "reason": "Passe 5 criteres sur 6 (audience, echelle, substance au sens capital institutionnel, influence, portee) ; echoue sur la continuite (1re edition). Aucun volet logement ou foncier. Meme precedent que le New Africa Capital Forum d'Accra : retenu en capital_markets avec reserve, ou les deux sont ecartes.",
+      "category": "capital_markets"
+    },
+    "conflicts": [
+      "dates : 16-18 novembre (site, brochure, Africa24, sierraloaded) vs 17-18 novembre (FAQ du site officiel, Ecofin, ministere emirien des Affaires etrangeres)",
+      "pipeline : plus de 180 Md USD (site officiel) vs 122 projets pour environ 19 Md USD (EINPresswire, Xinhua) - ecart d'un facteur 10",
+      "lieu : Lungi (JMBICC, Port Loko) vs Freetown (certains communiques designent la capitale)",
+      "perimetre : aucun pilier logement/foncier ; l'immobilier n'apparait que dans le projet Three Cities Development et le Ring Road"
+    ],
+    "note": "Constat d'origine faux dans sa moitie 'B2B/institutionnel' : un sommet institutionnel de la CEDEAO s'est tenu en Sierra Leone du 16 au 18 novembre 2026. L'evenement etait public depuis le 14 juin 2026, soit cinq mois avant le constat du 6 novembre.",
+    "supersedes": "Sierra Leone : aucun événement immobilier B2B/institutionnel trouvé pour Freetown."
+  },
+  {
+    "country": "Somalie",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "hors_fenetre",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [],
+    "sources": [],
+    "event_found": {
+      "name": "Somali Real Estate, Construction and Investment Conference",
+      "edition": "edition 2026",
+      "dates": "2026-07-08/2026-07-09",
+      "city": "Mogadiscio",
+      "venue": null,
+      "url": null,
+      "decision": "hors_fenetre",
+      "reason": "Hors horizon, aucune edition 2027 annoncee ; evenement auto-declare, sans source de marche independante."
+    },
+    "note": "Constat d'origine repris tel quel, non re-audite.",
+    "supersedes": "Somalie : un seul événement immobilier repéré (Somali Real Estate, Construction and Investment Conference, Mogadishu, 8-9 juil. 2026, organisé par Somali Magazine) — hors horizon, aucune édition 2027 annoncée ; l'événement est de surcroît auto-déclaré, sans source de marché indépendante.",
+    "evidence": "constat_anterieur"
+  },
+  {
+    "country": "Soudan",
+    "zone": "Maghreb & Afrique du Nord",
+    "verdict": "retenu",
+    "constat_date": "2026-11-15",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Sudan Construct Show 2026 Khartoum",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 10,
+        "outcome": "site officiel et annuaires identifies"
+      },
+      {
+        "q": "Sudan real estate expo 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 2,
+        "outcome": "annuaires Sudan sans salon immobilier dedie"
+      },
+      {
+        "q": "site:10times.com Sudan",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "10times bloque l'acces invite"
+      },
+      {
+        "q": "Sudan investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 3,
+        "outcome": "forums bilateraux (Arabie saoudite, Senegal) ; aucun forum immobilier"
+      },
+      {
+        "q": "Khartoum real estate conference 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "conferences academiques seulement"
+      },
+      {
+        "q": "Sudan property exhibition 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 4,
+        "outcome": "annuaires de foires ; Sudan Construct Show seul evenement immobilier-construction"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Sudan Construct Show - site officiel",
+        "url": "https://sudanconstruct.com/en/home/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Global Trade Fairs - Sudan Construct Show 11e edition",
+        "url": "https://globaltradefairs.com/tradefairs/event-details/sudan-construct-show-11th-edition",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "TradingChem - fiche Sudan Construct Show (date 2026-10-01, en conflit)",
+        "url": "https://www.tradingchem.com/exhibitions/detail43759.html",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Lookschem - fiche Sudan Construct Show (date 2027-10-01, en conflit)",
+        "url": "https://www.lookchem.com/exhibitions_Ct-Khartoum (Sudan)_2027_10_1.html",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      }
+    ],
+    "event_found": {
+      "name": "Sudan Construct Show",
+      "edition": "11e edition",
+      "dates": "2026-12-01/2026-12-04",
+      "city": "Khartoum",
+      "venue": "Khartoum International Fairground",
+      "url": "https://sudanconstruct.com/en/home/",
+      "decision": "retenu",
+      "reason": "Le site officiel se presente comme une « plateforme construction, infrastructure et investissement » et liste un secteur « Real Estate & Urban Development » ; la page exposants vise explicitement decideurs, promoteurs et investisseurs. La raison de rejet du 15 novembre (« sans volet investisseur ni presence de promoteurs verifies ») est donc contredite par la source primaire. 11e edition, participation internationale annoncee de 10 pays.",
+      "category": "adjacent_construction"
+    },
+    "conflicts": [
+      "dates : 1-4 decembre 2026 (site officiel, Global Trade Fairs) vs 1er octobre 2026 (TradingChem) vs 1er octobre 2027 (Lookschem) — annuaires mal dates ou obsoletes.",
+      "qualification : le constat du 15 novembre ecarte l'evenement faute de volet investisseur ; le site officiel revendique l'inverse."
+    ],
+    "note": "Evenement reel, dans la fenetre, 11e edition. Le rejet du 15 novembre doit etre reexamine : la source primaire contredit son motif.",
+    "supersedes": "Soudan : un rendez-vous existe sur l'horizon et n'avait pas été repéré. Sudan Construct Show, 11e édition, 1-4 décembre 2026, Khartoum International Fairground, qui annonce un secteur « Real Estate & Urban Development ». Il n'est pas retenu : salon de construction et d'équipement, sans volet investisseur ni présence de promoteurs vérifiés. Aucun autre rendez-vous identifié. Revérifié le 15 novembre 2026."
+  },
+  {
+    "country": "Soudan du Sud",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Soudan du Sud",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Soudan du Sud, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/south-sudan",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Soudan du Sud : aucun salon, sommet ou conférence immobilier/investissement dans l'horizon nov. 2026 – déc. 2027 trouvé ; seul angle identifié, un forum sectoriel « South Sudan Oil & Power 2026 » sans dimension foncière."
+  },
+  {
+    "country": "São Tomé-et-Príncipe",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net São Tomé-et-Príncipe",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - São Tomé-et-Príncipe, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/sao-tome-and-principe",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "São Tomé-et-Príncipe : aucun événement immobilier trouvé."
+  },
+  {
+    "country": "Tchad",
+    "zone": "Afrique australe & centrale",
+    "verdict": "non_audite",
+    "constat_date": null,
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "Tchad salon immobilier 2027 N'Djamena",
+        "tool": "bing",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "aucun resultat"
+      },
+      {
+        "q": "site:expoassist.net Chad",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement liste au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Tchad, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/chad",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": null
+  },
+  {
+    "country": "Togo",
+    "zone": "Afrique de l'Ouest",
+    "verdict": "retenu",
+    "constat_date": "2026-11-15",
+    "audited_on": "2026-11-22",
+    "queries": [
+      {
+        "q": "Togo salon immobilier 2027",
+        "tool": "websearch",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "resultats hors Togo (Bruxelles, Paris, Abidjan)"
+      },
+      {
+        "q": "Togo Fest'Immo Lome 2027",
+        "tool": "websearch",
+        "lang": "fr",
+        "hits": 0,
+        "outcome": "outil indisponible"
+      },
+      {
+        "q": "Togo investment forum 2027",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 9,
+        "outcome": "EIF 2027 (BIDC) identifie a Lome"
+      },
+      {
+        "q": "Togo Fest'Immo salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 5,
+        "outcome": "Fest'Immo 2027 identifie, dates publiees"
+      },
+      {
+        "q": "site:10times.com Togo",
+        "tool": "duckduckgo-html",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "10times bloque l'acces invite"
+      },
+      {
+        "q": "Togo ministere logement salon immobilier 2027",
+        "tool": "duckduckgo-html",
+        "lang": "fr",
+        "hits": 2,
+        "outcome": "Fest'Immo confirme ; pages ministerielles sans evenement"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Fest'Immo 2027 - page officielle du salon",
+        "url": "https://expofestimmo.com/le-salon",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "BIDC - ECOWAS Investment Forum 2027",
+        "url": "https://bidc-ebid.org/eif/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Togo Presse - 2e Forum d'investissement de la CEDEAO, 7-8 avril 2027",
+        "url": "https://togopresse.tg/la-2e-edition-du-forum-dinvestissement-de-la-cedeao-se-tiendra-les-7-et-8-avril-2027a-lome/",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Agridigitale - cloture Fest'Immo x SolarDayZ 2026, ambition 2027",
+        "url": "https://agridigitale.com/article/faire-de-festimmo-x-solardayz-un-salon-international-en-2027",
+        "accessed": "2026-11-22",
+        "outcome": "event_found"
+      },
+      {
+        "name": "Ministere de l'Amenagement du territoire et de l'Urbanisme (Togo)",
+        "url": "https://urbanisme.gouv.tg",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": {
+      "name": "Fest'Immo 2027 - Salon International de l'Immobilier et de l'Habitat",
+      "edition": "12e edition",
+      "dates": "2027-05-06/2027-05-09",
+      "city": "Lome",
+      "venue": "CETEF Togo 2000, Lome",
+      "url": "https://expofestimmo.com/le-salon",
+      "attendance": "15 000+ visiteurs annonces ; 20+ pays representes",
+      "decision": "retenu",
+      "reason": "12e edition depuis 2015. Le 8 mai est une journee « Forum des Affaires et de l'Investissement » : rencontres B2B, sessions de financement et mise en relation investisseurs / porteurs de projets. Passe audience, echelle, substance, continuite et portee.",
+      "category": "national_anchor"
+    },
+    "also_found": [
+      {
+        "name": "EIF 2027 - ECOWAS Investment Forum",
+        "edition": "2e edition",
+        "dates": "2027-04-07/2027-04-08",
+        "city": "Lome",
+        "venue": "Palais des Congres, Lome",
+        "url": "https://bidc-ebid.org/eif/",
+        "decision": "retenu",
+        "reason": "Forum de la Banque d'investissement et de developpement de la CEDEAO : 40 projets mis en relation avec des investisseurs, capital institutionnel. Aucun volet logement/foncier identifie ; meme precedent que le New Africa Capital Forum d'Accra.",
+        "category": "capital_markets"
+      }
+    ],
+    "conflicts": [
+      "Fest'Immo : aucune date 2027 n'etait publiee au 15 novembre 2026 ; la page officielle donne desormais le 6-9 mai 2027, ce qui perime le constat.",
+      "EIF : date de lancement mediatique (29 septembre 2026) parfois confondue avec la date de l'evenement (7-8 avril 2027)."
+    ],
+    "note": "Le constat du 15 novembre est perime et incomplet : deux rendez-vous 2027 existent au Togo, dont un forum d'investissement institutionnel.",
+    "supersedes": "Togo : le FEST'IMMO (Salon international de l'immobilier et de l'habitat) n'est pas inactif. Une édition « Fest'Immo x SolarDayZ » s'est tenue à Lomé en 2026, et ses organisateurs annoncent une ambition internationale pour 2027. Aucune date 2027 n'était publiée au 15 novembre 2026 : rien à retenir dans l'horizon à cette date. Revérifié le 15 novembre 2026."
+  },
+  {
+    "country": "Érythrée",
+    "zone": "Afrique de l'Est & Corne",
+    "verdict": "non_audite",
+    "constat_date": "2026-11-06",
+    "audited_on": null,
+    "queries": [
+      {
+        "q": "site:expoassist.net Érythrée",
+        "tool": "expoassist",
+        "lang": "en",
+        "hits": 0,
+        "outcome": "0 evenement au 22.11.2026"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ExpoAssist - Érythrée, 0 evenement au 22.11.2026",
+        "url": "https://expoassist.net/events/country/eritrea",
+        "accessed": "2026-11-22",
+        "outcome": "no_event"
+      }
+    ],
+    "event_found": null,
+    "note": "Non audite. Annuaire consulte : 0 evenement. Le moteur generaliste est indisponible (websearch muet, DuckDuckGo sous captcha, Bing ne respecte plus les termes). Ne pas presenter ce pays comme un blanc : la recherche au sens du protocole n'a pas eu lieu.",
+    "supersedes": "Érythrée : aucune événementation immobilière accessible ni annonce pour l'horizon."
+  }
+]

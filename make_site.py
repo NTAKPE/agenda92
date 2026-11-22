@@ -265,20 +265,37 @@ else:
 
 # zones a blanc : negative findings agreges par zone
 negative = []
+ZONE_EVENTS = 0
+REGISTRY_URLS = set()
 for fn in sorted(os.listdir(DATA)):
     if not (fn.startswith("zone-") and fn.endswith(".json")):
         continue
     with open(os.path.join(DATA, fn), "r", encoding="utf-8") as fh:
         z = json.load(fh)
+    ZONE_EVENTS += len(z.get("events", []))
+    for s in z.get("sources", []):
+        if s.get("url"):
+            REGISTRY_URLS.add(s["url"])
     for n in z.get("negative_findings", []):
         negative.append((z.get("zone", "?"), n))
     for r in z.get("rejected", []):
         negative.append((z.get("zone", "?"), "ECARTE — %s : %s" % (r.get("name", ""), r.get("reason", ""))))
 
+_extra_sources = os.path.join(DATA, "sources-additionnels.json")
+if os.path.exists(_extra_sources):
+    with open(_extra_sources, "r", encoding="utf-8") as fh:
+        for s in json.load(fh).get("sources", []):
+            if s.get("url"):
+                REGISTRY_URLS.add(s["url"])
+REGISTRY = len(REGISTRY_URLS)
+
 # constats (information introuvable) et rejets (evenement ecarte) sont
 # comptes separement : la methode les presente distinctement.
 NEG_CONSTATS = [(z, n) for z, n in negative if not n.startswith("ECARTE")]
 NEG_REJECTS = [(z, n) for z, n in negative if n.startswith("ECARTE")]
+CANDIDATS = ZONE_EVENTS + len(NEG_REJECTS)
+OFFICIAL = sum(1 for e in EVENTS
+               if (e.get("official_site") or {}).get("type") in ("evenement", "organisateur"))
 
 COUNTRIES = {}
 for e in EVENTS:
@@ -293,8 +310,27 @@ REAL_COUNTRIES = {c: v for c, v in COUNTRIES.items() if c != UNKNOWN}
 ORPHAN_EVENTS = COUNTRIES.get(UNKNOWN, [])
 
 # Pays africains sans aucun rendez-vous documente : c'est ce que la page
-# « contribuer » propose de completer. Derive, jamais saisi a la main.
-UNCOVERED_COUNTRIES = max(0, AFRICA_TOTAL - len(REAL_COUNTRIES))
+# « contribuer » propose de completer. Le chiffre vient du journal d'audit
+# (data/constats-pays.json), jamais d'une soustraction ni d'une saisie.
+JOURNAL_PATH = os.path.join(DATA, "constats-pays.json")
+JOURNAL = []
+if os.path.exists(JOURNAL_PATH):
+    with open(JOURNAL_PATH, "r", encoding="utf-8") as fh:
+        JOURNAL = json.load(fh)
+
+_VERDICTS = {}
+for _r in JOURNAL:
+    _v = _r.get("verdict")
+    _VERDICTS[_v] = _VERDICTS.get(_v, 0) + 1
+
+BLANC_VERIFIE = _VERDICTS.get("blanc_verifie", 0)
+NON_AUDITES = _VERDICTS.get("non_audite", 0) + _VERDICTS.get("blanc_declare", 0)
+SANS_EVENEMENT = BLANC_VERIFIE + NON_AUDITES
+AUDIT_DATE = "2026-11-22"
+AUDIT_DATE_FR = "22 novembre 2026"
+UNCOVERED_COUNTRIES = SANS_EVENEMENT
+if AUDIT_DATE > (REFRESH_DATE or ""):
+    REFRESH_DATE = AUDIT_DATE
 
 
 # --------------------------------------------------------------------------
@@ -623,6 +659,7 @@ tbody tr.open{background:var(--panel2)}
 .b-probable{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,transparent);
   background:color-mix(in srgb,var(--warn) 12%,transparent)}
 .b-to_confirm{color:var(--todo);border-color:var(--line);background:var(--panel2)}
+.b-past{color:var(--muted);border-color:var(--line);background:transparent;text-transform:uppercase;letter-spacing:.04em}
 .cat{display:inline-block;font-size:10.5px;color:var(--ink2);background:var(--panel2);
   border:1px solid var(--line);padding:2px 7px;border-radius:5px;white-space:nowrap}
 .score{display:inline-flex;gap:2px;vertical-align:middle}
@@ -850,6 +887,7 @@ def event_row(e, index, with_link=True, prefix=""):
     scale = esc(e.get("attendees") or "")
     if e.get("exhibitors"):
         scale += '<br><span class="muted">%s exposants</span>' % esc(e["exhibitors"])
+    past_flag = '<div><span class="badge b-past">Passé</span></div>' if e.get("past") else ""
     flag = ""
     if e.get("has_conflict"):
         flag = '<div class="conflicts">conflit de sources</div>'
@@ -861,9 +899,9 @@ def event_row(e, index, with_link=True, prefix=""):
     return (
         '<tr class="ev" data-i="%d" data-cat="%s" data-status="%s" data-country="%s" '
         'data-zone="%s" data-score="%s" data-start="%s" data-name="%s" data-city="%s" '
-        'data-search="%s">'
+        'data-past="%s" data-search="%s">'
         '<td class="date-cell"><div class="date-main">%s</div>'
-        '<div>%s</div>%s</td>'
+        '<div>%s</div>%s%s</td>'
         '<td><div class="ev-name">%s</div>%s</td>'
         '<td>%s</td>'
         '<td>%s<br><span class="muted">%s</span></td>'
@@ -877,7 +915,8 @@ def event_row(e, index, with_link=True, prefix=""):
         esc(e.get("country", "")), esc(e.get("zone", "")),
         e.get("score", 0) or 0, esc(e.get("start") or ""),
         esc((e.get("name") or "").lower()), esc((e.get("city") or "").lower()),
-        esc(search), esc(display), status_badge(e.get("status", "")), flag,
+        "1" if e.get("past") else "0", esc(search), esc(display),
+        status_badge(e.get("status", "")), past_flag, flag,
         title, edition, category_badge(e.get("category", "")),
         esc(e.get("city") or ""), esc(e.get("country") or ""),
         scale, score_bars(e.get("score", 0)),
@@ -889,6 +928,12 @@ def detail_block(e):
     conflicts = e.get("conflicts") or ""
     notes = e.get("notes") or ""
     blocks = []
+    if e.get("past"):
+        blocks.append(
+            '<div class="block"><p class="meta" style="margin:0">'
+            '<b>Événement passé.</b> Il s\'est tenu du %s. Les dates sont conservées '
+            'pour l\'archive ; vérifiez l\'édition suivante sur le site officiel.</p></div>'
+            % esc(fmt_range_fr(e.get("start"), e.get("end"))))
     blocks.append(
         '<div class="block"><h3>Pertinence investisseur</h3><p>%s</p>'
         '%s%s</div>' % (
@@ -999,6 +1044,8 @@ def build():
     opts_zone = "".join('<option value="%s">%s</option>' % (esc(z), esc(z)) for z in zones)
 
     dated = [e for e in EVENTS if e.get("start")]
+    upcoming = [e for e in EVENTS if not e.get("past")]
+    past_events = [e for e in EVENTS if e.get("past")]
     to_confirm = [e for e in EVENTS if e.get("status") == "to_confirm"]
     conflicts = [e for e in EVENTS if e.get("has_conflict")]
 
@@ -1012,7 +1059,8 @@ def build():
   déplacer ou de payer. Chaque fiche indique sa source et les contradictions entre sources.</p>
 
   <div class="stats">
-   <div class="stat"><b>%d</b><span>événements retenus</span></div>
+   <div class="stat"><b>%d</b><span>à venir</span></div>
+   <div class="stat"><b>%d</b><span>passés (archive)</span></div>
    <div class="stat"><b>%d</b><span>datés</span></div>
    <div class="stat"><b>%d</b><span>date à confirmer</span></div>
    <div class="stat"><b>%d</b><span>avec conflit de sources</span></div>
@@ -1026,7 +1074,7 @@ def build():
   <div class="notice"><b>Périmètre.</b> Uniquement les événements organisés sur le continent
   africain. Les rendez-vous organisés hors d'Afrique (Dubaï, Londres, New York) et les expos de la
   diaspora sont exclus, même s'ils portent sur l'immobilier africain. Filtre d'inclusion&nbsp;:
-  à moins de deux des six critères (audience décisionnelle, échelle, substance, continuité, influence,
+  au moins deux des six critères (audience décisionnelle, échelle, substance, continuité, influence,
   portée). <a href="methodologie.html">La méthode en détail</a>.</div>
 
   %s
@@ -1036,6 +1084,7 @@ def build():
   </div>
   <div class="toolbar">
    <input type="search" id="q" placeholder="Rechercher un événement, une ville, un organisateur, un thème…">
+   <select id="f-period"><option value="upcoming">À venir</option><option value="past">Passés</option><option value="">Tous</option></select>
    <select id="f-cat"><option value="">Toutes catégories</option>%s</select>
    <select id="f-status"><option value="">Tous les statuts</option>%s</select>
    <select id="f-country"><option value="">Tous les pays</option>%s</select>
@@ -1055,7 +1104,8 @@ def build():
  </div>
 </main>
 """ % (
-        len(EVENTS), len(dated), len(to_confirm), len(conflicts), len(REAL_COUNTRIES),
+        len(upcoming), len(past_events), len(dated), len(to_confirm), len(conflicts),
+        len(REAL_COUNTRIES),
         fmt_gen_date(payload.get("generated", "")),
         sponsor_slot(),
         "".join('<a class="chip" href="pays/%s.html">%s</a>' % (slugify(c), esc(c)) for c in sorted(REAL_COUNTRIES)),
@@ -1193,6 +1243,11 @@ def build():
                           '<p class="officiel-note">Cette fiche est un récapitulatif '
                           'indépendant : l\'agenda n\'organise ni ne finance aucun de ces '
                           'événements.</p>' % off_line)
+        if e.get("past"):
+            official_block = (
+                '<p class="notice"><b>Événement passé.</b> Il s\'est tenu du %s. '
+                'La fiche reste en archive ; vérifiez l\'édition suivante sur le site officiel.</p>'
+                % esc(fmt_range_fr(e.get("start"), e.get("end"))) + official_block)
 
         body_ev = """
 <main><div class="wrap">
@@ -1406,26 +1461,25 @@ def build():
         }))
 
     # ---- etude de cas ---------------------------------------------------
-    case_body = """
+    case_body = f"""
 <main><div class="wrap">
  <p class="eyebrow">Étude de cas</p>
- <h1>83 événements, 97 refus</h1>
+ <h1>{len(EVENTS)} événements, {len(NEG_REJECTS)} refus</h1>
  <p class="lede">Il n'existe pas d'agenda consolidé des rendez-vous immobiliers africains.
  Les informations sont dispersées entre les sites des organisateurs, les billetteries, les
  portails de salons et la presse sectorielle. Elles se contredisent, et elles se périment.</p>
 
  <figure style="margin:26px 0">
-  <img src="assets/carte-afrique.png" alt="Carte de l'Afrique : 22 pays accueillent au moins un
-  rendez-vous immobilier institutionnel documenté, 32 n'en ont aucun au 6 novembre 2026."
+  <img src="assets/carte-afrique.png" alt="Carte de l'Afrique : {len(REAL_COUNTRIES)} pays accueillent au moins un
+  rendez-vous immobilier institutionnel documenté, {SANS_EVENEMENT} n'en ont aucun au {AUDIT_DATE_FR}."
   style="width:100%;height:auto;border:1px solid var(--line);border-radius:10px">
-  <figcaption class="meta" style="margin-top:8px">22 pays accueillent au moins un rendez-vous
-  documenté ; 32 n'en ont aucun au 6 novembre 2026. Trois de ces constats ont été revérifiés
-  et corrigés depuis.</figcaption>
+  <figcaption class="meta" style="margin-top:8px">{len(REAL_COUNTRIES)} pays accueillent au moins un rendez-vous
+  documenté ; {SANS_EVENEMENT} n'en ont aucun au {AUDIT_DATE_FR}. {BLANC_VERIFIE} est vérifié par recherche, {NON_AUDITES} ne sont pas encore audités.</figcaption>
  </figure>
 
- <h2>194 candidats</h2>
+ <h2>{CANDIDATS} candidats</h2>
  <p>Cinq passes de recherche, une par zone, sur un horizon qui va de novembre 2026 à
- décembre 2027. À l'arrivée, 194 candidats examinés : 97 jugés recevables, 97 écartés.
+ décembre 2027. À l'arrivée, {CANDIDATS} candidats examinés : {ZONE_EVENTS} jugés recevables, {len(NEG_REJECTS)} écartés.
  Chaque refus porte son motif — un salon de décoration à Accra n'est pas un rendez-vous
  d'investisseurs, un séminaire d'accréditation de cinquante personnes non plus.</p>
  <p>Le filtre tient en six critères : audience décisionnelle, échelle, substance, continuité,
@@ -1441,7 +1495,7 @@ def build():
  <b>fait l'union des conflits</b> : consolider ne doit jamais faire perdre une contradiction.</p>
 
  <h2>Le statut des dates</h2>
- <p>Onze dates confirmées, trente-trois à confirmer, le reste probable. Le statut n'est pas
+ <p>{len([x for x in EVENTS if x.get('status') == 'confirmed'])} dates confirmées, {len([x for x in EVENTS if x.get('status') == 'to_confirm'])} à confirmer, le reste probable. Le statut n'est pas
  saisi à la main : il est recalculé. une contradiction entre sources — deux dates distinctes,
  ou un marqueur explicite — rétrograde automatiquement une date « confirmée » en
  « probable ». On ne peut pas se mentir sur une date dans ses propres données sans que le
@@ -1455,15 +1509,15 @@ def build():
  qu'elle ressemble à une source officielle.</p>
 
  <h2>Ce que je n'affirme pas</h2>
- <p>22 pays sur 54 ont un rendez-vous documenté. Les 32 autres n'en ont pas, et je l'écris :
- 74 lacunes, chacune disant ce qui a été cherché et ce qui existe à la marge. Sur les
- 83 fiches, 67 portent le site officiel de l'événement ; les autres sont marquées
+ <p>{len(REAL_COUNTRIES)} pays sur 54 ont un rendez-vous documenté. Les {SANS_EVENEMENT} autres n'en ont pas, et je l'écris :
+ {len(NEG_CONSTATS)} lacunes, chacune disant ce qui a été cherché et ce qui existe à la marge. Sur les
+ {len(EVENTS)} fiches, {OFFICIAL} portent le site officiel de l'événement ; les autres sont marquées
  « non identifié » plutôt que de deviner une racine.</p>
- <p>267 pages lues sont consignées avec leur URL et leur date de consultation. Aucun lien
+ <p>{REGISTRY} pages lues sont consignées avec leur URL et leur date de consultation. Aucun lien
  n'est fabriqué : un domaine n'est cliquable que s'il figure au registre.</p>
 
  <h2>À quoi ça sert</h2>
- <p>Un rendez-vous vaut un déplacement et un budget, ou il ne vaut rien. Les 83 dossiers
+ <p>Un rendez-vous vaut un déplacement et un budget, ou il ne vaut rien. Les {len(EVENTS)} dossiers
  sont faits pour répondre à ça — avec leurs sources, leurs conflits, et la date à laquelle
  quelqu'un est allé vérifier.</p>
 
@@ -1473,7 +1527,7 @@ def build():
 </div></main>
 """
     write("etude-de-cas.html", page(
-        "Étude de cas — 83 événements, 97 refus",
+        "Étude de cas — %d événements, %d refus" % (len(EVENTS), len(NEG_REJECTS)),
         "Comment l'agenda des événements immobiliers en Afrique a été construit : filtre "
         "d'inclusion, consolidation des doublons, statut des dates et zones à blanc.",
         case_body,
@@ -1541,6 +1595,14 @@ def build():
         len(NEG_REJECTS),
         "".join('<li><b>%s</b> — %s</li>' % (esc(z), esc(n)) for z, n in NEG_REJECTS),
     )
+
+    method_body = (method_body
+        .replace("comment 194 candidats sont devenus 83 dossiers",
+                 "comment %d candidats sont devenus %d dossiers" % (CANDIDATS, len(EVENTS)))
+        .replace("arrêtés le 6 novembre 2026", "arrêtés le %s" % AUDIT_DATE_FR)
+        .replace("trois d'entre eux ont", "une partie d'entre eux a")
+        .replace("été revérifiés et corrigés le 15 novembre 2026",
+                 "été réexaminée le %s" % AUDIT_DATE_FR))
 
 
     write("methodologie.html", page(
@@ -1617,6 +1679,11 @@ def build():
 """ % (UNCOVERED_COUNTRIES,
        esc(signal_mailto), esc(CONTACT_EMAIL), UNCOVERED_COUNTRIES,
        sponsor_slot())
+
+    contribute_body = contribute_body.replace(
+        "pays n’ont aujourd’hui aucun rendez-vous immobilier institutionnel documenté.",
+        "pays n’ont aujourd’hui aucun rendez-vous documenté : %d vérifié par recherche, "
+        "%d non encore audités." % (BLANC_VERIFIE, NON_AUDITES))
 
     write("contribuer.html", page(
         "Signaler un événement — agenda immobilier Afrique",

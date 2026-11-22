@@ -22,7 +22,7 @@ data/zone-*.json      données brutes par zone (recherche)
         ↓  build.py
 export/*.csv *.ics    exports tableur et calendrier
         ↓  make_site.py
-site/                 site statique prêt à publier (111 pages)
+site/                 site statique prêt à publier (124 pages)
         ↓  refresh.py  (mensuel)
 export/refresh-report.csv   écarts détectés vs pages officielles
 ```
@@ -115,9 +115,9 @@ Aucune action supplémentaire n'est requise pour le référencement et le partag
 |---|---|
 | 105 visuels de partage 1200×630 (un par événement, un par pays, un par défaut) | `site/assets/og/` |
 | Balises Open Graph + Twitter Card + `canonical` | toutes les pages |
-| Données structurées JSON-LD (`WebSite`, `Event`) | accueil et 83 fiches |
+| Données structurées JSON-LD (`WebSite`, `Event`) | accueil et 90 fiches |
 | Favicon PNG + SVG | `site/assets/` |
-| `sitemap.xml` (111 URL) et `robots.txt` | racine du site |
+| `sitemap.xml` (124 URL) et `robots.txt` | racine du site |
 | Flux RSS du journal | `feed.xml` |
 | Botons de partage X / LinkedIn / WhatsApp / Telegram + copie du lien | chaque fiche |
 
@@ -128,7 +128,7 @@ régénérés au prochain build.
 
 ## 3. Le formulaire d'intake (Google Forms → Sheets)
 
-C'est le levier qui fait couvrir les 32 pays sans rendez-vous. Mise en place, environ 15 minutes.
+C'est le levier qui fait couvrir les 15 pays sans rendez-vous documenté. Mise en place, environ 15 minutes.
 
 ### Créer la Sheet
 
@@ -226,7 +226,7 @@ en fournit une.
 ### Ce qui est vendable
 
 - Bannière en tête d'agenda (page d'accueil).
-- Emplacement sur les 22 pages pays et les 83 pages événement — c'est là que le trafic
+- Emplacement sur les 28 pages pays et les 90 pages événement — c'est là que le trafic
   professionnel se concentre.
 - Mention partenaire dans le récapitulatif hebdomadaire des changements.
 - Un lien sortant depuis une page qui parle d'un pays ou d'un événement précis : pour un cabinet
@@ -249,7 +249,7 @@ Ne pas mettre seulement « voir l'agenda ». Le clic se gagne avec une raison pr
 
 - « 3 événements ajoutés, 2 dates changées cette semaine »
 - « Before you book the flight : the verified dates for the next 90 days »
-- « Le rendez-vous que vous cherchez est peut-être dans les 32 pays où personne ne l'a encore signalé »
+- « Le rendez-vous que vous cherchez est peut-être dans les 15 pays où personne ne l'a encore signalé »
 
 ### Ce que le Substack apporte à l'agenda
 
@@ -307,6 +307,6 @@ A FAIRE PLUS TARD - 1 point(s) :
 
 ```powershell
 python check_links.py      # 3 688 liens, 0 cassé, 0 page orpheline
-python check_tracker.py    # 0 script exécutable en ligne, 83 lignes et 83 détails appariés
+python check_tracker.py    # 0 script exécutable en ligne, 90 lignes et 90 détails appariés
 python check_countries.py  # 54 pays, nomenclature conforme
 ```

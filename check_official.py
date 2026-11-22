@@ -23,6 +23,8 @@ for fn in sorted(os.listdir(DATA)):
     if not fn.endswith(".json") or fn in ("changelog.json", "sites-officiels.json"):
         continue
     payload = json.load(open(os.path.join(DATA, fn), encoding="utf-8"))
+    if not isinstance(payload, dict):
+        continue
     for s in payload.get("sources", []):
         url = (s.get("url") or "").strip()
         if url:

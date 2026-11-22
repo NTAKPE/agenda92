@@ -99,6 +99,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   .b-probable{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,transparent);
     background:color-mix(in srgb,var(--warn) 12%,transparent)}
   .b-to_confirm{color:var(--todo);border-color:var(--line);background:var(--panel2)}
+  .b-past{color:var(--muted);border-color:var(--line);background:transparent;text-transform:uppercase;letter-spacing:.04em}
   .cat{display:inline-block;font-size:10.5px;color:var(--ink2);background:var(--panel2);
     border:1px solid var(--line);padding:2px 7px;border-radius:5px;white-space:nowrap}
   .score{display:inline-flex;gap:2px;vertical-align:middle}
@@ -157,6 +158,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <div class="toolbar">
   <div class="wrap">
     <input type="search" id="q" placeholder="Rechercher un &eacute;v&eacute;nement, une ville, un organisateur, un th&egrave;me&hellip;">
+    <select id="f-period"><option value="upcoming">&Agrave; venir</option><option value="past">Pass&eacute;s</option><option value="">Tous</option></select>
     <select id="f-cat"><option value="">Toutes cat&eacute;gories</option></select>
     <select id="f-status"><option value="">Tous les statuts</option></select>
     <select id="f-country"><option value="">Tous les pays</option></select>
@@ -210,7 +212,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 (function(){
   var DATA = JSON.parse(document.getElementById('payload').textContent);
   var EV = DATA.events || [];
-  var state = {q:'', cat:'', status:'', country:'', zone:'', score:0, sort:'start', dir:1};
+  var state = {q:'', cat:'', status:'', country:'', zone:'', period:'upcoming', score:0, sort:'start', dir:1};
 
   function esc(s){return String(s==null?'':s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
@@ -286,9 +288,10 @@ TEMPLATE = r"""<!DOCTYPE html>
       : '<span class="muted">'+esc(e.source_name||'&mdash;')+'</span>';
     var conf = e.has_conflict ? '<div class="conflicts">conflit de sources</div>'
       : (e.notes ? '<div class="notes">signalement</div>' : '');
-    return '<tr class="ev" data-i="'+e.__i+'">'
+    var past = e.past ? '<div><span class="badge b-past">Pass\u00e9</span></div>' : '';
+    return '<tr class="ev" data-i="'+e.__i+'" data-past="'+(e.past?'1':'0')+'">'
       + '<td class="date-cell"><div class="date-main">'+esc(e.display_date)+'</div>'
-      + '<div><span class="badge '+st+'">'+esc(e.status_label)+'</span></div>'+conf+'</td>'
+      + '<div><span class="badge '+st+'">'+esc(e.status_label)+'</span></div>'+past+conf+'</td>'
       + '<td><div class="ev-name">'+esc(e.name)+'</div>'
       + (e.edition?'<span class="ev-edition">'+esc(e.edition)+'</span>':'')+'</td>'
       + '<td><span class="cat">'+esc(e.category_label)+'</span></td>'
@@ -310,6 +313,8 @@ TEMPLATE = r"""<!DOCTYPE html>
     if(state.status && e.status!==state.status) return false;
     if(state.country && e.country!==state.country) return false;
     if(state.zone && e.zone!==state.zone) return false;
+    if(state.period==='upcoming' && e.past) return false;
+    if(state.period==='past' && !e.past) return false;
     if(state.score && (e.score||0) < state.score) return false;
     if(state.q){
       var hay = [e.name,e.edition,e.city,e.country,e.venue,e.organizer,e.themes,e.actors,e.why,e.source_name].join(' ').toLowerCase();
@@ -356,9 +361,10 @@ TEMPLATE = r"""<!DOCTYPE html>
     var v=this.value; clearTimeout(qt); qt=setTimeout(function(){state.q=v;render();},140);
   });
   document.getElementById('reset').addEventListener('click', function(){
-    state={q:'',cat:'',status:'',country:'',zone:'',score:0,sort:'start',dir:1};
+    state={q:'',cat:'',status:'',country:'',zone:'',period:'upcoming',score:0,sort:'start',dir:1};
     document.getElementById('q').value='';
     ['cat','status','country','zone'].forEach(function(f){document.getElementById('f-'+f).value='';});
+    document.getElementById('f-period').value='upcoming';
     document.getElementById('f-score').value='0'; render();
   });
 

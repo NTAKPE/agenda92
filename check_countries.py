@@ -133,4 +133,13 @@ if os.path.exists(pub):
             print("  conforme")
 
 print()
-print("A injecter dans make_site.py : pays non couverts = %d" % (54 - len(covered)))
+print("pays sans evenement retenu : %d" % (54 - len(covered)))
+_jpath = os.path.join(BASE, "data", "constats-pays.json")
+if os.path.exists(_jpath):
+    with open(_jpath, encoding="utf-8") as fh:
+        _j = json.load(fh)
+    _blank = sum(1 for r in _j
+                 if r.get("verdict") in ("blanc_verifie", "blanc_declare", "non_audite"))
+    _verif = sum(1 for r in _j if r.get("verdict") == "blanc_verifie")
+    print("pays sans rendez-vous documente (journal) : %d, dont %d audite(s) a blanc"
+          % (_blank, _verif))

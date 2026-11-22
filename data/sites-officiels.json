@@ -348,6 +348,34 @@
       "site": null,
       "type": null,
       "note": "site officiel non identifie"
+    },
+    "WAIIS 2026 — West Africa Integration & Investment Summit": {
+      "site": "https://waiis.org/en",
+      "type": "evenement"
+    },
+    "Fest'Immo 2027 — Salon International de l'Immobilier et de l'Habitat": {
+      "site": "https://expofestimmo.com/le-salon",
+      "type": "evenement"
+    },
+    "EIF 2027 — ECOWAS Investment Forum": {
+      "site": "https://bidc-ebid.org/eif/",
+      "type": "evenement"
+    },
+    "Forum du Mali Kura — Forum international de l'investissement au Mali": {
+      "site": "https://forumdumalikura.ml/fr",
+      "type": "evenement"
+    },
+    "F2IN / N2IF 2026 — Forum international Investir au Niger": {
+      "site": "https://www.f2in.ne/",
+      "type": "evenement"
+    },
+    "SIF — Salon de l'Immobilier de la Guinée Forestière": {
+      "site": "https://sif-guineeforestiere.com/",
+      "type": "evenement"
+    },
+    "Sudan Construct Show": {
+      "site": "https://sudanconstruct.com/en/home/",
+      "type": "evenement"
     }
   }
 }

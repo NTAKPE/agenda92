@@ -825,7 +825,233 @@
     "édition 2026 à Abuja : 22 août 2026 au Sandralia Hotel (Eventbrite) vs 8 août 2026 (flux ICS idoff.net)",
     "le site de l'organisateur (africarealestateinternational.org/events) ne liste à ce jour que des éditions 2026"
    ]
-  }
+  },
+  {
+  "name": "WAIIS 2026 — West Africa Integration & Investment Summit",
+  "edition": "1re édition (sommet convoqué par le président de la Sierra Leone, sous mandat CEDEAO)",
+  "category": "capital_markets",
+  "start": "2026-11-16",
+  "end": "2026-11-18",
+  "date_display": "16-18 nov. 2026",
+  "date_status": "probable",
+  "city": "Lungi",
+  "country": "Sierra Leone",
+  "venue": "Julius Maada Bio International Conference Centre, Lungi, Port Loko District",
+  "organizer": "Présidence de la Sierra Leone (H.E. Julius Maada Bio), avec Richard Attias & Associates et le secrétariat WAIIS",
+  "attendees": "1 000+ participants annoncés ; chefs d'État et de gouvernement de 8 pays",
+  "exhibitors": "Deal Room de 122 projets, sans salon d'exposition",
+  "investor_score": 4,
+  "investor_why": "Seul rendez-vous de la sous-région qui met autour de la même table chefs d'État, DFI, fonds souverains et porteurs de projets sur un pipeline de 122 projets : pour un financeur, c'est un point d'entrée politique et transactionnel, même si l'immobilier n'y est pas un pilier.",
+  "capital_actors": [
+   "chefs d'État",
+   "DFI",
+   "fonds souverains",
+   "banques",
+   "investisseurs institutionnels"
+  ],
+  "themes": [
+   "intégration régionale",
+   "énergie",
+   "minerais stratégiques",
+   "agribusiness",
+   "transformation numérique",
+   "Deal Room"
+  ],
+  "ticket_url": "https://waiis.org/en",
+  "source_url": "https://waiis.org/en",
+  "source_name": "WAIIS — site officiel",
+  "last_verified": "2026-11-22",
+  "conflicts": [
+   "dates : 16-18 novembre (site, brochure, Africa24, Sierraloaded) vs 17-18 novembre (FAQ du site officiel, Ecofin, ministère émirien des Affaires étrangères)",
+   "pipeline : plus de 180 Md USD (site officiel) vs 122 projets pour environ 19 Md USD (EINPresswire, Xinhua) — écart d'un facteur 10",
+   "lieu : Lungi (JMBICC, Port Loko) vs Freetown dans plusieurs communiqués",
+   "périmètre : aucun pilier logement ou foncier ; l'immobilier n'apparaît que dans le projet Three Cities Development et le Ring Road"
+  ]
+ },
+  {
+  "name": "Fest'Immo 2027 — Salon International de l'Immobilier et de l'Habitat",
+  "edition": "12e édition (depuis 2015)",
+  "category": "national_anchor",
+  "start": "2027-05-06",
+  "end": "2027-05-09",
+  "date_display": "6-9 mai 2027",
+  "date_status": "confirmed",
+  "city": "Lomé",
+  "country": "Togo",
+  "venue": "CETEF Togo 2000, Lomé",
+  "organizer": "Fest'Immo (organisation togolaise)",
+  "attendees": "15 000+ visiteurs annoncés ; 20+ pays représentés",
+  "exhibitors": "Promoteurs, banques, institutions financières, matériaux",
+  "investor_score": 4,
+  "investor_why": "Le 8 mai est une journée « Forum des Affaires et de l'Investissement » : rencontres B2B, sessions de financement et mise en relation investisseurs / porteurs de projets, dans un salon installé depuis douze éditions. Le meilleur point d'entrée immobilier du Togo.",
+  "capital_actors": [
+   "banques",
+   "institutions financières",
+   "promoteurs immobiliers",
+   "investisseurs",
+   "décideurs publics"
+  ],
+  "themes": [
+   "logement et habitat",
+   "financement immobilier",
+   "investissement",
+   "aménagement urbain",
+   "partenariats"
+  ],
+  "ticket_url": "https://expofestimmo.com/le-salon",
+  "source_url": "https://expofestimmo.com/le-salon",
+  "source_name": "Fest'Immo — page officielle du salon 2027",
+  "last_verified": "2026-11-22",
+  "conflicts": [
+   "le constat du 15 novembre 2026 indiquait qu'aucune date 2027 n'était publiée ; la page officielle donne désormais le 6-9 mai 2027"
+  ]
+ },
+  {
+  "name": "EIF 2027 — ECOWAS Investment Forum",
+  "edition": "2e édition",
+  "category": "capital_markets",
+  "start": "2027-04-07",
+  "end": "2027-04-08",
+  "date_display": "7-8 avr. 2027",
+  "date_status": "confirmed",
+  "city": "Lomé",
+  "country": "Togo",
+  "venue": "Palais des Congrès, Lomé",
+  "organizer": "Banque d'investissement et de développement de la CEDEAO (BIDC/EBID)",
+  "attendees": "Investisseurs, partenaires au développement et décideurs de la CEDEAO",
+  "exhibitors": "40 projets présentés à des financeurs",
+  "investor_score": 4,
+  "investor_why": "Forum de la banque de développement de la CEDEAO : 40 projets et programmes présentés à des financeurs, avec un objectif de transformation en transactions finançables. L'édition 2024 a produit trois accords d'environ 439 M USD.",
+  "capital_actors": [
+   "BIDC",
+   "DFI",
+   "banques",
+   "fonds d'investissement",
+   "décideurs publics"
+  ],
+  "themes": [
+   "mobilisation de capitaux",
+   "projets bancables",
+   "résilience économique",
+   "transition énergétique",
+   "transformation productive"
+  ],
+  "ticket_url": "https://bidc-ebid.org/eif/",
+  "source_url": "https://bidc-ebid.org/eif/",
+  "source_name": "BIDC — ECOWAS Investment Forum 2027",
+  "last_verified": "2026-11-22",
+  "conflicts": []
+ },
+  {
+  "name": "Forum du Mali Kura — Forum international de l'investissement au Mali",
+  "edition": "1re édition",
+  "category": "capital_markets",
+  "start": "2026-12-11",
+  "end": "2026-12-12",
+  "date_display": "11-12 déc. 2026",
+  "date_status": "confirmed",
+  "city": "Bamako",
+  "country": "Mali",
+  "venue": "Centre international de conférences de Bamako (CICB)",
+  "organizer": "Ministère de l'Industrie et du Commerce, via l'API-Mali",
+  "attendees": "près de 1 000 participants annoncés, dont 400 délégués étrangers",
+  "exhibitors": null,
+  "investor_score": 4,
+  "investor_why": "Forum officiel de l'investissement, avec panels stratégiques, rencontres B2B et B2G et présentation des opportunités dans les secteurs prioritaires. Dans un pays où aucun rendez-vous institutionnel n'était documenté, c'est le point d'entrée unique pour rencontrer l'API-Mali et les porteurs de projets.",
+  "capital_actors": [
+   "API-Mali",
+   "décideurs publics",
+   "investisseurs étrangers",
+   "banques"
+  ],
+  "themes": [
+   "investissement",
+   "secteurs prioritaires",
+   "B2B",
+   "B2G",
+   "partenariats"
+  ],
+  "ticket_url": "https://forumdumalikura.ml/fr",
+  "source_url": "https://forumdumalikura.ml/fr",
+  "source_name": "Forum du Mali Kura — site officiel (API-Mali)",
+  "last_verified": "2026-11-22",
+  "conflicts": []
+ },
+  {
+  "name": "F2IN / N2IF 2026 — Forum international Investir au Niger",
+  "edition": "1re édition",
+  "category": "capital_markets",
+  "start": "2026-11-24",
+  "end": "2026-11-26",
+  "date_display": "24-26 nov. 2026",
+  "date_status": "confirmed",
+  "city": "Niamey",
+  "country": "Niger",
+  "venue": "Niamey (lieu exact non publié)",
+  "organizer": "Ministère du Commerce et de l'Industrie du Niger",
+  "attendees": "non communiqué",
+  "exhibitors": "13 secteurs, présentation de projets",
+  "investor_score": 3,
+  "investor_why": "Premier forum international de l'investissement du Niger : 13 secteurs, présentation de projets, rencontres B2B et G2G. L'échelle reste nationale et l'édition inaugurale, mais c'est le seul rendez-vous institutionnel du pays.",
+  "capital_actors": [
+   "décideurs publics",
+   "investisseurs",
+   "banques",
+   "partenaires au développement"
+  ],
+  "themes": [
+   "investissement",
+   "13 secteurs",
+   "B2B",
+   "G2G",
+   "projets"
+  ],
+  "ticket_url": "https://www.f2in.ne/",
+  "source_url": "https://www.f2in.ne/",
+  "source_name": "F2IN 2026 — site officiel",
+  "last_verified": "2026-11-22",
+  "conflicts": [
+   "deux domaines se présentent comme plateforme du forum : f2in.ne, cité par la presse officielle (ANP), et nigerinvestforum.dev"
+  ]
+ },
+  {
+  "name": "SIF — Salon de l'Immobilier de la Guinée Forestière",
+  "edition": "édition inaugurale",
+  "category": "national_anchor",
+  "start": "2027-01-15",
+  "end": "2027-01-17",
+  "date_display": "15-17 janv. 2027",
+  "date_status": "confirmed",
+  "city": "N'Zérékoré",
+  "country": "Guinée",
+  "venue": "Palais du Peuple de N'Zérékoré",
+  "organizer": "Kolié Immobilier (initiative privée)",
+  "attendees": "80+ stands visés ; pass professionnel et diaspora",
+  "exhibitors": "80+ stands visés (promoteurs, banques, matériaux, énergies)",
+  "investor_score": 3,
+  "investor_why": "Trois jours sur le foncier sécurisé, l'immobilier accessible et l'investissement : notaires, géomètres, services domaniaux, promoteurs, banques, rencontres B2B et espace diaspora dédié. Premier salon immobilier de la Guinée Forestière, à N'Zérékoré.",
+  "capital_actors": [
+   "banques",
+   "promoteurs",
+   "notaires",
+   "géomètres",
+   "diaspora"
+  ],
+  "themes": [
+   "foncier sécurisé",
+   "immobilier accessible",
+   "financement",
+   "diaspora",
+   "B2B"
+  ],
+  "ticket_url": "https://sif-guineeforestiere.com/reserver",
+  "source_url": "https://sif-guineeforestiere.com/",
+  "source_name": "SIF Guinée Forestière — site officiel",
+  "last_verified": "2026-11-22",
+  "conflicts": [
+   "plusieurs événements immobiliers guinéens se présentent comme « le premier salon » : SIG 2026, SIIBAGUI, SAFIPIM-GUI et SIF 2027"
+  ]
+ }
  ],
  "rejected": [
   {

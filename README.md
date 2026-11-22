@@ -88,9 +88,9 @@ Au moment de générer le site, `build.py` relève les domaines cités dans l'ar
 portant son nom et sa date de consultation ; ce qui ne correspond pas reste écrit en clair, sans
 jamais de lien deviné. `check_cited.py` vérifie que chaque URL affichée provient bien du registre.
 
-Résultat au 8 novembre 2026 : 267 URL au registre, 38 sources rattachées à 20 fiches, 14 domaines
+Résultat au 22 novembre 2026 : 276 URL au registre, 38 sources rattachées à 20 fiches, 14 domaines
 cités sans page de référence. Chaque fiche affiche aussi le lien de billetterie de l'organisateur
-lorsqu'il existe (30 événements sur 83).
+lorsqu'il existe (37 événements sur 90).
 
 ## Le site officiel de chaque événement
 
@@ -102,7 +102,7 @@ l'événement. Chaque fiche indique donc, en tête de page :
   identifié ;
 - « non identifié » quand aucune page n'a pu être vérifiée.
 
-67 des 83 événements portent une URL, 16 l'annoncent explicitement comme non identifiée. Toutes
+74 des 90 événements portent une URL, 16 l'annoncent explicitement comme non identifiée. Toutes
 proviennent du registre des pages lues : une racine devinée n'est jamais ajoutée. Le mapping est un
 fichier de données explicite, `data/sites-officiels.json`, produit par `build_sites_officiels.py` et
 contrôlé par `check_official.py`.
@@ -116,7 +116,7 @@ Chaque fiche porte aussi la mention d'indépendance : l'agenda n'organise ni ne 
 agenda-immobilier-afrique/
 ├── build.py                 consolidation, dédoublonnage, arbitrages
 ├── make_tracker.py          tracker autonome (une page, données inline)
-├── make_site.py             génération du site statique (111 pages)
+├── make_site.py             génération du site statique (124 pages)
 ├── deploy_github.py         préparation et envoi vers GitHub Pages
 ├── refresh.py               re-vérification des dates vs pages officielles
 ├── check_links.py           intégrité des liens internes
@@ -135,12 +135,12 @@ agenda-immobilier-afrique/
 ├── data/                    un JSON par zone + changelog.json + registre des sources
 ├── export/                  CSV, ICS, tracker HTML, rapports de re-vérification
 ├── site/                    site statique prêt à publier
-│   ├── index.html                 tracker interactif, 83 lignes pré-rendues
-│   ├── evenements/                83 fiches événement
+│   ├── index.html                 tracker interactif, 90 lignes pré-rendues
+│   ├── evenements/                90 fiches événement
 │   ├── pays/                      22 pages pays
 │   ├── methodologie.html          le filtre, les statuts, la méthode
 │   ├── a-propos.html              page d'auteur : qui écrit, sources, politique de correction
-│   ├── etude-de-cas.html          comment l'agenda est construit (194 candidats, 83 dossiers)
+│   ├── etude-de-cas.html          comment l'agenda est construit (201 candidats, 90 dossiers)
 │   ├── changelog.html             journal des changements
 │   ├── contribuer.html            signalement par email (zones à blanc)
 │   ├── feed.xml, sitemap.xml, robots.txt
@@ -151,7 +151,7 @@ agenda-immobilier-afrique/
 ```
 
 Le site est **entièrement pré-rendu** : les pages événement ne contiennent aucun `<script>`, et les
-83 lignes du tracker sont dans le HTML statique. Le JavaScript ne fait que filtrer des lignes déjà
+90 lignes du tracker sont dans le HTML statique. Le JavaScript ne fait que filtrer des lignes déjà
 présentes — il améliore l'usage, il ne porte pas le contenu. C'est ce qui rend les pages
 indexables et la navigation fonctionnelle sans JavaScript.
 
@@ -173,7 +173,7 @@ les conflits, l'URL source et les sources citées dans l'arbitrage.
 ```powershell
 python build.py            # reconsolide data/ -> export/
 python make_tracker.py     # regénère export/tracker.html
-python make_site.py        # regénère site/ (111 pages)
+python make_site.py        # regénère site/ (124 pages)
 python check_links.py      # 3 688 liens internes vérifiés
 python check_tracker.py    # structure du tracker pré-rendu
 python check_countries.py  # nomenclature et périmètre
@@ -198,31 +198,31 @@ et adresse de contact placeholder.
 `https://NTAKPE.github.io/agenda92/` — le build l'écrit dans les URL absolues
 (canonical, Open Graph, partage social, sitemap, robots).
 
-## Ce que contient la version du 6 novembre 2026
+## Ce que contient la version du 22 novembre 2026
 
-**83 événements retenus**, dans **22 pays**, après consolidation de 97 fiches sources
+**90 événements retenus**, dans **28 pays**, après consolidation de 104 fiches sources
 (5 zones de recherche) et rejet documenté de **97 événements** qui ne passaient pas le filtre.
 
 | | |
 |---|---|
 | Flagship continental | 8 |
-| Ancre nationale | 17 |
-| Marchés de capitaux | 16 |
-| Adjacent construction | 13 |
+| Ancre nationale | 19 |
+| Marchés de capitaux | 20 |
+| Adjacent construction | 14 |
 | Watchlist (date non fixée) | 29 |
-| Date confirmée | 11 |
-| Date probable (sources divergentes) | 39 |
+| Date confirmée | 15 |
+| Date probable (sources divergentes) | 42 |
 | Date à confirmer | 33 |
-| Avec contradiction entre sources | 49 |
+| Avec contradiction entre sources | 52 |
 
 **Répartition par pays** : Kenya 15, Nigeria 11, Ghana 9, Afrique du Sud 7, Égypte 6, Algérie 5,
-Tanzanie 4, Maroc 4, puis Ouganda, Zambie, Éthiopie, Côte d'Ivoire, Sénégal, Maurice et Tunisie
-(2 chacun), puis Botswana, Namibie, République démocratique du Congo, Cameroun, Zimbabwe, Gabon et
-Congo (1 chacun). Un événement — l'Africa Urban Forum — n'a pas de pays confirmé et reste
+Tanzanie 4, Maroc 4, puis Ouganda, Zambie, Éthiopie, Côte d'Ivoire, Sénégal, Maurice, Tunisie et
+Togo (2 chacun), puis Botswana, Namibie, République démocratique du Congo, Cameroun, Zimbabwe,
+Gabon, Congo, Sierra Leone, Niger, Soudan, Mali et Guinée (1 chacun). Un événement — l'Africa Urban Forum — n'a pas de pays confirmé et reste
 séparément filtrable.
 
-**Répartition par zone** : Afrique de l'Est & Corne 21, Afrique de l'Ouest 20, Continental / finance /
-adjacent 18, Maghreb & Afrique du Nord 13, Afrique australe & centrale 11.
+**Répartition par zone** : Afrique de l'Est & Corne 21, Afrique de l'Ouest 26, Continental / finance /
+adjacent 18, Maghreb & Afrique du Nord 14, Afrique australe & centrale 11.
 
 **Les rendez-vous les plus déterminants pour un investisseur** (score 5/5, date fixée) : 16ᵉ Africa PPP
 Infrastructure Finance Summit (Nairobi, 11-13 nov. 2026), LMA & ICMA Annual Africa Summit (Le Cap,
@@ -230,25 +230,34 @@ Infrastructure Finance Summit (Nairobi, 11-13 nov. 2026), LMA & ICMA Annual Afri
 17-19 mars 2027), EAPI Summit (Nairobi, 12-13 mai 2027), AIHS 21ᵉ Africa International Housing Show
 (Abuja, 12-17 juil. 2027), API Summit (Le Cap, 15-16 sept. 2027).
 
-**Densité** : l'horizon démarre au quatrième trimestre 2026 (25 événements entre le 1ᵉʳ novembre et
-le 31 décembre), puis 7 événements au T1 2027, 7 au T2, 9 au T3 et 3 au T4.
+**Densité** : l'horizon démarre au quatrième trimestre 2026 (29 événements entre le 1ᵉʳ novembre et
+le 31 décembre), puis 8 événements au T1 2027, 9 au T2, 9 au T3 et 3 au T4. Quatorze de ces
+rendez-vous sont déjà passés au 22 novembre et restent en archive.
 
 ### Les zones à blanc
 
 L'agenda ne couvre pas uniformément le continent, et le tracker le dit. **97 événements ont été
 écartés avec une raison explicite**, et **74 mentions d'information introuvable** documentent les
-angles morts. Sur les 54 États africains, **22 sont couverts et 32 n'ont aucun rendez-vous
-documenté** :
+angles morts. Sur les 54 États africains, **28 sont couverts et 15 n'ont aucun rendez-vous
+documenté** : un seul a été audité à blanc au sens du protocole (Gambie), les quatorze autres
+n'ont pas encore été audités.
 
-- **Aucun rendez-vous immobilier institutionnel trouvé** : Libye, Soudan, Bénin, Burkina Faso,
-  Cap-Vert, Gambie, Guinée, Guinée-Bissau, Liberia, Mali, Mauritanie, Niger, Sierra Leone, Togo,
-  Angola, Tchad, Guinée équatoriale, République centrafricaine, São Tomé-et-Príncipe, Burundi,
-  Comores, Djibouti, Érythrée, Madagascar, Malawi, Mozambique, Rwanda, Seychelles, Somalie,
-  Soudan du Sud, Eswatini, Lesotho.
-- **Le Maghreb est structurellement plus pauvre que l'Afrique de l'Ouest en matière de finance
-  immobilière** : aucun salon REIT, crédit foncier coté ou family office immobilier n'a été trouvé
-  dans la zone. Le rendez-vous y est le crédit/leasing (TASHIL à Alger), pas l'investissement
-  institutionnel.
+- **Audité à blanc** : Gambie — six interrogations, cinq sources datées, aucun événement.
+- **Non encore audités** : Angola, Burundi, Djibouti, Guinée équatoriale, Guinée-Bissau, Lesotho,
+  Libye, Malawi, Mauritanie, République centrafricaine, Soudan du Sud, São Tomé-et-Príncipe, Tchad,
+  Érythrée. Un annuaire a été consulté pour chacun, mais le moteur généraliste était indisponible :
+  ces pays ne sont pas déclarés vides, seulement non vérifiés.
+
+**Ce chiffre était de 32 au 6 novembre 2026.** L'audit de couverture du 22 novembre a retrouvé un
+rendez-vous dans dix des onze pays ouest-africains déclarés à blanc. Six pays sont désormais
+couverts — Sierra Leone (WAIIS), Togo (Fest'Immo et EIF), Soudan (Sudan Construct Show), Mali
+(Forum du Mali Kura), Niger (F2IN) et Guinée (SIF) — et quatre autres ont un événement hors
+fenêtre ou en attente : Bénin, Burkina Faso, Cap-Vert et Libéria. Le constat initial n'était pas
+seulement périmé : il était faux.
+
+- **Le Maghreb reste plus pauvre en finance immobilière que l'Afrique de l'Ouest** : aucun salon
+  REIT, crédit foncier coté ou family office immobilier n'a été trouvé dans la zone, hors le
+  Sudan Construct Show désormais couvert.
 - **L'Afrique du Sud est saturée mais peu lisible** : le calendrier immobilier sud-africain est
   majoritairement constitué de séminaires de formation et d'accréditation (IEASA, SAIF, CFA) et de
   webinaires de 50 personnes, écartés au titre du filtre.
