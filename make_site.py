@@ -19,6 +19,7 @@ Entree : export/tracker-data.json (produit par build.py)
 
 Usage :  python make_site.py
 """
+import hashlib
 import json
 import os
 import re
@@ -915,6 +916,9 @@ TRACKER_JS = """(function(){
 })();
 """
 
+_CSS_VER = hashlib.md5(CSS.encode("utf-8")).hexdigest()[:8]
+_JS_VER = hashlib.md5(TRACKER_JS.encode("utf-8")).hexdigest()[:8]
+
 
 # --------------------------------------------------------------------------
 # fragments de table
@@ -1038,6 +1042,9 @@ def events_table(events, with_details=True, sortable=True, prefix=""):
 # --------------------------------------------------------------------------
 
 def write(path, content):
+    if path.endswith(".html"):
+        content = content.replace("assets/site.css", "assets/site.css?v=%s" % _CSS_VER)
+        content = content.replace("assets/tracker.js", "assets/tracker.js?v=%s" % _JS_VER)
     full = os.path.join(SITE, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     with open(full, "w", encoding="utf-8", newline="\n") as fh:
@@ -1184,7 +1191,7 @@ def build():
     idx_path = os.path.join(SITE, "index.html")
     with open(idx_path, "r", encoding="utf-8") as fh:
         html = fh.read()
-    html = html.replace("</body>", '<script src="assets/tracker.js"></script>\n</body>')
+    html = html.replace("</body>", '<script src="assets/tracker.js?v=%s"></script>\n</body>' % _JS_VER)
     with open(idx_path, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(html)
 

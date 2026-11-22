@@ -380,7 +380,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     if(d){ d.classList.toggle('hide'); tr.classList.toggle('open'); }
   });
 
-  ['cat','status','country','zone','score'].forEach(function(f){
+  ['cat','status','country','zone','period','score'].forEach(function(f){
     document.getElementById('f-'+f).addEventListener('change', function(){
       state[f] = f==='score' ? parseInt(this.value,10) : this.value; render();
     });
