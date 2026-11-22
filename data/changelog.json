@@ -3,7 +3,7 @@
     "date": "2026-11-22",
     "date_display": "22 novembre 2026",
     "title": "Un filtre « Cette semaine » dans le tracker",
-    "detail": "Le tracker propose désormais un filtre « Cette semaine », calculé dans le navigateur à partir de la semaine ISO courante : il reste juste même si la page a été générée plusieurs semaines plus tôt. Les événements à sessions multiples — la série AREA, tenue les 3-4 novembre à Kampala puis les 2-4 décembre à Jinja — ne sont retenus que pour les semaines où ils ont réellement une session. Le libellé du filtre affiche les dates de la semaine en cours."
+    "detail": "Le tracker propose désormais un filtre « Cette semaine », calculé dans le navigateur à partir de la semaine ISO courante : il reste juste même si la page a été générée plusieurs semaines plus tôt. Les événements à sessions multiples — la série AREA, tenue les 3-4 novembre à Kampala puis les 2-4 décembre à Jinja — ne sont retenus que pour les semaines où ils ont réellement une session. Le libellé du filtre affiche les dates de la semaine en cours. Le filtre propose également la semaine suivante, avec ses propres bornes."
   },
   {
     "date": "2026-11-22",

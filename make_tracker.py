@@ -158,7 +158,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <div class="toolbar">
   <div class="wrap">
     <input type="search" id="q" placeholder="Rechercher un &eacute;v&eacute;nement, une ville, un organisateur, un th&egrave;me&hellip;">
-    <select id="f-period"><option value="upcoming">&Agrave; venir</option><option value="week">Cette semaine</option><option value="past">Pass&eacute;s</option><option value="">Tous</option></select>
+    <select id="f-period"><option value="upcoming">&Agrave; venir</option><option value="week">Cette semaine</option><option value="nextweek">Semaine prochaine</option><option value="past">Pass&eacute;s</option><option value="">Tous</option></select>
     <select id="f-cat"><option value="">Toutes cat&eacute;gories</option></select>
     <select id="f-status"><option value="">Tous les statuts</option></select>
     <select id="f-country"><option value="">Tous les pays</option></select>
@@ -320,21 +320,30 @@ TEMPLATE = r"""<!DOCTYPE html>
         + '-' + String(x.getDate()).padStart(2,'0');
     }
     function fr(x){ return x.toLocaleDateString('fr-FR', {day:'numeric', month:'short'}); }
-    return {start: iso(mon), end: iso(sun), label: fr(mon) + ' \u2013 ' + fr(sun)};
+    var nmon = new Date(sun); nmon.setDate(sun.getDate() + 1);
+    var nsun = new Date(nmon); nsun.setDate(nmon.getDate() + 6);
+    return {
+      start: iso(mon), end: iso(sun), label: fr(mon) + ' \u2013 ' + fr(sun),
+      nextStart: iso(nmon), nextEnd: iso(nsun), nextLabel: fr(nmon) + ' \u2013 ' + fr(nsun)
+    };
   })();
   (function(){
     var sel = document.getElementById('f-period');
     var wo = sel && sel.querySelector('option[value="week"]');
     if(wo) wo.textContent = 'Cette semaine (' + WEEK.label + ')';
+    var no = sel && sel.querySelector('option[value="nextweek"]');
+    if(no) no.textContent = 'Semaine prochaine (' + WEEK.nextLabel + ')';
   })();
-  function inWeek(e){
+  function inRange(e, start, end){
     var list = (e.sessions && e.sessions.length) ? e.sessions : [[e.start, e.end || e.start]];
     for(var i=0;i<list.length;i++){
       var a = list[i][0], b = list[i][1] || a;
-      if(a && a <= WEEK.end && b >= WEEK.start) return true;
+      if(a && a <= end && b >= start) return true;
     }
     return false;
   }
+  function inWeek(e){ return inRange(e, WEEK.start, WEEK.end); }
+  function inNextWeek(e){ return inRange(e, WEEK.nextStart, WEEK.nextEnd); }
 
   function matches(e){
     if(state.cat && e.category!==state.cat) return false;
@@ -344,6 +353,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     if(state.period==='upcoming' && e.past) return false;
     if(state.period==='past' && !e.past) return false;
     if(state.period==='week' && !inWeek(e)) return false;
+    if(state.period==='nextweek' && !inNextWeek(e)) return false;
     if(state.score && (e.score||0) < state.score) return false;
     if(state.q){
       var hay = [e.name,e.edition,e.city,e.country,e.venue,e.organizer,e.themes,e.actors,e.why,e.source_name].join(' ').toLowerCase();
