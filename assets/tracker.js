@@ -26,27 +26,36 @@
         + '-' + String(x.getDate()).padStart(2,'0');
     }
     function fr(x){ return x.toLocaleDateString('fr-FR', {day:'numeric', month:'short'}); }
-    return {start: iso(mon), end: iso(sun), label: fr(mon) + ' – ' + fr(sun)};
+    var nmon = new Date(sun); nmon.setDate(sun.getDate() + 1);
+    var nsun = new Date(nmon); nsun.setDate(nmon.getDate() + 6);
+    return {
+      start: iso(mon), end: iso(sun), label: fr(mon) + ' – ' + fr(sun),
+      nextStart: iso(nmon), nextEnd: iso(nsun), nextLabel: fr(nmon) + ' – ' + fr(nsun)
+    };
   })();
   var periodSel = document.getElementById('f-period');
   if(periodSel){
     var wo = periodSel.querySelector('option[value="week"]');
     if(wo) wo.textContent = 'Cette semaine (' + WEEK.label + ')';
+    var no = periodSel.querySelector('option[value="nextweek"]');
+    if(no) no.textContent = 'Semaine prochaine (' + WEEK.nextLabel + ')';
   }
-  function inWeek(tr){
+  function inRange(tr, start, end){
     var raw = tr.getAttribute('data-sessions') || '';
     if(raw){
       var parts = raw.split('|');
       for(var i=0;i<parts.length;i++){
         var p = parts[i].split('/');
-        if(p[0] <= WEEK.end && (p[1] || p[0]) >= WEEK.start) return true;
+        if(p[0] <= end && (p[1] || p[0]) >= start) return true;
       }
       return false;
     }
     var s = tr.getAttribute('data-start') || '';
     var e = tr.getAttribute('data-end') || s;
-    return !!s && s <= WEEK.end && e >= WEEK.start;
+    return !!s && s <= end && e >= start;
   }
+  function inWeek(tr){ return inRange(tr, WEEK.start, WEEK.end); }
+  function inNextWeek(tr){ return inRange(tr, WEEK.nextStart, WEEK.nextEnd); }
 
   function haystack(tr){
     if(tr._hay) return tr._hay;
@@ -71,6 +80,7 @@
         if(state.period === 'upcoming' && isPast) ok = false;
         if(state.period === 'past' && !isPast) ok = false;
         if(state.period === 'week' && !inWeek(tr)) ok = false;
+        if(state.period === 'nextweek' && !inNextWeek(tr)) ok = false;
       }
       tr.hidden = !ok;
       var d = document.querySelector('tr.detail[data-d="'+tr.getAttribute('data-i')+'"]');
