@@ -6,11 +6,47 @@
     status: document.getElementById('f-status'),
     country: document.getElementById('f-country'),
     zone: document.getElementById('f-zone'),
+    period: document.getElementById('f-period'),
     score: document.getElementById('f-score')
   };
   var shown = document.getElementById('shown');
   var total = document.getElementById('total');
   if(total) total.textContent = rows.length;
+
+  // Semaine ISO courante, calculee dans le navigateur : le filtre reste juste
+  // meme si la page a ete generee il y a plusieurs semaines.
+  var WEEK = (function(){
+    var now = new Date();
+    var d = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var day = (d.getDay() + 6) % 7;
+    var mon = new Date(d); mon.setDate(d.getDate() - day);
+    var sun = new Date(mon); sun.setDate(mon.getDate() + 6);
+    function iso(x){
+      return x.getFullYear() + '-' + String(x.getMonth()+1).padStart(2,'0')
+        + '-' + String(x.getDate()).padStart(2,'0');
+    }
+    function fr(x){ return x.toLocaleDateString('fr-FR', {day:'numeric', month:'short'}); }
+    return {start: iso(mon), end: iso(sun), label: fr(mon) + ' – ' + fr(sun)};
+  })();
+  var periodSel = document.getElementById('f-period');
+  if(periodSel){
+    var wo = periodSel.querySelector('option[value="week"]');
+    if(wo) wo.textContent = 'Cette semaine (' + WEEK.label + ')';
+  }
+  function inWeek(tr){
+    var raw = tr.getAttribute('data-sessions') || '';
+    if(raw){
+      var parts = raw.split('|');
+      for(var i=0;i<parts.length;i++){
+        var p = parts[i].split('/');
+        if(p[0] <= WEEK.end && (p[1] || p[0]) >= WEEK.start) return true;
+      }
+      return false;
+    }
+    var s = tr.getAttribute('data-start') || '';
+    var e = tr.getAttribute('data-end') || s;
+    return !!s && s <= WEEK.end && e >= WEEK.start;
+  }
 
   function haystack(tr){
     if(tr._hay) return tr._hay;
@@ -30,6 +66,12 @@
       if(ok && state.country && tr.getAttribute('data-country') !== state.country) ok = false;
       if(ok && state.zone && tr.getAttribute('data-zone') !== state.zone) ok = false;
       if(ok && state.score && parseInt(tr.getAttribute('data-score')||'0',10) < parseInt(state.score,10)) ok = false;
+      if(ok && state.period){
+        var isPast = tr.getAttribute('data-past') === '1';
+        if(state.period === 'upcoming' && isPast) ok = false;
+        if(state.period === 'past' && !isPast) ok = false;
+        if(state.period === 'week' && !inWeek(tr)) ok = false;
+      }
       tr.hidden = !ok;
       var d = document.querySelector('tr.detail[data-d="'+tr.getAttribute('data-i')+'"]');
       if(d) d.hidden = !ok;
@@ -47,7 +89,10 @@
   var reset = document.getElementById('reset');
   if(reset) reset.addEventListener('click', function(){
     if(q) q.value = '';
-    for(var k in filters){ if(filters[k]) filters[k].value = (k==='score' ? '0' : ''); }
+    for(var k in filters){
+      if(!filters[k]) continue;
+      filters[k].value = (k==='score' ? '0' : (k==='period' ? 'upcoming' : ''));
+    }
     apply();
   });
 
