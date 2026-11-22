@@ -338,7 +338,7 @@ FIELDS = [
     "date_status", "city", "country", "venue", "organizer", "attendees",
     "exhibitors", "investor_score", "investor_why", "capital_actors",
     "themes", "ticket_url", "source_url", "source_name", "last_verified",
-    "conflicts",
+    "conflicts", "sessions",
 ]
 
 records = []
@@ -352,6 +352,11 @@ for z in zones:
         if rec["start_dt"] and not rec["end_dt"]:
             rec["end_dt"] = rec["start_dt"]
         rec["past"] = bool(rec["end_dt"] and rec["end_dt"] < date.today())
+        # un evenement peut avoir plusieurs sessions separees (série itinerante) :
+        # a defaut, la session unique va de la date de debut a la date de fin.
+        if not rec.get("sessions"):
+            rec["sessions"] = ([[rec["start_dt"].isoformat(), rec["end_dt"].isoformat()]]
+                               if rec["start_dt"] and rec["end_dt"] else [])
         rec["category"] = rec["category"] or "national_anchor"
         rec["date_status"] = rec["date_status"] or "to_confirm"
         rec["investor_score"] = rec["investor_score"] or 0
@@ -785,6 +790,7 @@ payload = {
             "has_conflict": r["has_conflict"],
             "last_verified": r["last_verified"] or "",
             "past": r["past"],
+            "sessions": r["sessions"],
         }
         for r in records
     ],

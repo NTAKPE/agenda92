@@ -63,6 +63,7 @@
       "category": "national_anchor",
       "start": "2026-11-03",
       "end": "2026-12-04",
+      "sessions": [["2026-11-03", "2026-11-04"], ["2026-12-02", "2026-12-04"]],
       "date_display": "3-4 nov. 2026 (Kampala) puis 2-4 déc. 2026 (Jinja)",
       "date_status": "confirmed",
       "city": "Kampala et Jinja",
